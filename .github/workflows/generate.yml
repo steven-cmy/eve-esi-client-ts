@@ -21,7 +21,7 @@ jobs:
         with:
           generator: typescript-axios
           openapi-url: https://esi.evetech.net/latest/swagger.json
-          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=1.0.0 --git-user-id=${{ github.repository_owner }},git-repo-id=${{ github.event.repository.name }},git-host=github.com --
+          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
       - name: Process output
         run: |
           rsync -a --remove-source-files typescript-axios-client/ .
@@ -47,14 +47,14 @@ jobs:
             echo "No changes to commit."
             echo "committed=false" >> $GITHUB_OUTPUT
           else
-            git commit -am "Update typescript client"
+            npm version patch
+            VERSION=$(node -p "require('./package.json').version")
+            git commit -am "v$VERSION"
             git push
             echo "committed=true" >> $GITHUB_OUTPUT
           fi
       - name: Publish to NPM
         if: steps.commit.outputs.committed == 'true'
-        run: |
-          npm version patch
-          npm publish --provenance --access public
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
