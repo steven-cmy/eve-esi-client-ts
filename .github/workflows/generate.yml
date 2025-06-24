@@ -21,7 +21,10 @@ jobs:
         with:
           generator: typescript-axios
           openapi-url: https://esi.evetech.net/latest/swagger.json
+          command-args: -o / --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=1.0.0
       - name: Commit new client
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name 'steven-cmy'
           git config --global user.email '4248629+steven-cmy@users.noreply.github.com'
