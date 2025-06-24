@@ -7,33 +7,51 @@ on:
 permissions:
   contents: write
 jobs:
-  build:
+  generate-client:
+    name: Generate TypeScript Client
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Download OpenAPI specification
-        run: |
-          curl -fSL https://esi.evetech.net/latest/swagger.json -o swagger.json
-          if [ ! -f swagger.json ]; then
-            echo "swagger.json was not downloaded!"
-            exit 1
-          fi
       - name: Generate Client
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: typescript-axios
-          openapi-url: swagger.json
-          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=1.0.0
+          openapi-url: https://esi.evetech.net/latest/swagger.json
+          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts
       - name: Commit new client
+        id: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mv typescript-axios-client/* .
+          rsync -a --remove-source-files typescript-axios-client/ .
           rm -rf typescript-axios-client
           git config --global user.name 'steven-cmy'
           git config --global user.email '4248629+steven-cmy@users.noreply.github.com'
           git add *
-          git commit -am "Update typescript client"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            echo "committed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -am "Update typescript client"
+            git push
+            echo "committed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Node.js
+        if: steps.commit.outputs.committed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        if: steps.commit.outputs.committed == 'true'
+        run: npm ci
+
+      - name: Publish to NPM
+        if: steps.commit.outputs.committed == 'true'
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
