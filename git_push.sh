@@ -14,12 +14,12 @@ if [ "$git_host" = "" ]; then
 fi
 
 if [ "$git_user_id" = "" ]; then
-    git_user_id="steven-cmy,git-repo-id=eve-esi-client-ts,git-host=github.com"
+    git_user_id="steven-cmy"
     echo "[INFO] No command line input provided. Set \$git_user_id to $git_user_id"
 fi
 
 if [ "$git_repo_id" = "" ]; then
-    git_repo_id="GIT_REPO_ID"
+    git_repo_id="eve-esi-client-ts"
     echo "[INFO] No command line input provided. Set \$git_repo_id to $git_repo_id"
 fi
 
