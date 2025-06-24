@@ -1,6 +1,7 @@
 name: Generate Client
 
 on:
+  push:
   schedule:
     - cron: '5 11 * * *' # Runs at 11:05 UTC daily
   workflow_dispatch:
@@ -20,16 +21,30 @@ jobs:
           generator: typescript-axios
           openapi-url: https://esi.evetech.net/latest/swagger.json
           command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts
+      - name: Process output
+        run: |
+          rsync -a --remove-source-files typescript-axios-client/ .
+          rm -rf typescript-axios-client
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+          npm ci
+            else
+          npm install
+            fi
       - name: Commit new client
         id: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          rsync -a --remove-source-files typescript-axios-client/ .
-          rm -rf typescript-axios-client
           git config --global user.name 'steven-cmy'
           git config --global user.email '4248629+steven-cmy@users.noreply.github.com'
-          git add *
+          git add .
           if git diff --cached --quiet; then
             echo "No changes to commit."
             echo "committed=false" >> $GITHUB_OUTPUT
@@ -38,18 +53,6 @@ jobs:
             git push
             echo "committed=true" >> $GITHUB_OUTPUT
           fi
-
-      - name: Set up Node.js
-        if: steps.commit.outputs.committed == 'true'
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Install dependencies
-        if: steps.commit.outputs.committed == 'true'
-        run: npm ci
-
       - name: Publish to NPM
         if: steps.commit.outputs.committed == 'true'
         run: npm publish --provenance --access public
