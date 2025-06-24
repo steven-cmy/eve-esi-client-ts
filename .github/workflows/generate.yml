@@ -14,22 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Generate Angular Client
+        with:
+          fetch-depth: 0
+      - name: Generate Client
         uses: openapi-generators/openapitools-generator-action@v1
         with:
-          generator: typescript-angular
-          config-file: angular-generator-config.yml
-
-  # publish-npm:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: actions/setup-node@v4
-  #       with:
-  #         node-version: 20
-  #         registry-url: https://registry.npmjs.org/
-  #     - run: npm ci
-  #     - run: npm publish
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          generator: typescript-axios
+          openapi-url: https://esi.evetech.net/latest/swagger.json
+      - name: Commit new client
+        run: |
+          git config --global user.name 'steven-cmy'
+          git config --global user.email '4248629+steven-cmy@users.noreply.github.com'
+          git add *
+          git commit -am "Update typescript client"
+          git push
