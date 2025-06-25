@@ -33,6 +33,7 @@ jobs:
           openapi-file: swagger.json
           command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.version.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
       - name: Process output
+        id: check
         run: |
           rsync -a --remove-source-files typescript-axios-client/ .
           rm -rf typescript-axios-client
@@ -41,21 +42,26 @@ jobs:
           git diff --cached
           if git diff --cached --quiet; then
             echo "No changes after client generation. Exiting."
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           fi
+          echo "changed=true" >> $GITHUB_OUTPUT
       - name: Bump version
         id: bump
+        if: steps.check.outputs.changed == 'true'
         run: |
           git reset --hard
           VERSION=$(npm version patch --tag-version-prefix='' --git-tag-version false)
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - name: Generate new Client
         uses: openapi-generators/openapitools-generator-action@v1
+        if: steps.check.outputs.changed == 'true'
         with:
           generator: typescript-axios
           openapi-file: swagger.json
           command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
       - name: Process new output
+        if: steps.check.outputs.changed == 'true'
         run: |
           rsync -a --remove-source-files typescript-axios-client/ .
           rm -rf typescript-axios-client swagger.json
@@ -63,15 +69,18 @@ jobs:
           git commit -m "Auto generate: ${{ steps.bump.outputs.version }}"
           git push
       - name: Set up Node.js
+        if: steps.check.outputs.changed == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
+        if: steps.check.outputs.changed == 'true'
         run: |
           rm -rf node_modules package-lock.json
           npm install
       - name: Publish to NPM
+        if: steps.check.outputs.changed == 'true'
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
