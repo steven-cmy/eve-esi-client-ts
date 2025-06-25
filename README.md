@@ -1,4 +1,4 @@
-## eve-esi-client-ts@v1.0.3
+## eve-esi-client-ts@v1.0.4
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
