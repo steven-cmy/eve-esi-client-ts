@@ -1,6 +1,6 @@
 {
   "name": "eve-esi-client-ts",
-  "version": "1.0.2",
+  "version": "v1.0.2",
   "description": "OpenAPI client for eve-esi-client-ts",
   "author": "OpenAPI-Generator Contributors",
   "repository": {
@@ -14,7 +14,7 @@
     "openapi-generator",
     "eve-esi-client-ts"
   ],
-  "license": "Unlicense",
+  "license": "MIT",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "module": "./dist/esm/index.js",
