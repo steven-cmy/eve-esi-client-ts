@@ -21,7 +21,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          VERSION=$(node -p "require('./package.json').version")
+          VERSION=$(node -p "require('./package.json').version.replace(/^v/, '')")
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - name: Download spec
         run: |
@@ -47,7 +47,7 @@ jobs:
         id: bump
         run: |
           git reset --hard
-          VERSION=$(npm version patch)
+          VERSION=$(npm version patch --tag-version-prefix='' --git-tag-version false)
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - name: Generate new Client
         uses: openapi-generators/openapitools-generator-action@v1
