@@ -19,16 +19,16 @@ jobs:
       - name: Bump version
         id: bump
         run: |
-          git config --global user.name 'steven-cmy'
-          git config --global user.email '4248629+steven-cmy@users.noreply.github.com'
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           VERSION=$(npm version patch)
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - name: Generate Client
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: typescript-axios
           openapi-url: https://esi.evetech.net/latest/swagger.json
-          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }} --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
+          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
       - name: Process output
         run: |
           rsync -a --remove-source-files typescript-axios-client/ .
@@ -52,7 +52,7 @@ jobs:
             echo "No changes to commit."
             echo "committed=false" >> $GITHUB_OUTPUT
           else
-            git commit -am "Auto generated: v${{ steps.bump.outputs.version }}"
+            git commit -am "Auto generated: ${{ steps.bump.outputs.version }}"
             git push
             echo "committed=true" >> $GITHUB_OUTPUT
           fi
