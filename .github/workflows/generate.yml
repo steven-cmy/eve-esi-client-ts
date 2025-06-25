@@ -16,20 +16,40 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Bump version
-        id: bump
+      - name: Get version
+        id: version
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+      - name: Generate old Client
+        uses: openapi-generators/openapitools-generator-action@v1
+        with:
+          generator: typescript-axios
+          openapi-url: https://esi.evetech.net/latest/swagger.json
+          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.version.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
+      - name: Process output
+        run: |
+          rsync -a --remove-source-files typescript-axios-client/ .
+          rm -rf typescript-axios-client
+          if git diff --quiet; then
+          echo "No changes after client generation. Exiting."
+          exit 0
+          fi
+      - name: Bump version
+        id: bump
+        run: |
+          git reset --hard
           VERSION=$(npm version patch)
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
-      - name: Generate Client
+      - name: Generate new Client
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: typescript-axios
           openapi-url: https://esi.evetech.net/latest/swagger.json
           command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
-      - name: Process output
+      - name: Process new output
         run: |
           rsync -a --remove-source-files typescript-axios-client/ .
           rm -rf typescript-axios-client
@@ -42,22 +62,7 @@ jobs:
         run: |
           rm -rf node_modules package-lock.json
           npm install
-      - name: Commit new client
-        id: commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git add .
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            echo "committed=false" >> $GITHUB_OUTPUT
-          else
-            git commit -am "Auto generated: ${{ steps.bump.outputs.version }}"
-            git push
-            echo "committed=true" >> $GITHUB_OUTPUT
-          fi
       - name: Publish to NPM
-        if: steps.commit.outputs.committed == 'true'
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
