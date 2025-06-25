@@ -33,7 +33,7 @@ jobs:
         run: |
           rsync -a --remove-source-files typescript-axios-client/ .
           rm -rf typescript-axios-client
-          if git diff --quiet; then
+          if git diff --cached --quiet; then
           echo "No changes after client generation. Exiting."
           exit 0
           fi
@@ -53,6 +53,10 @@ jobs:
         run: |
           rsync -a --remove-source-files typescript-axios-client/ .
           rm -rf typescript-axios-client
+          git add .
+          git commit -m "Auto generate: ${{ steps.bump.outputs.version }}"
+          git tag "${{ steps.bump.outputs.version }}"
+          git push origin HEAD --tags
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -62,7 +66,7 @@ jobs:
         run: |
           rm -rf node_modules package-lock.json
           npm install
-      - name: Publish to NPM
-        run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Publish to NPM
+      #   run: npm publish --provenance --access public
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
