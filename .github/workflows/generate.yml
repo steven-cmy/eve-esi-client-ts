@@ -43,35 +43,35 @@ jobs:
             echo "No changes after client generation. Exiting."
             exit 0
           fi
-      # - name: Bump version
-      #   id: bump
-      #   run: |
-      #     git reset --hard
-      #     VERSION=$(npm version patch)
-      #     echo "version=$VERSION" >> "$GITHUB_OUTPUT"
-      # - name: Generate new Client
-      #   uses: openapi-generators/openapitools-generator-action@v1
-      #   with:
-      #     generator: typescript-axios
-      #     openapi-file: swagger.json
-      #     command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
-      # - name: Process new output
-      #   run: |
-      #     rsync -a --remove-source-files typescript-axios-client/ .
-      #     rm -rf typescript-axios-client swagger.json
-      #     git add .
-      #     git commit -m "Auto generate: ${{ steps.bump.outputs.version }}"
-      #     git push
-      # - name: Set up Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: lts/*
-      #     registry-url: 'https://registry.npmjs.org'
-      # - name: Install dependencies
-      #   run: |
-      #     rm -rf node_modules package-lock.json
-      #     npm install
-      # - name: Publish to NPM
-      #   run: npm publish --provenance --access public
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Bump version
+        id: bump
+        run: |
+          git reset --hard
+          VERSION=$(npm version patch)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+      - name: Generate new Client
+        uses: openapi-generators/openapitools-generator-action@v1
+        with:
+          generator: typescript-axios
+          openapi-file: swagger.json
+          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
+      - name: Process new output
+        run: |
+          rsync -a --remove-source-files typescript-axios-client/ .
+          rm -rf typescript-axios-client swagger.json
+          git add .
+          git commit -m "Auto generate: ${{ steps.bump.outputs.version }}"
+          git push
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install dependencies
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
+      - name: Publish to NPM
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
