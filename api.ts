@@ -25,148 +25,102 @@ import { BASE_PATH, COLLECTION_FORMATS, BaseAPI, RequiredError, operationServerM
 
 /**
  * Bad request model
- * @export
- * @interface BadRequest
  */
 export interface BadRequest {
     /**
      * Bad request message
-     * @type {string}
-     * @memberof BadRequest
      */
     'error': string;
 }
 /**
  * Unprocessable entity
- * @export
- * @interface DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity
  */
 export interface DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity {
     /**
      * Unprocessable entity message
-     * @type {string}
-     * @memberof DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface DeleteFleetsFleetIdMembersMemberIdNotFound
  */
 export interface DeleteFleetsFleetIdMembersMemberIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof DeleteFleetsFleetIdMembersMemberIdNotFound
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface DeleteFleetsFleetIdSquadsSquadIdNotFound
  */
 export interface DeleteFleetsFleetIdSquadsSquadIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof DeleteFleetsFleetIdSquadsSquadIdNotFound
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface DeleteFleetsFleetIdWingsWingIdNotFound
  */
 export interface DeleteFleetsFleetIdWingsWingIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof DeleteFleetsFleetIdWingsWingIdNotFound
      */
     'error'?: string;
 }
 /**
  * Error limited model
- * @export
- * @interface ErrorLimited
  */
 export interface ErrorLimited {
     /**
      * Error limited message
-     * @type {string}
-     * @memberof ErrorLimited
      */
     'error': string;
 }
 /**
  * Forbidden model
- * @export
- * @interface Forbidden
  */
 export interface Forbidden {
     /**
      * Forbidden message
-     * @type {string}
-     * @memberof Forbidden
      */
     'error': string;
     /**
      * status code received from SSO
-     * @type {number}
-     * @memberof Forbidden
      */
     'sso_status'?: number;
 }
 /**
  * Gateway timeout model
- * @export
- * @interface GatewayTimeout
  */
 export interface GatewayTimeout {
     /**
      * Gateway timeout message
-     * @type {string}
-     * @memberof GatewayTimeout
      */
     'error': string;
     /**
      * number of seconds the request was given
-     * @type {number}
-     * @memberof GatewayTimeout
      */
     'timeout'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetAlliancesAllianceIdContacts200Ok
  */
 export interface GetAlliancesAllianceIdContacts200Ok {
     /**
      * contact_id integer
-     * @type {number}
-     * @memberof GetAlliancesAllianceIdContacts200Ok
      */
     'contact_id': number;
     /**
      * contact_type string
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdContacts200Ok
      */
     'contact_type': GetAlliancesAllianceIdContacts200OkContactTypeEnum;
     /**
      * label_ids array
-     * @type {Array<number>}
-     * @memberof GetAlliancesAllianceIdContacts200Ok
      */
     'label_ids'?: Array<number>;
     /**
      * Standing of the contact
-     * @type {number}
-     * @memberof GetAlliancesAllianceIdContacts200Ok
      */
     'standing': number;
 }
@@ -182,206 +136,140 @@ export type GetAlliancesAllianceIdContacts200OkContactTypeEnum = typeof GetAllia
 
 /**
  * 200 ok object
- * @export
- * @interface GetAlliancesAllianceIdContactsLabels200Ok
  */
 export interface GetAlliancesAllianceIdContactsLabels200Ok {
     /**
      * label_id integer
-     * @type {number}
-     * @memberof GetAlliancesAllianceIdContactsLabels200Ok
      */
     'label_id': number;
     /**
      * label_name string
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdContactsLabels200Ok
      */
     'label_name': string;
 }
 /**
  * No image server for this datasource
- * @export
- * @interface GetAlliancesAllianceIdIconsNotFound
  */
 export interface GetAlliancesAllianceIdIconsNotFound {
     /**
      * error message
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdIconsNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetAlliancesAllianceIdIconsOk
  */
 export interface GetAlliancesAllianceIdIconsOk {
     /**
      * px128x128 string
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdIconsOk
      */
     'px128x128'?: string;
     /**
      * px64x64 string
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdIconsOk
      */
     'px64x64'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetAlliancesAllianceIdNotFound
  */
 export interface GetAlliancesAllianceIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetAlliancesAllianceIdOk
  */
 export interface GetAlliancesAllianceIdOk {
     /**
      * ID of the corporation that created the alliance
-     * @type {number}
-     * @memberof GetAlliancesAllianceIdOk
      */
     'creator_corporation_id': number;
     /**
      * ID of the character that created the alliance
-     * @type {number}
-     * @memberof GetAlliancesAllianceIdOk
      */
     'creator_id': number;
     /**
      * date_founded string
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdOk
      */
     'date_founded': string;
     /**
      * the executor corporation ID, if this alliance is not closed
-     * @type {number}
-     * @memberof GetAlliancesAllianceIdOk
      */
     'executor_corporation_id'?: number;
     /**
      * Faction ID this alliance is fighting for, if this alliance is enlisted in factional warfare
-     * @type {number}
-     * @memberof GetAlliancesAllianceIdOk
      */
     'faction_id'?: number;
     /**
      * the full name of the alliance
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdOk
      */
     'name': string;
     /**
      * the short name of the alliance
-     * @type {string}
-     * @memberof GetAlliancesAllianceIdOk
      */
     'ticker': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdAgentsResearch200Ok
  */
 export interface GetCharactersCharacterIdAgentsResearch200Ok {
     /**
      * agent_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAgentsResearch200Ok
      */
     'agent_id': number;
     /**
      * points_per_day number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAgentsResearch200Ok
      */
     'points_per_day': number;
     /**
      * remainder_points number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAgentsResearch200Ok
      */
     'remainder_points': number;
     /**
      * skill_type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAgentsResearch200Ok
      */
     'skill_type_id': number;
     /**
      * started_at string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdAgentsResearch200Ok
      */
     'started_at': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdAssets200Ok
  */
 export interface GetCharactersCharacterIdAssets200Ok {
     /**
      * is_blueprint_copy boolean
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'is_blueprint_copy'?: boolean;
     /**
      * is_singleton boolean
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'is_singleton': boolean;
     /**
      * item_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'item_id': number;
     /**
      * location_flag string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'location_flag': GetCharactersCharacterIdAssets200OkLocationFlagEnum;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'location_id': number;
     /**
      * location_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'location_type': GetCharactersCharacterIdAssets200OkLocationTypeEnum;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'quantity': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAssets200Ok
      */
     'type_id': number;
 }
@@ -489,124 +377,84 @@ export type GetCharactersCharacterIdAssets200OkLocationTypeEnum = typeof GetChar
 
 /**
  * Requested page does not exist
- * @export
- * @interface GetCharactersCharacterIdAssetsNotFound
  */
 export interface GetCharactersCharacterIdAssetsNotFound {
     /**
      * error message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdAssetsNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdAttributesOk
  */
 export interface GetCharactersCharacterIdAttributesOk {
     /**
      * Neural remapping cooldown after a character uses remap accrued over time
-     * @type {string}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'accrued_remap_cooldown_date'?: string;
     /**
      * Number of available bonus character neural remaps
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'bonus_remaps'?: number;
     /**
      * charisma integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'charisma': number;
     /**
      * intelligence integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'intelligence': number;
     /**
      * Datetime of last neural remap, including usage of bonus remaps
-     * @type {string}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'last_remap_date'?: string;
     /**
      * memory integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'memory': number;
     /**
      * perception integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'perception': number;
     /**
      * willpower integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdAttributesOk
      */
     'willpower': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdBlueprints200Ok
  */
 export interface GetCharactersCharacterIdBlueprints200Ok {
     /**
      * Unique ID for this item.
-     * @type {number}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'item_id': number;
     /**
      * Type of the location_id
-     * @type {string}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'location_flag': GetCharactersCharacterIdBlueprints200OkLocationFlagEnum;
     /**
      * References a station, a ship or an item_id if this blueprint is located within a container. If the return value is an item_id, then the Character AssetList API must be queried to find the container using the given item_id to determine the correct location of the Blueprint.
-     * @type {number}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'location_id': number;
     /**
      * Material Efficiency Level of the blueprint.
-     * @type {number}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'material_efficiency': number;
     /**
      * A range of numbers with a minimum of -2 and no maximum value where -1 is an original and -2 is a copy. It can be a positive integer if it is a stack of blueprint originals fresh from the market (e.g. no activities performed on them yet).
-     * @type {number}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'quantity': number;
     /**
      * Number of runs remaining if the blueprint is a copy, -1 if it is an original.
-     * @type {number}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'runs': number;
     /**
      * Time Efficiency Level of the blueprint.
-     * @type {number}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'time_efficiency': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdBlueprints200Ok
      */
     'type_id': number;
 }
@@ -694,38 +542,26 @@ export type GetCharactersCharacterIdBlueprints200OkLocationFlagEnum = typeof Get
 
 /**
  * event
- * @export
- * @interface GetCharactersCharacterIdCalendar200Ok
  */
 export interface GetCharactersCharacterIdCalendar200Ok {
     /**
      * event_date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendar200Ok
      */
     'event_date'?: string;
     /**
      * event_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCalendar200Ok
      */
     'event_id'?: number;
     /**
      * event_response string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendar200Ok
      */
     'event_response'?: GetCharactersCharacterIdCalendar200OkEventResponseEnum;
     /**
      * importance integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCalendar200Ok
      */
     'importance'?: number;
     /**
      * title string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendar200Ok
      */
     'title'?: string;
 }
@@ -741,20 +577,14 @@ export type GetCharactersCharacterIdCalendar200OkEventResponseEnum = typeof GetC
 
 /**
  * character_id and response of an attendee
- * @export
- * @interface GetCharactersCharacterIdCalendarEventIdAttendees200Ok
  */
 export interface GetCharactersCharacterIdCalendarEventIdAttendees200Ok {
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCalendarEventIdAttendees200Ok
      */
     'character_id'?: number;
     /**
      * event_response string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdAttendees200Ok
      */
     'event_response'?: GetCharactersCharacterIdCalendarEventIdAttendees200OkEventResponseEnum;
 }
@@ -770,94 +600,64 @@ export type GetCharactersCharacterIdCalendarEventIdAttendees200OkEventResponseEn
 
 /**
  * Not found
- * @export
- * @interface GetCharactersCharacterIdCalendarEventIdAttendeesNotFound
  */
 export interface GetCharactersCharacterIdCalendarEventIdAttendeesNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdAttendeesNotFound
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetCharactersCharacterIdCalendarEventIdNotFound
  */
 export interface GetCharactersCharacterIdCalendarEventIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdNotFound
      */
     'error'?: string;
 }
 /**
  * Full details of a specific event
- * @export
- * @interface GetCharactersCharacterIdCalendarEventIdOk
  */
 export interface GetCharactersCharacterIdCalendarEventIdOk {
     /**
      * date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'date': string;
     /**
      * Length in minutes
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'duration': number;
     /**
      * event_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'event_id': number;
     /**
      * importance integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'importance': number;
     /**
      * owner_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'owner_id': number;
     /**
      * owner_name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'owner_name': string;
     /**
      * owner_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'owner_type': GetCharactersCharacterIdCalendarEventIdOkOwnerTypeEnum;
     /**
      * response string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'response': string;
     /**
      * text string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'text': string;
     /**
      * title string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCalendarEventIdOk
      */
     'title': string;
 }
@@ -874,20 +674,14 @@ export type GetCharactersCharacterIdCalendarEventIdOkOwnerTypeEnum = typeof GetC
 
 /**
  * home_location object
- * @export
- * @interface GetCharactersCharacterIdClonesHomeLocation
  */
 export interface GetCharactersCharacterIdClonesHomeLocation {
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdClonesHomeLocation
      */
     'location_id'?: number;
     /**
      * location_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdClonesHomeLocation
      */
     'location_type'?: GetCharactersCharacterIdClonesHomeLocationLocationTypeEnum;
 }
@@ -901,38 +695,26 @@ export type GetCharactersCharacterIdClonesHomeLocationLocationTypeEnum = typeof 
 
 /**
  * jump_clone object
- * @export
- * @interface GetCharactersCharacterIdClonesJumpClone
  */
 export interface GetCharactersCharacterIdClonesJumpClone {
     /**
      * implants array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdClonesJumpClone
      */
     'implants': Array<number>;
     /**
      * jump_clone_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdClonesJumpClone
      */
     'jump_clone_id': number;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdClonesJumpClone
      */
     'location_id': number;
     /**
      * location_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdClonesJumpClone
      */
     'location_type': GetCharactersCharacterIdClonesJumpCloneLocationTypeEnum;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdClonesJumpClone
      */
     'name'?: string;
 }
@@ -946,75 +728,48 @@ export type GetCharactersCharacterIdClonesJumpCloneLocationTypeEnum = typeof Get
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdClonesOk
  */
 export interface GetCharactersCharacterIdClonesOk {
-    /**
-     * 
-     * @type {GetCharactersCharacterIdClonesHomeLocation}
-     * @memberof GetCharactersCharacterIdClonesOk
-     */
     'home_location'?: GetCharactersCharacterIdClonesHomeLocation;
     /**
      * jump_clones array
-     * @type {Array<GetCharactersCharacterIdClonesJumpClone>}
-     * @memberof GetCharactersCharacterIdClonesOk
      */
     'jump_clones': Array<GetCharactersCharacterIdClonesJumpClone>;
     /**
      * last_clone_jump_date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdClonesOk
      */
     'last_clone_jump_date'?: string;
     /**
      * last_station_change_date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdClonesOk
      */
     'last_station_change_date'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdContacts200Ok
  */
 export interface GetCharactersCharacterIdContacts200Ok {
     /**
      * contact_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContacts200Ok
      */
     'contact_id': number;
     /**
      * contact_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContacts200Ok
      */
     'contact_type': GetCharactersCharacterIdContacts200OkContactTypeEnum;
     /**
      * Whether this contact is in the blocked list. Note a missing value denotes unknown, not true or false
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdContacts200Ok
      */
     'is_blocked'?: boolean;
     /**
      * Whether this contact is being watched
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdContacts200Ok
      */
     'is_watched'?: boolean;
     /**
      * label_ids array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdContacts200Ok
      */
     'label_ids'?: Array<number>;
     /**
      * Standing of the contact
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContacts200Ok
      */
     'standing': number;
 }
@@ -1030,159 +785,107 @@ export type GetCharactersCharacterIdContacts200OkContactTypeEnum = typeof GetCha
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdContactsLabels200Ok
  */
 export interface GetCharactersCharacterIdContactsLabels200Ok {
     /**
      * label_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContactsLabels200Ok
      */
     'label_id': number;
     /**
      * label_name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContactsLabels200Ok
      */
     'label_name': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdContracts200Ok
  */
 export interface GetCharactersCharacterIdContracts200Ok {
     /**
      * Who will accept the contract
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'acceptor_id': number;
     /**
      * ID to whom the contract is assigned, can be alliance, corporation or character ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'assignee_id': number;
     /**
      * To whom the contract is available
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'availability': GetCharactersCharacterIdContracts200OkAvailabilityEnum;
     /**
      * Buyout price (for Auctions only)
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'buyout'?: number;
     /**
      * Collateral price (for Couriers only)
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'collateral'?: number;
     /**
      * contract_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'contract_id': number;
     /**
      * Date of confirmation of contract
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'date_accepted'?: string;
     /**
      * Date of completed of contract
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'date_completed'?: string;
     /**
      * Expiration date of the contract
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'date_expired': string;
     /**
      * Сreation date of the contract
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'date_issued': string;
     /**
      * Number of days to perform the contract
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'days_to_complete'?: number;
     /**
      * End location ID (for Couriers contract)
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'end_location_id'?: number;
     /**
      * true if the contract was issued on behalf of the issuer\'s corporation
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'for_corporation': boolean;
     /**
      * Character\'s corporation ID for the issuer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'issuer_corporation_id': number;
     /**
      * Character ID for the issuer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'issuer_id': number;
     /**
      * Price of contract (for ItemsExchange and Auctions)
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'price'?: number;
     /**
      * Remuneration for contract (for Couriers only)
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'reward'?: number;
     /**
      * Start location ID (for Couriers contract)
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'start_location_id'?: number;
     /**
      * Status of the the contract
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'status': GetCharactersCharacterIdContracts200OkStatusEnum;
     /**
      * Title of the contract
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'title'?: string;
     /**
      * Type of the contract
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'type': GetCharactersCharacterIdContracts200OkTypeEnum;
     /**
      * Volume of items in the contract
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContracts200Ok
      */
     'volume'?: number;
 }
@@ -1221,219 +924,149 @@ export type GetCharactersCharacterIdContracts200OkTypeEnum = typeof GetCharacter
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdContractsContractIdBids200Ok
  */
 export interface GetCharactersCharacterIdContractsContractIdBids200Ok {
     /**
      * The amount bid, in ISK
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContractsContractIdBids200Ok
      */
     'amount': number;
     /**
      * Unique ID for the bid
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContractsContractIdBids200Ok
      */
     'bid_id': number;
     /**
      * Character ID of the bidder
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContractsContractIdBids200Ok
      */
     'bidder_id': number;
     /**
      * Datetime when the bid was placed
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContractsContractIdBids200Ok
      */
     'date_bid': string;
 }
 /**
  * Not found
- * @export
- * @interface GetCharactersCharacterIdContractsContractIdBidsNotFound
  */
 export interface GetCharactersCharacterIdContractsContractIdBidsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContractsContractIdBidsNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdContractsContractIdItems200Ok
  */
 export interface GetCharactersCharacterIdContractsContractIdItems200Ok {
     /**
      * true if the contract issuer has submitted this item with the contract, false if the isser is asking for this item in the contract
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdContractsContractIdItems200Ok
      */
     'is_included': boolean;
     /**
      * is_singleton boolean
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdContractsContractIdItems200Ok
      */
     'is_singleton': boolean;
     /**
      * Number of items in the stack
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContractsContractIdItems200Ok
      */
     'quantity': number;
     /**
      * -1 indicates that the item is a singleton (non-stackable). If the item happens to be a Blueprint, -1 is an Original and -2 is a Blueprint Copy
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContractsContractIdItems200Ok
      */
     'raw_quantity'?: number;
     /**
      * Unique ID for the item
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContractsContractIdItems200Ok
      */
     'record_id': number;
     /**
      * Type ID for item
-     * @type {number}
-     * @memberof GetCharactersCharacterIdContractsContractIdItems200Ok
      */
     'type_id': number;
 }
 /**
  * Not found
- * @export
- * @interface GetCharactersCharacterIdContractsContractIdItemsNotFound
  */
 export interface GetCharactersCharacterIdContractsContractIdItemsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdContractsContractIdItemsNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdCorporationhistory200Ok
  */
 export interface GetCharactersCharacterIdCorporationhistory200Ok {
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCorporationhistory200Ok
      */
     'corporation_id': number;
     /**
      * True if the corporation has been deleted
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdCorporationhistory200Ok
      */
     'is_deleted'?: boolean;
     /**
      * An incrementing ID that can be used to canonically establish order of records in cases where dates may be ambiguous
-     * @type {number}
-     * @memberof GetCharactersCharacterIdCorporationhistory200Ok
      */
     'record_id': number;
     /**
      * start_date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdCorporationhistory200Ok
      */
     'start_date': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdFatigueOk
  */
 export interface GetCharactersCharacterIdFatigueOk {
     /**
      * Character\'s jump fatigue expiry
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFatigueOk
      */
     'jump_fatigue_expire_date'?: string;
     /**
      * Character\'s last jump activation
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFatigueOk
      */
     'last_jump_date'?: string;
     /**
      * Character\'s last jump update
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFatigueOk
      */
     'last_update_date'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdFittings200Ok
  */
 export interface GetCharactersCharacterIdFittings200Ok {
     /**
      * description string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFittings200Ok
      */
     'description': string;
     /**
      * fitting_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFittings200Ok
      */
     'fitting_id': number;
     /**
      * items array
-     * @type {Array<GetCharactersCharacterIdFittingsItem>}
-     * @memberof GetCharactersCharacterIdFittings200Ok
      */
     'items': Array<GetCharactersCharacterIdFittingsItem>;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFittings200Ok
      */
     'name': string;
     /**
      * ship_type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFittings200Ok
      */
     'ship_type_id': number;
 }
 /**
  * item object
- * @export
- * @interface GetCharactersCharacterIdFittingsItem
  */
 export interface GetCharactersCharacterIdFittingsItem {
     /**
      * flag string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFittingsItem
      */
     'flag': GetCharactersCharacterIdFittingsItemFlagEnum;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFittingsItem
      */
     'quantity': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFittingsItem
      */
     'type_id': number;
 }
@@ -1488,51 +1121,35 @@ export type GetCharactersCharacterIdFittingsItemFlagEnum = typeof GetCharactersC
 
 /**
  * Not found
- * @export
- * @interface GetCharactersCharacterIdFleetNotFound
  */
 export interface GetCharactersCharacterIdFleetNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFleetNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdFleetOk
  */
 export interface GetCharactersCharacterIdFleetOk {
     /**
      * Character ID of the current fleet boss
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFleetOk
      */
     'fleet_boss_id': number;
     /**
      * The character\'s current fleet ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFleetOk
      */
     'fleet_id': number;
     /**
      * Member’s role in fleet
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFleetOk
      */
     'role': GetCharactersCharacterIdFleetOkRoleEnum;
     /**
      * ID of the squad the member is in. If not applicable, will be set to -1
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFleetOk
      */
     'squad_id': number;
     /**
      * ID of the wing the member is in. If not applicable, will be set to -1
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFleetOk
      */
     'wing_id': number;
 }
@@ -1548,233 +1165,151 @@ export type GetCharactersCharacterIdFleetOkRoleEnum = typeof GetCharactersCharac
 
 /**
  * Summary of kills done by the given character against enemy factions
- * @export
- * @interface GetCharactersCharacterIdFwStatsKills
  */
 export interface GetCharactersCharacterIdFwStatsKills {
     /**
      * Last week\'s total number of kills by a given character against enemy factions
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsKills
      */
     'last_week': number;
     /**
      * Total number of kills by a given character against enemy factions since the character enlisted
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsKills
      */
     'total': number;
     /**
      * Yesterday\'s total number of kills by a given character against enemy factions
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsKills
      */
     'yesterday': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdFwStatsOk
  */
 export interface GetCharactersCharacterIdFwStatsOk {
     /**
      * The given character\'s current faction rank
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsOk
      */
     'current_rank'?: number;
     /**
      * The enlistment date of the given character into faction warfare. Will not be included if character is not enlisted in faction warfare
-     * @type {string}
-     * @memberof GetCharactersCharacterIdFwStatsOk
      */
     'enlisted_on'?: string;
     /**
      * The faction the given character is enlisted to fight for. Will not be included if character is not enlisted in faction warfare
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsOk
      */
     'faction_id'?: number;
     /**
      * The given character\'s highest faction rank achieved
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsOk
      */
     'highest_rank'?: number;
-    /**
-     * 
-     * @type {GetCharactersCharacterIdFwStatsKills}
-     * @memberof GetCharactersCharacterIdFwStatsOk
-     */
     'kills': GetCharactersCharacterIdFwStatsKills;
-    /**
-     * 
-     * @type {GetCharactersCharacterIdFwStatsVictoryPoints}
-     * @memberof GetCharactersCharacterIdFwStatsOk
-     */
     'victory_points': GetCharactersCharacterIdFwStatsVictoryPoints;
 }
 /**
  * Summary of victory points gained by the given character for the enlisted faction
- * @export
- * @interface GetCharactersCharacterIdFwStatsVictoryPoints
  */
 export interface GetCharactersCharacterIdFwStatsVictoryPoints {
     /**
      * Last week\'s victory points gained by the given character
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsVictoryPoints
      */
     'last_week': number;
     /**
      * Total victory points gained since the given character enlisted
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsVictoryPoints
      */
     'total': number;
     /**
      * Yesterday\'s victory points gained by the given character
-     * @type {number}
-     * @memberof GetCharactersCharacterIdFwStatsVictoryPoints
      */
     'yesterday': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdIndustryJobs200Ok
  */
 export interface GetCharactersCharacterIdIndustryJobs200Ok {
     /**
      * Job activity ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'activity_id': number;
     /**
      * blueprint_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'blueprint_id': number;
     /**
      * Location ID of the location from which the blueprint was installed. Normally a station ID, but can also be an asset (e.g. container) or corporation facility
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'blueprint_location_id': number;
     /**
      * blueprint_type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'blueprint_type_id': number;
     /**
      * ID of the character which completed this job
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'completed_character_id'?: number;
     /**
      * Date and time when this job was completed
-     * @type {string}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'completed_date'?: string;
     /**
      * The sume of job installation fee and industry facility tax
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'cost'?: number;
     /**
      * Job duration in seconds
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'duration': number;
     /**
      * Date and time when this job finished
-     * @type {string}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'end_date': string;
     /**
      * ID of the facility where this job is running
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'facility_id': number;
     /**
      * ID of the character which installed this job
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'installer_id': number;
     /**
      * Unique job ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'job_id': number;
     /**
      * Number of runs blueprint is licensed for
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'licensed_runs'?: number;
     /**
      * Location ID of the location to which the output of the job will be delivered. Normally a station ID, but can also be a corporation facility
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'output_location_id': number;
     /**
      * Date and time when this job was paused (i.e. time when the facility where this job was installed went offline)
-     * @type {string}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'pause_date'?: string;
     /**
      * Chance of success for invention
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'probability'?: number;
     /**
      * Type ID of product (manufactured, copied or invented)
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'product_type_id'?: number;
     /**
      * Number of runs for a manufacturing job, or number of copies to make for a blueprint copy
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'runs': number;
     /**
      * Date and time when this job started
-     * @type {string}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'start_date': string;
     /**
      * ID of the station where industry facility is located
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'station_id': number;
     /**
      * status string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'status': GetCharactersCharacterIdIndustryJobs200OkStatusEnum;
     /**
      * Number of successful runs for this job. Equal to runs unless this is an invention job
-     * @type {number}
-     * @memberof GetCharactersCharacterIdIndustryJobs200Ok
      */
     'successful_runs'?: number;
 }
@@ -1792,144 +1327,98 @@ export type GetCharactersCharacterIdIndustryJobs200OkStatusEnum = typeof GetChar
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdKillmailsRecent200Ok
  */
 export interface GetCharactersCharacterIdKillmailsRecent200Ok {
     /**
      * A hash of this killmail
-     * @type {string}
-     * @memberof GetCharactersCharacterIdKillmailsRecent200Ok
      */
     'killmail_hash': string;
     /**
      * ID of this killmail
-     * @type {number}
-     * @memberof GetCharactersCharacterIdKillmailsRecent200Ok
      */
     'killmail_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdLocationOk
  */
 export interface GetCharactersCharacterIdLocationOk {
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdLocationOk
      */
     'solar_system_id': number;
     /**
      * station_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdLocationOk
      */
     'station_id'?: number;
     /**
      * structure_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdLocationOk
      */
     'structure_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdLoyaltyPoints200Ok
  */
 export interface GetCharactersCharacterIdLoyaltyPoints200Ok {
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdLoyaltyPoints200Ok
      */
     'corporation_id': number;
     /**
      * loyalty_points integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdLoyaltyPoints200Ok
      */
     'loyalty_points': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdMail200Ok
  */
 export interface GetCharactersCharacterIdMail200Ok {
     /**
      * From whom the mail was sent
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMail200Ok
      */
     'from'?: number;
     /**
      * is_read boolean
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdMail200Ok
      */
     'is_read'?: boolean;
     /**
      * labels array
-     * @type {Set<number>}
-     * @memberof GetCharactersCharacterIdMail200Ok
      */
     'labels'?: Set<number>;
     /**
      * mail_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMail200Ok
      */
     'mail_id'?: number;
     /**
      * Recipients of the mail
-     * @type {Set<GetCharactersCharacterIdMailRecipient>}
-     * @memberof GetCharactersCharacterIdMail200Ok
      */
     'recipients'?: Set<GetCharactersCharacterIdMailRecipient>;
     /**
      * Mail subject
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMail200Ok
      */
     'subject'?: string;
     /**
      * When the mail was sent
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMail200Ok
      */
     'timestamp'?: string;
 }
 /**
  * label object
- * @export
- * @interface GetCharactersCharacterIdMailLabelsLabel
  */
 export interface GetCharactersCharacterIdMailLabelsLabel {
     /**
      * color string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailLabelsLabel
      */
     'color'?: GetCharactersCharacterIdMailLabelsLabelColorEnum;
     /**
      * label_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMailLabelsLabel
      */
     'label_id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailLabelsLabel
      */
     'name'?: string;
     /**
      * unread_count integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMailLabelsLabel
      */
     'unread_count'?: number;
 }
@@ -1959,120 +1448,82 @@ export type GetCharactersCharacterIdMailLabelsLabelColorEnum = typeof GetCharact
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdMailLabelsOk
  */
 export interface GetCharactersCharacterIdMailLabelsOk {
     /**
      * labels array
-     * @type {Array<GetCharactersCharacterIdMailLabelsLabel>}
-     * @memberof GetCharactersCharacterIdMailLabelsOk
      */
     'labels'?: Array<GetCharactersCharacterIdMailLabelsLabel>;
     /**
      * total_unread_count integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMailLabelsOk
      */
     'total_unread_count'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdMailLists200Ok
  */
 export interface GetCharactersCharacterIdMailLists200Ok {
     /**
      * Mailing list ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMailLists200Ok
      */
     'mailing_list_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailLists200Ok
      */
     'name': string;
 }
 /**
  * Not found
- * @export
- * @interface GetCharactersCharacterIdMailMailIdNotFound
  */
 export interface GetCharactersCharacterIdMailMailIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailMailIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdMailMailIdOk
  */
 export interface GetCharactersCharacterIdMailMailIdOk {
     /**
      * Mail\'s body
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailMailIdOk
      */
     'body'?: string;
     /**
      * From whom the mail was sent
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMailMailIdOk
      */
     'from'?: number;
     /**
      * Labels attached to the mail
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdMailMailIdOk
      */
     'labels'?: Array<number>;
     /**
      * Whether the mail is flagged as read
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdMailMailIdOk
      */
     'read'?: boolean;
     /**
      * Recipients of the mail
-     * @type {Set<GetCharactersCharacterIdMailMailIdRecipient>}
-     * @memberof GetCharactersCharacterIdMailMailIdOk
      */
     'recipients'?: Set<GetCharactersCharacterIdMailMailIdRecipient>;
     /**
      * Mail subject
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailMailIdOk
      */
     'subject'?: string;
     /**
      * When the mail was sent
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailMailIdOk
      */
     'timestamp'?: string;
 }
 /**
  * recipient object
- * @export
- * @interface GetCharactersCharacterIdMailMailIdRecipient
  */
 export interface GetCharactersCharacterIdMailMailIdRecipient {
     /**
      * recipient_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMailMailIdRecipient
      */
     'recipient_id': number;
     /**
      * recipient_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailMailIdRecipient
      */
     'recipient_type': GetCharactersCharacterIdMailMailIdRecipientRecipientTypeEnum;
 }
@@ -2088,20 +1539,14 @@ export type GetCharactersCharacterIdMailMailIdRecipientRecipientTypeEnum = typeo
 
 /**
  * recipient object
- * @export
- * @interface GetCharactersCharacterIdMailRecipient
  */
 export interface GetCharactersCharacterIdMailRecipient {
     /**
      * recipient_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMailRecipient
      */
     'recipient_id': number;
     /**
      * recipient_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMailRecipient
      */
     'recipient_type': GetCharactersCharacterIdMailRecipientRecipientTypeEnum;
 }
@@ -2117,62 +1562,42 @@ export type GetCharactersCharacterIdMailRecipientRecipientTypeEnum = typeof GetC
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdMedals200Ok
  */
 export interface GetCharactersCharacterIdMedals200Ok {
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'corporation_id': number;
     /**
      * date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'date': string;
     /**
      * description string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'description': string;
     /**
      * graphics array
-     * @type {Array<GetCharactersCharacterIdMedalsGraphic>}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'graphics': Array<GetCharactersCharacterIdMedalsGraphic>;
     /**
      * issuer_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'issuer_id': number;
     /**
      * medal_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'medal_id': number;
     /**
      * reason string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'reason': string;
     /**
      * status string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'status': GetCharactersCharacterIdMedals200OkStatusEnum;
     /**
      * title string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMedals200Ok
      */
     'title': string;
 }
@@ -2186,125 +1611,85 @@ export type GetCharactersCharacterIdMedals200OkStatusEnum = typeof GetCharacters
 
 /**
  * graphic object
- * @export
- * @interface GetCharactersCharacterIdMedalsGraphic
  */
 export interface GetCharactersCharacterIdMedalsGraphic {
     /**
      * color integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMedalsGraphic
      */
     'color'?: number;
     /**
      * graphic string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMedalsGraphic
      */
     'graphic': string;
     /**
      * layer integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMedalsGraphic
      */
     'layer': number;
     /**
      * part integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMedalsGraphic
      */
     'part': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdMining200Ok
  */
 export interface GetCharactersCharacterIdMining200Ok {
     /**
      * date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdMining200Ok
      */
     'date': string;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMining200Ok
      */
     'quantity': number;
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMining200Ok
      */
     'solar_system_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdMining200Ok
      */
     'type_id': number;
 }
 /**
  * Not found
- * @export
- * @interface GetCharactersCharacterIdNotFound
  */
 export interface GetCharactersCharacterIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdNotifications200Ok
  */
 export interface GetCharactersCharacterIdNotifications200Ok {
     /**
      * is_read boolean
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdNotifications200Ok
      */
     'is_read'?: boolean;
     /**
      * notification_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdNotifications200Ok
      */
     'notification_id': number;
     /**
      * sender_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdNotifications200Ok
      */
     'sender_id': number;
     /**
      * sender_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdNotifications200Ok
      */
     'sender_type': GetCharactersCharacterIdNotifications200OkSenderTypeEnum;
     /**
      * text string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdNotifications200Ok
      */
     'text'?: string;
     /**
      * timestamp string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdNotifications200Ok
      */
     'timestamp': string;
     /**
      * type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdNotifications200Ok
      */
     'type': GetCharactersCharacterIdNotifications200OkTypeEnum;
 }
@@ -2571,111 +1956,75 @@ export type GetCharactersCharacterIdNotifications200OkTypeEnum = typeof GetChara
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdNotificationsContacts200Ok
  */
 export interface GetCharactersCharacterIdNotificationsContacts200Ok {
     /**
      * message string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdNotificationsContacts200Ok
      */
     'message': string;
     /**
      * notification_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdNotificationsContacts200Ok
      */
     'notification_id': number;
     /**
      * send_date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdNotificationsContacts200Ok
      */
     'send_date': string;
     /**
      * sender_character_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdNotificationsContacts200Ok
      */
     'sender_character_id': number;
     /**
      * A number representing the standing level the receiver has been added at by the sender. The standing levels are as follows: -10 -> Terrible | -5 -> Bad |  0 -> Neutral |  5 -> Good |  10 -> Excellent
-     * @type {number}
-     * @memberof GetCharactersCharacterIdNotificationsContacts200Ok
      */
     'standing_level': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdOk
  */
 export interface GetCharactersCharacterIdOk {
     /**
      * The character\'s alliance ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOk
      */
     'alliance_id'?: number;
     /**
      * Creation date of the character
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOk
      */
     'birthday': string;
     /**
      * bloodline_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOk
      */
     'bloodline_id': number;
     /**
      * The character\'s corporation ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOk
      */
     'corporation_id': number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOk
      */
     'description'?: string;
     /**
      * ID of the faction the character is fighting for, if the character is enlisted in Factional Warfare
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOk
      */
     'faction_id'?: number;
     /**
      * gender string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOk
      */
     'gender': GetCharactersCharacterIdOkGenderEnum;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOk
      */
     'name': string;
     /**
      * race_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOk
      */
     'race_id': number;
     /**
      * security_status number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOk
      */
     'security_status'?: number;
     /**
      * The individual title of the character
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOk
      */
     'title'?: string;
 }
@@ -2689,123 +2038,83 @@ export type GetCharactersCharacterIdOkGenderEnum = typeof GetCharactersCharacter
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdOnlineOk
  */
 export interface GetCharactersCharacterIdOnlineOk {
     /**
      * Timestamp of the last login
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOnlineOk
      */
     'last_login'?: string;
     /**
      * Timestamp of the last logout
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOnlineOk
      */
     'last_logout'?: string;
     /**
      * Total number of times the character has logged in
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOnlineOk
      */
     'logins'?: number;
     /**
      * If the character is online
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdOnlineOk
      */
     'online': boolean;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdOrders200Ok
  */
 export interface GetCharactersCharacterIdOrders200Ok {
     /**
      * Number of days for which order is valid (starting from the issued date). An order expires at time issued + duration
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'duration': number;
     /**
      * For buy orders, the amount of ISK in escrow
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'escrow'?: number;
     /**
      * True if the order is a bid (buy) order
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'is_buy_order'?: boolean;
     /**
      * Signifies whether the buy/sell order was placed on behalf of a corporation.
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'is_corporation': boolean;
     /**
      * Date and time when this order was issued
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'issued': string;
     /**
      * ID of the location where order was placed
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'location_id': number;
     /**
      * For buy orders, the minimum quantity that will be accepted in a matching sell order
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'min_volume'?: number;
     /**
      * Unique order ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'order_id': number;
     /**
      * Cost per unit for this order
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'price': number;
     /**
      * Valid order range, numbers are ranges in jumps
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'range': GetCharactersCharacterIdOrders200OkRangeEnum;
     /**
      * ID of the region where order was placed
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'region_id': number;
     /**
      * The type ID of the item transacted in this order
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'type_id': number;
     /**
      * Quantity of items still required or offered
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'volume_remain': number;
     /**
      * Quantity of items required or offered at time order was placed
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrders200Ok
      */
     'volume_total': number;
 }
@@ -2829,98 +2138,66 @@ export type GetCharactersCharacterIdOrders200OkRangeEnum = typeof GetCharactersC
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdOrdersHistory200Ok
  */
 export interface GetCharactersCharacterIdOrdersHistory200Ok {
     /**
      * Number of days the order was valid for (starting from the issued date). An order expires at time issued + duration
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'duration': number;
     /**
      * For buy orders, the amount of ISK in escrow
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'escrow'?: number;
     /**
      * True if the order is a bid (buy) order
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'is_buy_order'?: boolean;
     /**
      * Signifies whether the buy/sell order was placed on behalf of a corporation.
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'is_corporation': boolean;
     /**
      * Date and time when this order was issued
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'issued': string;
     /**
      * ID of the location where order was placed
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'location_id': number;
     /**
      * For buy orders, the minimum quantity that will be accepted in a matching sell order
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'min_volume'?: number;
     /**
      * Unique order ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'order_id': number;
     /**
      * Cost per unit for this order
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'price': number;
     /**
      * Valid order range, numbers are ranges in jumps
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'range': GetCharactersCharacterIdOrdersHistory200OkRangeEnum;
     /**
      * ID of the region where order was placed
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'region_id': number;
     /**
      * Current order state
-     * @type {string}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'state': GetCharactersCharacterIdOrdersHistory200OkStateEnum;
     /**
      * The type ID of the item transacted in this order
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'type_id': number;
     /**
      * Quantity of items still required or offered
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'volume_remain': number;
     /**
      * Quantity of items required or offered at time order was placed
-     * @type {number}
-     * @memberof GetCharactersCharacterIdOrdersHistory200Ok
      */
     'volume_total': number;
 }
@@ -2950,50 +2227,34 @@ export type GetCharactersCharacterIdOrdersHistory200OkStateEnum = typeof GetChar
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdPlanets200Ok
  */
 export interface GetCharactersCharacterIdPlanets200Ok {
     /**
      * last_update string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPlanets200Ok
      */
     'last_update': string;
     /**
      * num_pins integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanets200Ok
      */
     'num_pins': number;
     /**
      * owner_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanets200Ok
      */
     'owner_id': number;
     /**
      * planet_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanets200Ok
      */
     'planet_id': number;
     /**
      * planet_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPlanets200Ok
      */
     'planet_type': GetCharactersCharacterIdPlanets200OkPlanetTypeEnum;
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanets200Ok
      */
     'solar_system_id': number;
     /**
      * upgrade_level integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanets200Ok
      */
     'upgrade_level': number;
 }
@@ -3013,349 +2274,231 @@ export type GetCharactersCharacterIdPlanets200OkPlanetTypeEnum = typeof GetChara
 
 /**
  * content object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdContent
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdContent {
     /**
      * amount integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdContent
      */
     'amount': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdContent
      */
     'type_id': number;
 }
 /**
  * extractor_details object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails {
     /**
      * in seconds
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
      */
     'cycle_time'?: number;
     /**
      * head_radius number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
      */
     'head_radius'?: number;
     /**
      * heads array
-     * @type {Array<GetCharactersCharacterIdPlanetsPlanetIdHead>}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
      */
     'heads': Array<GetCharactersCharacterIdPlanetsPlanetIdHead>;
     /**
      * product_type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
      */
     'product_type_id'?: number;
     /**
      * qty_per_cycle integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
      */
     'qty_per_cycle'?: number;
 }
 /**
  * factory_details object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails {
     /**
      * schematic_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails
      */
     'schematic_id': number;
 }
 /**
  * head object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdHead
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdHead {
     /**
      * head_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdHead
      */
     'head_id': number;
     /**
      * latitude number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdHead
      */
     'latitude': number;
     /**
      * longitude number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdHead
      */
     'longitude': number;
 }
 /**
  * link object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdLink
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdLink {
     /**
      * destination_pin_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdLink
      */
     'destination_pin_id': number;
     /**
      * link_level integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdLink
      */
     'link_level': number;
     /**
      * source_pin_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdLink
      */
     'source_pin_id': number;
 }
 /**
  * Colony not found
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdNotFound
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdNotFound {
     /**
      * error message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdOk
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdOk {
     /**
      * links array
-     * @type {Array<GetCharactersCharacterIdPlanetsPlanetIdLink>}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdOk
      */
     'links': Array<GetCharactersCharacterIdPlanetsPlanetIdLink>;
     /**
      * pins array
-     * @type {Array<GetCharactersCharacterIdPlanetsPlanetIdPin>}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdOk
      */
     'pins': Array<GetCharactersCharacterIdPlanetsPlanetIdPin>;
     /**
      * routes array
-     * @type {Array<GetCharactersCharacterIdPlanetsPlanetIdRoute>}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdOk
      */
     'routes': Array<GetCharactersCharacterIdPlanetsPlanetIdRoute>;
 }
 /**
  * pin object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdPin
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdPin {
     /**
      * contents array
-     * @type {Array<GetCharactersCharacterIdPlanetsPlanetIdContent>}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'contents'?: Array<GetCharactersCharacterIdPlanetsPlanetIdContent>;
     /**
      * expiry_time string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'expiry_time'?: string;
-    /**
-     * 
-     * @type {GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
-     */
     'extractor_details'?: GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails;
-    /**
-     * 
-     * @type {GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
-     */
     'factory_details'?: GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails;
     /**
      * install_time string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'install_time'?: string;
     /**
      * last_cycle_start string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'last_cycle_start'?: string;
     /**
      * latitude number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'latitude': number;
     /**
      * longitude number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'longitude': number;
     /**
      * pin_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'pin_id': number;
     /**
      * schematic_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'schematic_id'?: number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdPin
      */
     'type_id': number;
 }
 /**
  * route object
- * @export
- * @interface GetCharactersCharacterIdPlanetsPlanetIdRoute
  */
 export interface GetCharactersCharacterIdPlanetsPlanetIdRoute {
     /**
      * content_type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdRoute
      */
     'content_type_id': number;
     /**
      * destination_pin_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdRoute
      */
     'destination_pin_id': number;
     /**
      * quantity number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdRoute
      */
     'quantity': number;
     /**
      * route_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdRoute
      */
     'route_id': number;
     /**
      * source_pin_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdRoute
      */
     'source_pin_id': number;
     /**
      * list of pin ID waypoints
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdPlanetsPlanetIdRoute
      */
     'waypoints'?: Array<number>;
 }
 /**
  * No image server for this datasource
- * @export
- * @interface GetCharactersCharacterIdPortraitNotFound
  */
 export interface GetCharactersCharacterIdPortraitNotFound {
     /**
      * error message
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPortraitNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdPortraitOk
  */
 export interface GetCharactersCharacterIdPortraitOk {
     /**
      * px128x128 string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPortraitOk
      */
     'px128x128'?: string;
     /**
      * px256x256 string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPortraitOk
      */
     'px256x256'?: string;
     /**
      * px512x512 string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPortraitOk
      */
     'px512x512'?: string;
     /**
      * px64x64 string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdPortraitOk
      */
     'px64x64'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdRolesOk
  */
 export interface GetCharactersCharacterIdRolesOk {
     /**
      * roles array
-     * @type {Array<string>}
-     * @memberof GetCharactersCharacterIdRolesOk
      */
     'roles'?: Array<GetCharactersCharacterIdRolesOkRolesEnum>;
     /**
      * roles_at_base array
-     * @type {Array<string>}
-     * @memberof GetCharactersCharacterIdRolesOk
      */
     'roles_at_base'?: Array<GetCharactersCharacterIdRolesOkRolesAtBaseEnum>;
     /**
      * roles_at_hq array
-     * @type {Array<string>}
-     * @memberof GetCharactersCharacterIdRolesOk
      */
     'roles_at_hq'?: Array<GetCharactersCharacterIdRolesOkRolesAtHqEnum>;
     /**
      * roles_at_other array
-     * @type {Array<string>}
-     * @memberof GetCharactersCharacterIdRolesOk
      */
     'roles_at_other'?: Array<GetCharactersCharacterIdRolesOkRolesAtOtherEnum>;
 }
@@ -3595,235 +2738,159 @@ export type GetCharactersCharacterIdRolesOkRolesAtOtherEnum = typeof GetCharacte
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdSearchOk
  */
 export interface GetCharactersCharacterIdSearchOk {
     /**
      * agent array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'agent'?: Array<number>;
     /**
      * alliance array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'alliance'?: Array<number>;
     /**
      * character array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'character'?: Array<number>;
     /**
      * constellation array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'constellation'?: Array<number>;
     /**
      * corporation array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'corporation'?: Array<number>;
     /**
      * faction array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'faction'?: Array<number>;
     /**
      * inventory_type array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'inventory_type'?: Array<number>;
     /**
      * region array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'region'?: Array<number>;
     /**
      * solar_system array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'solar_system'?: Array<number>;
     /**
      * station array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'station'?: Array<number>;
     /**
      * structure array
-     * @type {Array<number>}
-     * @memberof GetCharactersCharacterIdSearchOk
      */
     'structure'?: Array<number>;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdShipOk
  */
 export interface GetCharactersCharacterIdShipOk {
     /**
      * Item id\'s are unique to a ship and persist until it is repackaged. This value can be used to track repeated uses of a ship, or detect when a pilot changes into a different instance of the same ship type.
-     * @type {number}
-     * @memberof GetCharactersCharacterIdShipOk
      */
     'ship_item_id': number;
     /**
      * ship_name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdShipOk
      */
     'ship_name': string;
     /**
      * ship_type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdShipOk
      */
     'ship_type_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdSkillqueue200Ok
  */
 export interface GetCharactersCharacterIdSkillqueue200Ok {
     /**
      * Date on which training of the skill will complete. Omitted if the skill queue is paused.
-     * @type {string}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'finish_date'?: string;
     /**
      * finished_level integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'finished_level': number;
     /**
      * level_end_sp integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'level_end_sp'?: number;
     /**
      * Amount of SP that was in the skill when it started training it\'s current level. Used to calculate % of current level complete.
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'level_start_sp'?: number;
     /**
      * queue_position integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'queue_position': number;
     /**
      * skill_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'skill_id': number;
     /**
      * start_date string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'start_date'?: string;
     /**
      * training_start_sp integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillqueue200Ok
      */
     'training_start_sp'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdSkillsOk
  */
 export interface GetCharactersCharacterIdSkillsOk {
     /**
      * skills array
-     * @type {Array<GetCharactersCharacterIdSkillsSkill>}
-     * @memberof GetCharactersCharacterIdSkillsOk
      */
     'skills': Array<GetCharactersCharacterIdSkillsSkill>;
     /**
      * total_sp integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillsOk
      */
     'total_sp': number;
     /**
      * Skill points available to be assigned
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillsOk
      */
     'unallocated_sp'?: number;
 }
 /**
  * skill object
- * @export
- * @interface GetCharactersCharacterIdSkillsSkill
  */
 export interface GetCharactersCharacterIdSkillsSkill {
     /**
      * active_skill_level integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillsSkill
      */
     'active_skill_level': number;
     /**
      * skill_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillsSkill
      */
     'skill_id': number;
     /**
      * skillpoints_in_skill integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillsSkill
      */
     'skillpoints_in_skill': number;
     /**
      * trained_skill_level integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdSkillsSkill
      */
     'trained_skill_level': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdStandings200Ok
  */
 export interface GetCharactersCharacterIdStandings200Ok {
     /**
      * from_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdStandings200Ok
      */
     'from_id': number;
     /**
      * from_type string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdStandings200Ok
      */
     'from_type': GetCharactersCharacterIdStandings200OkFromTypeEnum;
     /**
      * standing number
-     * @type {number}
-     * @memberof GetCharactersCharacterIdStandings200Ok
      */
     'standing': number;
 }
@@ -3838,105 +2905,71 @@ export type GetCharactersCharacterIdStandings200OkFromTypeEnum = typeof GetChara
 
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdTitles200Ok
  */
 export interface GetCharactersCharacterIdTitles200Ok {
     /**
      * name string
-     * @type {string}
-     * @memberof GetCharactersCharacterIdTitles200Ok
      */
     'name'?: string;
     /**
      * title_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdTitles200Ok
      */
     'title_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCharactersCharacterIdWalletJournal200Ok
  */
 export interface GetCharactersCharacterIdWalletJournal200Ok {
     /**
      * The amount of ISK given or taken from the wallet as a result of the given transaction. Positive when ISK is deposited into the wallet and negative when ISK is withdrawn
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'amount'?: number;
     /**
      * Wallet balance after transaction occurred
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'balance'?: number;
     /**
      * An ID that gives extra context to the particular transaction. Because of legacy reasons the context is completely different per ref_type and means different things. It is also possible to not have a context_id
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'context_id'?: number;
     /**
      * The type of the given context_id if present
-     * @type {string}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'context_id_type'?: GetCharactersCharacterIdWalletJournal200OkContextIdTypeEnum;
     /**
      * Date and time of transaction
-     * @type {string}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'date': string;
     /**
      * The reason for the transaction, mirrors what is seen in the client
-     * @type {string}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'description': string;
     /**
      * The id of the first party involved in the transaction. This attribute has no consistency and is different or non existant for particular ref_types. The description attribute will help make sense of what this attribute means. For more info about the given ID it can be dropped into the /universe/names/ ESI route to determine its type and name
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'first_party_id'?: number;
     /**
      * Unique journal reference ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'id': number;
     /**
      * The user stated reason for the transaction. Only applies to some ref_types
-     * @type {string}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'reason'?: string;
     /**
      * \"The transaction type for the given. transaction. Different transaction types will populate different attributes.\"
-     * @type {string}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'ref_type': GetCharactersCharacterIdWalletJournal200OkRefTypeEnum;
     /**
      * The id of the second party involved in the transaction. This attribute has no consistency and is different or non existant for particular ref_types. The description attribute will help make sense of what this attribute means. For more info about the given ID it can be dropped into the /universe/names/ ESI route to determine its type and name
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'second_party_id'?: number;
     /**
      * Tax amount received. Only applies to tax related transactions
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'tax'?: number;
     /**
      * The corporation ID receiving any tax paid. Only applies to tax related transactions
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletJournal200Ok
      */
     'tax_receiver_id'?: number;
 }
@@ -4119,309 +3152,209 @@ export type GetCharactersCharacterIdWalletJournal200OkRefTypeEnum = typeof GetCh
 
 /**
  * wallet transaction
- * @export
- * @interface GetCharactersCharacterIdWalletTransactions200Ok
  */
 export interface GetCharactersCharacterIdWalletTransactions200Ok {
     /**
      * client_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'client_id': number;
     /**
      * Date and time of transaction
-     * @type {string}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'date': string;
     /**
      * is_buy boolean
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'is_buy': boolean;
     /**
      * is_personal boolean
-     * @type {boolean}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'is_personal': boolean;
     /**
      * journal_ref_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'journal_ref_id': number;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'location_id': number;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'quantity': number;
     /**
      * Unique transaction ID
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'transaction_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'type_id': number;
     /**
      * Amount paid per unit
-     * @type {number}
-     * @memberof GetCharactersCharacterIdWalletTransactions200Ok
      */
     'unit_price': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetContractsPublicBidsContractId200Ok
  */
 export interface GetContractsPublicBidsContractId200Ok {
     /**
      * The amount bid, in ISK
-     * @type {number}
-     * @memberof GetContractsPublicBidsContractId200Ok
      */
     'amount': number;
     /**
      * Unique ID for the bid
-     * @type {number}
-     * @memberof GetContractsPublicBidsContractId200Ok
      */
     'bid_id': number;
     /**
      * Datetime when the bid was placed
-     * @type {string}
-     * @memberof GetContractsPublicBidsContractId200Ok
      */
     'date_bid': string;
 }
 /**
  * Forbidden
- * @export
- * @interface GetContractsPublicBidsContractIdForbidden
  */
 export interface GetContractsPublicBidsContractIdForbidden {
     /**
      * Forbidden message
-     * @type {string}
-     * @memberof GetContractsPublicBidsContractIdForbidden
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetContractsPublicBidsContractIdNotFound
  */
 export interface GetContractsPublicBidsContractIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetContractsPublicBidsContractIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetContractsPublicItemsContractId200Ok
  */
 export interface GetContractsPublicItemsContractId200Ok {
     /**
      * is_blueprint_copy boolean
-     * @type {boolean}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'is_blueprint_copy'?: boolean;
     /**
      * true if the contract issuer has submitted this item with the contract, false if the isser is asking for this item in the contract
-     * @type {boolean}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'is_included': boolean;
     /**
      * Unique ID for the item being sold. Not present if item is being requested by contract rather than sold with contract
-     * @type {number}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'item_id'?: number;
     /**
      * Material Efficiency Level of the blueprint
-     * @type {number}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'material_efficiency'?: number;
     /**
      * Number of items in the stack
-     * @type {number}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'quantity': number;
     /**
      * Unique ID for the item, used by the contract system
-     * @type {number}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'record_id': number;
     /**
      * Number of runs remaining if the blueprint is a copy, -1 if it is an original
-     * @type {number}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'runs'?: number;
     /**
      * Time Efficiency Level of the blueprint
-     * @type {number}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'time_efficiency'?: number;
     /**
      * Type ID for item
-     * @type {number}
-     * @memberof GetContractsPublicItemsContractId200Ok
      */
     'type_id': number;
 }
 /**
  * Forbidden
- * @export
- * @interface GetContractsPublicItemsContractIdForbidden
  */
 export interface GetContractsPublicItemsContractIdForbidden {
     /**
      * Forbidden message
-     * @type {string}
-     * @memberof GetContractsPublicItemsContractIdForbidden
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetContractsPublicItemsContractIdNotFound
  */
 export interface GetContractsPublicItemsContractIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetContractsPublicItemsContractIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetContractsPublicRegionId200Ok
  */
 export interface GetContractsPublicRegionId200Ok {
     /**
      * Buyout price (for Auctions only)
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'buyout'?: number;
     /**
      * Collateral price (for Couriers only)
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'collateral'?: number;
     /**
      * contract_id integer
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'contract_id': number;
     /**
      * Expiration date of the contract
-     * @type {string}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'date_expired': string;
     /**
      * Сreation date of the contract
-     * @type {string}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'date_issued': string;
     /**
      * Number of days to perform the contract
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'days_to_complete'?: number;
     /**
      * End location ID (for Couriers contract)
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'end_location_id'?: number;
     /**
      * true if the contract was issued on behalf of the issuer\'s corporation
-     * @type {boolean}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'for_corporation'?: boolean;
     /**
      * Character\'s corporation ID for the issuer
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'issuer_corporation_id': number;
     /**
      * Character ID for the issuer
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'issuer_id': number;
     /**
      * Price of contract (for ItemsExchange and Auctions)
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'price'?: number;
     /**
      * Remuneration for contract (for Couriers only)
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'reward'?: number;
     /**
      * Start location ID (for Couriers contract)
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'start_location_id'?: number;
     /**
      * Title of the contract
-     * @type {string}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'title'?: string;
     /**
      * Type of the contract
-     * @type {string}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'type': GetContractsPublicRegionId200OkTypeEnum;
     /**
      * Volume of items in the contract
-     * @type {number}
-     * @memberof GetContractsPublicRegionId200Ok
      */
     'volume'?: number;
 }
@@ -4438,76 +3371,52 @@ export type GetContractsPublicRegionId200OkTypeEnum = typeof GetContractsPublicR
 
 /**
  * Not found
- * @export
- * @interface GetContractsPublicRegionIdNotFound
  */
 export interface GetContractsPublicRegionIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetContractsPublicRegionIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationCorporationIdMiningExtractions200Ok
  */
 export interface GetCorporationCorporationIdMiningExtractions200Ok {
     /**
      * The time at which the chunk being extracted will arrive and can be fractured by the moon mining drill. 
-     * @type {string}
-     * @memberof GetCorporationCorporationIdMiningExtractions200Ok
      */
     'chunk_arrival_time': string;
     /**
      * The time at which the current extraction was initiated. 
-     * @type {string}
-     * @memberof GetCorporationCorporationIdMiningExtractions200Ok
      */
     'extraction_start_time': string;
     /**
      * moon_id integer
-     * @type {number}
-     * @memberof GetCorporationCorporationIdMiningExtractions200Ok
      */
     'moon_id': number;
     /**
      * The time at which the chunk being extracted will naturally fracture if it is not first fractured by the moon mining drill. 
-     * @type {string}
-     * @memberof GetCorporationCorporationIdMiningExtractions200Ok
      */
     'natural_decay_time': string;
     /**
      * structure_id integer
-     * @type {number}
-     * @memberof GetCorporationCorporationIdMiningExtractions200Ok
      */
     'structure_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationCorporationIdMiningObservers200Ok
  */
 export interface GetCorporationCorporationIdMiningObservers200Ok {
     /**
      * last_updated string
-     * @type {string}
-     * @memberof GetCorporationCorporationIdMiningObservers200Ok
      */
     'last_updated': string;
     /**
      * The entity that was observing the asteroid field when it was mined. 
-     * @type {number}
-     * @memberof GetCorporationCorporationIdMiningObservers200Ok
      */
     'observer_id': number;
     /**
      * The category of the observing entity
-     * @type {string}
-     * @memberof GetCorporationCorporationIdMiningObservers200Ok
      */
     'observer_type': GetCorporationCorporationIdMiningObservers200OkObserverTypeEnum;
 }
@@ -4520,124 +3429,84 @@ export type GetCorporationCorporationIdMiningObservers200OkObserverTypeEnum = ty
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationCorporationIdMiningObserversObserverId200Ok
  */
 export interface GetCorporationCorporationIdMiningObserversObserverId200Ok {
     /**
      * The character that did the mining 
-     * @type {number}
-     * @memberof GetCorporationCorporationIdMiningObserversObserverId200Ok
      */
     'character_id': number;
     /**
      * last_updated string
-     * @type {string}
-     * @memberof GetCorporationCorporationIdMiningObserversObserverId200Ok
      */
     'last_updated': string;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCorporationCorporationIdMiningObserversObserverId200Ok
      */
     'quantity': number;
     /**
      * The corporation id of the character at the time data was recorded. 
-     * @type {number}
-     * @memberof GetCorporationCorporationIdMiningObserversObserverId200Ok
      */
     'recorded_corporation_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCorporationCorporationIdMiningObserversObserverId200Ok
      */
     'type_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdAlliancehistory200Ok
  */
 export interface GetCorporationsCorporationIdAlliancehistory200Ok {
     /**
      * alliance_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdAlliancehistory200Ok
      */
     'alliance_id'?: number;
     /**
      * True if the alliance has been closed
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdAlliancehistory200Ok
      */
     'is_deleted'?: boolean;
     /**
      * An incrementing ID that can be used to canonically establish order of records in cases where dates may be ambiguous
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdAlliancehistory200Ok
      */
     'record_id': number;
     /**
      * start_date string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdAlliancehistory200Ok
      */
     'start_date': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdAssets200Ok
  */
 export interface GetCorporationsCorporationIdAssets200Ok {
     /**
      * is_blueprint_copy boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'is_blueprint_copy'?: boolean;
     /**
      * is_singleton boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'is_singleton': boolean;
     /**
      * item_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'item_id': number;
     /**
      * location_flag string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'location_flag': GetCorporationsCorporationIdAssets200OkLocationFlagEnum;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'location_id': number;
     /**
      * location_type string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'location_type': GetCorporationsCorporationIdAssets200OkLocationTypeEnum;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'quantity': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdAssets200Ok
      */
     'type_id': number;
 }
@@ -4781,56 +3650,38 @@ export type GetCorporationsCorporationIdAssets200OkLocationTypeEnum = typeof Get
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdBlueprints200Ok
  */
 export interface GetCorporationsCorporationIdBlueprints200Ok {
     /**
      * Unique ID for this item.
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'item_id': number;
     /**
      * Type of the location_id
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'location_flag': GetCorporationsCorporationIdBlueprints200OkLocationFlagEnum;
     /**
      * References a station, a ship or an item_id if this blueprint is located within a container.
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'location_id': number;
     /**
      * Material Efficiency Level of the blueprint.
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'material_efficiency': number;
     /**
      * A range of numbers with a minimum of -2 and no maximum value where -1 is an original and -2 is a copy. It can be a positive integer if it is a stack of blueprint originals fresh from the market (e.g. no activities performed on them yet).
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'quantity': number;
     /**
      * Number of runs remaining if the blueprint is a copy, -1 if it is an original.
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'runs': number;
     /**
      * Time Efficiency Level of the blueprint.
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'time_efficiency': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdBlueprints200Ok
      */
     'type_id': number;
 }
@@ -4966,38 +3817,26 @@ export type GetCorporationsCorporationIdBlueprints200OkLocationFlagEnum = typeof
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdContacts200Ok
  */
 export interface GetCorporationsCorporationIdContacts200Ok {
     /**
      * contact_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContacts200Ok
      */
     'contact_id': number;
     /**
      * contact_type string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContacts200Ok
      */
     'contact_type': GetCorporationsCorporationIdContacts200OkContactTypeEnum;
     /**
      * Whether this contact is being watched
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdContacts200Ok
      */
     'is_watched'?: boolean;
     /**
      * label_ids array
-     * @type {Array<number>}
-     * @memberof GetCorporationsCorporationIdContacts200Ok
      */
     'label_ids'?: Array<number>;
     /**
      * Standing of the contact
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContacts200Ok
      */
     'standing': number;
 }
@@ -5013,99 +3852,67 @@ export type GetCorporationsCorporationIdContacts200OkContactTypeEnum = typeof Ge
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdContactsLabels200Ok
  */
 export interface GetCorporationsCorporationIdContactsLabels200Ok {
     /**
      * label_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContactsLabels200Ok
      */
     'label_id': number;
     /**
      * label_name string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContactsLabels200Ok
      */
     'label_name': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdContainersLogs200Ok
  */
 export interface GetCorporationsCorporationIdContainersLogs200Ok {
     /**
      * action string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'action': GetCorporationsCorporationIdContainersLogs200OkActionEnum;
     /**
      * ID of the character who performed the action.
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'character_id': number;
     /**
      * ID of the container
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'container_id': number;
     /**
      * Type ID of the container
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'container_type_id': number;
     /**
      * location_flag string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'location_flag': GetCorporationsCorporationIdContainersLogs200OkLocationFlagEnum;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'location_id': number;
     /**
      * Timestamp when this log was created
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'logged_at': string;
     /**
      * new_config_bitmask integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'new_config_bitmask'?: number;
     /**
      * old_config_bitmask integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'old_config_bitmask'?: number;
     /**
      * Type of password set if action is of type SetPassword or EnterPassword
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'password_type'?: GetCorporationsCorporationIdContainersLogs200OkPasswordTypeEnum;
     /**
      * Quantity of the item being acted upon
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'quantity'?: number;
     /**
      * Type ID of the item being acted upon
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContainersLogs200Ok
      */
     'type_id'?: number;
 }
@@ -5261,140 +4068,94 @@ export type GetCorporationsCorporationIdContainersLogs200OkPasswordTypeEnum = ty
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdContracts200Ok
  */
 export interface GetCorporationsCorporationIdContracts200Ok {
     /**
      * Who will accept the contract
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'acceptor_id': number;
     /**
      * ID to whom the contract is assigned, can be corporation or character ID
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'assignee_id': number;
     /**
      * To whom the contract is available
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'availability': GetCorporationsCorporationIdContracts200OkAvailabilityEnum;
     /**
      * Buyout price (for Auctions only)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'buyout'?: number;
     /**
      * Collateral price (for Couriers only)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'collateral'?: number;
     /**
      * contract_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'contract_id': number;
     /**
      * Date of confirmation of contract
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'date_accepted'?: string;
     /**
      * Date of completed of contract
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'date_completed'?: string;
     /**
      * Expiration date of the contract
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'date_expired': string;
     /**
      * Сreation date of the contract
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'date_issued': string;
     /**
      * Number of days to perform the contract
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'days_to_complete'?: number;
     /**
      * End location ID (for Couriers contract)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'end_location_id'?: number;
     /**
      * true if the contract was issued on behalf of the issuer\'s corporation
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'for_corporation': boolean;
     /**
      * Character\'s corporation ID for the issuer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'issuer_corporation_id': number;
     /**
      * Character ID for the issuer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'issuer_id': number;
     /**
      * Price of contract (for ItemsExchange and Auctions)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'price'?: number;
     /**
      * Remuneration for contract (for Couriers only)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'reward'?: number;
     /**
      * Start location ID (for Couriers contract)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'start_location_id'?: number;
     /**
      * Status of the the contract
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'status': GetCorporationsCorporationIdContracts200OkStatusEnum;
     /**
      * Title of the contract
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'title'?: string;
     /**
      * Type of the contract
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'type': GetCorporationsCorporationIdContracts200OkTypeEnum;
     /**
      * Volume of items in the contract
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContracts200Ok
      */
     'volume'?: number;
 }
@@ -5433,205 +4194,139 @@ export type GetCorporationsCorporationIdContracts200OkTypeEnum = typeof GetCorpo
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdContractsContractIdBids200Ok
  */
 export interface GetCorporationsCorporationIdContractsContractIdBids200Ok {
     /**
      * The amount bid, in ISK
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContractsContractIdBids200Ok
      */
     'amount': number;
     /**
      * Unique ID for the bid
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContractsContractIdBids200Ok
      */
     'bid_id': number;
     /**
      * Character ID of the bidder
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContractsContractIdBids200Ok
      */
     'bidder_id': number;
     /**
      * Datetime when the bid was placed
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContractsContractIdBids200Ok
      */
     'date_bid': string;
 }
 /**
  * Not found
- * @export
- * @interface GetCorporationsCorporationIdContractsContractIdBidsNotFound
  */
 export interface GetCorporationsCorporationIdContractsContractIdBidsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContractsContractIdBidsNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdContractsContractIdItems200Ok
  */
 export interface GetCorporationsCorporationIdContractsContractIdItems200Ok {
     /**
      * true if the contract issuer has submitted this item with the contract, false if the isser is asking for this item in the contract
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItems200Ok
      */
     'is_included': boolean;
     /**
      * is_singleton boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItems200Ok
      */
     'is_singleton': boolean;
     /**
      * Number of items in the stack
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItems200Ok
      */
     'quantity': number;
     /**
      * -1 indicates that the item is a singleton (non-stackable). If the item happens to be a Blueprint, -1 is an Original and -2 is a Blueprint Copy
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItems200Ok
      */
     'raw_quantity'?: number;
     /**
      * Unique ID for the item
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItems200Ok
      */
     'record_id': number;
     /**
      * Type ID for item
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItems200Ok
      */
     'type_id': number;
 }
 /**
  * Error 520
- * @export
- * @interface GetCorporationsCorporationIdContractsContractIdItemsError520
  */
 export interface GetCorporationsCorporationIdContractsContractIdItemsError520 {
     /**
      * Error 520 message
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItemsError520
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetCorporationsCorporationIdContractsContractIdItemsNotFound
  */
 export interface GetCorporationsCorporationIdContractsContractIdItemsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdContractsContractIdItemsNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdCustomsOffices200Ok
  */
 export interface GetCorporationsCorporationIdCustomsOffices200Ok {
     /**
      * Only present if alliance access is allowed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'alliance_tax_rate'?: number;
     /**
      * standing_level and any standing related tax rate only present when this is true
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'allow_access_with_standings': boolean;
     /**
      * allow_alliance_access boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'allow_alliance_access': boolean;
     /**
      * bad_standing_tax_rate number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'bad_standing_tax_rate'?: number;
     /**
      * corporation_tax_rate number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'corporation_tax_rate'?: number;
     /**
      * Tax rate for entities with excellent level of standing, only present if this level is allowed, same for all other standing related tax rates
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'excellent_standing_tax_rate'?: number;
     /**
      * good_standing_tax_rate number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'good_standing_tax_rate'?: number;
     /**
      * neutral_standing_tax_rate number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'neutral_standing_tax_rate'?: number;
     /**
      * unique ID of this customs office
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'office_id': number;
     /**
      * reinforce_exit_end integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'reinforce_exit_end': number;
     /**
      * Together with reinforce_exit_end, marks a 2-hour period where this customs office could exit reinforcement mode during the day after initial attack
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'reinforce_exit_start': number;
     /**
      * Access is allowed only for entities with this level of standing or better
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'standing_level'?: GetCorporationsCorporationIdCustomsOffices200OkStandingLevelEnum;
     /**
      * ID of the solar system this customs office is located in
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'system_id': number;
     /**
      * terrible_standing_tax_rate number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdCustomsOffices200Ok
      */
     'terrible_standing_tax_rate'?: number;
 }
@@ -5648,347 +4343,229 @@ export type GetCorporationsCorporationIdCustomsOffices200OkStandingLevelEnum = t
 
 /**
  * hangar object
- * @export
- * @interface GetCorporationsCorporationIdDivisionsHangarHangar
  */
 export interface GetCorporationsCorporationIdDivisionsHangarHangar {
     /**
      * division integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdDivisionsHangarHangar
      */
     'division'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdDivisionsHangarHangar
      */
     'name'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdDivisionsOk
  */
 export interface GetCorporationsCorporationIdDivisionsOk {
     /**
      * hangar array
-     * @type {Array<GetCorporationsCorporationIdDivisionsHangarHangar>}
-     * @memberof GetCorporationsCorporationIdDivisionsOk
      */
     'hangar'?: Array<GetCorporationsCorporationIdDivisionsHangarHangar>;
     /**
      * wallet array
-     * @type {Array<GetCorporationsCorporationIdDivisionsWalletWallet>}
-     * @memberof GetCorporationsCorporationIdDivisionsOk
      */
     'wallet'?: Array<GetCorporationsCorporationIdDivisionsWalletWallet>;
 }
 /**
  * wallet object
- * @export
- * @interface GetCorporationsCorporationIdDivisionsWalletWallet
  */
 export interface GetCorporationsCorporationIdDivisionsWalletWallet {
     /**
      * division integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdDivisionsWalletWallet
      */
     'division'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdDivisionsWalletWallet
      */
     'name'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdFacilities200Ok
  */
 export interface GetCorporationsCorporationIdFacilities200Ok {
     /**
      * facility_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFacilities200Ok
      */
     'facility_id': number;
     /**
      * system_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFacilities200Ok
      */
     'system_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFacilities200Ok
      */
     'type_id': number;
 }
 /**
  * Summary of kills done by the given corporation against enemy factions
- * @export
- * @interface GetCorporationsCorporationIdFwStatsKills
  */
 export interface GetCorporationsCorporationIdFwStatsKills {
     /**
      * Last week\'s total number of kills by members of the given corporation against enemy factions
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsKills
      */
     'last_week': number;
     /**
      * Total number of kills by members of the given corporation against enemy factions since the corporation enlisted
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsKills
      */
     'total': number;
     /**
      * Yesterday\'s total number of kills by members of the given corporation against enemy factions
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsKills
      */
     'yesterday': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdFwStatsOk
  */
 export interface GetCorporationsCorporationIdFwStatsOk {
     /**
      * The enlistment date of the given corporation into faction warfare. Will not be included if corporation is not enlisted in faction warfare
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdFwStatsOk
      */
     'enlisted_on'?: string;
     /**
      * The faction the given corporation is enlisted to fight for. Will not be included if corporation is not enlisted in faction warfare
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsOk
      */
     'faction_id'?: number;
-    /**
-     * 
-     * @type {GetCorporationsCorporationIdFwStatsKills}
-     * @memberof GetCorporationsCorporationIdFwStatsOk
-     */
     'kills': GetCorporationsCorporationIdFwStatsKills;
     /**
      * How many pilots the enlisted corporation has. Will not be included if corporation is not enlisted in faction warfare
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsOk
      */
     'pilots'?: number;
-    /**
-     * 
-     * @type {GetCorporationsCorporationIdFwStatsVictoryPoints}
-     * @memberof GetCorporationsCorporationIdFwStatsOk
-     */
     'victory_points': GetCorporationsCorporationIdFwStatsVictoryPoints;
 }
 /**
  * Summary of victory points gained by the given corporation for the enlisted faction
- * @export
- * @interface GetCorporationsCorporationIdFwStatsVictoryPoints
  */
 export interface GetCorporationsCorporationIdFwStatsVictoryPoints {
     /**
      * Last week\'s victory points gained by members of the given corporation
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsVictoryPoints
      */
     'last_week': number;
     /**
      * Total victory points gained since the given corporation enlisted
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsVictoryPoints
      */
     'total': number;
     /**
      * Yesterday\'s victory points gained by members of the given corporation
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdFwStatsVictoryPoints
      */
     'yesterday': number;
 }
 /**
  * No image server for this datasource
- * @export
- * @interface GetCorporationsCorporationIdIconsNotFound
  */
 export interface GetCorporationsCorporationIdIconsNotFound {
     /**
      * error message
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIconsNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdIconsOk
  */
 export interface GetCorporationsCorporationIdIconsOk {
     /**
      * px128x128 string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIconsOk
      */
     'px128x128'?: string;
     /**
      * px256x256 string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIconsOk
      */
     'px256x256'?: string;
     /**
      * px64x64 string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIconsOk
      */
     'px64x64'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdIndustryJobs200Ok
  */
 export interface GetCorporationsCorporationIdIndustryJobs200Ok {
     /**
      * Job activity ID
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'activity_id': number;
     /**
      * blueprint_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'blueprint_id': number;
     /**
      * Location ID of the location from which the blueprint was installed. Normally a station ID, but can also be an asset (e.g. container) or corporation facility
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'blueprint_location_id': number;
     /**
      * blueprint_type_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'blueprint_type_id': number;
     /**
      * ID of the character which completed this job
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'completed_character_id'?: number;
     /**
      * Date and time when this job was completed
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'completed_date'?: string;
     /**
      * The sume of job installation fee and industry facility tax
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'cost'?: number;
     /**
      * Job duration in seconds
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'duration': number;
     /**
      * Date and time when this job finished
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'end_date': string;
     /**
      * ID of the facility where this job is running
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'facility_id': number;
     /**
      * ID of the character which installed this job
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'installer_id': number;
     /**
      * Unique job ID
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'job_id': number;
     /**
      * Number of runs blueprint is licensed for
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'licensed_runs'?: number;
     /**
      * ID of the location for the industry facility
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'location_id': number;
     /**
      * Location ID of the location to which the output of the job will be delivered. Normally a station ID, but can also be a corporation facility
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'output_location_id': number;
     /**
      * Date and time when this job was paused (i.e. time when the facility where this job was installed went offline)
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'pause_date'?: string;
     /**
      * Chance of success for invention
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'probability'?: number;
     /**
      * Type ID of product (manufactured, copied or invented)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'product_type_id'?: number;
     /**
      * Number of runs for a manufacturing job, or number of copies to make for a blueprint copy
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'runs': number;
     /**
      * Date and time when this job started
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'start_date': string;
     /**
      * status string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'status': GetCorporationsCorporationIdIndustryJobs200OkStatusEnum;
     /**
      * Number of successful runs for this job. Equal to runs unless this is an invention job
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdIndustryJobs200Ok
      */
     'successful_runs'?: number;
 }
@@ -6006,100 +4583,68 @@ export type GetCorporationsCorporationIdIndustryJobs200OkStatusEnum = typeof Get
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdKillmailsRecent200Ok
  */
 export interface GetCorporationsCorporationIdKillmailsRecent200Ok {
     /**
      * A hash of this killmail
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdKillmailsRecent200Ok
      */
     'killmail_hash': string;
     /**
      * ID of this killmail
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdKillmailsRecent200Ok
      */
     'killmail_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdMedals200Ok
  */
 export interface GetCorporationsCorporationIdMedals200Ok {
     /**
      * created_at string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMedals200Ok
      */
     'created_at': string;
     /**
      * ID of the character who created this medal
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMedals200Ok
      */
     'creator_id': number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMedals200Ok
      */
     'description': string;
     /**
      * medal_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMedals200Ok
      */
     'medal_id': number;
     /**
      * title string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMedals200Ok
      */
     'title': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdMedalsIssued200Ok
  */
 export interface GetCorporationsCorporationIdMedalsIssued200Ok {
     /**
      * ID of the character who was rewarded this medal
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMedalsIssued200Ok
      */
     'character_id': number;
     /**
      * issued_at string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMedalsIssued200Ok
      */
     'issued_at': string;
     /**
      * ID of the character who issued the medal
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMedalsIssued200Ok
      */
     'issuer_id': number;
     /**
      * medal_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMedalsIssued200Ok
      */
     'medal_id': number;
     /**
      * reason string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMedalsIssued200Ok
      */
     'reason': string;
     /**
      * status string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMedalsIssued200Ok
      */
     'status': GetCorporationsCorporationIdMedalsIssued200OkStatusEnum;
 }
@@ -6113,270 +4658,182 @@ export type GetCorporationsCorporationIdMedalsIssued200OkStatusEnum = typeof Get
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdMembersTitles200Ok
  */
 export interface GetCorporationsCorporationIdMembersTitles200Ok {
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMembersTitles200Ok
      */
     'character_id': number;
     /**
      * A list of title_id
-     * @type {Array<number>}
-     * @memberof GetCorporationsCorporationIdMembersTitles200Ok
      */
     'titles': Array<number>;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdMembertracking200Ok
  */
 export interface GetCorporationsCorporationIdMembertracking200Ok {
     /**
      * base_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMembertracking200Ok
      */
     'base_id'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMembertracking200Ok
      */
     'character_id': number;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMembertracking200Ok
      */
     'location_id'?: number;
     /**
      * logoff_date string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMembertracking200Ok
      */
     'logoff_date'?: string;
     /**
      * logon_date string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMembertracking200Ok
      */
     'logon_date'?: string;
     /**
      * ship_type_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdMembertracking200Ok
      */
     'ship_type_id'?: number;
     /**
      * start_date string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdMembertracking200Ok
      */
     'start_date'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetCorporationsCorporationIdNotFound
  */
 export interface GetCorporationsCorporationIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdOk
  */
 export interface GetCorporationsCorporationIdOk {
     /**
      * ID of the alliance that corporation is a member of, if any
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'alliance_id'?: number;
     /**
      * ceo_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'ceo_id': number;
     /**
      * creator_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'creator_id': number;
     /**
      * date_founded string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'date_founded'?: string;
     /**
      * description string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'description'?: string;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'faction_id'?: number;
     /**
      * home_station_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'home_station_id'?: number;
     /**
      * member_count integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'member_count': number;
     /**
      * the full name of the corporation
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'name': string;
     /**
      * shares integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'shares'?: number;
     /**
      * tax_rate number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'tax_rate': number;
     /**
      * the short name of the corporation
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'ticker': string;
     /**
      * url string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'url'?: string;
     /**
      * war_eligible boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdOk
      */
     'war_eligible'?: boolean;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdOrders200Ok
  */
 export interface GetCorporationsCorporationIdOrders200Ok {
     /**
      * Number of days for which order is valid (starting from the issued date). An order expires at time issued + duration
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'duration': number;
     /**
      * For buy orders, the amount of ISK in escrow
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'escrow'?: number;
     /**
      * True if the order is a bid (buy) order
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'is_buy_order'?: boolean;
     /**
      * Date and time when this order was issued
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'issued': string;
     /**
      * The character who issued this order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'issued_by': number;
     /**
      * ID of the location where order was placed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'location_id': number;
     /**
      * For buy orders, the minimum quantity that will be accepted in a matching sell order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'min_volume'?: number;
     /**
      * Unique order ID
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'order_id': number;
     /**
      * Cost per unit for this order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'price': number;
     /**
      * Valid order range, numbers are ranges in jumps
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'range': GetCorporationsCorporationIdOrders200OkRangeEnum;
     /**
      * ID of the region where order was placed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'region_id': number;
     /**
      * The type ID of the item transacted in this order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'type_id': number;
     /**
      * Quantity of items still required or offered
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'volume_remain': number;
     /**
      * Quantity of items required or offered at time order was placed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'volume_total': number;
     /**
      * The corporation wallet division used for this order.
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrders200Ok
      */
     'wallet_division': number;
 }
@@ -6400,104 +4857,70 @@ export type GetCorporationsCorporationIdOrders200OkRangeEnum = typeof GetCorpora
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdOrdersHistory200Ok
  */
 export interface GetCorporationsCorporationIdOrdersHistory200Ok {
     /**
      * Number of days the order was valid for (starting from the issued date). An order expires at time issued + duration
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'duration': number;
     /**
      * For buy orders, the amount of ISK in escrow
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'escrow'?: number;
     /**
      * True if the order is a bid (buy) order
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'is_buy_order'?: boolean;
     /**
      * Date and time when this order was issued
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'issued': string;
     /**
      * The character who issued this order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'issued_by'?: number;
     /**
      * ID of the location where order was placed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'location_id': number;
     /**
      * For buy orders, the minimum quantity that will be accepted in a matching sell order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'min_volume'?: number;
     /**
      * Unique order ID
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'order_id': number;
     /**
      * Cost per unit for this order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'price': number;
     /**
      * Valid order range, numbers are ranges in jumps
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'range': GetCorporationsCorporationIdOrdersHistory200OkRangeEnum;
     /**
      * ID of the region where order was placed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'region_id': number;
     /**
      * Current order state
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'state': GetCorporationsCorporationIdOrdersHistory200OkStateEnum;
     /**
      * The type ID of the item transacted in this order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'type_id': number;
     /**
      * Quantity of items still required or offered
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'volume_remain': number;
     /**
      * Quantity of items required or offered at time order was placed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'volume_total': number;
     /**
      * The corporation wallet division used for this order
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdOrdersHistory200Ok
      */
     'wallet_division': number;
 }
@@ -6527,62 +4950,42 @@ export type GetCorporationsCorporationIdOrdersHistory200OkStateEnum = typeof Get
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdRoles200Ok
  */
 export interface GetCorporationsCorporationIdRoles200Ok {
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'character_id': number;
     /**
      * grantable_roles array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'grantable_roles'?: Array<GetCorporationsCorporationIdRoles200OkGrantableRolesEnum>;
     /**
      * grantable_roles_at_base array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'grantable_roles_at_base'?: Array<GetCorporationsCorporationIdRoles200OkGrantableRolesAtBaseEnum>;
     /**
      * grantable_roles_at_hq array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'grantable_roles_at_hq'?: Array<GetCorporationsCorporationIdRoles200OkGrantableRolesAtHqEnum>;
     /**
      * grantable_roles_at_other array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'grantable_roles_at_other'?: Array<GetCorporationsCorporationIdRoles200OkGrantableRolesAtOtherEnum>;
     /**
      * roles array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'roles'?: Array<GetCorporationsCorporationIdRoles200OkRolesEnum>;
     /**
      * roles_at_base array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'roles_at_base'?: Array<GetCorporationsCorporationIdRoles200OkRolesAtBaseEnum>;
     /**
      * roles_at_hq array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'roles_at_hq'?: Array<GetCorporationsCorporationIdRoles200OkRolesAtHqEnum>;
     /**
      * roles_at_other array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRoles200Ok
      */
     'roles_at_other'?: Array<GetCorporationsCorporationIdRoles200OkRolesAtOtherEnum>;
 }
@@ -7054,44 +5457,30 @@ export type GetCorporationsCorporationIdRoles200OkRolesAtOtherEnum = typeof GetC
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdRolesHistory200Ok
  */
 export interface GetCorporationsCorporationIdRolesHistory200Ok {
     /**
      * changed_at string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdRolesHistory200Ok
      */
     'changed_at': string;
     /**
      * The character whose roles are changed
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdRolesHistory200Ok
      */
     'character_id': number;
     /**
      * ID of the character who issued this change
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdRolesHistory200Ok
      */
     'issuer_id': number;
     /**
      * new_roles array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRolesHistory200Ok
      */
     'new_roles': Array<GetCorporationsCorporationIdRolesHistory200OkNewRolesEnum>;
     /**
      * old_roles array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdRolesHistory200Ok
      */
     'old_roles': Array<GetCorporationsCorporationIdRolesHistory200OkOldRolesEnum>;
     /**
      * role_type string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdRolesHistory200Ok
      */
     'role_type': GetCorporationsCorporationIdRolesHistory200OkRoleTypeEnum;
 }
@@ -7227,26 +5616,18 @@ export type GetCorporationsCorporationIdRolesHistory200OkRoleTypeEnum = typeof G
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdShareholders200Ok
  */
 export interface GetCorporationsCorporationIdShareholders200Ok {
     /**
      * share_count integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdShareholders200Ok
      */
     'share_count': number;
     /**
      * shareholder_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdShareholders200Ok
      */
     'shareholder_id': number;
     /**
      * shareholder_type string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdShareholders200Ok
      */
     'shareholder_type': GetCorporationsCorporationIdShareholders200OkShareholderTypeEnum;
 }
@@ -7260,26 +5641,18 @@ export type GetCorporationsCorporationIdShareholders200OkShareholderTypeEnum = t
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdStandings200Ok
  */
 export interface GetCorporationsCorporationIdStandings200Ok {
     /**
      * from_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStandings200Ok
      */
     'from_id': number;
     /**
      * from_type string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStandings200Ok
      */
     'from_type': GetCorporationsCorporationIdStandings200OkFromTypeEnum;
     /**
      * standing number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStandings200Ok
      */
     'standing': number;
 }
@@ -7294,56 +5667,38 @@ export type GetCorporationsCorporationIdStandings200OkFromTypeEnum = typeof GetC
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdStarbases200Ok
  */
 export interface GetCorporationsCorporationIdStarbases200Ok {
     /**
      * The moon this starbase (POS) is anchored on, unanchored POSes do not have this information
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'moon_id'?: number;
     /**
      * When the POS onlined, for starbases (POSes) in online state
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'onlined_since'?: string;
     /**
      * When the POS will be out of reinforcement, for starbases (POSes) in reinforced state
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'reinforced_until'?: string;
     /**
      * Unique ID for this starbase (POS)
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'starbase_id': number;
     /**
      * state string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'state'?: GetCorporationsCorporationIdStarbases200OkStateEnum;
     /**
      * The solar system this starbase (POS) is in, unanchored POSes have this information
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'system_id': number;
     /**
      * Starbase (POS) type
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'type_id': number;
     /**
      * When the POS started unanchoring, for starbases (POSes) in unanchoring state
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbases200Ok
      */
     'unanchor_at'?: string;
 }
@@ -7360,111 +5715,75 @@ export type GetCorporationsCorporationIdStarbases200OkStateEnum = typeof GetCorp
 
 /**
  * fuel object
- * @export
- * @interface GetCorporationsCorporationIdStarbasesStarbaseIdFuel
  */
 export interface GetCorporationsCorporationIdStarbasesStarbaseIdFuel {
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdFuel
      */
     'quantity': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdFuel
      */
     'type_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdStarbasesStarbaseIdOk
  */
 export interface GetCorporationsCorporationIdStarbasesStarbaseIdOk {
     /**
      * allow_alliance_members boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'allow_alliance_members': boolean;
     /**
      * allow_corporation_members boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'allow_corporation_members': boolean;
     /**
      * Who can anchor starbase (POS) and its structures
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'anchor': GetCorporationsCorporationIdStarbasesStarbaseIdOkAnchorEnum;
     /**
      * attack_if_at_war boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'attack_if_at_war': boolean;
     /**
      * attack_if_other_security_status_dropping boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'attack_if_other_security_status_dropping': boolean;
     /**
      * Starbase (POS) will attack if target\'s security standing is lower than this value
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'attack_security_status_threshold'?: number;
     /**
      * Starbase (POS) will attack if target\'s standing is lower than this value
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'attack_standing_threshold'?: number;
     /**
      * Who can take fuel blocks out of the starbase (POS)\'s fuel bay
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'fuel_bay_take': GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayTakeEnum;
     /**
      * Who can view the starbase (POS)\'s fule bay. Characters either need to have required role or belong to the starbase (POS) owner\'s corporation or alliance, as described by the enum, all other access settings follows the same scheme
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'fuel_bay_view': GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayViewEnum;
     /**
      * Fuel blocks and other things that will be consumed when operating a starbase (POS)
-     * @type {Array<GetCorporationsCorporationIdStarbasesStarbaseIdFuel>}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'fuels'?: Array<GetCorporationsCorporationIdStarbasesStarbaseIdFuel>;
     /**
      * Who can offline starbase (POS) and its structures
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'offline': GetCorporationsCorporationIdStarbasesStarbaseIdOkOfflineEnum;
     /**
      * Who can online starbase (POS) and its structures
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'online': GetCorporationsCorporationIdStarbasesStarbaseIdOkOnlineEnum;
     /**
      * Who can unanchor starbase (POS) and its structures
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'unanchor': GetCorporationsCorporationIdStarbasesStarbaseIdOkUnanchorEnum;
     /**
      * True if the starbase (POS) is using alliance standings, otherwise using corporation\'s
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdStarbasesStarbaseIdOk
      */
     'use_alliance_standings': boolean;
 }
@@ -7520,98 +5839,66 @@ export type GetCorporationsCorporationIdStarbasesStarbaseIdOkUnanchorEnum = type
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdStructures200Ok
  */
 export interface GetCorporationsCorporationIdStructures200Ok {
     /**
      * ID of the corporation that owns the structure
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'corporation_id': number;
     /**
      * Date on which the structure will run out of fuel
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'fuel_expires'?: string;
     /**
      * The structure name
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'name'?: string;
     /**
      * The date and time when the structure\'s newly requested reinforcement times (e.g. next_reinforce_hour and next_reinforce_day) will take effect
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'next_reinforce_apply'?: string;
     /**
      * The requested change to reinforce_hour that will take effect at the time shown by next_reinforce_apply
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'next_reinforce_hour'?: number;
     /**
      * The id of the ACL profile for this citadel
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'profile_id': number;
     /**
      * The hour of day that determines the four hour window when the structure will randomly exit its reinforcement periods and become vulnerable to attack against its armor and/or hull. The structure will become vulnerable at a random time that is +/- 2 hours centered on the value of this property
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'reinforce_hour'?: number;
     /**
      * Contains a list of service upgrades, and their state
-     * @type {Array<GetCorporationsCorporationIdStructuresService>}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'services'?: Array<GetCorporationsCorporationIdStructuresService>;
     /**
      * state string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'state': GetCorporationsCorporationIdStructures200OkStateEnum;
     /**
      * Date at which the structure will move to it\'s next state
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'state_timer_end'?: string;
     /**
      * Date at which the structure entered it\'s current state
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'state_timer_start'?: string;
     /**
      * The Item ID of the structure
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'structure_id': number;
     /**
      * The solar system the structure is in
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'system_id': number;
     /**
      * The type id of the structure
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'type_id': number;
     /**
      * Date at which the structure will unanchor
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructures200Ok
      */
     'unanchors_at'?: string;
 }
@@ -7636,20 +5923,14 @@ export type GetCorporationsCorporationIdStructures200OkStateEnum = typeof GetCor
 
 /**
  * service object
- * @export
- * @interface GetCorporationsCorporationIdStructuresService
  */
 export interface GetCorporationsCorporationIdStructuresService {
     /**
      * name string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructuresService
      */
     'name': string;
     /**
      * state string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdStructuresService
      */
     'state': GetCorporationsCorporationIdStructuresServiceStateEnum;
 }
@@ -7664,68 +5945,46 @@ export type GetCorporationsCorporationIdStructuresServiceStateEnum = typeof GetC
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdTitles200Ok
  */
 export interface GetCorporationsCorporationIdTitles200Ok {
     /**
      * grantable_roles array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'grantable_roles'?: Array<GetCorporationsCorporationIdTitles200OkGrantableRolesEnum>;
     /**
      * grantable_roles_at_base array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'grantable_roles_at_base'?: Array<GetCorporationsCorporationIdTitles200OkGrantableRolesAtBaseEnum>;
     /**
      * grantable_roles_at_hq array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'grantable_roles_at_hq'?: Array<GetCorporationsCorporationIdTitles200OkGrantableRolesAtHqEnum>;
     /**
      * grantable_roles_at_other array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'grantable_roles_at_other'?: Array<GetCorporationsCorporationIdTitles200OkGrantableRolesAtOtherEnum>;
     /**
      * name string
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'name'?: string;
     /**
      * roles array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'roles'?: Array<GetCorporationsCorporationIdTitles200OkRolesEnum>;
     /**
      * roles_at_base array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'roles_at_base'?: Array<GetCorporationsCorporationIdTitles200OkRolesAtBaseEnum>;
     /**
      * roles_at_hq array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'roles_at_hq'?: Array<GetCorporationsCorporationIdTitles200OkRolesAtHqEnum>;
     /**
      * roles_at_other array
-     * @type {Array<string>}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'roles_at_other'?: Array<GetCorporationsCorporationIdTitles200OkRolesAtOtherEnum>;
     /**
      * title_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdTitles200Ok
      */
     'title_id'?: number;
 }
@@ -8197,105 +6456,71 @@ export type GetCorporationsCorporationIdTitles200OkRolesAtOtherEnum = typeof Get
 
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdWallets200Ok
  */
 export interface GetCorporationsCorporationIdWallets200Ok {
     /**
      * balance number
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWallets200Ok
      */
     'balance': number;
     /**
      * division integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWallets200Ok
      */
     'division': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetCorporationsCorporationIdWalletsDivisionJournal200Ok
  */
 export interface GetCorporationsCorporationIdWalletsDivisionJournal200Ok {
     /**
      * The amount of ISK given or taken from the wallet as a result of the given transaction. Positive when ISK is deposited into the wallet and negative when ISK is withdrawn
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'amount'?: number;
     /**
      * Wallet balance after transaction occurred
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'balance'?: number;
     /**
      * An ID that gives extra context to the particular transaction. Because of legacy reasons the context is completely different per ref_type and means different things. It is also possible to not have a context_id
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'context_id'?: number;
     /**
      * The type of the given context_id if present
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'context_id_type'?: GetCorporationsCorporationIdWalletsDivisionJournal200OkContextIdTypeEnum;
     /**
      * Date and time of transaction
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'date': string;
     /**
      * The reason for the transaction, mirrors what is seen in the client
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'description': string;
     /**
      * The id of the first party involved in the transaction. This attribute has no consistency and is different or non existant for particular ref_types. The description attribute will help make sense of what this attribute means. For more info about the given ID it can be dropped into the /universe/names/ ESI route to determine its type and name
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'first_party_id'?: number;
     /**
      * Unique journal reference ID
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'id': number;
     /**
      * The user stated reason for the transaction. Only applies to some ref_types
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'reason'?: string;
     /**
      * \"The transaction type for the given. transaction. Different transaction types will populate different attributes. Note: If you have an existing XML API application that is using ref_types, you will need to know which string ESI ref_type maps to which integer. You can look at the following file to see string->int mappings: https://github.com/ccpgames/eve-glue/blob/master/eve_glue/wallet_journal_ref.py\"
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'ref_type': GetCorporationsCorporationIdWalletsDivisionJournal200OkRefTypeEnum;
     /**
      * The id of the second party involved in the transaction. This attribute has no consistency and is different or non existant for particular ref_types. The description attribute will help make sense of what this attribute means. For more info about the given ID it can be dropped into the /universe/names/ ESI route to determine its type and name
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'second_party_id'?: number;
     /**
      * Tax amount received. Only applies to tax related transactions
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'tax'?: number;
     /**
      * The corporation ID receiving any tax paid. Only applies to tax related transactions
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionJournal200Ok
      */
     'tax_receiver_id'?: number;
 }
@@ -8478,486 +6703,328 @@ export type GetCorporationsCorporationIdWalletsDivisionJournal200OkRefTypeEnum =
 
 /**
  * wallet transaction
- * @export
- * @interface GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
  */
 export interface GetCorporationsCorporationIdWalletsDivisionTransactions200Ok {
     /**
      * client_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'client_id': number;
     /**
      * Date and time of transaction
-     * @type {string}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'date': string;
     /**
      * is_buy boolean
-     * @type {boolean}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'is_buy': boolean;
     /**
      * -1 if there is no corresponding wallet journal entry
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'journal_ref_id': number;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'location_id': number;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'quantity': number;
     /**
      * Unique transaction ID
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'transaction_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'type_id': number;
     /**
      * Amount paid per unit
-     * @type {number}
-     * @memberof GetCorporationsCorporationIdWalletsDivisionTransactions200Ok
      */
     'unit_price': number;
 }
 /**
  * Not found
- * @export
- * @interface GetDogmaAttributesAttributeIdNotFound
  */
 export interface GetDogmaAttributesAttributeIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetDogmaAttributesAttributeIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetDogmaAttributesAttributeIdOk
  */
 export interface GetDogmaAttributesAttributeIdOk {
     /**
      * attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'attribute_id': number;
     /**
      * default_value number
-     * @type {number}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'default_value'?: number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'description'?: string;
     /**
      * display_name string
-     * @type {string}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'display_name'?: string;
     /**
      * high_is_good boolean
-     * @type {boolean}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'high_is_good'?: boolean;
     /**
      * icon_id integer
-     * @type {number}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'icon_id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'name'?: string;
     /**
      * published boolean
-     * @type {boolean}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'published'?: boolean;
     /**
      * stackable boolean
-     * @type {boolean}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'stackable'?: boolean;
     /**
      * unit_id integer
-     * @type {number}
-     * @memberof GetDogmaAttributesAttributeIdOk
      */
     'unit_id'?: number;
 }
 /**
  * dogma_attribute object
- * @export
- * @interface GetDogmaDynamicItemsTypeIdItemIdDogmaAttribute
  */
 export interface GetDogmaDynamicItemsTypeIdItemIdDogmaAttribute {
     /**
      * attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdDogmaAttribute
      */
     'attribute_id': number;
     /**
      * value number
-     * @type {number}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdDogmaAttribute
      */
     'value': number;
 }
 /**
  * dogma_effect object
- * @export
- * @interface GetDogmaDynamicItemsTypeIdItemIdDogmaEffect
  */
 export interface GetDogmaDynamicItemsTypeIdItemIdDogmaEffect {
     /**
      * effect_id integer
-     * @type {number}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdDogmaEffect
      */
     'effect_id': number;
     /**
      * is_default boolean
-     * @type {boolean}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdDogmaEffect
      */
     'is_default': boolean;
 }
 /**
  * Not found
- * @export
- * @interface GetDogmaDynamicItemsTypeIdItemIdNotFound
  */
 export interface GetDogmaDynamicItemsTypeIdItemIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetDogmaDynamicItemsTypeIdItemIdOk
  */
 export interface GetDogmaDynamicItemsTypeIdItemIdOk {
     /**
      * The ID of the character who created the item
-     * @type {number}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdOk
      */
     'created_by': number;
     /**
      * dogma_attributes array
-     * @type {Array<GetDogmaDynamicItemsTypeIdItemIdDogmaAttribute>}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdOk
      */
     'dogma_attributes': Array<GetDogmaDynamicItemsTypeIdItemIdDogmaAttribute>;
     /**
      * dogma_effects array
-     * @type {Array<GetDogmaDynamicItemsTypeIdItemIdDogmaEffect>}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdOk
      */
     'dogma_effects': Array<GetDogmaDynamicItemsTypeIdItemIdDogmaEffect>;
     /**
      * The type ID of the mutator used to generate the dynamic item.
-     * @type {number}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdOk
      */
     'mutator_type_id': number;
     /**
      * The type ID of the source item the mutator was applied to create the dynamic item.
-     * @type {number}
-     * @memberof GetDogmaDynamicItemsTypeIdItemIdOk
      */
     'source_type_id': number;
 }
 /**
  * modifier object
- * @export
- * @interface GetDogmaEffectsEffectIdModifier
  */
 export interface GetDogmaEffectsEffectIdModifier {
     /**
      * domain string
-     * @type {string}
-     * @memberof GetDogmaEffectsEffectIdModifier
      */
     'domain'?: string;
     /**
      * effect_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdModifier
      */
     'effect_id'?: number;
     /**
      * func string
-     * @type {string}
-     * @memberof GetDogmaEffectsEffectIdModifier
      */
     'func': string;
     /**
      * modified_attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdModifier
      */
     'modified_attribute_id'?: number;
     /**
      * modifying_attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdModifier
      */
     'modifying_attribute_id'?: number;
     /**
      * operator integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdModifier
      */
     'operator'?: number;
 }
 /**
  * Not found
- * @export
- * @interface GetDogmaEffectsEffectIdNotFound
  */
 export interface GetDogmaEffectsEffectIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetDogmaEffectsEffectIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetDogmaEffectsEffectIdOk
  */
 export interface GetDogmaEffectsEffectIdOk {
     /**
      * description string
-     * @type {string}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'description'?: string;
     /**
      * disallow_auto_repeat boolean
-     * @type {boolean}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'disallow_auto_repeat'?: boolean;
     /**
      * discharge_attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'discharge_attribute_id'?: number;
     /**
      * display_name string
-     * @type {string}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'display_name'?: string;
     /**
      * duration_attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'duration_attribute_id'?: number;
     /**
      * effect_category integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'effect_category'?: number;
     /**
      * effect_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'effect_id': number;
     /**
      * electronic_chance boolean
-     * @type {boolean}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'electronic_chance'?: boolean;
     /**
      * falloff_attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'falloff_attribute_id'?: number;
     /**
      * icon_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'icon_id'?: number;
     /**
      * is_assistance boolean
-     * @type {boolean}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'is_assistance'?: boolean;
     /**
      * is_offensive boolean
-     * @type {boolean}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'is_offensive'?: boolean;
     /**
      * is_warp_safe boolean
-     * @type {boolean}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'is_warp_safe'?: boolean;
     /**
      * modifiers array
-     * @type {Array<GetDogmaEffectsEffectIdModifier>}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'modifiers'?: Array<GetDogmaEffectsEffectIdModifier>;
     /**
      * name string
-     * @type {string}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'name'?: string;
     /**
      * post_expression integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'post_expression'?: number;
     /**
      * pre_expression integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'pre_expression'?: number;
     /**
      * published boolean
-     * @type {boolean}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'published'?: boolean;
     /**
      * range_attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'range_attribute_id'?: number;
     /**
      * range_chance boolean
-     * @type {boolean}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'range_chance'?: boolean;
     /**
      * tracking_speed_attribute_id integer
-     * @type {number}
-     * @memberof GetDogmaEffectsEffectIdOk
      */
     'tracking_speed_attribute_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFleetsFleetIdMembers200Ok
  */
 export interface GetFleetsFleetIdMembers200Ok {
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'character_id': number;
     /**
      * join_time string
-     * @type {string}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'join_time': string;
     /**
      * Member’s role in fleet
-     * @type {string}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'role': GetFleetsFleetIdMembers200OkRoleEnum;
     /**
      * Localized role names
-     * @type {string}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'role_name': string;
     /**
      * ship_type_id integer
-     * @type {number}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'ship_type_id': number;
     /**
      * Solar system the member is located in
-     * @type {number}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'solar_system_id': number;
     /**
      * ID of the squad the member is in. If not applicable, will be set to -1
-     * @type {number}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'squad_id': number;
     /**
      * Station in which the member is docked in, if applicable
-     * @type {number}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'station_id'?: number;
     /**
      * Whether the member take fleet warps
-     * @type {boolean}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'takes_fleet_warp': boolean;
     /**
      * ID of the wing the member is in. If not applicable, will be set to -1
-     * @type {number}
-     * @memberof GetFleetsFleetIdMembers200Ok
      */
     'wing_id': number;
 }
@@ -8973,794 +7040,518 @@ export type GetFleetsFleetIdMembers200OkRoleEnum = typeof GetFleetsFleetIdMember
 
 /**
  * Not found
- * @export
- * @interface GetFleetsFleetIdMembersNotFound
  */
 export interface GetFleetsFleetIdMembersNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetFleetsFleetIdMembersNotFound
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetFleetsFleetIdNotFound
  */
 export interface GetFleetsFleetIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetFleetsFleetIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFleetsFleetIdOk
  */
 export interface GetFleetsFleetIdOk {
     /**
      * Is free-move enabled
-     * @type {boolean}
-     * @memberof GetFleetsFleetIdOk
      */
     'is_free_move': boolean;
     /**
      * Does the fleet have an active fleet advertisement
-     * @type {boolean}
-     * @memberof GetFleetsFleetIdOk
      */
     'is_registered': boolean;
     /**
      * Is EVE Voice enabled
-     * @type {boolean}
-     * @memberof GetFleetsFleetIdOk
      */
     'is_voice_enabled': boolean;
     /**
      * Fleet MOTD in CCP flavoured HTML
-     * @type {string}
-     * @memberof GetFleetsFleetIdOk
      */
     'motd': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFleetsFleetIdWings200Ok
  */
 export interface GetFleetsFleetIdWings200Ok {
     /**
      * id integer
-     * @type {number}
-     * @memberof GetFleetsFleetIdWings200Ok
      */
     'id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetFleetsFleetIdWings200Ok
      */
     'name': string;
     /**
      * squads array
-     * @type {Array<GetFleetsFleetIdWingsSquad>}
-     * @memberof GetFleetsFleetIdWings200Ok
      */
     'squads': Array<GetFleetsFleetIdWingsSquad>;
 }
 /**
  * Not found
- * @export
- * @interface GetFleetsFleetIdWingsNotFound
  */
 export interface GetFleetsFleetIdWingsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetFleetsFleetIdWingsNotFound
      */
     'error'?: string;
 }
 /**
  * squad object
- * @export
- * @interface GetFleetsFleetIdWingsSquad
  */
 export interface GetFleetsFleetIdWingsSquad {
     /**
      * id integer
-     * @type {number}
-     * @memberof GetFleetsFleetIdWingsSquad
      */
     'id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetFleetsFleetIdWingsSquad
      */
     'name': string;
 }
 /**
  * active_total object
- * @export
- * @interface GetFwLeaderboardsActiveTotalActiveTotal
  */
 export interface GetFwLeaderboardsActiveTotalActiveTotal {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsActiveTotalActiveTotal
      */
     'amount'?: number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsActiveTotalActiveTotal
      */
     'faction_id'?: number;
 }
 /**
  * active_total object
- * @export
- * @interface GetFwLeaderboardsActiveTotalActiveTotal1
  */
 export interface GetFwLeaderboardsActiveTotalActiveTotal1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsActiveTotalActiveTotal1
      */
     'amount'?: number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsActiveTotalActiveTotal1
      */
     'faction_id'?: number;
 }
 /**
  * active_total object
- * @export
- * @interface GetFwLeaderboardsCharactersActiveTotalActiveTotal
  */
 export interface GetFwLeaderboardsCharactersActiveTotalActiveTotal {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersActiveTotalActiveTotal
      */
     'amount'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersActiveTotalActiveTotal
      */
     'character_id'?: number;
 }
 /**
  * active_total object
- * @export
- * @interface GetFwLeaderboardsCharactersActiveTotalActiveTotal1
  */
 export interface GetFwLeaderboardsCharactersActiveTotalActiveTotal1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersActiveTotalActiveTotal1
      */
     'amount'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersActiveTotalActiveTotal1
      */
     'character_id'?: number;
 }
 /**
  * Top 100 rankings of pilots by number of kills from yesterday, last week and in total
- * @export
- * @interface GetFwLeaderboardsCharactersKills
  */
 export interface GetFwLeaderboardsCharactersKills {
     /**
      * Top 100 ranking of pilots active in faction warfare by total kills. A pilot is considered \"active\" if they have participated in faction warfare in the past 14 days
-     * @type {Array<GetFwLeaderboardsCharactersActiveTotalActiveTotal>}
-     * @memberof GetFwLeaderboardsCharactersKills
      */
     'active_total': Array<GetFwLeaderboardsCharactersActiveTotalActiveTotal>;
     /**
      * Top 100 ranking of pilots by kills in the past week
-     * @type {Array<GetFwLeaderboardsCharactersLastWeekLastWeek>}
-     * @memberof GetFwLeaderboardsCharactersKills
      */
     'last_week': Array<GetFwLeaderboardsCharactersLastWeekLastWeek>;
     /**
      * Top 100 ranking of pilots by kills in the past day
-     * @type {Array<GetFwLeaderboardsCharactersYesterdayYesterday>}
-     * @memberof GetFwLeaderboardsCharactersKills
      */
     'yesterday': Array<GetFwLeaderboardsCharactersYesterdayYesterday>;
 }
 /**
  * last_week object
- * @export
- * @interface GetFwLeaderboardsCharactersLastWeekLastWeek
  */
 export interface GetFwLeaderboardsCharactersLastWeekLastWeek {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersLastWeekLastWeek
      */
     'amount'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersLastWeekLastWeek
      */
     'character_id'?: number;
 }
 /**
  * last_week object
- * @export
- * @interface GetFwLeaderboardsCharactersLastWeekLastWeek1
  */
 export interface GetFwLeaderboardsCharactersLastWeekLastWeek1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersLastWeekLastWeek1
      */
     'amount'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersLastWeekLastWeek1
      */
     'character_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFwLeaderboardsCharactersOk
  */
 export interface GetFwLeaderboardsCharactersOk {
-    /**
-     * 
-     * @type {GetFwLeaderboardsCharactersKills}
-     * @memberof GetFwLeaderboardsCharactersOk
-     */
     'kills': GetFwLeaderboardsCharactersKills;
-    /**
-     * 
-     * @type {GetFwLeaderboardsCharactersVictoryPoints}
-     * @memberof GetFwLeaderboardsCharactersOk
-     */
     'victory_points': GetFwLeaderboardsCharactersVictoryPoints;
 }
 /**
  * Top 100 rankings of pilots by victory points from yesterday, last week and in total
- * @export
- * @interface GetFwLeaderboardsCharactersVictoryPoints
  */
 export interface GetFwLeaderboardsCharactersVictoryPoints {
     /**
      * Top 100 ranking of pilots active in faction warfare by total victory points. A pilot is considered \"active\" if they have participated in faction warfare in the past 14 days
-     * @type {Array<GetFwLeaderboardsCharactersActiveTotalActiveTotal1>}
-     * @memberof GetFwLeaderboardsCharactersVictoryPoints
      */
     'active_total': Array<GetFwLeaderboardsCharactersActiveTotalActiveTotal1>;
     /**
      * Top 100 ranking of pilots by victory points in the past week
-     * @type {Array<GetFwLeaderboardsCharactersLastWeekLastWeek1>}
-     * @memberof GetFwLeaderboardsCharactersVictoryPoints
      */
     'last_week': Array<GetFwLeaderboardsCharactersLastWeekLastWeek1>;
     /**
      * Top 100 ranking of pilots by victory points in the past day
-     * @type {Array<GetFwLeaderboardsCharactersYesterdayYesterday1>}
-     * @memberof GetFwLeaderboardsCharactersVictoryPoints
      */
     'yesterday': Array<GetFwLeaderboardsCharactersYesterdayYesterday1>;
 }
 /**
  * yesterday object
- * @export
- * @interface GetFwLeaderboardsCharactersYesterdayYesterday
  */
 export interface GetFwLeaderboardsCharactersYesterdayYesterday {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersYesterdayYesterday
      */
     'amount'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersYesterdayYesterday
      */
     'character_id'?: number;
 }
 /**
  * yesterday object
- * @export
- * @interface GetFwLeaderboardsCharactersYesterdayYesterday1
  */
 export interface GetFwLeaderboardsCharactersYesterdayYesterday1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersYesterdayYesterday1
      */
     'amount'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCharactersYesterdayYesterday1
      */
     'character_id'?: number;
 }
 /**
  * active_total object
- * @export
- * @interface GetFwLeaderboardsCorporationsActiveTotalActiveTotal
  */
 export interface GetFwLeaderboardsCorporationsActiveTotalActiveTotal {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsActiveTotalActiveTotal
      */
     'amount'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsActiveTotalActiveTotal
      */
     'corporation_id'?: number;
 }
 /**
  * active_total object
- * @export
- * @interface GetFwLeaderboardsCorporationsActiveTotalActiveTotal1
  */
 export interface GetFwLeaderboardsCorporationsActiveTotalActiveTotal1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsActiveTotalActiveTotal1
      */
     'amount'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsActiveTotalActiveTotal1
      */
     'corporation_id'?: number;
 }
 /**
  * Top 10 rankings of corporations by number of kills from yesterday, last week and in total
- * @export
- * @interface GetFwLeaderboardsCorporationsKills
  */
 export interface GetFwLeaderboardsCorporationsKills {
     /**
      * Top 10 ranking of corporations active in faction warfare by total kills. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days
-     * @type {Array<GetFwLeaderboardsCorporationsActiveTotalActiveTotal>}
-     * @memberof GetFwLeaderboardsCorporationsKills
      */
     'active_total': Array<GetFwLeaderboardsCorporationsActiveTotalActiveTotal>;
     /**
      * Top 10 ranking of corporations by kills in the past week
-     * @type {Array<GetFwLeaderboardsCorporationsLastWeekLastWeek>}
-     * @memberof GetFwLeaderboardsCorporationsKills
      */
     'last_week': Array<GetFwLeaderboardsCorporationsLastWeekLastWeek>;
     /**
      * Top 10 ranking of corporations by kills in the past day
-     * @type {Array<GetFwLeaderboardsCorporationsYesterdayYesterday>}
-     * @memberof GetFwLeaderboardsCorporationsKills
      */
     'yesterday': Array<GetFwLeaderboardsCorporationsYesterdayYesterday>;
 }
 /**
  * last_week object
- * @export
- * @interface GetFwLeaderboardsCorporationsLastWeekLastWeek
  */
 export interface GetFwLeaderboardsCorporationsLastWeekLastWeek {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsLastWeekLastWeek
      */
     'amount'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsLastWeekLastWeek
      */
     'corporation_id'?: number;
 }
 /**
  * last_week object
- * @export
- * @interface GetFwLeaderboardsCorporationsLastWeekLastWeek1
  */
 export interface GetFwLeaderboardsCorporationsLastWeekLastWeek1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsLastWeekLastWeek1
      */
     'amount'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsLastWeekLastWeek1
      */
     'corporation_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFwLeaderboardsCorporationsOk
  */
 export interface GetFwLeaderboardsCorporationsOk {
-    /**
-     * 
-     * @type {GetFwLeaderboardsCorporationsKills}
-     * @memberof GetFwLeaderboardsCorporationsOk
-     */
     'kills': GetFwLeaderboardsCorporationsKills;
-    /**
-     * 
-     * @type {GetFwLeaderboardsCorporationsVictoryPoints}
-     * @memberof GetFwLeaderboardsCorporationsOk
-     */
     'victory_points': GetFwLeaderboardsCorporationsVictoryPoints;
 }
 /**
  * Top 10 rankings of corporations by victory points from yesterday, last week and in total
- * @export
- * @interface GetFwLeaderboardsCorporationsVictoryPoints
  */
 export interface GetFwLeaderboardsCorporationsVictoryPoints {
     /**
      * Top 10 ranking of corporations active in faction warfare by total victory points. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days
-     * @type {Array<GetFwLeaderboardsCorporationsActiveTotalActiveTotal1>}
-     * @memberof GetFwLeaderboardsCorporationsVictoryPoints
      */
     'active_total': Array<GetFwLeaderboardsCorporationsActiveTotalActiveTotal1>;
     /**
      * Top 10 ranking of corporations by victory points in the past week
-     * @type {Array<GetFwLeaderboardsCorporationsLastWeekLastWeek1>}
-     * @memberof GetFwLeaderboardsCorporationsVictoryPoints
      */
     'last_week': Array<GetFwLeaderboardsCorporationsLastWeekLastWeek1>;
     /**
      * Top 10 ranking of corporations by victory points in the past day
-     * @type {Array<GetFwLeaderboardsCorporationsYesterdayYesterday1>}
-     * @memberof GetFwLeaderboardsCorporationsVictoryPoints
      */
     'yesterday': Array<GetFwLeaderboardsCorporationsYesterdayYesterday1>;
 }
 /**
  * yesterday object
- * @export
- * @interface GetFwLeaderboardsCorporationsYesterdayYesterday
  */
 export interface GetFwLeaderboardsCorporationsYesterdayYesterday {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsYesterdayYesterday
      */
     'amount'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsYesterdayYesterday
      */
     'corporation_id'?: number;
 }
 /**
  * yesterday object
- * @export
- * @interface GetFwLeaderboardsCorporationsYesterdayYesterday1
  */
 export interface GetFwLeaderboardsCorporationsYesterdayYesterday1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsYesterdayYesterday1
      */
     'amount'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsCorporationsYesterdayYesterday1
      */
     'corporation_id'?: number;
 }
 /**
  * Top 4 rankings of factions by number of kills from yesterday, last week and in total
- * @export
- * @interface GetFwLeaderboardsKills
  */
 export interface GetFwLeaderboardsKills {
     /**
      * Top 4 ranking of factions active in faction warfare by total kills. A faction is considered \"active\" if they have participated in faction warfare in the past 14 days
-     * @type {Array<GetFwLeaderboardsActiveTotalActiveTotal>}
-     * @memberof GetFwLeaderboardsKills
      */
     'active_total': Array<GetFwLeaderboardsActiveTotalActiveTotal>;
     /**
      * Top 4 ranking of factions by kills in the past week
-     * @type {Array<GetFwLeaderboardsLastWeekLastWeek>}
-     * @memberof GetFwLeaderboardsKills
      */
     'last_week': Array<GetFwLeaderboardsLastWeekLastWeek>;
     /**
      * Top 4 ranking of factions by kills in the past day
-     * @type {Array<GetFwLeaderboardsYesterdayYesterday>}
-     * @memberof GetFwLeaderboardsKills
      */
     'yesterday': Array<GetFwLeaderboardsYesterdayYesterday>;
 }
 /**
  * last_week object
- * @export
- * @interface GetFwLeaderboardsLastWeekLastWeek
  */
 export interface GetFwLeaderboardsLastWeekLastWeek {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsLastWeekLastWeek
      */
     'amount'?: number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsLastWeekLastWeek
      */
     'faction_id'?: number;
 }
 /**
  * last_week object
- * @export
- * @interface GetFwLeaderboardsLastWeekLastWeek1
  */
 export interface GetFwLeaderboardsLastWeekLastWeek1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsLastWeekLastWeek1
      */
     'amount'?: number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsLastWeekLastWeek1
      */
     'faction_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFwLeaderboardsOk
  */
 export interface GetFwLeaderboardsOk {
-    /**
-     * 
-     * @type {GetFwLeaderboardsKills}
-     * @memberof GetFwLeaderboardsOk
-     */
     'kills': GetFwLeaderboardsKills;
-    /**
-     * 
-     * @type {GetFwLeaderboardsVictoryPoints}
-     * @memberof GetFwLeaderboardsOk
-     */
     'victory_points': GetFwLeaderboardsVictoryPoints;
 }
 /**
  * Top 4 rankings of factions by victory points from yesterday, last week and in total
- * @export
- * @interface GetFwLeaderboardsVictoryPoints
  */
 export interface GetFwLeaderboardsVictoryPoints {
     /**
      * Top 4 ranking of factions active in faction warfare by total victory points. A faction is considered \"active\" if they have participated in faction warfare in the past 14 days
-     * @type {Array<GetFwLeaderboardsActiveTotalActiveTotal1>}
-     * @memberof GetFwLeaderboardsVictoryPoints
      */
     'active_total': Array<GetFwLeaderboardsActiveTotalActiveTotal1>;
     /**
      * Top 4 ranking of factions by victory points in the past week
-     * @type {Array<GetFwLeaderboardsLastWeekLastWeek1>}
-     * @memberof GetFwLeaderboardsVictoryPoints
      */
     'last_week': Array<GetFwLeaderboardsLastWeekLastWeek1>;
     /**
      * Top 4 ranking of factions by victory points in the past day
-     * @type {Array<GetFwLeaderboardsYesterdayYesterday1>}
-     * @memberof GetFwLeaderboardsVictoryPoints
      */
     'yesterday': Array<GetFwLeaderboardsYesterdayYesterday1>;
 }
 /**
  * yesterday object
- * @export
- * @interface GetFwLeaderboardsYesterdayYesterday
  */
 export interface GetFwLeaderboardsYesterdayYesterday {
     /**
      * Amount of kills
-     * @type {number}
-     * @memberof GetFwLeaderboardsYesterdayYesterday
      */
     'amount'?: number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsYesterdayYesterday
      */
     'faction_id'?: number;
 }
 /**
  * yesterday object
- * @export
- * @interface GetFwLeaderboardsYesterdayYesterday1
  */
 export interface GetFwLeaderboardsYesterdayYesterday1 {
     /**
      * Amount of victory points
-     * @type {number}
-     * @memberof GetFwLeaderboardsYesterdayYesterday1
      */
     'amount'?: number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwLeaderboardsYesterdayYesterday1
      */
     'faction_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFwStats200Ok
  */
 export interface GetFwStats200Ok {
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwStats200Ok
      */
     'faction_id': number;
-    /**
-     * 
-     * @type {GetFwStatsKills}
-     * @memberof GetFwStats200Ok
-     */
     'kills': GetFwStatsKills;
     /**
      * How many pilots fight for the given faction
-     * @type {number}
-     * @memberof GetFwStats200Ok
      */
     'pilots': number;
     /**
      * The number of solar systems controlled by the given faction
-     * @type {number}
-     * @memberof GetFwStats200Ok
      */
     'systems_controlled': number;
-    /**
-     * 
-     * @type {GetFwStatsVictoryPoints}
-     * @memberof GetFwStats200Ok
-     */
     'victory_points': GetFwStatsVictoryPoints;
 }
 /**
  * Summary of kills against an enemy faction for the given faction
- * @export
- * @interface GetFwStatsKills
  */
 export interface GetFwStatsKills {
     /**
      * Last week\'s total number of kills against enemy factions
-     * @type {number}
-     * @memberof GetFwStatsKills
      */
     'last_week': number;
     /**
      * Total number of kills against enemy factions since faction warfare began
-     * @type {number}
-     * @memberof GetFwStatsKills
      */
     'total': number;
     /**
      * Yesterday\'s total number of kills against enemy factions
-     * @type {number}
-     * @memberof GetFwStatsKills
      */
     'yesterday': number;
 }
 /**
  * Summary of victory points gained for the given faction
- * @export
- * @interface GetFwStatsVictoryPoints
  */
 export interface GetFwStatsVictoryPoints {
     /**
      * Last week\'s victory points gained
-     * @type {number}
-     * @memberof GetFwStatsVictoryPoints
      */
     'last_week': number;
     /**
      * Total victory points gained since faction warfare began
-     * @type {number}
-     * @memberof GetFwStatsVictoryPoints
      */
     'total': number;
     /**
      * Yesterday\'s victory points gained
-     * @type {number}
-     * @memberof GetFwStatsVictoryPoints
      */
     'yesterday': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetFwSystems200Ok
  */
 export interface GetFwSystems200Ok {
     /**
      * contested string
-     * @type {string}
-     * @memberof GetFwSystems200Ok
      */
     'contested': GetFwSystems200OkContestedEnum;
     /**
      * occupier_faction_id integer
-     * @type {number}
-     * @memberof GetFwSystems200Ok
      */
     'occupier_faction_id': number;
     /**
      * owner_faction_id integer
-     * @type {number}
-     * @memberof GetFwSystems200Ok
      */
     'owner_faction_id': number;
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetFwSystems200Ok
      */
     'solar_system_id': number;
     /**
      * victory_points integer
-     * @type {number}
-     * @memberof GetFwSystems200Ok
      */
     'victory_points': number;
     /**
      * victory_points_threshold integer
-     * @type {number}
-     * @memberof GetFwSystems200Ok
      */
     'victory_points_threshold': number;
 }
@@ -9776,75 +7567,51 @@ export type GetFwSystems200OkContestedEnum = typeof GetFwSystems200OkContestedEn
 
 /**
  * 200 ok object
- * @export
- * @interface GetFwWars200Ok
  */
 export interface GetFwWars200Ok {
     /**
      * The faction ID of the enemy faction.
-     * @type {number}
-     * @memberof GetFwWars200Ok
      */
     'against_id': number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetFwWars200Ok
      */
     'faction_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetIncursions200Ok
  */
 export interface GetIncursions200Ok {
     /**
      * The constellation id in which this incursion takes place
-     * @type {number}
-     * @memberof GetIncursions200Ok
      */
     'constellation_id': number;
     /**
      * The attacking faction\'s id
-     * @type {number}
-     * @memberof GetIncursions200Ok
      */
     'faction_id': number;
     /**
      * Whether the final encounter has boss or not
-     * @type {boolean}
-     * @memberof GetIncursions200Ok
      */
     'has_boss': boolean;
     /**
      * A list of infested solar system ids that are a part of this incursion
-     * @type {Array<number>}
-     * @memberof GetIncursions200Ok
      */
     'infested_solar_systems': Array<number>;
     /**
      * Influence of this incursion as a float from 0 to 1
-     * @type {number}
-     * @memberof GetIncursions200Ok
      */
     'influence': number;
     /**
      * Staging solar system for this incursion
-     * @type {number}
-     * @memberof GetIncursions200Ok
      */
     'staging_solar_system_id': number;
     /**
      * The state of this incursion
-     * @type {string}
-     * @memberof GetIncursions200Ok
      */
     'state': GetIncursions200OkStateEnum;
     /**
      * The type of this incursion
-     * @type {string}
-     * @memberof GetIncursions200Ok
      */
     'type': string;
 }
@@ -9859,82 +7626,56 @@ export type GetIncursions200OkStateEnum = typeof GetIncursions200OkStateEnum[key
 
 /**
  * 200 ok object
- * @export
- * @interface GetIndustryFacilities200Ok
  */
 export interface GetIndustryFacilities200Ok {
     /**
      * ID of the facility
-     * @type {number}
-     * @memberof GetIndustryFacilities200Ok
      */
     'facility_id': number;
     /**
      * Owner of the facility
-     * @type {number}
-     * @memberof GetIndustryFacilities200Ok
      */
     'owner_id': number;
     /**
      * Region ID where the facility is
-     * @type {number}
-     * @memberof GetIndustryFacilities200Ok
      */
     'region_id': number;
     /**
      * Solar system ID where the facility is
-     * @type {number}
-     * @memberof GetIndustryFacilities200Ok
      */
     'solar_system_id': number;
     /**
      * Tax imposed by the facility
-     * @type {number}
-     * @memberof GetIndustryFacilities200Ok
      */
     'tax'?: number;
     /**
      * Type ID of the facility
-     * @type {number}
-     * @memberof GetIndustryFacilities200Ok
      */
     'type_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetIndustrySystems200Ok
  */
 export interface GetIndustrySystems200Ok {
     /**
      * cost_indices array
-     * @type {Array<GetIndustrySystemsCostIndice>}
-     * @memberof GetIndustrySystems200Ok
      */
     'cost_indices': Array<GetIndustrySystemsCostIndice>;
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetIndustrySystems200Ok
      */
     'solar_system_id': number;
 }
 /**
  * cost_indice object
- * @export
- * @interface GetIndustrySystemsCostIndice
  */
 export interface GetIndustrySystemsCostIndice {
     /**
      * activity string
-     * @type {string}
-     * @memberof GetIndustrySystemsCostIndice
      */
     'activity': GetIndustrySystemsCostIndiceActivityEnum;
     /**
      * cost_index number
-     * @type {number}
-     * @memberof GetIndustrySystemsCostIndice
      */
     'cost_index': number;
 }
@@ -9956,645 +7697,431 @@ export type GetIndustrySystemsCostIndiceActivityEnum = typeof GetIndustrySystems
 
 /**
  * 200 ok object
- * @export
- * @interface GetInsurancePrices200Ok
  */
 export interface GetInsurancePrices200Ok {
     /**
      * A list of a available insurance levels for this ship type
-     * @type {Array<GetInsurancePricesLevel>}
-     * @memberof GetInsurancePrices200Ok
      */
     'levels': Array<GetInsurancePricesLevel>;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetInsurancePrices200Ok
      */
     'type_id': number;
 }
 /**
  * level object
- * @export
- * @interface GetInsurancePricesLevel
  */
 export interface GetInsurancePricesLevel {
     /**
      * cost number
-     * @type {number}
-     * @memberof GetInsurancePricesLevel
      */
     'cost': number;
     /**
      * Localized insurance level
-     * @type {string}
-     * @memberof GetInsurancePricesLevel
      */
     'name': string;
     /**
      * payout number
-     * @type {number}
-     * @memberof GetInsurancePricesLevel
      */
     'payout': number;
 }
 /**
  * attacker object
- * @export
- * @interface GetKillmailsKillmailIdKillmailHashAttacker
  */
 export interface GetKillmailsKillmailIdKillmailHashAttacker {
     /**
      * alliance_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'alliance_id'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'character_id'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'corporation_id'?: number;
     /**
      * damage_done integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'damage_done': number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'faction_id'?: number;
     /**
      * Was the attacker the one to achieve the final blow 
-     * @type {boolean}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'final_blow': boolean;
     /**
      * Security status for the attacker 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'security_status': number;
     /**
      * What ship was the attacker flying 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'ship_type_id'?: number;
     /**
      * What weapon was used by the attacker for the kill 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashAttacker
      */
     'weapon_type_id'?: number;
 }
 /**
  * item object
- * @export
- * @interface GetKillmailsKillmailIdKillmailHashItem
  */
 export interface GetKillmailsKillmailIdKillmailHashItem {
     /**
      * Flag for the location of the item 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItem
      */
     'flag': number;
     /**
      * item_type_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItem
      */
     'item_type_id': number;
     /**
      * items array
-     * @type {Array<GetKillmailsKillmailIdKillmailHashItemsItem>}
-     * @memberof GetKillmailsKillmailIdKillmailHashItem
      */
     'items'?: Array<GetKillmailsKillmailIdKillmailHashItemsItem>;
     /**
      * How many of the item were destroyed if any 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItem
      */
     'quantity_destroyed'?: number;
     /**
      * How many of the item were dropped if any 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItem
      */
     'quantity_dropped'?: number;
     /**
      * singleton integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItem
      */
     'singleton': number;
 }
 /**
  * item object
- * @export
- * @interface GetKillmailsKillmailIdKillmailHashItemsItem
  */
 export interface GetKillmailsKillmailIdKillmailHashItemsItem {
     /**
      * flag integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItemsItem
      */
     'flag': number;
     /**
      * item_type_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItemsItem
      */
     'item_type_id': number;
     /**
      * quantity_destroyed integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItemsItem
      */
     'quantity_destroyed'?: number;
     /**
      * quantity_dropped integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItemsItem
      */
     'quantity_dropped'?: number;
     /**
      * singleton integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashItemsItem
      */
     'singleton': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetKillmailsKillmailIdKillmailHashOk
  */
 export interface GetKillmailsKillmailIdKillmailHashOk {
     /**
      * attackers array
-     * @type {Array<GetKillmailsKillmailIdKillmailHashAttacker>}
-     * @memberof GetKillmailsKillmailIdKillmailHashOk
      */
     'attackers': Array<GetKillmailsKillmailIdKillmailHashAttacker>;
     /**
      * ID of the killmail
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashOk
      */
     'killmail_id': number;
     /**
      * Time that the victim was killed and the killmail generated 
-     * @type {string}
-     * @memberof GetKillmailsKillmailIdKillmailHashOk
      */
     'killmail_time': string;
     /**
      * Moon if the kill took place at one
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashOk
      */
     'moon_id'?: number;
     /**
      * Solar system that the kill took place in 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashOk
      */
     'solar_system_id': number;
-    /**
-     * 
-     * @type {GetKillmailsKillmailIdKillmailHashVictim}
-     * @memberof GetKillmailsKillmailIdKillmailHashOk
-     */
     'victim': GetKillmailsKillmailIdKillmailHashVictim;
     /**
      * War if the killmail is generated in relation to an official war 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashOk
      */
     'war_id'?: number;
 }
 /**
  * Coordinates of the victim in Cartesian space relative to the Sun 
- * @export
- * @interface GetKillmailsKillmailIdKillmailHashPosition
  */
 export interface GetKillmailsKillmailIdKillmailHashPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashPosition
      */
     'z': number;
 }
 /**
  * Unprocessable entity
- * @export
- * @interface GetKillmailsKillmailIdKillmailHashUnprocessableEntity
  */
 export interface GetKillmailsKillmailIdKillmailHashUnprocessableEntity {
     /**
      * Unprocessable entity message
-     * @type {string}
-     * @memberof GetKillmailsKillmailIdKillmailHashUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * victim object
- * @export
- * @interface GetKillmailsKillmailIdKillmailHashVictim
  */
 export interface GetKillmailsKillmailIdKillmailHashVictim {
     /**
      * alliance_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
      */
     'alliance_id'?: number;
     /**
      * character_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
      */
     'character_id'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
      */
     'corporation_id'?: number;
     /**
      * How much total damage was taken by the victim 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
      */
     'damage_taken': number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
      */
     'faction_id'?: number;
     /**
      * items array
-     * @type {Array<GetKillmailsKillmailIdKillmailHashItem>}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
      */
     'items'?: Array<GetKillmailsKillmailIdKillmailHashItem>;
-    /**
-     * 
-     * @type {GetKillmailsKillmailIdKillmailHashPosition}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
-     */
     'position'?: GetKillmailsKillmailIdKillmailHashPosition;
     /**
      * The ship that the victim was piloting and was destroyed 
-     * @type {number}
-     * @memberof GetKillmailsKillmailIdKillmailHashVictim
      */
     'ship_type_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetLoyaltyStoresCorporationIdOffers200Ok
  */
 export interface GetLoyaltyStoresCorporationIdOffers200Ok {
     /**
      * Analysis kredit cost
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffers200Ok
      */
     'ak_cost'?: number;
     /**
      * isk_cost integer
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffers200Ok
      */
     'isk_cost': number;
     /**
      * lp_cost integer
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffers200Ok
      */
     'lp_cost': number;
     /**
      * offer_id integer
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffers200Ok
      */
     'offer_id': number;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffers200Ok
      */
     'quantity': number;
     /**
      * required_items array
-     * @type {Array<GetLoyaltyStoresCorporationIdOffersRequiredItem>}
-     * @memberof GetLoyaltyStoresCorporationIdOffers200Ok
      */
     'required_items': Array<GetLoyaltyStoresCorporationIdOffersRequiredItem>;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffers200Ok
      */
     'type_id': number;
 }
 /**
  * Not found
- * @export
- * @interface GetLoyaltyStoresCorporationIdOffersNotFound
  */
 export interface GetLoyaltyStoresCorporationIdOffersNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetLoyaltyStoresCorporationIdOffersNotFound
      */
     'error'?: string;
 }
 /**
  * required_item object
- * @export
- * @interface GetLoyaltyStoresCorporationIdOffersRequiredItem
  */
 export interface GetLoyaltyStoresCorporationIdOffersRequiredItem {
     /**
      * quantity integer
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffersRequiredItem
      */
     'quantity': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetLoyaltyStoresCorporationIdOffersRequiredItem
      */
     'type_id': number;
 }
 /**
  * Not found
- * @export
- * @interface GetMarketsGroupsMarketGroupIdNotFound
  */
 export interface GetMarketsGroupsMarketGroupIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetMarketsGroupsMarketGroupIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetMarketsGroupsMarketGroupIdOk
  */
 export interface GetMarketsGroupsMarketGroupIdOk {
     /**
      * description string
-     * @type {string}
-     * @memberof GetMarketsGroupsMarketGroupIdOk
      */
     'description': string;
     /**
      * market_group_id integer
-     * @type {number}
-     * @memberof GetMarketsGroupsMarketGroupIdOk
      */
     'market_group_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetMarketsGroupsMarketGroupIdOk
      */
     'name': string;
     /**
      * parent_group_id integer
-     * @type {number}
-     * @memberof GetMarketsGroupsMarketGroupIdOk
      */
     'parent_group_id'?: number;
     /**
      * types array
-     * @type {Array<number>}
-     * @memberof GetMarketsGroupsMarketGroupIdOk
      */
     'types': Array<number>;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetMarketsPrices200Ok
  */
 export interface GetMarketsPrices200Ok {
     /**
      * adjusted_price number
-     * @type {number}
-     * @memberof GetMarketsPrices200Ok
      */
     'adjusted_price'?: number;
     /**
      * average_price number
-     * @type {number}
-     * @memberof GetMarketsPrices200Ok
      */
     'average_price'?: number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetMarketsPrices200Ok
      */
     'type_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetMarketsRegionIdHistory200Ok
  */
 export interface GetMarketsRegionIdHistory200Ok {
     /**
      * average number
-     * @type {number}
-     * @memberof GetMarketsRegionIdHistory200Ok
      */
     'average': number;
     /**
      * The date of this historical statistic entry
-     * @type {string}
-     * @memberof GetMarketsRegionIdHistory200Ok
      */
     'date': string;
     /**
      * highest number
-     * @type {number}
-     * @memberof GetMarketsRegionIdHistory200Ok
      */
     'highest': number;
     /**
      * lowest number
-     * @type {number}
-     * @memberof GetMarketsRegionIdHistory200Ok
      */
     'lowest': number;
     /**
      * Total number of orders happened that day
-     * @type {number}
-     * @memberof GetMarketsRegionIdHistory200Ok
      */
     'order_count': number;
     /**
      * Total
-     * @type {number}
-     * @memberof GetMarketsRegionIdHistory200Ok
      */
     'volume': number;
 }
 /**
  * Error 520
- * @export
- * @interface GetMarketsRegionIdHistoryError520
  */
 export interface GetMarketsRegionIdHistoryError520 {
     /**
      * Error 520 message
-     * @type {string}
-     * @memberof GetMarketsRegionIdHistoryError520
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetMarketsRegionIdHistoryNotFound
  */
 export interface GetMarketsRegionIdHistoryNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetMarketsRegionIdHistoryNotFound
      */
     'error'?: string;
 }
 /**
  * Unprocessable entity
- * @export
- * @interface GetMarketsRegionIdHistoryUnprocessableEntity
  */
 export interface GetMarketsRegionIdHistoryUnprocessableEntity {
     /**
      * Unprocessable entity message
-     * @type {string}
-     * @memberof GetMarketsRegionIdHistoryUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetMarketsRegionIdOrders200Ok
  */
 export interface GetMarketsRegionIdOrders200Ok {
     /**
      * duration integer
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'duration': number;
     /**
      * is_buy_order boolean
-     * @type {boolean}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'is_buy_order': boolean;
     /**
      * issued string
-     * @type {string}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'issued': string;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'location_id': number;
     /**
      * min_volume integer
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'min_volume': number;
     /**
      * order_id integer
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'order_id': number;
     /**
      * price number
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'price': number;
     /**
      * range string
-     * @type {string}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'range': GetMarketsRegionIdOrders200OkRangeEnum;
     /**
      * The solar system this order was placed
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'system_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'type_id': number;
     /**
      * volume_remain integer
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'volume_remain': number;
     /**
      * volume_total integer
-     * @type {number}
-     * @memberof GetMarketsRegionIdOrders200Ok
      */
     'volume_total': number;
 }
@@ -10618,113 +8145,77 @@ export type GetMarketsRegionIdOrders200OkRangeEnum = typeof GetMarketsRegionIdOr
 
 /**
  * Not found
- * @export
- * @interface GetMarketsRegionIdOrdersNotFound
  */
 export interface GetMarketsRegionIdOrdersNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetMarketsRegionIdOrdersNotFound
      */
     'error'?: string;
 }
 /**
  * Unprocessable entity
- * @export
- * @interface GetMarketsRegionIdOrdersUnprocessableEntity
  */
 export interface GetMarketsRegionIdOrdersUnprocessableEntity {
     /**
      * Unprocessable entity message
-     * @type {string}
-     * @memberof GetMarketsRegionIdOrdersUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetMarketsRegionIdTypesNotFound
  */
 export interface GetMarketsRegionIdTypesNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetMarketsRegionIdTypesNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetMarketsStructuresStructureId200Ok
  */
 export interface GetMarketsStructuresStructureId200Ok {
     /**
      * duration integer
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'duration': number;
     /**
      * is_buy_order boolean
-     * @type {boolean}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'is_buy_order': boolean;
     /**
      * issued string
-     * @type {string}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'issued': string;
     /**
      * location_id integer
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'location_id': number;
     /**
      * min_volume integer
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'min_volume': number;
     /**
      * order_id integer
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'order_id': number;
     /**
      * price number
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'price': number;
     /**
      * range string
-     * @type {string}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'range': GetMarketsStructuresStructureId200OkRangeEnum;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'type_id': number;
     /**
      * volume_remain integer
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'volume_remain': number;
     /**
      * volume_total integer
-     * @type {number}
-     * @memberof GetMarketsStructuresStructureId200Ok
      */
     'volume_total': number;
 }
@@ -10748,81 +8239,55 @@ export type GetMarketsStructuresStructureId200OkRangeEnum = typeof GetMarketsStr
 
 /**
  * Not found
- * @export
- * @interface GetRouteOriginDestinationNotFound
  */
 export interface GetRouteOriginDestinationNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetRouteOriginDestinationNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetSovereigntyCampaigns200Ok
  */
 export interface GetSovereigntyCampaigns200Ok {
     /**
      * Score for all attacking parties, only present in Defense Events. 
-     * @type {number}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'attackers_score'?: number;
     /**
      * Unique ID for this campaign.
-     * @type {number}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'campaign_id': number;
     /**
      * The constellation in which the campaign will take place. 
-     * @type {number}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'constellation_id': number;
     /**
      * Defending alliance, only present in Defense Events 
-     * @type {number}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'defender_id'?: number;
     /**
      * Score for the defending alliance, only present in Defense Events. 
-     * @type {number}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'defender_score'?: number;
     /**
      * Type of event this campaign is for. tcu_defense, ihub_defense and station_defense are referred to as \"Defense Events\", station_freeport as \"Freeport Events\". 
-     * @type {string}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'event_type': GetSovereigntyCampaigns200OkEventTypeEnum;
     /**
      * Alliance participating and their respective scores, only present in Freeport Events. 
-     * @type {Array<GetSovereigntyCampaignsParticipant>}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'participants'?: Array<GetSovereigntyCampaignsParticipant>;
     /**
      * The solar system the structure is located in. 
-     * @type {number}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'solar_system_id': number;
     /**
      * Time the event is scheduled to start. 
-     * @type {string}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'start_time': string;
     /**
      * The structure item ID that is related to this campaign. 
-     * @type {number}
-     * @memberof GetSovereigntyCampaigns200Ok
      */
     'structure_id': number;
 }
@@ -10838,1020 +8303,674 @@ export type GetSovereigntyCampaigns200OkEventTypeEnum = typeof GetSovereigntyCam
 
 /**
  * participant object
- * @export
- * @interface GetSovereigntyCampaignsParticipant
  */
 export interface GetSovereigntyCampaignsParticipant {
     /**
      * alliance_id integer
-     * @type {number}
-     * @memberof GetSovereigntyCampaignsParticipant
      */
     'alliance_id': number;
     /**
      * score number
-     * @type {number}
-     * @memberof GetSovereigntyCampaignsParticipant
      */
     'score': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetSovereigntyMap200Ok
  */
 export interface GetSovereigntyMap200Ok {
     /**
      * alliance_id integer
-     * @type {number}
-     * @memberof GetSovereigntyMap200Ok
      */
     'alliance_id'?: number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetSovereigntyMap200Ok
      */
     'corporation_id'?: number;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetSovereigntyMap200Ok
      */
     'faction_id'?: number;
     /**
      * system_id integer
-     * @type {number}
-     * @memberof GetSovereigntyMap200Ok
      */
     'system_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetSovereigntyStructures200Ok
  */
 export interface GetSovereigntyStructures200Ok {
     /**
      * The alliance that owns the structure. 
-     * @type {number}
-     * @memberof GetSovereigntyStructures200Ok
      */
     'alliance_id': number;
     /**
      * Solar system in which the structure is located. 
-     * @type {number}
-     * @memberof GetSovereigntyStructures200Ok
      */
     'solar_system_id': number;
     /**
      * Unique item ID for this structure.
-     * @type {number}
-     * @memberof GetSovereigntyStructures200Ok
      */
     'structure_id': number;
     /**
      * A reference to the type of structure this is. 
-     * @type {number}
-     * @memberof GetSovereigntyStructures200Ok
      */
     'structure_type_id': number;
     /**
      * The occupancy level for the next or current vulnerability window. This takes into account all development indexes and capital system bonuses. Also known as Activity Defense Multiplier from in the client. It increases the time that attackers must spend using their entosis links on the structure. 
-     * @type {number}
-     * @memberof GetSovereigntyStructures200Ok
      */
     'vulnerability_occupancy_level'?: number;
     /**
      * The time at which the next or current vulnerability window ends. At the end of a vulnerability window the next window is recalculated and locked in along with the vulnerabilityOccupancyLevel. If the structure is not in 100% entosis control of the defender, it will go in to \'overtime\' and stay vulnerable for as long as that situation persists. Only once the defenders have 100% entosis control and has the vulnerableEndTime passed does the vulnerability interval expire and a new one is calculated. 
-     * @type {string}
-     * @memberof GetSovereigntyStructures200Ok
      */
     'vulnerable_end_time'?: string;
     /**
      * The next time at which the structure will become vulnerable. Or the start time of the current window if current time is between this and vulnerableEndTime. 
-     * @type {string}
-     * @memberof GetSovereigntyStructures200Ok
      */
     'vulnerable_start_time'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetStatusOk
  */
 export interface GetStatusOk {
     /**
      * Current online player count
-     * @type {number}
-     * @memberof GetStatusOk
      */
     'players': number;
     /**
      * Running version as string
-     * @type {string}
-     * @memberof GetStatusOk
      */
     'server_version': string;
     /**
      * Server start timestamp
-     * @type {string}
-     * @memberof GetStatusOk
      */
     'start_time': string;
     /**
      * If the server is in VIP mode
-     * @type {boolean}
-     * @memberof GetStatusOk
      */
     'vip'?: boolean;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseAncestries200Ok
  */
 export interface GetUniverseAncestries200Ok {
     /**
      * The bloodline associated with this ancestry
-     * @type {number}
-     * @memberof GetUniverseAncestries200Ok
      */
     'bloodline_id': number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetUniverseAncestries200Ok
      */
     'description': string;
     /**
      * icon_id integer
-     * @type {number}
-     * @memberof GetUniverseAncestries200Ok
      */
     'icon_id'?: number;
     /**
      * id integer
-     * @type {number}
-     * @memberof GetUniverseAncestries200Ok
      */
     'id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseAncestries200Ok
      */
     'name': string;
     /**
      * short_description string
-     * @type {string}
-     * @memberof GetUniverseAncestries200Ok
      */
     'short_description'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseAsteroidBeltsAsteroidBeltIdNotFound
  */
 export interface GetUniverseAsteroidBeltsAsteroidBeltIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseAsteroidBeltsAsteroidBeltIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseAsteroidBeltsAsteroidBeltIdOk
  */
 export interface GetUniverseAsteroidBeltsAsteroidBeltIdOk {
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseAsteroidBeltsAsteroidBeltIdOk
      */
     'name': string;
-    /**
-     * 
-     * @type {GetUniverseAsteroidBeltsAsteroidBeltIdPosition}
-     * @memberof GetUniverseAsteroidBeltsAsteroidBeltIdOk
-     */
     'position': GetUniverseAsteroidBeltsAsteroidBeltIdPosition;
     /**
      * The solar system this asteroid belt is in
-     * @type {number}
-     * @memberof GetUniverseAsteroidBeltsAsteroidBeltIdOk
      */
     'system_id': number;
 }
 /**
  * position object
- * @export
- * @interface GetUniverseAsteroidBeltsAsteroidBeltIdPosition
  */
 export interface GetUniverseAsteroidBeltsAsteroidBeltIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniverseAsteroidBeltsAsteroidBeltIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniverseAsteroidBeltsAsteroidBeltIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniverseAsteroidBeltsAsteroidBeltIdPosition
      */
     'z': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseBloodlines200Ok
  */
 export interface GetUniverseBloodlines200Ok {
     /**
      * bloodline_id integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'bloodline_id': number;
     /**
      * charisma integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'charisma': number;
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'corporation_id': number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'description': string;
     /**
      * intelligence integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'intelligence': number;
     /**
      * memory integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'memory': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'name': string;
     /**
      * perception integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'perception': number;
     /**
      * race_id integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'race_id': number;
     /**
      * ship_type_id integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'ship_type_id': number | null;
     /**
      * willpower integer
-     * @type {number}
-     * @memberof GetUniverseBloodlines200Ok
      */
     'willpower': number;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseCategoriesCategoryIdNotFound
  */
 export interface GetUniverseCategoriesCategoryIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseCategoriesCategoryIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseCategoriesCategoryIdOk
  */
 export interface GetUniverseCategoriesCategoryIdOk {
     /**
      * category_id integer
-     * @type {number}
-     * @memberof GetUniverseCategoriesCategoryIdOk
      */
     'category_id': number;
     /**
      * groups array
-     * @type {Array<number>}
-     * @memberof GetUniverseCategoriesCategoryIdOk
      */
     'groups': Array<number>;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseCategoriesCategoryIdOk
      */
     'name': string;
     /**
      * published boolean
-     * @type {boolean}
-     * @memberof GetUniverseCategoriesCategoryIdOk
      */
     'published': boolean;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseConstellationsConstellationIdNotFound
  */
 export interface GetUniverseConstellationsConstellationIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseConstellationsConstellationIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseConstellationsConstellationIdOk
  */
 export interface GetUniverseConstellationsConstellationIdOk {
     /**
      * constellation_id integer
-     * @type {number}
-     * @memberof GetUniverseConstellationsConstellationIdOk
      */
     'constellation_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseConstellationsConstellationIdOk
      */
     'name': string;
-    /**
-     * 
-     * @type {GetUniverseConstellationsConstellationIdPosition}
-     * @memberof GetUniverseConstellationsConstellationIdOk
-     */
     'position': GetUniverseConstellationsConstellationIdPosition;
     /**
      * The region this constellation is in
-     * @type {number}
-     * @memberof GetUniverseConstellationsConstellationIdOk
      */
     'region_id': number;
     /**
      * systems array
-     * @type {Array<number>}
-     * @memberof GetUniverseConstellationsConstellationIdOk
      */
     'systems': Array<number>;
 }
 /**
  * position object
- * @export
- * @interface GetUniverseConstellationsConstellationIdPosition
  */
 export interface GetUniverseConstellationsConstellationIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniverseConstellationsConstellationIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniverseConstellationsConstellationIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniverseConstellationsConstellationIdPosition
      */
     'z': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseFactions200Ok
  */
 export interface GetUniverseFactions200Ok {
     /**
      * corporation_id integer
-     * @type {number}
-     * @memberof GetUniverseFactions200Ok
      */
     'corporation_id'?: number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetUniverseFactions200Ok
      */
     'description': string;
     /**
      * faction_id integer
-     * @type {number}
-     * @memberof GetUniverseFactions200Ok
      */
     'faction_id': number;
     /**
      * is_unique boolean
-     * @type {boolean}
-     * @memberof GetUniverseFactions200Ok
      */
     'is_unique': boolean;
     /**
      * militia_corporation_id integer
-     * @type {number}
-     * @memberof GetUniverseFactions200Ok
      */
     'militia_corporation_id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseFactions200Ok
      */
     'name': string;
     /**
      * size_factor number
-     * @type {number}
-     * @memberof GetUniverseFactions200Ok
      */
     'size_factor': number;
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetUniverseFactions200Ok
      */
     'solar_system_id'?: number;
     /**
      * station_count integer
-     * @type {number}
-     * @memberof GetUniverseFactions200Ok
      */
     'station_count': number;
     /**
      * station_system_count integer
-     * @type {number}
-     * @memberof GetUniverseFactions200Ok
      */
     'station_system_count': number;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseGraphicsGraphicIdNotFound
  */
 export interface GetUniverseGraphicsGraphicIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseGraphicsGraphicIdOk
  */
 export interface GetUniverseGraphicsGraphicIdOk {
     /**
      * collision_file string
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'collision_file'?: string;
     /**
      * graphic_file string
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'graphic_file'?: string;
     /**
      * graphic_id integer
-     * @type {number}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'graphic_id': number;
     /**
      * icon_folder string
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'icon_folder'?: string;
     /**
      * sof_dna string
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'sof_dna'?: string;
     /**
      * sof_fation_name string
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'sof_fation_name'?: string;
     /**
      * sof_hull_name string
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'sof_hull_name'?: string;
     /**
      * sof_race_name string
-     * @type {string}
-     * @memberof GetUniverseGraphicsGraphicIdOk
      */
     'sof_race_name'?: string;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseGroupsGroupIdNotFound
  */
 export interface GetUniverseGroupsGroupIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseGroupsGroupIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseGroupsGroupIdOk
  */
 export interface GetUniverseGroupsGroupIdOk {
     /**
      * category_id integer
-     * @type {number}
-     * @memberof GetUniverseGroupsGroupIdOk
      */
     'category_id': number;
     /**
      * group_id integer
-     * @type {number}
-     * @memberof GetUniverseGroupsGroupIdOk
      */
     'group_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseGroupsGroupIdOk
      */
     'name': string;
     /**
      * published boolean
-     * @type {boolean}
-     * @memberof GetUniverseGroupsGroupIdOk
      */
     'published': boolean;
     /**
      * types array
-     * @type {Array<number>}
-     * @memberof GetUniverseGroupsGroupIdOk
      */
     'types': Array<number>;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseMoonsMoonIdNotFound
  */
 export interface GetUniverseMoonsMoonIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseMoonsMoonIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseMoonsMoonIdOk
  */
 export interface GetUniverseMoonsMoonIdOk {
     /**
      * moon_id integer
-     * @type {number}
-     * @memberof GetUniverseMoonsMoonIdOk
      */
     'moon_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseMoonsMoonIdOk
      */
     'name': string;
-    /**
-     * 
-     * @type {GetUniverseMoonsMoonIdPosition}
-     * @memberof GetUniverseMoonsMoonIdOk
-     */
     'position': GetUniverseMoonsMoonIdPosition;
     /**
      * The solar system this moon is in
-     * @type {number}
-     * @memberof GetUniverseMoonsMoonIdOk
      */
     'system_id': number;
 }
 /**
  * position object
- * @export
- * @interface GetUniverseMoonsMoonIdPosition
  */
 export interface GetUniverseMoonsMoonIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniverseMoonsMoonIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniverseMoonsMoonIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniverseMoonsMoonIdPosition
      */
     'z': number;
 }
 /**
  * Not found
- * @export
- * @interface GetUniversePlanetsPlanetIdNotFound
  */
 export interface GetUniversePlanetsPlanetIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniversePlanetsPlanetIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniversePlanetsPlanetIdOk
  */
 export interface GetUniversePlanetsPlanetIdOk {
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniversePlanetsPlanetIdOk
      */
     'name': string;
     /**
      * planet_id integer
-     * @type {number}
-     * @memberof GetUniversePlanetsPlanetIdOk
      */
     'planet_id': number;
-    /**
-     * 
-     * @type {GetUniversePlanetsPlanetIdPosition}
-     * @memberof GetUniversePlanetsPlanetIdOk
-     */
     'position': GetUniversePlanetsPlanetIdPosition;
     /**
      * The solar system this planet is in
-     * @type {number}
-     * @memberof GetUniversePlanetsPlanetIdOk
      */
     'system_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetUniversePlanetsPlanetIdOk
      */
     'type_id': number;
 }
 /**
  * position object
- * @export
- * @interface GetUniversePlanetsPlanetIdPosition
  */
 export interface GetUniversePlanetsPlanetIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniversePlanetsPlanetIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniversePlanetsPlanetIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniversePlanetsPlanetIdPosition
      */
     'z': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseRaces200Ok
  */
 export interface GetUniverseRaces200Ok {
     /**
      * The alliance generally associated with this race
-     * @type {number}
-     * @memberof GetUniverseRaces200Ok
      */
     'alliance_id': number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetUniverseRaces200Ok
      */
     'description': string;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseRaces200Ok
      */
     'name': string;
     /**
      * race_id integer
-     * @type {number}
-     * @memberof GetUniverseRaces200Ok
      */
     'race_id': number;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseRegionsRegionIdNotFound
  */
 export interface GetUniverseRegionsRegionIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseRegionsRegionIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseRegionsRegionIdOk
  */
 export interface GetUniverseRegionsRegionIdOk {
     /**
      * constellations array
-     * @type {Array<number>}
-     * @memberof GetUniverseRegionsRegionIdOk
      */
     'constellations': Array<number>;
     /**
      * description string
-     * @type {string}
-     * @memberof GetUniverseRegionsRegionIdOk
      */
     'description'?: string;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseRegionsRegionIdOk
      */
     'name': string;
     /**
      * region_id integer
-     * @type {number}
-     * @memberof GetUniverseRegionsRegionIdOk
      */
     'region_id': number;
 }
 /**
  * Schematic not found
- * @export
- * @interface GetUniverseSchematicsSchematicIdNotFound
  */
 export interface GetUniverseSchematicsSchematicIdNotFound {
     /**
      * error message
-     * @type {string}
-     * @memberof GetUniverseSchematicsSchematicIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseSchematicsSchematicIdOk
  */
 export interface GetUniverseSchematicsSchematicIdOk {
     /**
      * Time in seconds to process a run
-     * @type {number}
-     * @memberof GetUniverseSchematicsSchematicIdOk
      */
     'cycle_time': number;
     /**
      * schematic_name string
-     * @type {string}
-     * @memberof GetUniverseSchematicsSchematicIdOk
      */
     'schematic_name': string;
 }
 /**
  * destination object
- * @export
- * @interface GetUniverseStargatesStargateIdDestination
  */
 export interface GetUniverseStargatesStargateIdDestination {
     /**
      * The stargate this stargate connects to
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdDestination
      */
     'stargate_id': number;
     /**
      * The solar system this stargate connects to
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdDestination
      */
     'system_id': number;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseStargatesStargateIdNotFound
  */
 export interface GetUniverseStargatesStargateIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseStargatesStargateIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseStargatesStargateIdOk
  */
 export interface GetUniverseStargatesStargateIdOk {
-    /**
-     * 
-     * @type {GetUniverseStargatesStargateIdDestination}
-     * @memberof GetUniverseStargatesStargateIdOk
-     */
     'destination': GetUniverseStargatesStargateIdDestination;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseStargatesStargateIdOk
      */
     'name': string;
-    /**
-     * 
-     * @type {GetUniverseStargatesStargateIdPosition}
-     * @memberof GetUniverseStargatesStargateIdOk
-     */
     'position': GetUniverseStargatesStargateIdPosition;
     /**
      * stargate_id integer
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdOk
      */
     'stargate_id': number;
     /**
      * The solar system this stargate is in
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdOk
      */
     'system_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdOk
      */
     'type_id': number;
 }
 /**
  * position object
- * @export
- * @interface GetUniverseStargatesStargateIdPosition
  */
 export interface GetUniverseStargatesStargateIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniverseStargatesStargateIdPosition
      */
     'z': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseStarsStarIdOk
  */
 export interface GetUniverseStarsStarIdOk {
     /**
      * Age of star in years
-     * @type {number}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'age': number;
     /**
      * luminosity number
-     * @type {number}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'luminosity': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'name': string;
     /**
      * radius integer
-     * @type {number}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'radius': number;
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'solar_system_id': number;
     /**
      * spectral_class string
-     * @type {string}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'spectral_class': GetUniverseStarsStarIdOkSpectralClassEnum;
     /**
      * temperature integer
-     * @type {number}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'temperature': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetUniverseStarsStarIdOk
      */
     'type_id': number;
 }
@@ -11952,93 +9071,60 @@ export type GetUniverseStarsStarIdOkSpectralClassEnum = typeof GetUniverseStarsS
 
 /**
  * Not found
- * @export
- * @interface GetUniverseStationsStationIdNotFound
  */
 export interface GetUniverseStationsStationIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseStationsStationIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseStationsStationIdOk
  */
 export interface GetUniverseStationsStationIdOk {
     /**
      * max_dockable_ship_volume number
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'max_dockable_ship_volume': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'name': string;
     /**
      * office_rental_cost number
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'office_rental_cost': number;
     /**
      * ID of the corporation that controls this station
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'owner'?: number;
-    /**
-     * 
-     * @type {GetUniverseStationsStationIdPosition}
-     * @memberof GetUniverseStationsStationIdOk
-     */
     'position': GetUniverseStationsStationIdPosition;
     /**
      * race_id integer
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'race_id'?: number;
     /**
      * reprocessing_efficiency number
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'reprocessing_efficiency': number;
     /**
      * reprocessing_stations_take number
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'reprocessing_stations_take': number;
     /**
      * services array
-     * @type {Array<string>}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'services': Array<GetUniverseStationsStationIdOkServicesEnum>;
     /**
      * station_id integer
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'station_id': number;
     /**
      * The solar system this station is in
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'system_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdOk
      */
     'type_id': number;
 }
@@ -12077,817 +9163,540 @@ export type GetUniverseStationsStationIdOkServicesEnum = typeof GetUniverseStati
 
 /**
  * position object
- * @export
- * @interface GetUniverseStationsStationIdPosition
  */
 export interface GetUniverseStationsStationIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniverseStationsStationIdPosition
      */
     'z': number;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseStructuresStructureIdNotFound
  */
 export interface GetUniverseStructuresStructureIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseStructuresStructureIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseStructuresStructureIdOk
  */
 export interface GetUniverseStructuresStructureIdOk {
     /**
      * The full name of the structure
-     * @type {string}
-     * @memberof GetUniverseStructuresStructureIdOk
      */
     'name': string;
     /**
      * The ID of the corporation who owns this particular structure
-     * @type {number}
-     * @memberof GetUniverseStructuresStructureIdOk
      */
     'owner_id': number;
-    /**
-     * 
-     * @type {GetUniverseStructuresStructureIdPosition}
-     * @memberof GetUniverseStructuresStructureIdOk
-     */
     'position'?: GetUniverseStructuresStructureIdPosition;
     /**
      * solar_system_id integer
-     * @type {number}
-     * @memberof GetUniverseStructuresStructureIdOk
      */
     'solar_system_id': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetUniverseStructuresStructureIdOk
      */
     'type_id'?: number;
 }
 /**
  * Coordinates of the structure in Cartesian space relative to the Sun, in metres. 
- * @export
- * @interface GetUniverseStructuresStructureIdPosition
  */
 export interface GetUniverseStructuresStructureIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniverseStructuresStructureIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniverseStructuresStructureIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniverseStructuresStructureIdPosition
      */
     'z': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseSystemJumps200Ok
  */
 export interface GetUniverseSystemJumps200Ok {
     /**
      * ship_jumps integer
-     * @type {number}
-     * @memberof GetUniverseSystemJumps200Ok
      */
     'ship_jumps': number;
     /**
      * system_id integer
-     * @type {number}
-     * @memberof GetUniverseSystemJumps200Ok
      */
     'system_id': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseSystemKills200Ok
  */
 export interface GetUniverseSystemKills200Ok {
     /**
      * Number of NPC ships killed in this system
-     * @type {number}
-     * @memberof GetUniverseSystemKills200Ok
      */
     'npc_kills': number;
     /**
      * Number of pods killed in this system
-     * @type {number}
-     * @memberof GetUniverseSystemKills200Ok
      */
     'pod_kills': number;
     /**
      * Number of player ships killed in this system
-     * @type {number}
-     * @memberof GetUniverseSystemKills200Ok
      */
     'ship_kills': number;
     /**
      * system_id integer
-     * @type {number}
-     * @memberof GetUniverseSystemKills200Ok
      */
     'system_id': number;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseSystemsSystemIdNotFound
  */
 export interface GetUniverseSystemsSystemIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseSystemsSystemIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseSystemsSystemIdOk
  */
 export interface GetUniverseSystemsSystemIdOk {
     /**
      * The constellation this solar system is in
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'constellation_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'name': string;
     /**
      * planets array
-     * @type {Array<GetUniverseSystemsSystemIdPlanet>}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'planets'?: Array<GetUniverseSystemsSystemIdPlanet>;
-    /**
-     * 
-     * @type {GetUniverseSystemsSystemIdPosition}
-     * @memberof GetUniverseSystemsSystemIdOk
-     */
     'position': GetUniverseSystemsSystemIdPosition;
     /**
      * security_class string
-     * @type {string}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'security_class'?: string;
     /**
      * security_status number
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'security_status': number;
     /**
      * star_id integer
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'star_id'?: number;
     /**
      * stargates array
-     * @type {Array<number>}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'stargates'?: Array<number>;
     /**
      * stations array
-     * @type {Array<number>}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'stations'?: Array<number>;
     /**
      * system_id integer
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdOk
      */
     'system_id': number;
 }
 /**
  * planet object
- * @export
- * @interface GetUniverseSystemsSystemIdPlanet
  */
 export interface GetUniverseSystemsSystemIdPlanet {
     /**
      * asteroid_belts array
-     * @type {Array<number>}
-     * @memberof GetUniverseSystemsSystemIdPlanet
      */
     'asteroid_belts'?: Array<number>;
     /**
      * moons array
-     * @type {Array<number>}
-     * @memberof GetUniverseSystemsSystemIdPlanet
      */
     'moons'?: Array<number>;
     /**
      * planet_id integer
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdPlanet
      */
     'planet_id': number;
 }
 /**
  * position object
- * @export
- * @interface GetUniverseSystemsSystemIdPosition
  */
 export interface GetUniverseSystemsSystemIdPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof GetUniverseSystemsSystemIdPosition
      */
     'z': number;
 }
 /**
  * dogma_attribute object
- * @export
- * @interface GetUniverseTypesTypeIdDogmaAttribute
  */
 export interface GetUniverseTypesTypeIdDogmaAttribute {
     /**
      * attribute_id integer
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdDogmaAttribute
      */
     'attribute_id': number;
     /**
      * value number
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdDogmaAttribute
      */
     'value': number;
 }
 /**
  * dogma_effect object
- * @export
- * @interface GetUniverseTypesTypeIdDogmaEffect
  */
 export interface GetUniverseTypesTypeIdDogmaEffect {
     /**
      * effect_id integer
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdDogmaEffect
      */
     'effect_id': number;
     /**
      * is_default boolean
-     * @type {boolean}
-     * @memberof GetUniverseTypesTypeIdDogmaEffect
      */
     'is_default': boolean;
 }
 /**
  * Not found
- * @export
- * @interface GetUniverseTypesTypeIdNotFound
  */
 export interface GetUniverseTypesTypeIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof GetUniverseTypesTypeIdNotFound
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetUniverseTypesTypeIdOk
  */
 export interface GetUniverseTypesTypeIdOk {
     /**
      * capacity number
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'capacity'?: number;
     /**
      * description string
-     * @type {string}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'description': string;
     /**
      * dogma_attributes array
-     * @type {Array<GetUniverseTypesTypeIdDogmaAttribute>}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'dogma_attributes'?: Array<GetUniverseTypesTypeIdDogmaAttribute>;
     /**
      * dogma_effects array
-     * @type {Array<GetUniverseTypesTypeIdDogmaEffect>}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'dogma_effects'?: Array<GetUniverseTypesTypeIdDogmaEffect>;
     /**
      * graphic_id integer
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'graphic_id'?: number;
     /**
      * group_id integer
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'group_id': number;
     /**
      * icon_id integer
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'icon_id'?: number;
     /**
      * This only exists for types that can be put on the market
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'market_group_id'?: number;
     /**
      * mass number
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'mass'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'name': string;
     /**
      * packaged_volume number
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'packaged_volume'?: number;
     /**
      * portion_size integer
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'portion_size'?: number;
     /**
      * published boolean
-     * @type {boolean}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'published': boolean;
     /**
      * radius number
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'radius'?: number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'type_id': number;
     /**
      * volume number
-     * @type {number}
-     * @memberof GetUniverseTypesTypeIdOk
      */
     'volume'?: number;
 }
 /**
  * The aggressor corporation or alliance that declared this war, only contains either corporation_id or alliance_id
- * @export
- * @interface GetWarsWarIdAggressor
  */
 export interface GetWarsWarIdAggressor {
     /**
      * Alliance ID if and only if the aggressor is an alliance
-     * @type {number}
-     * @memberof GetWarsWarIdAggressor
      */
     'alliance_id'?: number;
     /**
      * Corporation ID if and only if the aggressor is a corporation
-     * @type {number}
-     * @memberof GetWarsWarIdAggressor
      */
     'corporation_id'?: number;
     /**
      * ISK value of ships the aggressor has destroyed
-     * @type {number}
-     * @memberof GetWarsWarIdAggressor
      */
     'isk_destroyed': number;
     /**
      * The number of ships the aggressor has killed
-     * @type {number}
-     * @memberof GetWarsWarIdAggressor
      */
     'ships_killed': number;
 }
 /**
  * ally object
- * @export
- * @interface GetWarsWarIdAlly
  */
 export interface GetWarsWarIdAlly {
     /**
      * Alliance ID if and only if this ally is an alliance
-     * @type {number}
-     * @memberof GetWarsWarIdAlly
      */
     'alliance_id'?: number;
     /**
      * Corporation ID if and only if this ally is a corporation
-     * @type {number}
-     * @memberof GetWarsWarIdAlly
      */
     'corporation_id'?: number;
 }
 /**
  * The defending corporation or alliance that declared this war, only contains either corporation_id or alliance_id
- * @export
- * @interface GetWarsWarIdDefender
  */
 export interface GetWarsWarIdDefender {
     /**
      * Alliance ID if and only if the defender is an alliance
-     * @type {number}
-     * @memberof GetWarsWarIdDefender
      */
     'alliance_id'?: number;
     /**
      * Corporation ID if and only if the defender is a corporation
-     * @type {number}
-     * @memberof GetWarsWarIdDefender
      */
     'corporation_id'?: number;
     /**
      * ISK value of ships the defender has killed
-     * @type {number}
-     * @memberof GetWarsWarIdDefender
      */
     'isk_destroyed': number;
     /**
      * The number of ships the defender has killed
-     * @type {number}
-     * @memberof GetWarsWarIdDefender
      */
     'ships_killed': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetWarsWarIdKillmails200Ok
  */
 export interface GetWarsWarIdKillmails200Ok {
     /**
      * A hash of this killmail
-     * @type {string}
-     * @memberof GetWarsWarIdKillmails200Ok
      */
     'killmail_hash': string;
     /**
      * ID of this killmail
-     * @type {number}
-     * @memberof GetWarsWarIdKillmails200Ok
      */
     'killmail_id': number;
 }
 /**
  * Unprocessable entity
- * @export
- * @interface GetWarsWarIdKillmailsUnprocessableEntity
  */
 export interface GetWarsWarIdKillmailsUnprocessableEntity {
     /**
      * Unprocessable entity message
-     * @type {string}
-     * @memberof GetWarsWarIdKillmailsUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface GetWarsWarIdOk
  */
 export interface GetWarsWarIdOk {
-    /**
-     * 
-     * @type {GetWarsWarIdAggressor}
-     * @memberof GetWarsWarIdOk
-     */
     'aggressor': GetWarsWarIdAggressor;
     /**
      * allied corporations or alliances, each object contains either corporation_id or alliance_id
-     * @type {Array<GetWarsWarIdAlly>}
-     * @memberof GetWarsWarIdOk
      */
     'allies'?: Array<GetWarsWarIdAlly>;
     /**
      * Time that the war was declared
-     * @type {string}
-     * @memberof GetWarsWarIdOk
      */
     'declared': string;
-    /**
-     * 
-     * @type {GetWarsWarIdDefender}
-     * @memberof GetWarsWarIdOk
-     */
     'defender': GetWarsWarIdDefender;
     /**
      * Time the war ended and shooting was no longer allowed
-     * @type {string}
-     * @memberof GetWarsWarIdOk
      */
     'finished'?: string;
     /**
      * ID of the specified war
-     * @type {number}
-     * @memberof GetWarsWarIdOk
      */
     'id': number;
     /**
      * Was the war declared mutual by both parties
-     * @type {boolean}
-     * @memberof GetWarsWarIdOk
      */
     'mutual': boolean;
     /**
      * Is the war currently open for allies or not
-     * @type {boolean}
-     * @memberof GetWarsWarIdOk
      */
     'open_for_allies': boolean;
     /**
      * Time the war was retracted but both sides could still shoot each other
-     * @type {string}
-     * @memberof GetWarsWarIdOk
      */
     'retracted'?: string;
     /**
      * Time when the war started and both sides could shoot each other
-     * @type {string}
-     * @memberof GetWarsWarIdOk
      */
     'started'?: string;
 }
 /**
  * Unprocessable entity
- * @export
- * @interface GetWarsWarIdUnprocessableEntity
  */
 export interface GetWarsWarIdUnprocessableEntity {
     /**
      * Unprocessable entity message
-     * @type {string}
-     * @memberof GetWarsWarIdUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * Internal server error model
- * @export
- * @interface InternalServerError
  */
 export interface InternalServerError {
     /**
      * Internal server error message
-     * @type {string}
-     * @memberof InternalServerError
      */
     'error': string;
 }
 /**
  * 200 ok object
- * @export
- * @interface PostCharactersAffiliation200Ok
  */
 export interface PostCharactersAffiliation200Ok {
     /**
      * The character\'s alliance ID, if their corporation is in an alliance
-     * @type {number}
-     * @memberof PostCharactersAffiliation200Ok
      */
     'alliance_id'?: number;
     /**
      * The character\'s ID
-     * @type {number}
-     * @memberof PostCharactersAffiliation200Ok
      */
     'character_id': number;
     /**
      * The character\'s corporation ID
-     * @type {number}
-     * @memberof PostCharactersAffiliation200Ok
      */
     'corporation_id': number;
     /**
      * The character\'s faction ID, if their corporation is in a faction
-     * @type {number}
-     * @memberof PostCharactersAffiliation200Ok
      */
     'faction_id'?: number;
 }
 /**
  * 200 ok object
- * @export
- * @interface PostCharactersCharacterIdAssetsLocations200Ok
  */
 export interface PostCharactersCharacterIdAssetsLocations200Ok {
     /**
      * item_id integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdAssetsLocations200Ok
      */
     'item_id': number;
-    /**
-     * 
-     * @type {PostCharactersCharacterIdAssetsLocationsPosition}
-     * @memberof PostCharactersCharacterIdAssetsLocations200Ok
-     */
     'position': PostCharactersCharacterIdAssetsLocationsPosition;
 }
 /**
  * position object
- * @export
- * @interface PostCharactersCharacterIdAssetsLocationsPosition
  */
 export interface PostCharactersCharacterIdAssetsLocationsPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof PostCharactersCharacterIdAssetsLocationsPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof PostCharactersCharacterIdAssetsLocationsPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof PostCharactersCharacterIdAssetsLocationsPosition
      */
     'z': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface PostCharactersCharacterIdAssetsNames200Ok
  */
 export interface PostCharactersCharacterIdAssetsNames200Ok {
     /**
      * item_id integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdAssetsNames200Ok
      */
     'item_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostCharactersCharacterIdAssetsNames200Ok
      */
     'name': string;
 }
 /**
  * Error 520
- * @export
- * @interface PostCharactersCharacterIdContactsError520
  */
 export interface PostCharactersCharacterIdContactsError520 {
     /**
      * Error 520 message
-     * @type {string}
-     * @memberof PostCharactersCharacterIdContactsError520
      */
     'error'?: string;
 }
 /**
  * 201 created object
- * @export
- * @interface PostCharactersCharacterIdFittingsCreated
  */
 export interface PostCharactersCharacterIdFittingsCreated {
     /**
      * fitting_id integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdFittingsCreated
      */
     'fitting_id': number;
 }
 /**
  * fitting object
- * @export
- * @interface PostCharactersCharacterIdFittingsFitting
  */
 export interface PostCharactersCharacterIdFittingsFitting {
     /**
      * description string
-     * @type {string}
-     * @memberof PostCharactersCharacterIdFittingsFitting
      */
     'description': string;
     /**
      * items array
-     * @type {Array<PostCharactersCharacterIdFittingsItem>}
-     * @memberof PostCharactersCharacterIdFittingsFitting
      */
     'items': Array<PostCharactersCharacterIdFittingsItem>;
     /**
      * name string
-     * @type {string}
-     * @memberof PostCharactersCharacterIdFittingsFitting
      */
     'name': string;
     /**
      * ship_type_id integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdFittingsFitting
      */
     'ship_type_id': number;
 }
 /**
  * item object
- * @export
- * @interface PostCharactersCharacterIdFittingsItem
  */
 export interface PostCharactersCharacterIdFittingsItem {
     /**
      * Fitting location for the item. Entries placed in \'Invalid\' will be discarded. If this leaves the fitting with nothing, it will cause an error.
-     * @type {string}
-     * @memberof PostCharactersCharacterIdFittingsItem
      */
     'flag': PostCharactersCharacterIdFittingsItemFlagEnum;
     /**
      * quantity integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdFittingsItem
      */
     'quantity': number;
     /**
      * type_id integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdFittingsItem
      */
     'type_id': number;
 }
@@ -12942,33 +9751,23 @@ export type PostCharactersCharacterIdFittingsItemFlagEnum = typeof PostCharacter
 
 /**
  * Error 520
- * @export
- * @interface PostCharactersCharacterIdMailError520
  */
 export interface PostCharactersCharacterIdMailError520 {
     /**
      * Error 520 message
-     * @type {string}
-     * @memberof PostCharactersCharacterIdMailError520
      */
     'error'?: string;
 }
 /**
  * label object
- * @export
- * @interface PostCharactersCharacterIdMailLabelsLabel
  */
 export interface PostCharactersCharacterIdMailLabelsLabel {
     /**
      * Hexadecimal string representing label color, in RGB format
-     * @type {string}
-     * @memberof PostCharactersCharacterIdMailLabelsLabel
      */
     'color'?: PostCharactersCharacterIdMailLabelsLabelColorEnum;
     /**
      * name string
-     * @type {string}
-     * @memberof PostCharactersCharacterIdMailLabelsLabel
      */
     'name': string;
 }
@@ -12998,51 +9797,35 @@ export type PostCharactersCharacterIdMailLabelsLabelColorEnum = typeof PostChara
 
 /**
  * mail object
- * @export
- * @interface PostCharactersCharacterIdMailMail
  */
 export interface PostCharactersCharacterIdMailMail {
     /**
      * approved_cost integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdMailMail
      */
     'approved_cost'?: number;
     /**
      * body string
-     * @type {string}
-     * @memberof PostCharactersCharacterIdMailMail
      */
     'body': string;
     /**
      * recipients array
-     * @type {Array<PostCharactersCharacterIdMailRecipient>}
-     * @memberof PostCharactersCharacterIdMailMail
      */
     'recipients': Array<PostCharactersCharacterIdMailRecipient>;
     /**
      * subject string
-     * @type {string}
-     * @memberof PostCharactersCharacterIdMailMail
      */
     'subject': string;
 }
 /**
  * recipient object
- * @export
- * @interface PostCharactersCharacterIdMailRecipient
  */
 export interface PostCharactersCharacterIdMailRecipient {
     /**
      * recipient_id integer
-     * @type {number}
-     * @memberof PostCharactersCharacterIdMailRecipient
      */
     'recipient_id': number;
     /**
      * recipient_type string
-     * @type {string}
-     * @memberof PostCharactersCharacterIdMailRecipient
      */
     'recipient_type': PostCharactersCharacterIdMailRecipientRecipientTypeEnum;
 }
@@ -13058,121 +9841,80 @@ export type PostCharactersCharacterIdMailRecipientRecipientTypeEnum = typeof Pos
 
 /**
  * 200 ok object
- * @export
- * @interface PostCorporationsCorporationIdAssetsLocations200Ok
  */
 export interface PostCorporationsCorporationIdAssetsLocations200Ok {
     /**
      * item_id integer
-     * @type {number}
-     * @memberof PostCorporationsCorporationIdAssetsLocations200Ok
      */
     'item_id': number;
-    /**
-     * 
-     * @type {PostCorporationsCorporationIdAssetsLocationsPosition}
-     * @memberof PostCorporationsCorporationIdAssetsLocations200Ok
-     */
     'position': PostCorporationsCorporationIdAssetsLocationsPosition;
 }
 /**
  * Not found
- * @export
- * @interface PostCorporationsCorporationIdAssetsLocationsNotFound
  */
 export interface PostCorporationsCorporationIdAssetsLocationsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PostCorporationsCorporationIdAssetsLocationsNotFound
      */
     'error'?: string;
 }
 /**
  * position object
- * @export
- * @interface PostCorporationsCorporationIdAssetsLocationsPosition
  */
 export interface PostCorporationsCorporationIdAssetsLocationsPosition {
     /**
      * x number
-     * @type {number}
-     * @memberof PostCorporationsCorporationIdAssetsLocationsPosition
      */
     'x': number;
     /**
      * y number
-     * @type {number}
-     * @memberof PostCorporationsCorporationIdAssetsLocationsPosition
      */
     'y': number;
     /**
      * z number
-     * @type {number}
-     * @memberof PostCorporationsCorporationIdAssetsLocationsPosition
      */
     'z': number;
 }
 /**
  * 200 ok object
- * @export
- * @interface PostCorporationsCorporationIdAssetsNames200Ok
  */
 export interface PostCorporationsCorporationIdAssetsNames200Ok {
     /**
      * item_id integer
-     * @type {number}
-     * @memberof PostCorporationsCorporationIdAssetsNames200Ok
      */
     'item_id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostCorporationsCorporationIdAssetsNames200Ok
      */
     'name': string;
 }
 /**
  * Not found
- * @export
- * @interface PostCorporationsCorporationIdAssetsNamesNotFound
  */
 export interface PostCorporationsCorporationIdAssetsNamesNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PostCorporationsCorporationIdAssetsNamesNotFound
      */
     'error'?: string;
 }
 /**
  * invitation object
- * @export
- * @interface PostFleetsFleetIdMembersInvitation
  */
 export interface PostFleetsFleetIdMembersInvitation {
     /**
      * The character you want to invite
-     * @type {number}
-     * @memberof PostFleetsFleetIdMembersInvitation
      */
     'character_id': number;
     /**
      * If a character is invited with the `fleet_commander` role, neither `wing_id` or `squad_id` should be specified. If a character is invited with the `wing_commander` role, only `wing_id` should be specified. If a character is invited with the `squad_commander` role, both `wing_id` and `squad_id` should be specified. If a character is invited with the `squad_member` role, `wing_id` and `squad_id` should either both be specified or not specified at all. If they aren’t specified, the invited character will join any squad with available positions.
-     * @type {string}
-     * @memberof PostFleetsFleetIdMembersInvitation
      */
     'role': PostFleetsFleetIdMembersInvitationRoleEnum;
     /**
      * squad_id integer
-     * @type {number}
-     * @memberof PostFleetsFleetIdMembersInvitation
      */
     'squad_id'?: number;
     /**
      * wing_id integer
-     * @type {number}
-     * @memberof PostFleetsFleetIdMembersInvitation
      */
     'wing_id'?: number;
 }
@@ -13188,411 +9930,281 @@ export type PostFleetsFleetIdMembersInvitationRoleEnum = typeof PostFleetsFleetI
 
 /**
  * Not found
- * @export
- * @interface PostFleetsFleetIdMembersNotFound
  */
 export interface PostFleetsFleetIdMembersNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PostFleetsFleetIdMembersNotFound
      */
     'error'?: string;
 }
 /**
  * 422 unprocessable entity object
- * @export
- * @interface PostFleetsFleetIdMembersUnprocessableEntity
  */
 export interface PostFleetsFleetIdMembersUnprocessableEntity {
     /**
      * error message
-     * @type {string}
-     * @memberof PostFleetsFleetIdMembersUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * 201 created object
- * @export
- * @interface PostFleetsFleetIdWingsCreated
  */
 export interface PostFleetsFleetIdWingsCreated {
     /**
      * The wing_id of the newly created wing
-     * @type {number}
-     * @memberof PostFleetsFleetIdWingsCreated
      */
     'wing_id': number;
 }
 /**
  * Not found
- * @export
- * @interface PostFleetsFleetIdWingsNotFound
  */
 export interface PostFleetsFleetIdWingsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PostFleetsFleetIdWingsNotFound
      */
     'error'?: string;
 }
 /**
  * 201 created object
- * @export
- * @interface PostFleetsFleetIdWingsWingIdSquadsCreated
  */
 export interface PostFleetsFleetIdWingsWingIdSquadsCreated {
     /**
      * The squad_id of the newly created squad
-     * @type {number}
-     * @memberof PostFleetsFleetIdWingsWingIdSquadsCreated
      */
     'squad_id': number;
 }
 /**
  * Not found
- * @export
- * @interface PostFleetsFleetIdWingsWingIdSquadsNotFound
  */
 export interface PostFleetsFleetIdWingsWingIdSquadsNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PostFleetsFleetIdWingsWingIdSquadsNotFound
      */
     'error'?: string;
 }
 /**
  * new_mail object
- * @export
- * @interface PostUiOpenwindowNewmailNewMail
  */
 export interface PostUiOpenwindowNewmailNewMail {
     /**
      * body string
-     * @type {string}
-     * @memberof PostUiOpenwindowNewmailNewMail
      */
     'body': string;
     /**
      * recipients array
-     * @type {Array<number>}
-     * @memberof PostUiOpenwindowNewmailNewMail
      */
     'recipients': Array<number>;
     /**
      * subject string
-     * @type {string}
-     * @memberof PostUiOpenwindowNewmailNewMail
      */
     'subject': string;
     /**
      * to_corp_or_alliance_id integer
-     * @type {number}
-     * @memberof PostUiOpenwindowNewmailNewMail
      */
     'to_corp_or_alliance_id'?: number;
     /**
      * Corporations, alliances and mailing lists are all types of mailing groups. You may only send to one mailing group, at a time, so you may fill out either this field or the to_corp_or_alliance_ids field
-     * @type {number}
-     * @memberof PostUiOpenwindowNewmailNewMail
      */
     'to_mailing_list_id'?: number;
 }
 /**
  * Unprocessable entity
- * @export
- * @interface PostUiOpenwindowNewmailUnprocessableEntity
  */
 export interface PostUiOpenwindowNewmailUnprocessableEntity {
     /**
      * Unprocessable entity message
-     * @type {string}
-     * @memberof PostUiOpenwindowNewmailUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * agent object
- * @export
- * @interface PostUniverseIdsAgent
  */
 export interface PostUniverseIdsAgent {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsAgent
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsAgent
      */
     'name'?: string;
 }
 /**
  * alliance object
- * @export
- * @interface PostUniverseIdsAlliance
  */
 export interface PostUniverseIdsAlliance {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsAlliance
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsAlliance
      */
     'name'?: string;
 }
 /**
  * character object
- * @export
- * @interface PostUniverseIdsCharacter
  */
 export interface PostUniverseIdsCharacter {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsCharacter
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsCharacter
      */
     'name'?: string;
 }
 /**
  * constellation object
- * @export
- * @interface PostUniverseIdsConstellation
  */
 export interface PostUniverseIdsConstellation {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsConstellation
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsConstellation
      */
     'name'?: string;
 }
 /**
  * corporation object
- * @export
- * @interface PostUniverseIdsCorporation
  */
 export interface PostUniverseIdsCorporation {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsCorporation
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsCorporation
      */
     'name'?: string;
 }
 /**
  * faction object
- * @export
- * @interface PostUniverseIdsFaction
  */
 export interface PostUniverseIdsFaction {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsFaction
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsFaction
      */
     'name'?: string;
 }
 /**
  * inventory_type object
- * @export
- * @interface PostUniverseIdsInventoryType
  */
 export interface PostUniverseIdsInventoryType {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsInventoryType
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsInventoryType
      */
     'name'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface PostUniverseIdsOk
  */
 export interface PostUniverseIdsOk {
     /**
      * agents array
-     * @type {Array<PostUniverseIdsAgent>}
-     * @memberof PostUniverseIdsOk
      */
     'agents'?: Array<PostUniverseIdsAgent>;
     /**
      * alliances array
-     * @type {Array<PostUniverseIdsAlliance>}
-     * @memberof PostUniverseIdsOk
      */
     'alliances'?: Array<PostUniverseIdsAlliance>;
     /**
      * characters array
-     * @type {Array<PostUniverseIdsCharacter>}
-     * @memberof PostUniverseIdsOk
      */
     'characters'?: Array<PostUniverseIdsCharacter>;
     /**
      * constellations array
-     * @type {Array<PostUniverseIdsConstellation>}
-     * @memberof PostUniverseIdsOk
      */
     'constellations'?: Array<PostUniverseIdsConstellation>;
     /**
      * corporations array
-     * @type {Array<PostUniverseIdsCorporation>}
-     * @memberof PostUniverseIdsOk
      */
     'corporations'?: Array<PostUniverseIdsCorporation>;
     /**
      * factions array
-     * @type {Array<PostUniverseIdsFaction>}
-     * @memberof PostUniverseIdsOk
      */
     'factions'?: Array<PostUniverseIdsFaction>;
     /**
      * inventory_types array
-     * @type {Array<PostUniverseIdsInventoryType>}
-     * @memberof PostUniverseIdsOk
      */
     'inventory_types'?: Array<PostUniverseIdsInventoryType>;
     /**
      * regions array
-     * @type {Array<PostUniverseIdsRegion>}
-     * @memberof PostUniverseIdsOk
      */
     'regions'?: Array<PostUniverseIdsRegion>;
     /**
      * stations array
-     * @type {Array<PostUniverseIdsStation>}
-     * @memberof PostUniverseIdsOk
      */
     'stations'?: Array<PostUniverseIdsStation>;
     /**
      * systems array
-     * @type {Array<PostUniverseIdsSystem>}
-     * @memberof PostUniverseIdsOk
      */
     'systems'?: Array<PostUniverseIdsSystem>;
 }
 /**
  * region object
- * @export
- * @interface PostUniverseIdsRegion
  */
 export interface PostUniverseIdsRegion {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsRegion
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsRegion
      */
     'name'?: string;
 }
 /**
  * station object
- * @export
- * @interface PostUniverseIdsStation
  */
 export interface PostUniverseIdsStation {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsStation
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsStation
      */
     'name'?: string;
 }
 /**
  * system object
- * @export
- * @interface PostUniverseIdsSystem
  */
 export interface PostUniverseIdsSystem {
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseIdsSystem
      */
     'id'?: number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseIdsSystem
      */
     'name'?: string;
 }
 /**
  * 200 ok object
- * @export
- * @interface PostUniverseNames200Ok
  */
 export interface PostUniverseNames200Ok {
     /**
      * category string
-     * @type {string}
-     * @memberof PostUniverseNames200Ok
      */
     'category': PostUniverseNames200OkCategoryEnum;
     /**
      * id integer
-     * @type {number}
-     * @memberof PostUniverseNames200Ok
      */
     'id': number;
     /**
      * name string
-     * @type {string}
-     * @memberof PostUniverseNames200Ok
      */
     'name': string;
 }
@@ -13613,27 +10225,19 @@ export type PostUniverseNames200OkCategoryEnum = typeof PostUniverseNames200OkCa
 
 /**
  * Not found
- * @export
- * @interface PostUniverseNamesNotFound
  */
 export interface PostUniverseNamesNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PostUniverseNamesNotFound
      */
     'error'?: string;
 }
 /**
  * response object
- * @export
- * @interface PutCharactersCharacterIdCalendarEventIdResponse
  */
 export interface PutCharactersCharacterIdCalendarEventIdResponse {
     /**
      * response string
-     * @type {string}
-     * @memberof PutCharactersCharacterIdCalendarEventIdResponse
      */
     'response': PutCharactersCharacterIdCalendarEventIdResponseResponseEnum;
 }
@@ -13648,45 +10252,31 @@ export type PutCharactersCharacterIdCalendarEventIdResponseResponseEnum = typeof
 
 /**
  * contents object
- * @export
- * @interface PutCharactersCharacterIdMailMailIdContents
  */
 export interface PutCharactersCharacterIdMailMailIdContents {
     /**
      * Labels to assign to the mail. Pre-existing labels are unassigned.
-     * @type {Array<number>}
-     * @memberof PutCharactersCharacterIdMailMailIdContents
      */
     'labels'?: Array<number>;
     /**
      * Whether the mail is flagged as read
-     * @type {boolean}
-     * @memberof PutCharactersCharacterIdMailMailIdContents
      */
     'read'?: boolean;
 }
 /**
  * movement object
- * @export
- * @interface PutFleetsFleetIdMembersMemberIdMovement
  */
 export interface PutFleetsFleetIdMembersMemberIdMovement {
     /**
      * If a character is moved to the `fleet_commander` role, neither `wing_id` or `squad_id` should be specified. If a character is moved to the `wing_commander` role, only `wing_id` should be specified. If a character is moved to the `squad_commander` role, both `wing_id` and `squad_id` should be specified. If a character is moved to the `squad_member` role, both `wing_id` and `squad_id` should be specified.
-     * @type {string}
-     * @memberof PutFleetsFleetIdMembersMemberIdMovement
      */
     'role': PutFleetsFleetIdMembersMemberIdMovementRoleEnum;
     /**
      * squad_id integer
-     * @type {number}
-     * @memberof PutFleetsFleetIdMembersMemberIdMovement
      */
     'squad_id'?: number;
     /**
      * wing_id integer
-     * @type {number}
-     * @memberof PutFleetsFleetIdMembersMemberIdMovement
      */
     'wing_id'?: number;
 }
@@ -13702,144 +10292,101 @@ export type PutFleetsFleetIdMembersMemberIdMovementRoleEnum = typeof PutFleetsFl
 
 /**
  * Not found
- * @export
- * @interface PutFleetsFleetIdMembersMemberIdNotFound
  */
 export interface PutFleetsFleetIdMembersMemberIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PutFleetsFleetIdMembersMemberIdNotFound
      */
     'error'?: string;
 }
 /**
  * 422 unprocessable entity object
- * @export
- * @interface PutFleetsFleetIdMembersMemberIdUnprocessableEntity
  */
 export interface PutFleetsFleetIdMembersMemberIdUnprocessableEntity {
     /**
      * error message
-     * @type {string}
-     * @memberof PutFleetsFleetIdMembersMemberIdUnprocessableEntity
      */
     'error'?: string;
 }
 /**
  * new_settings object
- * @export
- * @interface PutFleetsFleetIdNewSettings
  */
 export interface PutFleetsFleetIdNewSettings {
     /**
      * Should free-move be enabled in the fleet
-     * @type {boolean}
-     * @memberof PutFleetsFleetIdNewSettings
      */
     'is_free_move'?: boolean;
     /**
      * New fleet MOTD in CCP flavoured HTML
-     * @type {string}
-     * @memberof PutFleetsFleetIdNewSettings
      */
     'motd'?: string;
 }
 /**
  * Not found
- * @export
- * @interface PutFleetsFleetIdNotFound
  */
 export interface PutFleetsFleetIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PutFleetsFleetIdNotFound
      */
     'error'?: string;
 }
 /**
  * naming object
- * @export
- * @interface PutFleetsFleetIdSquadsSquadIdNaming
  */
 export interface PutFleetsFleetIdSquadsSquadIdNaming {
     /**
      * name string
-     * @type {string}
-     * @memberof PutFleetsFleetIdSquadsSquadIdNaming
      */
     'name': string;
 }
 /**
  * Not found
- * @export
- * @interface PutFleetsFleetIdSquadsSquadIdNotFound
  */
 export interface PutFleetsFleetIdSquadsSquadIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PutFleetsFleetIdSquadsSquadIdNotFound
      */
     'error'?: string;
 }
 /**
  * naming object
- * @export
- * @interface PutFleetsFleetIdWingsWingIdNaming
  */
 export interface PutFleetsFleetIdWingsWingIdNaming {
     /**
      * name string
-     * @type {string}
-     * @memberof PutFleetsFleetIdWingsWingIdNaming
      */
     'name': string;
 }
 /**
  * Not found
- * @export
- * @interface PutFleetsFleetIdWingsWingIdNotFound
  */
 export interface PutFleetsFleetIdWingsWingIdNotFound {
     /**
      * Not found message
-     * @type {string}
-     * @memberof PutFleetsFleetIdWingsWingIdNotFound
      */
     'error'?: string;
 }
 /**
  * Service unavailable model
- * @export
- * @interface ServiceUnavailable
  */
 export interface ServiceUnavailable {
     /**
      * Service unavailable message
-     * @type {string}
-     * @memberof ServiceUnavailable
      */
     'error': string;
 }
 /**
  * Unauthorized model
- * @export
- * @interface Unauthorized
  */
 export interface Unauthorized {
     /**
      * Unauthorized message
-     * @type {string}
-     * @memberof Unauthorized
      */
     'error': string;
 }
 
 /**
  * AllianceApi - axios parameter creator
- * @export
  */
 export const AllianceApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -14016,7 +10563,6 @@ export const AllianceApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * AllianceApi - functional programming interface
- * @export
  */
 export const AllianceApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = AllianceApiAxiosParamCreator(configuration)
@@ -14085,7 +10631,6 @@ export const AllianceApiFp = function(configuration?: Configuration) {
 
 /**
  * AllianceApi - factory interface
- * @export
  */
 export const AllianceApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = AllianceApiFp(configuration)
@@ -14142,9 +10687,6 @@ export const AllianceApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * AllianceApi - object-oriented interface
- * @export
- * @class AllianceApi
- * @extends {BaseAPI}
  */
 export class AllianceApi extends BaseAPI {
     /**
@@ -14154,7 +10696,6 @@ export class AllianceApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AllianceApi
      */
     public getAlliances(datasource?: GetAlliancesDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return AllianceApiFp(this.configuration).getAlliances(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -14168,7 +10709,6 @@ export class AllianceApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AllianceApi
      */
     public getAlliancesAllianceId(allianceId: number, datasource?: GetAlliancesAllianceIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return AllianceApiFp(this.configuration).getAlliancesAllianceId(allianceId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -14182,7 +10722,6 @@ export class AllianceApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AllianceApi
      */
     public getAlliancesAllianceIdCorporations(allianceId: number, datasource?: GetAlliancesAllianceIdCorporationsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return AllianceApiFp(this.configuration).getAlliancesAllianceIdCorporations(allianceId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -14196,37 +10735,24 @@ export class AllianceApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AllianceApi
      */
     public getAlliancesAllianceIdIcons(allianceId: number, datasource?: GetAlliancesAllianceIdIconsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return AllianceApiFp(this.configuration).getAlliancesAllianceIdIcons(allianceId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetAlliancesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetAlliancesDatasourceEnum = typeof GetAlliancesDatasourceEnum[keyof typeof GetAlliancesDatasourceEnum];
-/**
- * @export
- */
 export const GetAlliancesAllianceIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetAlliancesAllianceIdDatasourceEnum = typeof GetAlliancesAllianceIdDatasourceEnum[keyof typeof GetAlliancesAllianceIdDatasourceEnum];
-/**
- * @export
- */
 export const GetAlliancesAllianceIdCorporationsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetAlliancesAllianceIdCorporationsDatasourceEnum = typeof GetAlliancesAllianceIdCorporationsDatasourceEnum[keyof typeof GetAlliancesAllianceIdCorporationsDatasourceEnum];
-/**
- * @export
- */
 export const GetAlliancesAllianceIdIconsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -14235,7 +10761,6 @@ export type GetAlliancesAllianceIdIconsDatasourceEnum = typeof GetAlliancesAllia
 
 /**
  * AssetsApi - axios parameter creator
- * @export
  */
 export const AssetsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -14574,7 +11099,6 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * AssetsApi - functional programming interface
- * @export
  */
 export const AssetsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = AssetsApiAxiosParamCreator(configuration)
@@ -14682,7 +11206,6 @@ export const AssetsApiFp = function(configuration?: Configuration) {
 
 /**
  * AssetsApi - factory interface
- * @export
  */
 export const AssetsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = AssetsApiFp(configuration)
@@ -14772,9 +11295,6 @@ export const AssetsApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * AssetsApi - object-oriented interface
- * @export
- * @class AssetsApi
- * @extends {BaseAPI}
  */
 export class AssetsApi extends BaseAPI {
     /**
@@ -14787,7 +11307,6 @@ export class AssetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AssetsApi
      */
     public getCharactersCharacterIdAssets(characterId: number, datasource?: GetCharactersCharacterIdAssetsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return AssetsApiFp(this.configuration).getCharactersCharacterIdAssets(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -14803,7 +11322,6 @@ export class AssetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AssetsApi
      */
     public getCorporationsCorporationIdAssets(corporationId: number, datasource?: GetCorporationsCorporationIdAssetsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return AssetsApiFp(this.configuration).getCorporationsCorporationIdAssets(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -14818,7 +11336,6 @@ export class AssetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AssetsApi
      */
     public postCharactersCharacterIdAssetsLocations(characterId: number, itemIds: Set<number>, datasource?: PostCharactersCharacterIdAssetsLocationsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return AssetsApiFp(this.configuration).postCharactersCharacterIdAssetsLocations(characterId, itemIds, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -14833,7 +11350,6 @@ export class AssetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AssetsApi
      */
     public postCharactersCharacterIdAssetsNames(characterId: number, itemIds: Set<number>, datasource?: PostCharactersCharacterIdAssetsNamesDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return AssetsApiFp(this.configuration).postCharactersCharacterIdAssetsNames(characterId, itemIds, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -14848,7 +11364,6 @@ export class AssetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AssetsApi
      */
     public postCorporationsCorporationIdAssetsLocations(corporationId: number, itemIds: Set<number>, datasource?: PostCorporationsCorporationIdAssetsLocationsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return AssetsApiFp(this.configuration).postCorporationsCorporationIdAssetsLocations(corporationId, itemIds, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -14863,51 +11378,32 @@ export class AssetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AssetsApi
      */
     public postCorporationsCorporationIdAssetsNames(corporationId: number, itemIds: Set<number>, datasource?: PostCorporationsCorporationIdAssetsNamesDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return AssetsApiFp(this.configuration).postCorporationsCorporationIdAssetsNames(corporationId, itemIds, datasource, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdAssetsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdAssetsDatasourceEnum = typeof GetCharactersCharacterIdAssetsDatasourceEnum[keyof typeof GetCharactersCharacterIdAssetsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdAssetsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdAssetsDatasourceEnum = typeof GetCorporationsCorporationIdAssetsDatasourceEnum[keyof typeof GetCorporationsCorporationIdAssetsDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersCharacterIdAssetsLocationsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostCharactersCharacterIdAssetsLocationsDatasourceEnum = typeof PostCharactersCharacterIdAssetsLocationsDatasourceEnum[keyof typeof PostCharactersCharacterIdAssetsLocationsDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersCharacterIdAssetsNamesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostCharactersCharacterIdAssetsNamesDatasourceEnum = typeof PostCharactersCharacterIdAssetsNamesDatasourceEnum[keyof typeof PostCharactersCharacterIdAssetsNamesDatasourceEnum];
-/**
- * @export
- */
 export const PostCorporationsCorporationIdAssetsLocationsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostCorporationsCorporationIdAssetsLocationsDatasourceEnum = typeof PostCorporationsCorporationIdAssetsLocationsDatasourceEnum[keyof typeof PostCorporationsCorporationIdAssetsLocationsDatasourceEnum];
-/**
- * @export
- */
 export const PostCorporationsCorporationIdAssetsNamesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -14916,7 +11412,6 @@ export type PostCorporationsCorporationIdAssetsNamesDatasourceEnum = typeof Post
 
 /**
  * CalendarApi - axios parameter creator
- * @export
  */
 export const CalendarApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -15152,7 +11647,6 @@ export const CalendarApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * CalendarApi - functional programming interface
- * @export
  */
 export const CalendarApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = CalendarApiAxiosParamCreator(configuration)
@@ -15230,7 +11724,6 @@ export const CalendarApiFp = function(configuration?: Configuration) {
 
 /**
  * CalendarApi - factory interface
- * @export
  */
 export const CalendarApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = CalendarApiFp(configuration)
@@ -15296,9 +11789,6 @@ export const CalendarApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * CalendarApi - object-oriented interface
- * @export
- * @class CalendarApi
- * @extends {BaseAPI}
  */
 export class CalendarApi extends BaseAPI {
     /**
@@ -15311,7 +11801,6 @@ export class CalendarApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CalendarApi
      */
     public getCharactersCharacterIdCalendar(characterId: number, datasource?: GetCharactersCharacterIdCalendarDatasourceEnum, fromEvent?: number, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CalendarApiFp(this.configuration).getCharactersCharacterIdCalendar(characterId, datasource, fromEvent, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -15327,7 +11816,6 @@ export class CalendarApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CalendarApi
      */
     public getCharactersCharacterIdCalendarEventId(characterId: number, eventId: number, datasource?: GetCharactersCharacterIdCalendarEventIdDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CalendarApiFp(this.configuration).getCharactersCharacterIdCalendarEventId(characterId, eventId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -15343,7 +11831,6 @@ export class CalendarApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CalendarApi
      */
     public getCharactersCharacterIdCalendarEventIdAttendees(characterId: number, eventId: number, datasource?: GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CalendarApiFp(this.configuration).getCharactersCharacterIdCalendarEventIdAttendees(characterId, eventId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -15359,37 +11846,24 @@ export class CalendarApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CalendarApi
      */
     public putCharactersCharacterIdCalendarEventId(characterId: number, eventId: number, response: PutCharactersCharacterIdCalendarEventIdResponse, datasource?: PutCharactersCharacterIdCalendarEventIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return CalendarApiFp(this.configuration).putCharactersCharacterIdCalendarEventId(characterId, eventId, response, datasource, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdCalendarDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdCalendarDatasourceEnum = typeof GetCharactersCharacterIdCalendarDatasourceEnum[keyof typeof GetCharactersCharacterIdCalendarDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdCalendarEventIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdCalendarEventIdDatasourceEnum = typeof GetCharactersCharacterIdCalendarEventIdDatasourceEnum[keyof typeof GetCharactersCharacterIdCalendarEventIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum = typeof GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum[keyof typeof GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum];
-/**
- * @export
- */
 export const PutCharactersCharacterIdCalendarEventIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -15398,7 +11872,6 @@ export type PutCharactersCharacterIdCalendarEventIdDatasourceEnum = typeof PutCh
 
 /**
  * CharacterApi - axios parameter creator
- * @export
  */
 export const CharacterApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -16104,7 +12577,6 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * CharacterApi - functional programming interface
- * @export
  */
 export const CharacterApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = CharacterApiAxiosParamCreator(configuration)
@@ -16334,7 +12806,6 @@ export const CharacterApiFp = function(configuration?: Configuration) {
 
 /**
  * CharacterApi - factory interface
- * @export
  */
 export const CharacterApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = CharacterApiFp(configuration)
@@ -16522,9 +12993,6 @@ export const CharacterApiFactory = function (configuration?: Configuration, base
 
 /**
  * CharacterApi - object-oriented interface
- * @export
- * @class CharacterApi
- * @extends {BaseAPI}
  */
 export class CharacterApi extends BaseAPI {
     /**
@@ -16535,7 +13003,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterId(characterId: number, datasource?: GetCharactersCharacterIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterId(characterId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -16550,7 +13017,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdAgentsResearch(characterId: number, datasource?: GetCharactersCharacterIdAgentsResearchDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdAgentsResearch(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16566,7 +13032,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdBlueprints(characterId: number, datasource?: GetCharactersCharacterIdBlueprintsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdBlueprints(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -16580,7 +13045,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdCorporationhistory(characterId: number, datasource?: GetCharactersCharacterIdCorporationhistoryDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdCorporationhistory(characterId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -16595,7 +13059,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdFatigue(characterId: number, datasource?: GetCharactersCharacterIdFatigueDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdFatigue(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16610,7 +13073,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdMedals(characterId: number, datasource?: GetCharactersCharacterIdMedalsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdMedals(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16625,7 +13087,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdNotifications(characterId: number, datasource?: GetCharactersCharacterIdNotificationsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdNotifications(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16640,7 +13101,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdNotificationsContacts(characterId: number, datasource?: GetCharactersCharacterIdNotificationsContactsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdNotificationsContacts(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16654,7 +13114,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdPortrait(characterId: number, datasource?: GetCharactersCharacterIdPortraitDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdPortrait(characterId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -16669,7 +13128,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdRoles(characterId: number, datasource?: GetCharactersCharacterIdRolesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdRoles(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16684,7 +13142,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdStandings(characterId: number, datasource?: GetCharactersCharacterIdStandingsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdStandings(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16699,7 +13156,6 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public getCharactersCharacterIdTitles(characterId: number, datasource?: GetCharactersCharacterIdTitlesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).getCharactersCharacterIdTitles(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -16712,7 +13168,6 @@ export class CharacterApi extends BaseAPI {
      * @param {PostCharactersAffiliationDatasourceEnum} [datasource] The server name you would like data from
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public postCharactersAffiliation(characters: Set<number>, datasource?: PostCharactersAffiliationDatasourceEnum, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).postCharactersAffiliation(characters, datasource, options).then((request) => request(this.axios, this.basePath));
@@ -16727,107 +13182,64 @@ export class CharacterApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CharacterApi
      */
     public postCharactersCharacterIdCspa(characterId: number, characters: Set<number>, datasource?: PostCharactersCharacterIdCspaDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return CharacterApiFp(this.configuration).postCharactersCharacterIdCspa(characterId, characters, datasource, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdDatasourceEnum = typeof GetCharactersCharacterIdDatasourceEnum[keyof typeof GetCharactersCharacterIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdAgentsResearchDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdAgentsResearchDatasourceEnum = typeof GetCharactersCharacterIdAgentsResearchDatasourceEnum[keyof typeof GetCharactersCharacterIdAgentsResearchDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdBlueprintsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdBlueprintsDatasourceEnum = typeof GetCharactersCharacterIdBlueprintsDatasourceEnum[keyof typeof GetCharactersCharacterIdBlueprintsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdCorporationhistoryDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdCorporationhistoryDatasourceEnum = typeof GetCharactersCharacterIdCorporationhistoryDatasourceEnum[keyof typeof GetCharactersCharacterIdCorporationhistoryDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdFatigueDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdFatigueDatasourceEnum = typeof GetCharactersCharacterIdFatigueDatasourceEnum[keyof typeof GetCharactersCharacterIdFatigueDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdMedalsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdMedalsDatasourceEnum = typeof GetCharactersCharacterIdMedalsDatasourceEnum[keyof typeof GetCharactersCharacterIdMedalsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdNotificationsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdNotificationsDatasourceEnum = typeof GetCharactersCharacterIdNotificationsDatasourceEnum[keyof typeof GetCharactersCharacterIdNotificationsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdNotificationsContactsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdNotificationsContactsDatasourceEnum = typeof GetCharactersCharacterIdNotificationsContactsDatasourceEnum[keyof typeof GetCharactersCharacterIdNotificationsContactsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdPortraitDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdPortraitDatasourceEnum = typeof GetCharactersCharacterIdPortraitDatasourceEnum[keyof typeof GetCharactersCharacterIdPortraitDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdRolesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdRolesDatasourceEnum = typeof GetCharactersCharacterIdRolesDatasourceEnum[keyof typeof GetCharactersCharacterIdRolesDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdStandingsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdStandingsDatasourceEnum = typeof GetCharactersCharacterIdStandingsDatasourceEnum[keyof typeof GetCharactersCharacterIdStandingsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdTitlesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdTitlesDatasourceEnum = typeof GetCharactersCharacterIdTitlesDatasourceEnum[keyof typeof GetCharactersCharacterIdTitlesDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersAffiliationDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostCharactersAffiliationDatasourceEnum = typeof PostCharactersAffiliationDatasourceEnum[keyof typeof PostCharactersAffiliationDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersCharacterIdCspaDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -16836,7 +13248,6 @@ export type PostCharactersCharacterIdCspaDatasourceEnum = typeof PostCharactersC
 
 /**
  * ClonesApi - axios parameter creator
- * @export
  */
 export const ClonesApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -16949,7 +13360,6 @@ export const ClonesApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * ClonesApi - functional programming interface
- * @export
  */
 export const ClonesApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ClonesApiAxiosParamCreator(configuration)
@@ -16991,7 +13401,6 @@ export const ClonesApiFp = function(configuration?: Configuration) {
 
 /**
  * ClonesApi - factory interface
- * @export
  */
 export const ClonesApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ClonesApiFp(configuration)
@@ -17027,9 +13436,6 @@ export const ClonesApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * ClonesApi - object-oriented interface
- * @export
- * @class ClonesApi
- * @extends {BaseAPI}
  */
 export class ClonesApi extends BaseAPI {
     /**
@@ -17041,7 +13447,6 @@ export class ClonesApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ClonesApi
      */
     public getCharactersCharacterIdClones(characterId: number, datasource?: GetCharactersCharacterIdClonesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ClonesApiFp(this.configuration).getCharactersCharacterIdClones(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -17056,23 +13461,16 @@ export class ClonesApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ClonesApi
      */
     public getCharactersCharacterIdImplants(characterId: number, datasource?: GetCharactersCharacterIdImplantsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ClonesApiFp(this.configuration).getCharactersCharacterIdImplants(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdClonesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdClonesDatasourceEnum = typeof GetCharactersCharacterIdClonesDatasourceEnum[keyof typeof GetCharactersCharacterIdClonesDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdImplantsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -17081,7 +13479,6 @@ export type GetCharactersCharacterIdImplantsDatasourceEnum = typeof GetCharacter
 
 /**
  * ContactsApi - axios parameter creator
- * @export
  */
 export const ContactsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -17614,7 +14011,6 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * ContactsApi - functional programming interface
- * @export
  */
 export const ContactsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ContactsApiAxiosParamCreator(configuration)
@@ -17777,7 +14173,6 @@ export const ContactsApiFp = function(configuration?: Configuration) {
 
 /**
  * ContactsApi - factory interface
- * @export
  */
 export const ContactsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ContactsApiFp(configuration)
@@ -17913,9 +14308,6 @@ export const ContactsApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * ContactsApi - object-oriented interface
- * @export
- * @class ContactsApi
- * @extends {BaseAPI}
  */
 export class ContactsApi extends BaseAPI {
     /**
@@ -17927,7 +14319,6 @@ export class ContactsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public deleteCharactersCharacterIdContacts(characterId: number, contactIds: Array<number>, datasource?: DeleteCharactersCharacterIdContactsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).deleteCharactersCharacterIdContacts(characterId, contactIds, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -17943,7 +14334,6 @@ export class ContactsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public getAlliancesAllianceIdContacts(allianceId: number, datasource?: GetAlliancesAllianceIdContactsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).getAlliancesAllianceIdContacts(allianceId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -17958,7 +14348,6 @@ export class ContactsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public getAlliancesAllianceIdContactsLabels(allianceId: number, datasource?: GetAlliancesAllianceIdContactsLabelsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).getAlliancesAllianceIdContactsLabels(allianceId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -17974,7 +14363,6 @@ export class ContactsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public getCharactersCharacterIdContacts(characterId: number, datasource?: GetCharactersCharacterIdContactsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).getCharactersCharacterIdContacts(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -17989,7 +14377,6 @@ export class ContactsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public getCharactersCharacterIdContactsLabels(characterId: number, datasource?: GetCharactersCharacterIdContactsLabelsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).getCharactersCharacterIdContactsLabels(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -18005,7 +14392,6 @@ export class ContactsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public getCorporationsCorporationIdContacts(corporationId: number, datasource?: GetCorporationsCorporationIdContactsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).getCorporationsCorporationIdContacts(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -18020,7 +14406,6 @@ export class ContactsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public getCorporationsCorporationIdContactsLabels(corporationId: number, datasource?: GetCorporationsCorporationIdContactsLabelsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).getCorporationsCorporationIdContactsLabels(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -18038,7 +14423,6 @@ export class ContactsApi extends BaseAPI {
      * @param {boolean} [watched] Whether the contact should be watched, note this is only effective on characters
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public postCharactersCharacterIdContacts(characterId: number, standing: number, contactIds: Array<number>, datasource?: PostCharactersCharacterIdContactsDatasourceEnum, labelIds?: Array<number>, token?: string, watched?: boolean, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).postCharactersCharacterIdContacts(characterId, standing, contactIds, datasource, labelIds, token, watched, options).then((request) => request(this.axios, this.basePath));
@@ -18056,72 +14440,44 @@ export class ContactsApi extends BaseAPI {
      * @param {boolean} [watched] Whether the contact should be watched, note this is only effective on characters
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContactsApi
      */
     public putCharactersCharacterIdContacts(characterId: number, standing: number, contactIds: Array<number>, datasource?: PutCharactersCharacterIdContactsDatasourceEnum, labelIds?: Array<number>, token?: string, watched?: boolean, options?: RawAxiosRequestConfig) {
         return ContactsApiFp(this.configuration).putCharactersCharacterIdContacts(characterId, standing, contactIds, datasource, labelIds, token, watched, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const DeleteCharactersCharacterIdContactsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type DeleteCharactersCharacterIdContactsDatasourceEnum = typeof DeleteCharactersCharacterIdContactsDatasourceEnum[keyof typeof DeleteCharactersCharacterIdContactsDatasourceEnum];
-/**
- * @export
- */
 export const GetAlliancesAllianceIdContactsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetAlliancesAllianceIdContactsDatasourceEnum = typeof GetAlliancesAllianceIdContactsDatasourceEnum[keyof typeof GetAlliancesAllianceIdContactsDatasourceEnum];
-/**
- * @export
- */
 export const GetAlliancesAllianceIdContactsLabelsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetAlliancesAllianceIdContactsLabelsDatasourceEnum = typeof GetAlliancesAllianceIdContactsLabelsDatasourceEnum[keyof typeof GetAlliancesAllianceIdContactsLabelsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdContactsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdContactsDatasourceEnum = typeof GetCharactersCharacterIdContactsDatasourceEnum[keyof typeof GetCharactersCharacterIdContactsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdContactsLabelsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdContactsLabelsDatasourceEnum = typeof GetCharactersCharacterIdContactsLabelsDatasourceEnum[keyof typeof GetCharactersCharacterIdContactsLabelsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdContactsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdContactsDatasourceEnum = typeof GetCorporationsCorporationIdContactsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContactsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdContactsLabelsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdContactsLabelsDatasourceEnum = typeof GetCorporationsCorporationIdContactsLabelsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContactsLabelsDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersCharacterIdContactsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostCharactersCharacterIdContactsDatasourceEnum = typeof PostCharactersCharacterIdContactsDatasourceEnum[keyof typeof PostCharactersCharacterIdContactsDatasourceEnum];
-/**
- * @export
- */
 export const PutCharactersCharacterIdContactsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -18130,7 +14486,6 @@ export type PutCharactersCharacterIdContactsDatasourceEnum = typeof PutCharacter
 
 /**
  * ContractsApi - axios parameter creator
- * @export
  */
 export const ContractsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -18626,7 +14981,6 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * ContractsApi - functional programming interface
- * @export
  */
 export const ContractsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ContractsApiAxiosParamCreator(configuration)
@@ -18787,7 +15141,6 @@ export const ContractsApiFp = function(configuration?: Configuration) {
 
 /**
  * ContractsApi - factory interface
- * @export
  */
 export const ContractsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ContractsApiFp(configuration)
@@ -18921,9 +15274,6 @@ export const ContractsApiFactory = function (configuration?: Configuration, base
 
 /**
  * ContractsApi - object-oriented interface
- * @export
- * @class ContractsApi
- * @extends {BaseAPI}
  */
 export class ContractsApi extends BaseAPI {
     /**
@@ -18936,7 +15286,6 @@ export class ContractsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getCharactersCharacterIdContracts(characterId: number, datasource?: GetCharactersCharacterIdContractsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getCharactersCharacterIdContracts(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -18952,7 +15301,6 @@ export class ContractsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getCharactersCharacterIdContractsContractIdBids(characterId: number, contractId: number, datasource?: GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getCharactersCharacterIdContractsContractIdBids(characterId, contractId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -18968,7 +15316,6 @@ export class ContractsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getCharactersCharacterIdContractsContractIdItems(characterId: number, contractId: number, datasource?: GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getCharactersCharacterIdContractsContractIdItems(characterId, contractId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -18983,7 +15330,6 @@ export class ContractsApi extends BaseAPI {
      * @param {number} [page] Which page of results to return
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getContractsPublicBidsContractId(contractId: number, datasource?: GetContractsPublicBidsContractIdDatasourceEnum, ifNoneMatch?: string, page?: number, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getContractsPublicBidsContractId(contractId, datasource, ifNoneMatch, page, options).then((request) => request(this.axios, this.basePath));
@@ -18998,7 +15344,6 @@ export class ContractsApi extends BaseAPI {
      * @param {number} [page] Which page of results to return
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getContractsPublicItemsContractId(contractId: number, datasource?: GetContractsPublicItemsContractIdDatasourceEnum, ifNoneMatch?: string, page?: number, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getContractsPublicItemsContractId(contractId, datasource, ifNoneMatch, page, options).then((request) => request(this.axios, this.basePath));
@@ -19013,7 +15358,6 @@ export class ContractsApi extends BaseAPI {
      * @param {number} [page] Which page of results to return
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getContractsPublicRegionId(regionId: number, datasource?: GetContractsPublicRegionIdDatasourceEnum, ifNoneMatch?: string, page?: number, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getContractsPublicRegionId(regionId, datasource, ifNoneMatch, page, options).then((request) => request(this.axios, this.basePath));
@@ -19029,7 +15373,6 @@ export class ContractsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getCorporationsCorporationIdContracts(corporationId: number, datasource?: GetCorporationsCorporationIdContractsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getCorporationsCorporationIdContracts(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -19046,7 +15389,6 @@ export class ContractsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getCorporationsCorporationIdContractsContractIdBids(contractId: number, corporationId: number, datasource?: GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getCorporationsCorporationIdContractsContractIdBids(contractId, corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -19062,72 +15404,44 @@ export class ContractsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ContractsApi
      */
     public getCorporationsCorporationIdContractsContractIdItems(contractId: number, corporationId: number, datasource?: GetCorporationsCorporationIdContractsContractIdItemsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return ContractsApiFp(this.configuration).getCorporationsCorporationIdContractsContractIdItems(contractId, corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdContractsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdContractsDatasourceEnum = typeof GetCharactersCharacterIdContractsDatasourceEnum[keyof typeof GetCharactersCharacterIdContractsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum = typeof GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum[keyof typeof GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum = typeof GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum[keyof typeof GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum];
-/**
- * @export
- */
 export const GetContractsPublicBidsContractIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetContractsPublicBidsContractIdDatasourceEnum = typeof GetContractsPublicBidsContractIdDatasourceEnum[keyof typeof GetContractsPublicBidsContractIdDatasourceEnum];
-/**
- * @export
- */
 export const GetContractsPublicItemsContractIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetContractsPublicItemsContractIdDatasourceEnum = typeof GetContractsPublicItemsContractIdDatasourceEnum[keyof typeof GetContractsPublicItemsContractIdDatasourceEnum];
-/**
- * @export
- */
 export const GetContractsPublicRegionIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetContractsPublicRegionIdDatasourceEnum = typeof GetContractsPublicRegionIdDatasourceEnum[keyof typeof GetContractsPublicRegionIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdContractsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdContractsDatasourceEnum = typeof GetCorporationsCorporationIdContractsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContractsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum = typeof GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdContractsContractIdItemsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -19136,7 +15450,6 @@ export type GetCorporationsCorporationIdContractsContractIdItemsDatasourceEnum =
 
 /**
  * CorporationApi - axios parameter creator
- * @export
  */
 export const CorporationApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -20314,7 +16627,6 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * CorporationApi - functional programming interface
- * @export
  */
 export const CorporationApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = CorporationApiAxiosParamCreator(configuration)
@@ -20684,7 +16996,6 @@ export const CorporationApiFp = function(configuration?: Configuration) {
 
 /**
  * CorporationApi - factory interface
- * @export
  */
 export const CorporationApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = CorporationApiFp(configuration)
@@ -20988,9 +17299,6 @@ export const CorporationApiFactory = function (configuration?: Configuration, ba
 
 /**
  * CorporationApi - object-oriented interface
- * @export
- * @class CorporationApi
- * @extends {BaseAPI}
  */
 export class CorporationApi extends BaseAPI {
     /**
@@ -21001,7 +17309,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationId(corporationId: number, datasource?: GetCorporationsCorporationIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationId(corporationId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -21015,7 +17322,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdAlliancehistory(corporationId: number, datasource?: GetCorporationsCorporationIdAlliancehistoryDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdAlliancehistory(corporationId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -21031,7 +17337,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdBlueprints(corporationId: number, datasource?: GetCorporationsCorporationIdBlueprintsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdBlueprints(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21047,7 +17352,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdContainersLogs(corporationId: number, datasource?: GetCorporationsCorporationIdContainersLogsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdContainersLogs(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21062,7 +17366,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdDivisions(corporationId: number, datasource?: GetCorporationsCorporationIdDivisionsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdDivisions(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21077,7 +17380,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdFacilities(corporationId: number, datasource?: GetCorporationsCorporationIdFacilitiesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdFacilities(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21091,7 +17393,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdIcons(corporationId: number, datasource?: GetCorporationsCorporationIdIconsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdIcons(corporationId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -21107,7 +17408,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdMedals(corporationId: number, datasource?: GetCorporationsCorporationIdMedalsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdMedals(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21123,7 +17423,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdMedalsIssued(corporationId: number, datasource?: GetCorporationsCorporationIdMedalsIssuedDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdMedalsIssued(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21138,7 +17437,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdMembers(corporationId: number, datasource?: GetCorporationsCorporationIdMembersDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdMembers(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21153,7 +17451,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdMembersLimit(corporationId: number, datasource?: GetCorporationsCorporationIdMembersLimitDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdMembersLimit(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21168,7 +17465,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdMembersTitles(corporationId: number, datasource?: GetCorporationsCorporationIdMembersTitlesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdMembersTitles(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21183,7 +17479,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdMembertracking(corporationId: number, datasource?: GetCorporationsCorporationIdMembertrackingDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdMembertracking(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21198,7 +17493,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdRoles(corporationId: number, datasource?: GetCorporationsCorporationIdRolesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdRoles(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21214,7 +17508,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdRolesHistory(corporationId: number, datasource?: GetCorporationsCorporationIdRolesHistoryDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdRolesHistory(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21230,7 +17523,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdShareholders(corporationId: number, datasource?: GetCorporationsCorporationIdShareholdersDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdShareholders(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21246,7 +17538,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdStandings(corporationId: number, datasource?: GetCorporationsCorporationIdStandingsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdStandings(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21262,7 +17553,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdStarbases(corporationId: number, datasource?: GetCorporationsCorporationIdStarbasesDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdStarbases(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21279,7 +17569,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdStarbasesStarbaseId(corporationId: number, starbaseId: number, systemId: number, datasource?: GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdStarbasesStarbaseId(corporationId, starbaseId, systemId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21297,7 +17586,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdStructures(corporationId: number, acceptLanguage?: GetCorporationsCorporationIdStructuresAcceptLanguageEnum, datasource?: GetCorporationsCorporationIdStructuresDatasourceEnum, ifNoneMatch?: string, language?: GetCorporationsCorporationIdStructuresLanguageEnum, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdStructures(corporationId, acceptLanguage, datasource, ifNoneMatch, language, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -21312,7 +17600,6 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsCorporationIdTitles(corporationId: number, datasource?: GetCorporationsCorporationIdTitlesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsCorporationIdTitles(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -21325,149 +17612,88 @@ export class CorporationApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CorporationApi
      */
     public getCorporationsNpccorps(datasource?: GetCorporationsNpccorpsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return CorporationApiFp(this.configuration).getCorporationsNpccorps(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCorporationsCorporationIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdDatasourceEnum = typeof GetCorporationsCorporationIdDatasourceEnum[keyof typeof GetCorporationsCorporationIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdAlliancehistoryDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdAlliancehistoryDatasourceEnum = typeof GetCorporationsCorporationIdAlliancehistoryDatasourceEnum[keyof typeof GetCorporationsCorporationIdAlliancehistoryDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdBlueprintsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdBlueprintsDatasourceEnum = typeof GetCorporationsCorporationIdBlueprintsDatasourceEnum[keyof typeof GetCorporationsCorporationIdBlueprintsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdContainersLogsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdContainersLogsDatasourceEnum = typeof GetCorporationsCorporationIdContainersLogsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContainersLogsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdDivisionsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdDivisionsDatasourceEnum = typeof GetCorporationsCorporationIdDivisionsDatasourceEnum[keyof typeof GetCorporationsCorporationIdDivisionsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdFacilitiesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdFacilitiesDatasourceEnum = typeof GetCorporationsCorporationIdFacilitiesDatasourceEnum[keyof typeof GetCorporationsCorporationIdFacilitiesDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdIconsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdIconsDatasourceEnum = typeof GetCorporationsCorporationIdIconsDatasourceEnum[keyof typeof GetCorporationsCorporationIdIconsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdMedalsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdMedalsDatasourceEnum = typeof GetCorporationsCorporationIdMedalsDatasourceEnum[keyof typeof GetCorporationsCorporationIdMedalsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdMedalsIssuedDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdMedalsIssuedDatasourceEnum = typeof GetCorporationsCorporationIdMedalsIssuedDatasourceEnum[keyof typeof GetCorporationsCorporationIdMedalsIssuedDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdMembersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdMembersDatasourceEnum = typeof GetCorporationsCorporationIdMembersDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembersDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdMembersLimitDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdMembersLimitDatasourceEnum = typeof GetCorporationsCorporationIdMembersLimitDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembersLimitDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdMembersTitlesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdMembersTitlesDatasourceEnum = typeof GetCorporationsCorporationIdMembersTitlesDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembersTitlesDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdMembertrackingDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdMembertrackingDatasourceEnum = typeof GetCorporationsCorporationIdMembertrackingDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembertrackingDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdRolesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdRolesDatasourceEnum = typeof GetCorporationsCorporationIdRolesDatasourceEnum[keyof typeof GetCorporationsCorporationIdRolesDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdRolesHistoryDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdRolesHistoryDatasourceEnum = typeof GetCorporationsCorporationIdRolesHistoryDatasourceEnum[keyof typeof GetCorporationsCorporationIdRolesHistoryDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdShareholdersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdShareholdersDatasourceEnum = typeof GetCorporationsCorporationIdShareholdersDatasourceEnum[keyof typeof GetCorporationsCorporationIdShareholdersDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdStandingsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdStandingsDatasourceEnum = typeof GetCorporationsCorporationIdStandingsDatasourceEnum[keyof typeof GetCorporationsCorporationIdStandingsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdStarbasesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdStarbasesDatasourceEnum = typeof GetCorporationsCorporationIdStarbasesDatasourceEnum[keyof typeof GetCorporationsCorporationIdStarbasesDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdStructuresAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -21480,16 +17706,10 @@ export const GetCorporationsCorporationIdStructuresAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetCorporationsCorporationIdStructuresAcceptLanguageEnum = typeof GetCorporationsCorporationIdStructuresAcceptLanguageEnum[keyof typeof GetCorporationsCorporationIdStructuresAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdStructuresDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdStructuresDatasourceEnum = typeof GetCorporationsCorporationIdStructuresDatasourceEnum[keyof typeof GetCorporationsCorporationIdStructuresDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdStructuresLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -21502,16 +17722,10 @@ export const GetCorporationsCorporationIdStructuresLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetCorporationsCorporationIdStructuresLanguageEnum = typeof GetCorporationsCorporationIdStructuresLanguageEnum[keyof typeof GetCorporationsCorporationIdStructuresLanguageEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdTitlesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdTitlesDatasourceEnum = typeof GetCorporationsCorporationIdTitlesDatasourceEnum[keyof typeof GetCorporationsCorporationIdTitlesDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsNpccorpsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -21520,7 +17734,6 @@ export type GetCorporationsNpccorpsDatasourceEnum = typeof GetCorporationsNpccor
 
 /**
  * DogmaApi - axios parameter creator
- * @export
  */
 export const DogmaApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -21740,7 +17953,6 @@ export const DogmaApiAxiosParamCreator = function (configuration?: Configuration
 
 /**
  * DogmaApi - functional programming interface
- * @export
  */
 export const DogmaApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = DogmaApiAxiosParamCreator(configuration)
@@ -21824,7 +18036,6 @@ export const DogmaApiFp = function(configuration?: Configuration) {
 
 /**
  * DogmaApi - factory interface
- * @export
  */
 export const DogmaApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = DogmaApiFp(configuration)
@@ -21893,9 +18104,6 @@ export const DogmaApiFactory = function (configuration?: Configuration, basePath
 
 /**
  * DogmaApi - object-oriented interface
- * @export
- * @class DogmaApi
- * @extends {BaseAPI}
  */
 export class DogmaApi extends BaseAPI {
     /**
@@ -21905,7 +18113,6 @@ export class DogmaApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DogmaApi
      */
     public getDogmaAttributes(datasource?: GetDogmaAttributesDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return DogmaApiFp(this.configuration).getDogmaAttributes(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -21919,7 +18126,6 @@ export class DogmaApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DogmaApi
      */
     public getDogmaAttributesAttributeId(attributeId: number, datasource?: GetDogmaAttributesAttributeIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return DogmaApiFp(this.configuration).getDogmaAttributesAttributeId(attributeId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -21934,7 +18140,6 @@ export class DogmaApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DogmaApi
      */
     public getDogmaDynamicItemsTypeIdItemId(itemId: number, typeId: number, datasource?: GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return DogmaApiFp(this.configuration).getDogmaDynamicItemsTypeIdItemId(itemId, typeId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -21947,7 +18152,6 @@ export class DogmaApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DogmaApi
      */
     public getDogmaEffects(datasource?: GetDogmaEffectsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return DogmaApiFp(this.configuration).getDogmaEffects(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -21961,44 +18165,28 @@ export class DogmaApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DogmaApi
      */
     public getDogmaEffectsEffectId(effectId: number, datasource?: GetDogmaEffectsEffectIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return DogmaApiFp(this.configuration).getDogmaEffectsEffectId(effectId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetDogmaAttributesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetDogmaAttributesDatasourceEnum = typeof GetDogmaAttributesDatasourceEnum[keyof typeof GetDogmaAttributesDatasourceEnum];
-/**
- * @export
- */
 export const GetDogmaAttributesAttributeIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetDogmaAttributesAttributeIdDatasourceEnum = typeof GetDogmaAttributesAttributeIdDatasourceEnum[keyof typeof GetDogmaAttributesAttributeIdDatasourceEnum];
-/**
- * @export
- */
 export const GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum = typeof GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum[keyof typeof GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum];
-/**
- * @export
- */
 export const GetDogmaEffectsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetDogmaEffectsDatasourceEnum = typeof GetDogmaEffectsDatasourceEnum[keyof typeof GetDogmaEffectsDatasourceEnum];
-/**
- * @export
- */
 export const GetDogmaEffectsEffectIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -22007,7 +18195,6 @@ export type GetDogmaEffectsEffectIdDatasourceEnum = typeof GetDogmaEffectsEffect
 
 /**
  * FactionWarfareApi - axios parameter creator
- * @export
  */
 export const FactionWarfareApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -22354,7 +18541,6 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
 
 /**
  * FactionWarfareApi - functional programming interface
- * @export
  */
 export const FactionWarfareApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = FactionWarfareApiAxiosParamCreator(configuration)
@@ -22480,7 +18666,6 @@ export const FactionWarfareApiFp = function(configuration?: Configuration) {
 
 /**
  * FactionWarfareApi - factory interface
- * @export
  */
 export const FactionWarfareApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = FactionWarfareApiFp(configuration)
@@ -22582,9 +18767,6 @@ export const FactionWarfareApiFactory = function (configuration?: Configuration,
 
 /**
  * FactionWarfareApi - object-oriented interface
- * @export
- * @class FactionWarfareApi
- * @extends {BaseAPI}
  */
 export class FactionWarfareApi extends BaseAPI {
     /**
@@ -22596,7 +18778,6 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getCharactersCharacterIdFwStats(characterId: number, datasource?: GetCharactersCharacterIdFwStatsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getCharactersCharacterIdFwStats(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -22611,7 +18792,6 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getCorporationsCorporationIdFwStats(corporationId: number, datasource?: GetCorporationsCorporationIdFwStatsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getCorporationsCorporationIdFwStats(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -22624,7 +18804,6 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getFwLeaderboards(datasource?: GetFwLeaderboardsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getFwLeaderboards(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -22637,7 +18816,6 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getFwLeaderboardsCharacters(datasource?: GetFwLeaderboardsCharactersDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getFwLeaderboardsCharacters(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -22650,7 +18828,6 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getFwLeaderboardsCorporations(datasource?: GetFwLeaderboardsCorporationsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getFwLeaderboardsCorporations(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -22663,7 +18840,6 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getFwStats(datasource?: GetFwStatsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getFwStats(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -22676,7 +18852,6 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getFwSystems(datasource?: GetFwSystemsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getFwSystems(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -22689,65 +18864,40 @@ export class FactionWarfareApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FactionWarfareApi
      */
     public getFwWars(datasource?: GetFwWarsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return FactionWarfareApiFp(this.configuration).getFwWars(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdFwStatsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdFwStatsDatasourceEnum = typeof GetCharactersCharacterIdFwStatsDatasourceEnum[keyof typeof GetCharactersCharacterIdFwStatsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdFwStatsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdFwStatsDatasourceEnum = typeof GetCorporationsCorporationIdFwStatsDatasourceEnum[keyof typeof GetCorporationsCorporationIdFwStatsDatasourceEnum];
-/**
- * @export
- */
 export const GetFwLeaderboardsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFwLeaderboardsDatasourceEnum = typeof GetFwLeaderboardsDatasourceEnum[keyof typeof GetFwLeaderboardsDatasourceEnum];
-/**
- * @export
- */
 export const GetFwLeaderboardsCharactersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFwLeaderboardsCharactersDatasourceEnum = typeof GetFwLeaderboardsCharactersDatasourceEnum[keyof typeof GetFwLeaderboardsCharactersDatasourceEnum];
-/**
- * @export
- */
 export const GetFwLeaderboardsCorporationsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFwLeaderboardsCorporationsDatasourceEnum = typeof GetFwLeaderboardsCorporationsDatasourceEnum[keyof typeof GetFwLeaderboardsCorporationsDatasourceEnum];
-/**
- * @export
- */
 export const GetFwStatsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFwStatsDatasourceEnum = typeof GetFwStatsDatasourceEnum[keyof typeof GetFwStatsDatasourceEnum];
-/**
- * @export
- */
 export const GetFwSystemsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFwSystemsDatasourceEnum = typeof GetFwSystemsDatasourceEnum[keyof typeof GetFwSystemsDatasourceEnum];
-/**
- * @export
- */
 export const GetFwWarsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -22756,7 +18906,6 @@ export type GetFwWarsDatasourceEnum = typeof GetFwWarsDatasourceEnum[keyof typeo
 
 /**
  * FittingsApi - axios parameter creator
- * @export
  */
 export const FittingsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -22923,7 +19072,6 @@ export const FittingsApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * FittingsApi - functional programming interface
- * @export
  */
 export const FittingsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = FittingsApiAxiosParamCreator(configuration)
@@ -22981,7 +19129,6 @@ export const FittingsApiFp = function(configuration?: Configuration) {
 
 /**
  * FittingsApi - factory interface
- * @export
  */
 export const FittingsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = FittingsApiFp(configuration)
@@ -23030,9 +19177,6 @@ export const FittingsApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * FittingsApi - object-oriented interface
- * @export
- * @class FittingsApi
- * @extends {BaseAPI}
  */
 export class FittingsApi extends BaseAPI {
     /**
@@ -23044,7 +19188,6 @@ export class FittingsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FittingsApi
      */
     public deleteCharactersCharacterIdFittingsFittingId(characterId: number, fittingId: number, datasource?: DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FittingsApiFp(this.configuration).deleteCharactersCharacterIdFittingsFittingId(characterId, fittingId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -23059,7 +19202,6 @@ export class FittingsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FittingsApi
      */
     public getCharactersCharacterIdFittings(characterId: number, datasource?: GetCharactersCharacterIdFittingsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return FittingsApiFp(this.configuration).getCharactersCharacterIdFittings(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -23074,30 +19216,20 @@ export class FittingsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FittingsApi
      */
     public postCharactersCharacterIdFittings(characterId: number, fitting: PostCharactersCharacterIdFittingsFitting, datasource?: PostCharactersCharacterIdFittingsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FittingsApiFp(this.configuration).postCharactersCharacterIdFittings(characterId, fitting, datasource, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum = typeof DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum[keyof typeof DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdFittingsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdFittingsDatasourceEnum = typeof GetCharactersCharacterIdFittingsDatasourceEnum[keyof typeof GetCharactersCharacterIdFittingsDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersCharacterIdFittingsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -23106,7 +19238,6 @@ export type PostCharactersCharacterIdFittingsDatasourceEnum = typeof PostCharact
 
 /**
  * FleetsApi - axios parameter creator
- * @export
  */
 export const FleetsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -23879,7 +20010,6 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * FleetsApi - functional programming interface
- * @export
  */
 export const FleetsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = FleetsApiAxiosParamCreator(configuration)
@@ -24119,7 +20249,6 @@ export const FleetsApiFp = function(configuration?: Configuration) {
 
 /**
  * FleetsApi - factory interface
- * @export
  */
 export const FleetsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = FleetsApiFp(configuration)
@@ -24317,9 +20446,6 @@ export const FleetsApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * FleetsApi - object-oriented interface
- * @export
- * @class FleetsApi
- * @extends {BaseAPI}
  */
 export class FleetsApi extends BaseAPI {
     /**
@@ -24331,7 +20457,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public deleteFleetsFleetIdMembersMemberId(fleetId: number, memberId: number, datasource?: DeleteFleetsFleetIdMembersMemberIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).deleteFleetsFleetIdMembersMemberId(fleetId, memberId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24346,7 +20471,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public deleteFleetsFleetIdSquadsSquadId(fleetId: number, squadId: number, datasource?: DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).deleteFleetsFleetIdSquadsSquadId(fleetId, squadId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24361,7 +20485,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public deleteFleetsFleetIdWingsWingId(fleetId: number, wingId: number, datasource?: DeleteFleetsFleetIdWingsWingIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).deleteFleetsFleetIdWingsWingId(fleetId, wingId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24376,7 +20499,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public getCharactersCharacterIdFleet(characterId: number, datasource?: GetCharactersCharacterIdFleetDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).getCharactersCharacterIdFleet(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -24391,7 +20513,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public getFleetsFleetId(fleetId: number, datasource?: GetFleetsFleetIdDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).getFleetsFleetId(fleetId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -24408,7 +20529,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public getFleetsFleetIdMembers(fleetId: number, acceptLanguage?: GetFleetsFleetIdMembersAcceptLanguageEnum, datasource?: GetFleetsFleetIdMembersDatasourceEnum, ifNoneMatch?: string, language?: GetFleetsFleetIdMembersLanguageEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).getFleetsFleetIdMembers(fleetId, acceptLanguage, datasource, ifNoneMatch, language, token, options).then((request) => request(this.axios, this.basePath));
@@ -24425,7 +20545,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public getFleetsFleetIdWings(fleetId: number, acceptLanguage?: GetFleetsFleetIdWingsAcceptLanguageEnum, datasource?: GetFleetsFleetIdWingsDatasourceEnum, ifNoneMatch?: string, language?: GetFleetsFleetIdWingsLanguageEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).getFleetsFleetIdWings(fleetId, acceptLanguage, datasource, ifNoneMatch, language, token, options).then((request) => request(this.axios, this.basePath));
@@ -24440,7 +20559,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public postFleetsFleetIdMembers(fleetId: number, invitation: PostFleetsFleetIdMembersInvitation, datasource?: PostFleetsFleetIdMembersDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).postFleetsFleetIdMembers(fleetId, invitation, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24454,7 +20572,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public postFleetsFleetIdWings(fleetId: number, datasource?: PostFleetsFleetIdWingsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).postFleetsFleetIdWings(fleetId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24469,7 +20586,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public postFleetsFleetIdWingsWingIdSquads(fleetId: number, wingId: number, datasource?: PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).postFleetsFleetIdWingsWingIdSquads(fleetId, wingId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24484,7 +20600,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public putFleetsFleetId(fleetId: number, newSettings: PutFleetsFleetIdNewSettings, datasource?: PutFleetsFleetIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).putFleetsFleetId(fleetId, newSettings, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24500,7 +20615,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public putFleetsFleetIdMembersMemberId(fleetId: number, memberId: number, movement: PutFleetsFleetIdMembersMemberIdMovement, datasource?: PutFleetsFleetIdMembersMemberIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).putFleetsFleetIdMembersMemberId(fleetId, memberId, movement, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24516,7 +20630,6 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public putFleetsFleetIdSquadsSquadId(fleetId: number, squadId: number, naming: PutFleetsFleetIdSquadsSquadIdNaming, datasource?: PutFleetsFleetIdSquadsSquadIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).putFleetsFleetIdSquadsSquadId(fleetId, squadId, naming, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -24532,51 +20645,32 @@ export class FleetsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FleetsApi
      */
     public putFleetsFleetIdWingsWingId(fleetId: number, wingId: number, naming: PutFleetsFleetIdWingsWingIdNaming, datasource?: PutFleetsFleetIdWingsWingIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return FleetsApiFp(this.configuration).putFleetsFleetIdWingsWingId(fleetId, wingId, naming, datasource, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const DeleteFleetsFleetIdMembersMemberIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type DeleteFleetsFleetIdMembersMemberIdDatasourceEnum = typeof DeleteFleetsFleetIdMembersMemberIdDatasourceEnum[keyof typeof DeleteFleetsFleetIdMembersMemberIdDatasourceEnum];
-/**
- * @export
- */
 export const DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum = typeof DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum[keyof typeof DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum];
-/**
- * @export
- */
 export const DeleteFleetsFleetIdWingsWingIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type DeleteFleetsFleetIdWingsWingIdDatasourceEnum = typeof DeleteFleetsFleetIdWingsWingIdDatasourceEnum[keyof typeof DeleteFleetsFleetIdWingsWingIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdFleetDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdFleetDatasourceEnum = typeof GetCharactersCharacterIdFleetDatasourceEnum[keyof typeof GetCharactersCharacterIdFleetDatasourceEnum];
-/**
- * @export
- */
 export const GetFleetsFleetIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFleetsFleetIdDatasourceEnum = typeof GetFleetsFleetIdDatasourceEnum[keyof typeof GetFleetsFleetIdDatasourceEnum];
-/**
- * @export
- */
 export const GetFleetsFleetIdMembersAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -24589,16 +20683,10 @@ export const GetFleetsFleetIdMembersAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetFleetsFleetIdMembersAcceptLanguageEnum = typeof GetFleetsFleetIdMembersAcceptLanguageEnum[keyof typeof GetFleetsFleetIdMembersAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetFleetsFleetIdMembersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFleetsFleetIdMembersDatasourceEnum = typeof GetFleetsFleetIdMembersDatasourceEnum[keyof typeof GetFleetsFleetIdMembersDatasourceEnum];
-/**
- * @export
- */
 export const GetFleetsFleetIdMembersLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -24611,9 +20699,6 @@ export const GetFleetsFleetIdMembersLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetFleetsFleetIdMembersLanguageEnum = typeof GetFleetsFleetIdMembersLanguageEnum[keyof typeof GetFleetsFleetIdMembersLanguageEnum];
-/**
- * @export
- */
 export const GetFleetsFleetIdWingsAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -24626,16 +20711,10 @@ export const GetFleetsFleetIdWingsAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetFleetsFleetIdWingsAcceptLanguageEnum = typeof GetFleetsFleetIdWingsAcceptLanguageEnum[keyof typeof GetFleetsFleetIdWingsAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetFleetsFleetIdWingsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetFleetsFleetIdWingsDatasourceEnum = typeof GetFleetsFleetIdWingsDatasourceEnum[keyof typeof GetFleetsFleetIdWingsDatasourceEnum];
-/**
- * @export
- */
 export const GetFleetsFleetIdWingsLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -24648,51 +20727,30 @@ export const GetFleetsFleetIdWingsLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetFleetsFleetIdWingsLanguageEnum = typeof GetFleetsFleetIdWingsLanguageEnum[keyof typeof GetFleetsFleetIdWingsLanguageEnum];
-/**
- * @export
- */
 export const PostFleetsFleetIdMembersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostFleetsFleetIdMembersDatasourceEnum = typeof PostFleetsFleetIdMembersDatasourceEnum[keyof typeof PostFleetsFleetIdMembersDatasourceEnum];
-/**
- * @export
- */
 export const PostFleetsFleetIdWingsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostFleetsFleetIdWingsDatasourceEnum = typeof PostFleetsFleetIdWingsDatasourceEnum[keyof typeof PostFleetsFleetIdWingsDatasourceEnum];
-/**
- * @export
- */
 export const PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum = typeof PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum[keyof typeof PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum];
-/**
- * @export
- */
 export const PutFleetsFleetIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PutFleetsFleetIdDatasourceEnum = typeof PutFleetsFleetIdDatasourceEnum[keyof typeof PutFleetsFleetIdDatasourceEnum];
-/**
- * @export
- */
 export const PutFleetsFleetIdMembersMemberIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PutFleetsFleetIdMembersMemberIdDatasourceEnum = typeof PutFleetsFleetIdMembersMemberIdDatasourceEnum[keyof typeof PutFleetsFleetIdMembersMemberIdDatasourceEnum];
-/**
- * @export
- */
 export const PutFleetsFleetIdSquadsSquadIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PutFleetsFleetIdSquadsSquadIdDatasourceEnum = typeof PutFleetsFleetIdSquadsSquadIdDatasourceEnum[keyof typeof PutFleetsFleetIdSquadsSquadIdDatasourceEnum];
-/**
- * @export
- */
 export const PutFleetsFleetIdWingsWingIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -24701,7 +20759,6 @@ export type PutFleetsFleetIdWingsWingIdDatasourceEnum = typeof PutFleetsFleetIdW
 
 /**
  * IncursionsApi - axios parameter creator
- * @export
  */
 export const IncursionsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -24749,7 +20806,6 @@ export const IncursionsApiAxiosParamCreator = function (configuration?: Configur
 
 /**
  * IncursionsApi - functional programming interface
- * @export
  */
 export const IncursionsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = IncursionsApiAxiosParamCreator(configuration)
@@ -24773,7 +20829,6 @@ export const IncursionsApiFp = function(configuration?: Configuration) {
 
 /**
  * IncursionsApi - factory interface
- * @export
  */
 export const IncursionsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = IncursionsApiFp(configuration)
@@ -24794,9 +20849,6 @@ export const IncursionsApiFactory = function (configuration?: Configuration, bas
 
 /**
  * IncursionsApi - object-oriented interface
- * @export
- * @class IncursionsApi
- * @extends {BaseAPI}
  */
 export class IncursionsApi extends BaseAPI {
     /**
@@ -24806,16 +20858,12 @@ export class IncursionsApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IncursionsApi
      */
     public getIncursions(datasource?: GetIncursionsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return IncursionsApiFp(this.configuration).getIncursions(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetIncursionsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -24824,7 +20872,6 @@ export type GetIncursionsDatasourceEnum = typeof GetIncursionsDatasourceEnum[key
 
 /**
  * IndustryApi - axios parameter creator
- * @export
  */
 export const IndustryApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -25262,7 +21309,6 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * IndustryApi - functional programming interface
- * @export
  */
 export const IndustryApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = IndustryApiAxiosParamCreator(configuration)
@@ -25404,7 +21450,6 @@ export const IndustryApiFp = function(configuration?: Configuration) {
 
 /**
  * IndustryApi - factory interface
- * @export
  */
 export const IndustryApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = IndustryApiFp(configuration)
@@ -25522,9 +21567,6 @@ export const IndustryApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * IndustryApi - object-oriented interface
- * @export
- * @class IndustryApi
- * @extends {BaseAPI}
  */
 export class IndustryApi extends BaseAPI {
     /**
@@ -25537,7 +21579,6 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getCharactersCharacterIdIndustryJobs(characterId: number, datasource?: GetCharactersCharacterIdIndustryJobsDatasourceEnum, ifNoneMatch?: string, includeCompleted?: boolean, token?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getCharactersCharacterIdIndustryJobs(characterId, datasource, ifNoneMatch, includeCompleted, token, options).then((request) => request(this.axios, this.basePath));
@@ -25553,7 +21594,6 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getCharactersCharacterIdMining(characterId: number, datasource?: GetCharactersCharacterIdMiningDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getCharactersCharacterIdMining(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -25569,7 +21609,6 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getCorporationCorporationIdMiningExtractions(corporationId: number, datasource?: GetCorporationCorporationIdMiningExtractionsDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getCorporationCorporationIdMiningExtractions(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -25585,7 +21624,6 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getCorporationCorporationIdMiningObservers(corporationId: number, datasource?: GetCorporationCorporationIdMiningObserversDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getCorporationCorporationIdMiningObservers(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -25602,7 +21640,6 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getCorporationCorporationIdMiningObserversObserverId(corporationId: number, observerId: number, datasource?: GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getCorporationCorporationIdMiningObserversObserverId(corporationId, observerId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -25619,7 +21656,6 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getCorporationsCorporationIdIndustryJobs(corporationId: number, datasource?: GetCorporationsCorporationIdIndustryJobsDatasourceEnum, ifNoneMatch?: string, includeCompleted?: boolean, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getCorporationsCorporationIdIndustryJobs(corporationId, datasource, ifNoneMatch, includeCompleted, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -25632,7 +21668,6 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getIndustryFacilities(datasource?: GetIndustryFacilitiesDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getIndustryFacilities(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -25645,65 +21680,40 @@ export class IndustryApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof IndustryApi
      */
     public getIndustrySystems(datasource?: GetIndustrySystemsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return IndustryApiFp(this.configuration).getIndustrySystems(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdIndustryJobsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdIndustryJobsDatasourceEnum = typeof GetCharactersCharacterIdIndustryJobsDatasourceEnum[keyof typeof GetCharactersCharacterIdIndustryJobsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdMiningDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdMiningDatasourceEnum = typeof GetCharactersCharacterIdMiningDatasourceEnum[keyof typeof GetCharactersCharacterIdMiningDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationCorporationIdMiningExtractionsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationCorporationIdMiningExtractionsDatasourceEnum = typeof GetCorporationCorporationIdMiningExtractionsDatasourceEnum[keyof typeof GetCorporationCorporationIdMiningExtractionsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationCorporationIdMiningObserversDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationCorporationIdMiningObserversDatasourceEnum = typeof GetCorporationCorporationIdMiningObserversDatasourceEnum[keyof typeof GetCorporationCorporationIdMiningObserversDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum = typeof GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum[keyof typeof GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdIndustryJobsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdIndustryJobsDatasourceEnum = typeof GetCorporationsCorporationIdIndustryJobsDatasourceEnum[keyof typeof GetCorporationsCorporationIdIndustryJobsDatasourceEnum];
-/**
- * @export
- */
 export const GetIndustryFacilitiesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetIndustryFacilitiesDatasourceEnum = typeof GetIndustryFacilitiesDatasourceEnum[keyof typeof GetIndustryFacilitiesDatasourceEnum];
-/**
- * @export
- */
 export const GetIndustrySystemsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -25712,7 +21722,6 @@ export type GetIndustrySystemsDatasourceEnum = typeof GetIndustrySystemsDatasour
 
 /**
  * InsuranceApi - axios parameter creator
- * @export
  */
 export const InsuranceApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -25769,7 +21778,6 @@ export const InsuranceApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * InsuranceApi - functional programming interface
- * @export
  */
 export const InsuranceApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = InsuranceApiAxiosParamCreator(configuration)
@@ -25795,7 +21803,6 @@ export const InsuranceApiFp = function(configuration?: Configuration) {
 
 /**
  * InsuranceApi - factory interface
- * @export
  */
 export const InsuranceApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = InsuranceApiFp(configuration)
@@ -25818,9 +21825,6 @@ export const InsuranceApiFactory = function (configuration?: Configuration, base
 
 /**
  * InsuranceApi - object-oriented interface
- * @export
- * @class InsuranceApi
- * @extends {BaseAPI}
  */
 export class InsuranceApi extends BaseAPI {
     /**
@@ -25832,16 +21836,12 @@ export class InsuranceApi extends BaseAPI {
      * @param {GetInsurancePricesLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InsuranceApi
      */
     public getInsurancePrices(acceptLanguage?: GetInsurancePricesAcceptLanguageEnum, datasource?: GetInsurancePricesDatasourceEnum, ifNoneMatch?: string, language?: GetInsurancePricesLanguageEnum, options?: RawAxiosRequestConfig) {
         return InsuranceApiFp(this.configuration).getInsurancePrices(acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetInsurancePricesAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -25854,16 +21854,10 @@ export const GetInsurancePricesAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetInsurancePricesAcceptLanguageEnum = typeof GetInsurancePricesAcceptLanguageEnum[keyof typeof GetInsurancePricesAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetInsurancePricesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetInsurancePricesDatasourceEnum = typeof GetInsurancePricesDatasourceEnum[keyof typeof GetInsurancePricesDatasourceEnum];
-/**
- * @export
- */
 export const GetInsurancePricesLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -25880,7 +21874,6 @@ export type GetInsurancePricesLanguageEnum = typeof GetInsurancePricesLanguageEn
 
 /**
  * KillmailsApi - axios parameter creator
- * @export
  */
 export const KillmailsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -26050,7 +22043,6 @@ export const KillmailsApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * KillmailsApi - functional programming interface
- * @export
  */
 export const KillmailsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = KillmailsApiAxiosParamCreator(configuration)
@@ -26110,7 +22102,6 @@ export const KillmailsApiFp = function(configuration?: Configuration) {
 
 /**
  * KillmailsApi - factory interface
- * @export
  */
 export const KillmailsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = KillmailsApiFp(configuration)
@@ -26161,9 +22152,6 @@ export const KillmailsApiFactory = function (configuration?: Configuration, base
 
 /**
  * KillmailsApi - object-oriented interface
- * @export
- * @class KillmailsApi
- * @extends {BaseAPI}
  */
 export class KillmailsApi extends BaseAPI {
     /**
@@ -26176,7 +22164,6 @@ export class KillmailsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof KillmailsApi
      */
     public getCharactersCharacterIdKillmailsRecent(characterId: number, datasource?: GetCharactersCharacterIdKillmailsRecentDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return KillmailsApiFp(this.configuration).getCharactersCharacterIdKillmailsRecent(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -26192,7 +22179,6 @@ export class KillmailsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof KillmailsApi
      */
     public getCorporationsCorporationIdKillmailsRecent(corporationId: number, datasource?: GetCorporationsCorporationIdKillmailsRecentDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return KillmailsApiFp(this.configuration).getCorporationsCorporationIdKillmailsRecent(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -26207,30 +22193,20 @@ export class KillmailsApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof KillmailsApi
      */
     public getKillmailsKillmailIdKillmailHash(killmailHash: string, killmailId: number, datasource?: GetKillmailsKillmailIdKillmailHashDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return KillmailsApiFp(this.configuration).getKillmailsKillmailIdKillmailHash(killmailHash, killmailId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdKillmailsRecentDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdKillmailsRecentDatasourceEnum = typeof GetCharactersCharacterIdKillmailsRecentDatasourceEnum[keyof typeof GetCharactersCharacterIdKillmailsRecentDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdKillmailsRecentDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdKillmailsRecentDatasourceEnum = typeof GetCorporationsCorporationIdKillmailsRecentDatasourceEnum[keyof typeof GetCorporationsCorporationIdKillmailsRecentDatasourceEnum];
-/**
- * @export
- */
 export const GetKillmailsKillmailIdKillmailHashDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -26239,7 +22215,6 @@ export type GetKillmailsKillmailIdKillmailHashDatasourceEnum = typeof GetKillmai
 
 /**
  * LocationApi - axios parameter creator
- * @export
  */
 export const LocationApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -26404,7 +22379,6 @@ export const LocationApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * LocationApi - functional programming interface
- * @export
  */
 export const LocationApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = LocationApiAxiosParamCreator(configuration)
@@ -26462,7 +22436,6 @@ export const LocationApiFp = function(configuration?: Configuration) {
 
 /**
  * LocationApi - factory interface
- * @export
  */
 export const LocationApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = LocationApiFp(configuration)
@@ -26511,9 +22484,6 @@ export const LocationApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * LocationApi - object-oriented interface
- * @export
- * @class LocationApi
- * @extends {BaseAPI}
  */
 export class LocationApi extends BaseAPI {
     /**
@@ -26525,7 +22495,6 @@ export class LocationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LocationApi
      */
     public getCharactersCharacterIdLocation(characterId: number, datasource?: GetCharactersCharacterIdLocationDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return LocationApiFp(this.configuration).getCharactersCharacterIdLocation(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -26540,7 +22509,6 @@ export class LocationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LocationApi
      */
     public getCharactersCharacterIdOnline(characterId: number, datasource?: GetCharactersCharacterIdOnlineDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return LocationApiFp(this.configuration).getCharactersCharacterIdOnline(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -26555,30 +22523,20 @@ export class LocationApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LocationApi
      */
     public getCharactersCharacterIdShip(characterId: number, datasource?: GetCharactersCharacterIdShipDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return LocationApiFp(this.configuration).getCharactersCharacterIdShip(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdLocationDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdLocationDatasourceEnum = typeof GetCharactersCharacterIdLocationDatasourceEnum[keyof typeof GetCharactersCharacterIdLocationDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdOnlineDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdOnlineDatasourceEnum = typeof GetCharactersCharacterIdOnlineDatasourceEnum[keyof typeof GetCharactersCharacterIdOnlineDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdShipDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -26587,7 +22545,6 @@ export type GetCharactersCharacterIdShipDatasourceEnum = typeof GetCharactersCha
 
 /**
  * LoyaltyApi - axios parameter creator
- * @export
  */
 export const LoyaltyApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -26691,7 +22648,6 @@ export const LoyaltyApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * LoyaltyApi - functional programming interface
- * @export
  */
 export const LoyaltyApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = LoyaltyApiAxiosParamCreator(configuration)
@@ -26732,7 +22688,6 @@ export const LoyaltyApiFp = function(configuration?: Configuration) {
 
 /**
  * LoyaltyApi - factory interface
- * @export
  */
 export const LoyaltyApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = LoyaltyApiFp(configuration)
@@ -26767,9 +22722,6 @@ export const LoyaltyApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * LoyaltyApi - object-oriented interface
- * @export
- * @class LoyaltyApi
- * @extends {BaseAPI}
  */
 export class LoyaltyApi extends BaseAPI {
     /**
@@ -26781,7 +22733,6 @@ export class LoyaltyApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LoyaltyApi
      */
     public getCharactersCharacterIdLoyaltyPoints(characterId: number, datasource?: GetCharactersCharacterIdLoyaltyPointsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return LoyaltyApiFp(this.configuration).getCharactersCharacterIdLoyaltyPoints(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -26795,23 +22746,16 @@ export class LoyaltyApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LoyaltyApi
      */
     public getLoyaltyStoresCorporationIdOffers(corporationId: number, datasource?: GetLoyaltyStoresCorporationIdOffersDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return LoyaltyApiFp(this.configuration).getLoyaltyStoresCorporationIdOffers(corporationId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdLoyaltyPointsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdLoyaltyPointsDatasourceEnum = typeof GetCharactersCharacterIdLoyaltyPointsDatasourceEnum[keyof typeof GetCharactersCharacterIdLoyaltyPointsDatasourceEnum];
-/**
- * @export
- */
 export const GetLoyaltyStoresCorporationIdOffersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -26820,7 +22764,6 @@ export type GetLoyaltyStoresCorporationIdOffersDatasourceEnum = typeof GetLoyalt
 
 /**
  * MailApi - axios parameter creator
- * @export
  */
 export const MailApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -27321,7 +23264,6 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
 
 /**
  * MailApi - functional programming interface
- * @export
  */
 export const MailApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = MailApiAxiosParamCreator(configuration)
@@ -27479,7 +23421,6 @@ export const MailApiFp = function(configuration?: Configuration) {
 
 /**
  * MailApi - factory interface
- * @export
  */
 export const MailApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = MailApiFp(configuration)
@@ -27610,9 +23551,6 @@ export const MailApiFactory = function (configuration?: Configuration, basePath?
 
 /**
  * MailApi - object-oriented interface
- * @export
- * @class MailApi
- * @extends {BaseAPI}
  */
 export class MailApi extends BaseAPI {
     /**
@@ -27624,7 +23562,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public deleteCharactersCharacterIdMailLabelsLabelId(characterId: number, labelId: number, datasource?: DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).deleteCharactersCharacterIdMailLabelsLabelId(characterId, labelId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -27639,7 +23576,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public deleteCharactersCharacterIdMailMailId(characterId: number, mailId: number, datasource?: DeleteCharactersCharacterIdMailMailIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).deleteCharactersCharacterIdMailMailId(characterId, mailId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -27656,7 +23592,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public getCharactersCharacterIdMail(characterId: number, datasource?: GetCharactersCharacterIdMailDatasourceEnum, ifNoneMatch?: string, labels?: Set<number>, lastMailId?: number, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).getCharactersCharacterIdMail(characterId, datasource, ifNoneMatch, labels, lastMailId, token, options).then((request) => request(this.axios, this.basePath));
@@ -27671,7 +23606,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public getCharactersCharacterIdMailLabels(characterId: number, datasource?: GetCharactersCharacterIdMailLabelsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).getCharactersCharacterIdMailLabels(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -27686,7 +23620,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public getCharactersCharacterIdMailLists(characterId: number, datasource?: GetCharactersCharacterIdMailListsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).getCharactersCharacterIdMailLists(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -27702,7 +23635,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public getCharactersCharacterIdMailMailId(characterId: number, mailId: number, datasource?: GetCharactersCharacterIdMailMailIdDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).getCharactersCharacterIdMailMailId(characterId, mailId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -27717,7 +23649,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public postCharactersCharacterIdMail(characterId: number, mail: PostCharactersCharacterIdMailMail, datasource?: PostCharactersCharacterIdMailDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).postCharactersCharacterIdMail(characterId, mail, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -27732,7 +23663,6 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public postCharactersCharacterIdMailLabels(characterId: number, label: PostCharactersCharacterIdMailLabelsLabel, datasource?: PostCharactersCharacterIdMailLabelsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).postCharactersCharacterIdMailLabels(characterId, label, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -27748,72 +23678,44 @@ export class MailApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MailApi
      */
     public putCharactersCharacterIdMailMailId(characterId: number, mailId: number, contents: PutCharactersCharacterIdMailMailIdContents, datasource?: PutCharactersCharacterIdMailMailIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return MailApiFp(this.configuration).putCharactersCharacterIdMailMailId(characterId, mailId, contents, datasource, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum = typeof DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum[keyof typeof DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum];
-/**
- * @export
- */
 export const DeleteCharactersCharacterIdMailMailIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type DeleteCharactersCharacterIdMailMailIdDatasourceEnum = typeof DeleteCharactersCharacterIdMailMailIdDatasourceEnum[keyof typeof DeleteCharactersCharacterIdMailMailIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdMailDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdMailDatasourceEnum = typeof GetCharactersCharacterIdMailDatasourceEnum[keyof typeof GetCharactersCharacterIdMailDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdMailLabelsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdMailLabelsDatasourceEnum = typeof GetCharactersCharacterIdMailLabelsDatasourceEnum[keyof typeof GetCharactersCharacterIdMailLabelsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdMailListsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdMailListsDatasourceEnum = typeof GetCharactersCharacterIdMailListsDatasourceEnum[keyof typeof GetCharactersCharacterIdMailListsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdMailMailIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdMailMailIdDatasourceEnum = typeof GetCharactersCharacterIdMailMailIdDatasourceEnum[keyof typeof GetCharactersCharacterIdMailMailIdDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersCharacterIdMailDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostCharactersCharacterIdMailDatasourceEnum = typeof PostCharactersCharacterIdMailDatasourceEnum[keyof typeof PostCharactersCharacterIdMailDatasourceEnum];
-/**
- * @export
- */
 export const PostCharactersCharacterIdMailLabelsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostCharactersCharacterIdMailLabelsDatasourceEnum = typeof PostCharactersCharacterIdMailLabelsDatasourceEnum[keyof typeof PostCharactersCharacterIdMailLabelsDatasourceEnum];
-/**
- * @export
- */
 export const PutCharactersCharacterIdMailMailIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -27822,7 +23724,6 @@ export type PutCharactersCharacterIdMailMailIdDatasourceEnum = typeof PutCharact
 
 /**
  * MarketApi - axios parameter creator
- * @export
  */
 export const MarketApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -28399,7 +24300,6 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * MarketApi - functional programming interface
- * @export
  */
 export const MarketApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = MarketApiAxiosParamCreator(configuration)
@@ -28588,7 +24488,6 @@ export const MarketApiFp = function(configuration?: Configuration) {
 
 /**
  * MarketApi - factory interface
- * @export
  */
 export const MarketApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = MarketApiFp(configuration)
@@ -28744,9 +24643,6 @@ export const MarketApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * MarketApi - object-oriented interface
- * @export
- * @class MarketApi
- * @extends {BaseAPI}
  */
 export class MarketApi extends BaseAPI {
     /**
@@ -28758,7 +24654,6 @@ export class MarketApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getCharactersCharacterIdOrders(characterId: number, datasource?: GetCharactersCharacterIdOrdersDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getCharactersCharacterIdOrders(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -28774,7 +24669,6 @@ export class MarketApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getCharactersCharacterIdOrdersHistory(characterId: number, datasource?: GetCharactersCharacterIdOrdersHistoryDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getCharactersCharacterIdOrdersHistory(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -28790,7 +24684,6 @@ export class MarketApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getCorporationsCorporationIdOrders(corporationId: number, datasource?: GetCorporationsCorporationIdOrdersDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getCorporationsCorporationIdOrders(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -28806,7 +24699,6 @@ export class MarketApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getCorporationsCorporationIdOrdersHistory(corporationId: number, datasource?: GetCorporationsCorporationIdOrdersHistoryDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getCorporationsCorporationIdOrdersHistory(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -28819,7 +24711,6 @@ export class MarketApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getMarketsGroups(datasource?: GetMarketsGroupsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getMarketsGroups(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -28835,7 +24726,6 @@ export class MarketApi extends BaseAPI {
      * @param {GetMarketsGroupsMarketGroupIdLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getMarketsGroupsMarketGroupId(marketGroupId: number, acceptLanguage?: GetMarketsGroupsMarketGroupIdAcceptLanguageEnum, datasource?: GetMarketsGroupsMarketGroupIdDatasourceEnum, ifNoneMatch?: string, language?: GetMarketsGroupsMarketGroupIdLanguageEnum, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getMarketsGroupsMarketGroupId(marketGroupId, acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -28848,7 +24738,6 @@ export class MarketApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getMarketsPrices(datasource?: GetMarketsPricesDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getMarketsPrices(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -28863,7 +24752,6 @@ export class MarketApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getMarketsRegionIdHistory(regionId: number, typeId: number, datasource?: GetMarketsRegionIdHistoryDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getMarketsRegionIdHistory(regionId, typeId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -28880,7 +24768,6 @@ export class MarketApi extends BaseAPI {
      * @param {number} [typeId] Return orders only for this type
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getMarketsRegionIdOrders(orderType: GetMarketsRegionIdOrdersOrderTypeEnum, regionId: number, datasource?: GetMarketsRegionIdOrdersDatasourceEnum, ifNoneMatch?: string, page?: number, typeId?: number, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getMarketsRegionIdOrders(orderType, regionId, datasource, ifNoneMatch, page, typeId, options).then((request) => request(this.axios, this.basePath));
@@ -28895,7 +24782,6 @@ export class MarketApi extends BaseAPI {
      * @param {number} [page] Which page of results to return
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getMarketsRegionIdTypes(regionId: number, datasource?: GetMarketsRegionIdTypesDatasourceEnum, ifNoneMatch?: string, page?: number, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getMarketsRegionIdTypes(regionId, datasource, ifNoneMatch, page, options).then((request) => request(this.axios, this.basePath));
@@ -28911,51 +24797,32 @@ export class MarketApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MarketApi
      */
     public getMarketsStructuresStructureId(structureId: number, datasource?: GetMarketsStructuresStructureIdDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return MarketApiFp(this.configuration).getMarketsStructuresStructureId(structureId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdOrdersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdOrdersDatasourceEnum = typeof GetCharactersCharacterIdOrdersDatasourceEnum[keyof typeof GetCharactersCharacterIdOrdersDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdOrdersHistoryDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdOrdersHistoryDatasourceEnum = typeof GetCharactersCharacterIdOrdersHistoryDatasourceEnum[keyof typeof GetCharactersCharacterIdOrdersHistoryDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdOrdersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdOrdersDatasourceEnum = typeof GetCorporationsCorporationIdOrdersDatasourceEnum[keyof typeof GetCorporationsCorporationIdOrdersDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdOrdersHistoryDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdOrdersHistoryDatasourceEnum = typeof GetCorporationsCorporationIdOrdersHistoryDatasourceEnum[keyof typeof GetCorporationsCorporationIdOrdersHistoryDatasourceEnum];
-/**
- * @export
- */
 export const GetMarketsGroupsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetMarketsGroupsDatasourceEnum = typeof GetMarketsGroupsDatasourceEnum[keyof typeof GetMarketsGroupsDatasourceEnum];
-/**
- * @export
- */
 export const GetMarketsGroupsMarketGroupIdAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -28968,16 +24835,10 @@ export const GetMarketsGroupsMarketGroupIdAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetMarketsGroupsMarketGroupIdAcceptLanguageEnum = typeof GetMarketsGroupsMarketGroupIdAcceptLanguageEnum[keyof typeof GetMarketsGroupsMarketGroupIdAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetMarketsGroupsMarketGroupIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetMarketsGroupsMarketGroupIdDatasourceEnum = typeof GetMarketsGroupsMarketGroupIdDatasourceEnum[keyof typeof GetMarketsGroupsMarketGroupIdDatasourceEnum];
-/**
- * @export
- */
 export const GetMarketsGroupsMarketGroupIdLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -28990,46 +24851,28 @@ export const GetMarketsGroupsMarketGroupIdLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetMarketsGroupsMarketGroupIdLanguageEnum = typeof GetMarketsGroupsMarketGroupIdLanguageEnum[keyof typeof GetMarketsGroupsMarketGroupIdLanguageEnum];
-/**
- * @export
- */
 export const GetMarketsPricesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetMarketsPricesDatasourceEnum = typeof GetMarketsPricesDatasourceEnum[keyof typeof GetMarketsPricesDatasourceEnum];
-/**
- * @export
- */
 export const GetMarketsRegionIdHistoryDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetMarketsRegionIdHistoryDatasourceEnum = typeof GetMarketsRegionIdHistoryDatasourceEnum[keyof typeof GetMarketsRegionIdHistoryDatasourceEnum];
-/**
- * @export
- */
 export const GetMarketsRegionIdOrdersOrderTypeEnum = {
     Buy: 'buy',
     Sell: 'sell',
     All: 'all'
 } as const;
 export type GetMarketsRegionIdOrdersOrderTypeEnum = typeof GetMarketsRegionIdOrdersOrderTypeEnum[keyof typeof GetMarketsRegionIdOrdersOrderTypeEnum];
-/**
- * @export
- */
 export const GetMarketsRegionIdOrdersDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetMarketsRegionIdOrdersDatasourceEnum = typeof GetMarketsRegionIdOrdersDatasourceEnum[keyof typeof GetMarketsRegionIdOrdersDatasourceEnum];
-/**
- * @export
- */
 export const GetMarketsRegionIdTypesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetMarketsRegionIdTypesDatasourceEnum = typeof GetMarketsRegionIdTypesDatasourceEnum[keyof typeof GetMarketsRegionIdTypesDatasourceEnum];
-/**
- * @export
- */
 export const GetMarketsStructuresStructureIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -29038,7 +24881,6 @@ export type GetMarketsStructuresStructureIdDatasourceEnum = typeof GetMarketsStr
 
 /**
  * PlanetaryInteractionApi - axios parameter creator
- * @export
  */
 export const PlanetaryInteractionApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -29251,7 +25093,6 @@ export const PlanetaryInteractionApiAxiosParamCreator = function (configuration?
 
 /**
  * PlanetaryInteractionApi - functional programming interface
- * @export
  */
 export const PlanetaryInteractionApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = PlanetaryInteractionApiAxiosParamCreator(configuration)
@@ -29325,7 +25166,6 @@ export const PlanetaryInteractionApiFp = function(configuration?: Configuration)
 
 /**
  * PlanetaryInteractionApi - factory interface
- * @export
  */
 export const PlanetaryInteractionApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = PlanetaryInteractionApiFp(configuration)
@@ -29387,9 +25227,6 @@ export const PlanetaryInteractionApiFactory = function (configuration?: Configur
 
 /**
  * PlanetaryInteractionApi - object-oriented interface
- * @export
- * @class PlanetaryInteractionApi
- * @extends {BaseAPI}
  */
 export class PlanetaryInteractionApi extends BaseAPI {
     /**
@@ -29401,7 +25238,6 @@ export class PlanetaryInteractionApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlanetaryInteractionApi
      */
     public getCharactersCharacterIdPlanets(characterId: number, datasource?: GetCharactersCharacterIdPlanetsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return PlanetaryInteractionApiFp(this.configuration).getCharactersCharacterIdPlanets(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -29416,7 +25252,6 @@ export class PlanetaryInteractionApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlanetaryInteractionApi
      */
     public getCharactersCharacterIdPlanetsPlanetId(characterId: number, planetId: number, datasource?: GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return PlanetaryInteractionApiFp(this.configuration).getCharactersCharacterIdPlanetsPlanetId(characterId, planetId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -29432,7 +25267,6 @@ export class PlanetaryInteractionApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlanetaryInteractionApi
      */
     public getCorporationsCorporationIdCustomsOffices(corporationId: number, datasource?: GetCorporationsCorporationIdCustomsOfficesDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return PlanetaryInteractionApiFp(this.configuration).getCorporationsCorporationIdCustomsOffices(corporationId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -29446,37 +25280,24 @@ export class PlanetaryInteractionApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlanetaryInteractionApi
      */
     public getUniverseSchematicsSchematicId(schematicId: number, datasource?: GetUniverseSchematicsSchematicIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return PlanetaryInteractionApiFp(this.configuration).getUniverseSchematicsSchematicId(schematicId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdPlanetsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdPlanetsDatasourceEnum = typeof GetCharactersCharacterIdPlanetsDatasourceEnum[keyof typeof GetCharactersCharacterIdPlanetsDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum = typeof GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum[keyof typeof GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdCustomsOfficesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdCustomsOfficesDatasourceEnum = typeof GetCorporationsCorporationIdCustomsOfficesDatasourceEnum[keyof typeof GetCorporationsCorporationIdCustomsOfficesDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseSchematicsSchematicIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -29485,7 +25306,6 @@ export type GetUniverseSchematicsSchematicIdDatasourceEnum = typeof GetUniverseS
 
 /**
  * RoutesApi - axios parameter creator
- * @export
  */
 export const RoutesApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -29556,7 +25376,6 @@ export const RoutesApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * RoutesApi - functional programming interface
- * @export
  */
 export const RoutesApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = RoutesApiAxiosParamCreator(configuration)
@@ -29585,7 +25404,6 @@ export const RoutesApiFp = function(configuration?: Configuration) {
 
 /**
  * RoutesApi - factory interface
- * @export
  */
 export const RoutesApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = RoutesApiFp(configuration)
@@ -29611,9 +25429,6 @@ export const RoutesApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * RoutesApi - object-oriented interface
- * @export
- * @class RoutesApi
- * @extends {BaseAPI}
  */
 export class RoutesApi extends BaseAPI {
     /**
@@ -29628,23 +25443,16 @@ export class RoutesApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof RoutesApi
      */
     public getRouteOriginDestination(destination: number, origin: number, avoid?: Set<number>, connections?: Set<Set<number>>, datasource?: GetRouteOriginDestinationDatasourceEnum, flag?: GetRouteOriginDestinationFlagEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return RoutesApiFp(this.configuration).getRouteOriginDestination(destination, origin, avoid, connections, datasource, flag, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetRouteOriginDestinationDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetRouteOriginDestinationDatasourceEnum = typeof GetRouteOriginDestinationDatasourceEnum[keyof typeof GetRouteOriginDestinationDatasourceEnum];
-/**
- * @export
- */
 export const GetRouteOriginDestinationFlagEnum = {
     Shortest: 'shortest',
     Secure: 'secure',
@@ -29655,7 +25463,6 @@ export type GetRouteOriginDestinationFlagEnum = typeof GetRouteOriginDestination
 
 /**
  * SearchApi - axios parameter creator
- * @export
  */
 export const SearchApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -29744,7 +25551,6 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * SearchApi - functional programming interface
- * @export
  */
 export const SearchApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SearchApiAxiosParamCreator(configuration)
@@ -29775,7 +25581,6 @@ export const SearchApiFp = function(configuration?: Configuration) {
 
 /**
  * SearchApi - factory interface
- * @export
  */
 export const SearchApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SearchApiFp(configuration)
@@ -29803,9 +25608,6 @@ export const SearchApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * SearchApi - object-oriented interface
- * @export
- * @class SearchApi
- * @extends {BaseAPI}
  */
 export class SearchApi extends BaseAPI {
     /**
@@ -29822,16 +25624,12 @@ export class SearchApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SearchApi
      */
     public getCharactersCharacterIdSearch(categories: Set<GetCharactersCharacterIdSearchCategoriesEnum>, characterId: number, search: string, acceptLanguage?: GetCharactersCharacterIdSearchAcceptLanguageEnum, datasource?: GetCharactersCharacterIdSearchDatasourceEnum, ifNoneMatch?: string, language?: GetCharactersCharacterIdSearchLanguageEnum, strict?: boolean, token?: string, options?: RawAxiosRequestConfig) {
         return SearchApiFp(this.configuration).getCharactersCharacterIdSearch(categories, characterId, search, acceptLanguage, datasource, ifNoneMatch, language, strict, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdSearchCategoriesEnum = {
     Agent: 'agent',
     Alliance: 'alliance',
@@ -29846,9 +25644,6 @@ export const GetCharactersCharacterIdSearchCategoriesEnum = {
     Structure: 'structure'
 } as const;
 export type GetCharactersCharacterIdSearchCategoriesEnum = typeof GetCharactersCharacterIdSearchCategoriesEnum[keyof typeof GetCharactersCharacterIdSearchCategoriesEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdSearchAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -29861,16 +25656,10 @@ export const GetCharactersCharacterIdSearchAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetCharactersCharacterIdSearchAcceptLanguageEnum = typeof GetCharactersCharacterIdSearchAcceptLanguageEnum[keyof typeof GetCharactersCharacterIdSearchAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdSearchDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdSearchDatasourceEnum = typeof GetCharactersCharacterIdSearchDatasourceEnum[keyof typeof GetCharactersCharacterIdSearchDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdSearchLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -29887,7 +25676,6 @@ export type GetCharactersCharacterIdSearchLanguageEnum = typeof GetCharactersCha
 
 /**
  * SkillsApi - axios parameter creator
- * @export
  */
 export const SkillsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -30052,7 +25840,6 @@ export const SkillsApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * SkillsApi - functional programming interface
- * @export
  */
 export const SkillsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SkillsApiAxiosParamCreator(configuration)
@@ -30110,7 +25897,6 @@ export const SkillsApiFp = function(configuration?: Configuration) {
 
 /**
  * SkillsApi - factory interface
- * @export
  */
 export const SkillsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SkillsApiFp(configuration)
@@ -30159,9 +25945,6 @@ export const SkillsApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * SkillsApi - object-oriented interface
- * @export
- * @class SkillsApi
- * @extends {BaseAPI}
  */
 export class SkillsApi extends BaseAPI {
     /**
@@ -30173,7 +25956,6 @@ export class SkillsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SkillsApi
      */
     public getCharactersCharacterIdAttributes(characterId: number, datasource?: GetCharactersCharacterIdAttributesDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return SkillsApiFp(this.configuration).getCharactersCharacterIdAttributes(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -30188,7 +25970,6 @@ export class SkillsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SkillsApi
      */
     public getCharactersCharacterIdSkillqueue(characterId: number, datasource?: GetCharactersCharacterIdSkillqueueDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return SkillsApiFp(this.configuration).getCharactersCharacterIdSkillqueue(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -30203,30 +25984,20 @@ export class SkillsApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SkillsApi
      */
     public getCharactersCharacterIdSkills(characterId: number, datasource?: GetCharactersCharacterIdSkillsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return SkillsApiFp(this.configuration).getCharactersCharacterIdSkills(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdAttributesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdAttributesDatasourceEnum = typeof GetCharactersCharacterIdAttributesDatasourceEnum[keyof typeof GetCharactersCharacterIdAttributesDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdSkillqueueDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdSkillqueueDatasourceEnum = typeof GetCharactersCharacterIdSkillqueueDatasourceEnum[keyof typeof GetCharactersCharacterIdSkillqueueDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdSkillsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -30235,7 +26006,6 @@ export type GetCharactersCharacterIdSkillsDatasourceEnum = typeof GetCharactersC
 
 /**
  * SovereigntyApi - axios parameter creator
- * @export
  */
 export const SovereigntyApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -30361,7 +26131,6 @@ export const SovereigntyApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * SovereigntyApi - functional programming interface
- * @export
  */
 export const SovereigntyApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SovereigntyApiAxiosParamCreator(configuration)
@@ -30413,7 +26182,6 @@ export const SovereigntyApiFp = function(configuration?: Configuration) {
 
 /**
  * SovereigntyApi - factory interface
- * @export
  */
 export const SovereigntyApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SovereigntyApiFp(configuration)
@@ -30456,9 +26224,6 @@ export const SovereigntyApiFactory = function (configuration?: Configuration, ba
 
 /**
  * SovereigntyApi - object-oriented interface
- * @export
- * @class SovereigntyApi
- * @extends {BaseAPI}
  */
 export class SovereigntyApi extends BaseAPI {
     /**
@@ -30468,7 +26233,6 @@ export class SovereigntyApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SovereigntyApi
      */
     public getSovereigntyCampaigns(datasource?: GetSovereigntyCampaignsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return SovereigntyApiFp(this.configuration).getSovereigntyCampaigns(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -30481,7 +26245,6 @@ export class SovereigntyApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SovereigntyApi
      */
     public getSovereigntyMap(datasource?: GetSovereigntyMapDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return SovereigntyApiFp(this.configuration).getSovereigntyMap(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -30494,30 +26257,20 @@ export class SovereigntyApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SovereigntyApi
      */
     public getSovereigntyStructures(datasource?: GetSovereigntyStructuresDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return SovereigntyApiFp(this.configuration).getSovereigntyStructures(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetSovereigntyCampaignsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetSovereigntyCampaignsDatasourceEnum = typeof GetSovereigntyCampaignsDatasourceEnum[keyof typeof GetSovereigntyCampaignsDatasourceEnum];
-/**
- * @export
- */
 export const GetSovereigntyMapDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetSovereigntyMapDatasourceEnum = typeof GetSovereigntyMapDatasourceEnum[keyof typeof GetSovereigntyMapDatasourceEnum];
-/**
- * @export
- */
 export const GetSovereigntyStructuresDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -30526,7 +26279,6 @@ export type GetSovereigntyStructuresDatasourceEnum = typeof GetSovereigntyStruct
 
 /**
  * StatusApi - axios parameter creator
- * @export
  */
 export const StatusApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -30574,7 +26326,6 @@ export const StatusApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * StatusApi - functional programming interface
- * @export
  */
 export const StatusApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = StatusApiAxiosParamCreator(configuration)
@@ -30598,7 +26349,6 @@ export const StatusApiFp = function(configuration?: Configuration) {
 
 /**
  * StatusApi - factory interface
- * @export
  */
 export const StatusApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = StatusApiFp(configuration)
@@ -30619,9 +26369,6 @@ export const StatusApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * StatusApi - object-oriented interface
- * @export
- * @class StatusApi
- * @extends {BaseAPI}
  */
 export class StatusApi extends BaseAPI {
     /**
@@ -30631,16 +26378,12 @@ export class StatusApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StatusApi
      */
     public getStatus(datasource?: GetStatusDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return StatusApiFp(this.configuration).getStatus(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetStatusDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -30649,7 +26392,6 @@ export type GetStatusDatasourceEnum = typeof GetStatusDatasourceEnum[keyof typeo
 
 /**
  * UniverseApi - axios parameter creator
- * @export
  */
 export const UniverseApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -32011,7 +27753,6 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * UniverseApi - functional programming interface
- * @export
  */
 export const UniverseApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = UniverseApiAxiosParamCreator(configuration)
@@ -32481,7 +28222,6 @@ export const UniverseApiFp = function(configuration?: Configuration) {
 
 /**
  * UniverseApi - factory interface
- * @export
  */
 export const UniverseApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = UniverseApiFp(configuration)
@@ -32861,9 +28601,6 @@ export const UniverseApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * UniverseApi - object-oriented interface
- * @export
- * @class UniverseApi
- * @extends {BaseAPI}
  */
 export class UniverseApi extends BaseAPI {
     /**
@@ -32875,7 +28612,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseAncestriesLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseAncestries(acceptLanguage?: GetUniverseAncestriesAcceptLanguageEnum, datasource?: GetUniverseAncestriesDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseAncestriesLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseAncestries(acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -32889,7 +28625,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseAsteroidBeltsAsteroidBeltId(asteroidBeltId: number, datasource?: GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseAsteroidBeltsAsteroidBeltId(asteroidBeltId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -32904,7 +28639,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseBloodlinesLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseBloodlines(acceptLanguage?: GetUniverseBloodlinesAcceptLanguageEnum, datasource?: GetUniverseBloodlinesDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseBloodlinesLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseBloodlines(acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -32917,7 +28651,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseCategories(datasource?: GetUniverseCategoriesDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseCategories(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -32933,7 +28666,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseCategoriesCategoryIdLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseCategoriesCategoryId(categoryId: number, acceptLanguage?: GetUniverseCategoriesCategoryIdAcceptLanguageEnum, datasource?: GetUniverseCategoriesCategoryIdDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseCategoriesCategoryIdLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseCategoriesCategoryId(categoryId, acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -32946,7 +28678,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseConstellations(datasource?: GetUniverseConstellationsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseConstellations(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -32962,7 +28693,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseConstellationsConstellationIdLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseConstellationsConstellationId(constellationId: number, acceptLanguage?: GetUniverseConstellationsConstellationIdAcceptLanguageEnum, datasource?: GetUniverseConstellationsConstellationIdDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseConstellationsConstellationIdLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseConstellationsConstellationId(constellationId, acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -32977,7 +28707,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseFactionsLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseFactions(acceptLanguage?: GetUniverseFactionsAcceptLanguageEnum, datasource?: GetUniverseFactionsDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseFactionsLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseFactions(acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -32990,7 +28719,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseGraphics(datasource?: GetUniverseGraphicsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseGraphics(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33004,7 +28732,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseGraphicsGraphicId(graphicId: number, datasource?: GetUniverseGraphicsGraphicIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseGraphicsGraphicId(graphicId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33018,7 +28745,6 @@ export class UniverseApi extends BaseAPI {
      * @param {number} [page] Which page of results to return
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseGroups(datasource?: GetUniverseGroupsDatasourceEnum, ifNoneMatch?: string, page?: number, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseGroups(datasource, ifNoneMatch, page, options).then((request) => request(this.axios, this.basePath));
@@ -33034,7 +28760,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseGroupsGroupIdLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseGroupsGroupId(groupId: number, acceptLanguage?: GetUniverseGroupsGroupIdAcceptLanguageEnum, datasource?: GetUniverseGroupsGroupIdDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseGroupsGroupIdLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseGroupsGroupId(groupId, acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -33048,7 +28773,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseMoonsMoonId(moonId: number, datasource?: GetUniverseMoonsMoonIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseMoonsMoonId(moonId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33062,7 +28786,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniversePlanetsPlanetId(planetId: number, datasource?: GetUniversePlanetsPlanetIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniversePlanetsPlanetId(planetId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33077,7 +28800,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseRacesLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseRaces(acceptLanguage?: GetUniverseRacesAcceptLanguageEnum, datasource?: GetUniverseRacesDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseRacesLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseRaces(acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -33090,7 +28812,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseRegions(datasource?: GetUniverseRegionsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseRegions(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33106,7 +28827,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseRegionsRegionIdLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseRegionsRegionId(regionId: number, acceptLanguage?: GetUniverseRegionsRegionIdAcceptLanguageEnum, datasource?: GetUniverseRegionsRegionIdDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseRegionsRegionIdLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseRegionsRegionId(regionId, acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -33120,7 +28840,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseStargatesStargateId(stargateId: number, datasource?: GetUniverseStargatesStargateIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseStargatesStargateId(stargateId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33134,7 +28853,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseStarsStarId(starId: number, datasource?: GetUniverseStarsStarIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseStarsStarId(starId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33148,7 +28866,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseStationsStationId(stationId: number, datasource?: GetUniverseStationsStationIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseStationsStationId(stationId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33162,7 +28879,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseStructures(datasource?: GetUniverseStructuresDatasourceEnum, filter?: GetUniverseStructuresFilterEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseStructures(datasource, filter, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33177,7 +28893,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseStructuresStructureId(structureId: number, datasource?: GetUniverseStructuresStructureIdDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseStructuresStructureId(structureId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -33190,7 +28905,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseSystemJumps(datasource?: GetUniverseSystemJumpsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseSystemJumps(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33203,7 +28917,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseSystemKills(datasource?: GetUniverseSystemKillsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseSystemKills(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33216,7 +28929,6 @@ export class UniverseApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseSystems(datasource?: GetUniverseSystemsDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseSystems(datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -33232,7 +28944,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseSystemsSystemIdLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseSystemsSystemId(systemId: number, acceptLanguage?: GetUniverseSystemsSystemIdAcceptLanguageEnum, datasource?: GetUniverseSystemsSystemIdDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseSystemsSystemIdLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseSystemsSystemId(systemId, acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -33246,7 +28957,6 @@ export class UniverseApi extends BaseAPI {
      * @param {number} [page] Which page of results to return
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseTypes(datasource?: GetUniverseTypesDatasourceEnum, ifNoneMatch?: string, page?: number, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseTypes(datasource, ifNoneMatch, page, options).then((request) => request(this.axios, this.basePath));
@@ -33262,7 +28972,6 @@ export class UniverseApi extends BaseAPI {
      * @param {GetUniverseTypesTypeIdLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public getUniverseTypesTypeId(typeId: number, acceptLanguage?: GetUniverseTypesTypeIdAcceptLanguageEnum, datasource?: GetUniverseTypesTypeIdDatasourceEnum, ifNoneMatch?: string, language?: GetUniverseTypesTypeIdLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).getUniverseTypesTypeId(typeId, acceptLanguage, datasource, ifNoneMatch, language, options).then((request) => request(this.axios, this.basePath));
@@ -33277,7 +28986,6 @@ export class UniverseApi extends BaseAPI {
      * @param {PostUniverseIdsLanguageEnum} [language] Language to use in the response, takes precedence over Accept-Language
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public postUniverseIds(names: Set<string>, acceptLanguage?: PostUniverseIdsAcceptLanguageEnum, datasource?: PostUniverseIdsDatasourceEnum, language?: PostUniverseIdsLanguageEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).postUniverseIds(names, acceptLanguage, datasource, language, options).then((request) => request(this.axios, this.basePath));
@@ -33290,16 +28998,12 @@ export class UniverseApi extends BaseAPI {
      * @param {PostUniverseNamesDatasourceEnum} [datasource] The server name you would like data from
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UniverseApi
      */
     public postUniverseNames(ids: Set<number>, datasource?: PostUniverseNamesDatasourceEnum, options?: RawAxiosRequestConfig) {
         return UniverseApiFp(this.configuration).postUniverseNames(ids, datasource, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetUniverseAncestriesAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33312,16 +29016,10 @@ export const GetUniverseAncestriesAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseAncestriesAcceptLanguageEnum = typeof GetUniverseAncestriesAcceptLanguageEnum[keyof typeof GetUniverseAncestriesAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseAncestriesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseAncestriesDatasourceEnum = typeof GetUniverseAncestriesDatasourceEnum[keyof typeof GetUniverseAncestriesDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseAncestriesLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33334,16 +29032,10 @@ export const GetUniverseAncestriesLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseAncestriesLanguageEnum = typeof GetUniverseAncestriesLanguageEnum[keyof typeof GetUniverseAncestriesLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum = typeof GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum[keyof typeof GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseBloodlinesAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33356,16 +29048,10 @@ export const GetUniverseBloodlinesAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseBloodlinesAcceptLanguageEnum = typeof GetUniverseBloodlinesAcceptLanguageEnum[keyof typeof GetUniverseBloodlinesAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseBloodlinesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseBloodlinesDatasourceEnum = typeof GetUniverseBloodlinesDatasourceEnum[keyof typeof GetUniverseBloodlinesDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseBloodlinesLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33378,16 +29064,10 @@ export const GetUniverseBloodlinesLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseBloodlinesLanguageEnum = typeof GetUniverseBloodlinesLanguageEnum[keyof typeof GetUniverseBloodlinesLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseCategoriesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseCategoriesDatasourceEnum = typeof GetUniverseCategoriesDatasourceEnum[keyof typeof GetUniverseCategoriesDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseCategoriesCategoryIdAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33400,16 +29080,10 @@ export const GetUniverseCategoriesCategoryIdAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseCategoriesCategoryIdAcceptLanguageEnum = typeof GetUniverseCategoriesCategoryIdAcceptLanguageEnum[keyof typeof GetUniverseCategoriesCategoryIdAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseCategoriesCategoryIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseCategoriesCategoryIdDatasourceEnum = typeof GetUniverseCategoriesCategoryIdDatasourceEnum[keyof typeof GetUniverseCategoriesCategoryIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseCategoriesCategoryIdLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33422,16 +29096,10 @@ export const GetUniverseCategoriesCategoryIdLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseCategoriesCategoryIdLanguageEnum = typeof GetUniverseCategoriesCategoryIdLanguageEnum[keyof typeof GetUniverseCategoriesCategoryIdLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseConstellationsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseConstellationsDatasourceEnum = typeof GetUniverseConstellationsDatasourceEnum[keyof typeof GetUniverseConstellationsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseConstellationsConstellationIdAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33444,16 +29112,10 @@ export const GetUniverseConstellationsConstellationIdAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseConstellationsConstellationIdAcceptLanguageEnum = typeof GetUniverseConstellationsConstellationIdAcceptLanguageEnum[keyof typeof GetUniverseConstellationsConstellationIdAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseConstellationsConstellationIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseConstellationsConstellationIdDatasourceEnum = typeof GetUniverseConstellationsConstellationIdDatasourceEnum[keyof typeof GetUniverseConstellationsConstellationIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseConstellationsConstellationIdLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33466,9 +29128,6 @@ export const GetUniverseConstellationsConstellationIdLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseConstellationsConstellationIdLanguageEnum = typeof GetUniverseConstellationsConstellationIdLanguageEnum[keyof typeof GetUniverseConstellationsConstellationIdLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseFactionsAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33481,16 +29140,10 @@ export const GetUniverseFactionsAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseFactionsAcceptLanguageEnum = typeof GetUniverseFactionsAcceptLanguageEnum[keyof typeof GetUniverseFactionsAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseFactionsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseFactionsDatasourceEnum = typeof GetUniverseFactionsDatasourceEnum[keyof typeof GetUniverseFactionsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseFactionsLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33503,30 +29156,18 @@ export const GetUniverseFactionsLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseFactionsLanguageEnum = typeof GetUniverseFactionsLanguageEnum[keyof typeof GetUniverseFactionsLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseGraphicsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseGraphicsDatasourceEnum = typeof GetUniverseGraphicsDatasourceEnum[keyof typeof GetUniverseGraphicsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseGraphicsGraphicIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseGraphicsGraphicIdDatasourceEnum = typeof GetUniverseGraphicsGraphicIdDatasourceEnum[keyof typeof GetUniverseGraphicsGraphicIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseGroupsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseGroupsDatasourceEnum = typeof GetUniverseGroupsDatasourceEnum[keyof typeof GetUniverseGroupsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseGroupsGroupIdAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33539,16 +29180,10 @@ export const GetUniverseGroupsGroupIdAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseGroupsGroupIdAcceptLanguageEnum = typeof GetUniverseGroupsGroupIdAcceptLanguageEnum[keyof typeof GetUniverseGroupsGroupIdAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseGroupsGroupIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseGroupsGroupIdDatasourceEnum = typeof GetUniverseGroupsGroupIdDatasourceEnum[keyof typeof GetUniverseGroupsGroupIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseGroupsGroupIdLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33561,23 +29196,14 @@ export const GetUniverseGroupsGroupIdLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseGroupsGroupIdLanguageEnum = typeof GetUniverseGroupsGroupIdLanguageEnum[keyof typeof GetUniverseGroupsGroupIdLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseMoonsMoonIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseMoonsMoonIdDatasourceEnum = typeof GetUniverseMoonsMoonIdDatasourceEnum[keyof typeof GetUniverseMoonsMoonIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniversePlanetsPlanetIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniversePlanetsPlanetIdDatasourceEnum = typeof GetUniversePlanetsPlanetIdDatasourceEnum[keyof typeof GetUniversePlanetsPlanetIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseRacesAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33590,16 +29216,10 @@ export const GetUniverseRacesAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseRacesAcceptLanguageEnum = typeof GetUniverseRacesAcceptLanguageEnum[keyof typeof GetUniverseRacesAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseRacesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseRacesDatasourceEnum = typeof GetUniverseRacesDatasourceEnum[keyof typeof GetUniverseRacesDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseRacesLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33612,16 +29232,10 @@ export const GetUniverseRacesLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseRacesLanguageEnum = typeof GetUniverseRacesLanguageEnum[keyof typeof GetUniverseRacesLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseRegionsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseRegionsDatasourceEnum = typeof GetUniverseRegionsDatasourceEnum[keyof typeof GetUniverseRegionsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseRegionsRegionIdAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33634,16 +29248,10 @@ export const GetUniverseRegionsRegionIdAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseRegionsRegionIdAcceptLanguageEnum = typeof GetUniverseRegionsRegionIdAcceptLanguageEnum[keyof typeof GetUniverseRegionsRegionIdAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseRegionsRegionIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseRegionsRegionIdDatasourceEnum = typeof GetUniverseRegionsRegionIdDatasourceEnum[keyof typeof GetUniverseRegionsRegionIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseRegionsRegionIdLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33656,73 +29264,43 @@ export const GetUniverseRegionsRegionIdLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseRegionsRegionIdLanguageEnum = typeof GetUniverseRegionsRegionIdLanguageEnum[keyof typeof GetUniverseRegionsRegionIdLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseStargatesStargateIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseStargatesStargateIdDatasourceEnum = typeof GetUniverseStargatesStargateIdDatasourceEnum[keyof typeof GetUniverseStargatesStargateIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseStarsStarIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseStarsStarIdDatasourceEnum = typeof GetUniverseStarsStarIdDatasourceEnum[keyof typeof GetUniverseStarsStarIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseStationsStationIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseStationsStationIdDatasourceEnum = typeof GetUniverseStationsStationIdDatasourceEnum[keyof typeof GetUniverseStationsStationIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseStructuresDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseStructuresDatasourceEnum = typeof GetUniverseStructuresDatasourceEnum[keyof typeof GetUniverseStructuresDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseStructuresFilterEnum = {
     Market: 'market',
     ManufacturingBasic: 'manufacturing_basic'
 } as const;
 export type GetUniverseStructuresFilterEnum = typeof GetUniverseStructuresFilterEnum[keyof typeof GetUniverseStructuresFilterEnum];
-/**
- * @export
- */
 export const GetUniverseStructuresStructureIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseStructuresStructureIdDatasourceEnum = typeof GetUniverseStructuresStructureIdDatasourceEnum[keyof typeof GetUniverseStructuresStructureIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseSystemJumpsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseSystemJumpsDatasourceEnum = typeof GetUniverseSystemJumpsDatasourceEnum[keyof typeof GetUniverseSystemJumpsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseSystemKillsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseSystemKillsDatasourceEnum = typeof GetUniverseSystemKillsDatasourceEnum[keyof typeof GetUniverseSystemKillsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseSystemsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseSystemsDatasourceEnum = typeof GetUniverseSystemsDatasourceEnum[keyof typeof GetUniverseSystemsDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseSystemsSystemIdAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33735,16 +29313,10 @@ export const GetUniverseSystemsSystemIdAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseSystemsSystemIdAcceptLanguageEnum = typeof GetUniverseSystemsSystemIdAcceptLanguageEnum[keyof typeof GetUniverseSystemsSystemIdAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseSystemsSystemIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseSystemsSystemIdDatasourceEnum = typeof GetUniverseSystemsSystemIdDatasourceEnum[keyof typeof GetUniverseSystemsSystemIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseSystemsSystemIdLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33757,16 +29329,10 @@ export const GetUniverseSystemsSystemIdLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseSystemsSystemIdLanguageEnum = typeof GetUniverseSystemsSystemIdLanguageEnum[keyof typeof GetUniverseSystemsSystemIdLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseTypesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseTypesDatasourceEnum = typeof GetUniverseTypesDatasourceEnum[keyof typeof GetUniverseTypesDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseTypesTypeIdAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33779,16 +29345,10 @@ export const GetUniverseTypesTypeIdAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseTypesTypeIdAcceptLanguageEnum = typeof GetUniverseTypesTypeIdAcceptLanguageEnum[keyof typeof GetUniverseTypesTypeIdAcceptLanguageEnum];
-/**
- * @export
- */
 export const GetUniverseTypesTypeIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetUniverseTypesTypeIdDatasourceEnum = typeof GetUniverseTypesTypeIdDatasourceEnum[keyof typeof GetUniverseTypesTypeIdDatasourceEnum];
-/**
- * @export
- */
 export const GetUniverseTypesTypeIdLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33801,9 +29361,6 @@ export const GetUniverseTypesTypeIdLanguageEnum = {
     Es: 'es'
 } as const;
 export type GetUniverseTypesTypeIdLanguageEnum = typeof GetUniverseTypesTypeIdLanguageEnum[keyof typeof GetUniverseTypesTypeIdLanguageEnum];
-/**
- * @export
- */
 export const PostUniverseIdsAcceptLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33816,16 +29373,10 @@ export const PostUniverseIdsAcceptLanguageEnum = {
     Es: 'es'
 } as const;
 export type PostUniverseIdsAcceptLanguageEnum = typeof PostUniverseIdsAcceptLanguageEnum[keyof typeof PostUniverseIdsAcceptLanguageEnum];
-/**
- * @export
- */
 export const PostUniverseIdsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostUniverseIdsDatasourceEnum = typeof PostUniverseIdsDatasourceEnum[keyof typeof PostUniverseIdsDatasourceEnum];
-/**
- * @export
- */
 export const PostUniverseIdsLanguageEnum = {
     En: 'en',
     EnUs: 'en-us',
@@ -33838,9 +29389,6 @@ export const PostUniverseIdsLanguageEnum = {
     Es: 'es'
 } as const;
 export type PostUniverseIdsLanguageEnum = typeof PostUniverseIdsLanguageEnum[keyof typeof PostUniverseIdsLanguageEnum];
-/**
- * @export
- */
 export const PostUniverseNamesDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -33849,7 +29397,6 @@ export type PostUniverseNamesDatasourceEnum = typeof PostUniverseNamesDatasource
 
 /**
  * UserInterfaceApi - axios parameter creator
- * @export
  */
 export const UserInterfaceApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -34126,7 +29673,6 @@ export const UserInterfaceApiAxiosParamCreator = function (configuration?: Confi
 
 /**
  * UserInterfaceApi - functional programming interface
- * @export
  */
 export const UserInterfaceApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = UserInterfaceApiAxiosParamCreator(configuration)
@@ -34213,7 +29759,6 @@ export const UserInterfaceApiFp = function(configuration?: Configuration) {
 
 /**
  * UserInterfaceApi - factory interface
- * @export
  */
 export const UserInterfaceApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = UserInterfaceApiFp(configuration)
@@ -34285,9 +29830,6 @@ export const UserInterfaceApiFactory = function (configuration?: Configuration, 
 
 /**
  * UserInterfaceApi - object-oriented interface
- * @export
- * @class UserInterfaceApi
- * @extends {BaseAPI}
  */
 export class UserInterfaceApi extends BaseAPI {
     /**
@@ -34300,7 +29842,6 @@ export class UserInterfaceApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserInterfaceApi
      */
     public postUiAutopilotWaypoint(addToBeginning: boolean, clearOtherWaypoints: boolean, destinationId: number, datasource?: PostUiAutopilotWaypointDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return UserInterfaceApiFp(this.configuration).postUiAutopilotWaypoint(addToBeginning, clearOtherWaypoints, destinationId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -34314,7 +29855,6 @@ export class UserInterfaceApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserInterfaceApi
      */
     public postUiOpenwindowContract(contractId: number, datasource?: PostUiOpenwindowContractDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return UserInterfaceApiFp(this.configuration).postUiOpenwindowContract(contractId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -34328,7 +29868,6 @@ export class UserInterfaceApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserInterfaceApi
      */
     public postUiOpenwindowInformation(targetId: number, datasource?: PostUiOpenwindowInformationDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return UserInterfaceApiFp(this.configuration).postUiOpenwindowInformation(targetId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -34342,7 +29881,6 @@ export class UserInterfaceApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserInterfaceApi
      */
     public postUiOpenwindowMarketdetails(typeId: number, datasource?: PostUiOpenwindowMarketdetailsDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return UserInterfaceApiFp(this.configuration).postUiOpenwindowMarketdetails(typeId, datasource, token, options).then((request) => request(this.axios, this.basePath));
@@ -34356,44 +29894,28 @@ export class UserInterfaceApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserInterfaceApi
      */
     public postUiOpenwindowNewmail(newMail: PostUiOpenwindowNewmailNewMail, datasource?: PostUiOpenwindowNewmailDatasourceEnum, token?: string, options?: RawAxiosRequestConfig) {
         return UserInterfaceApiFp(this.configuration).postUiOpenwindowNewmail(newMail, datasource, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const PostUiAutopilotWaypointDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostUiAutopilotWaypointDatasourceEnum = typeof PostUiAutopilotWaypointDatasourceEnum[keyof typeof PostUiAutopilotWaypointDatasourceEnum];
-/**
- * @export
- */
 export const PostUiOpenwindowContractDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostUiOpenwindowContractDatasourceEnum = typeof PostUiOpenwindowContractDatasourceEnum[keyof typeof PostUiOpenwindowContractDatasourceEnum];
-/**
- * @export
- */
 export const PostUiOpenwindowInformationDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostUiOpenwindowInformationDatasourceEnum = typeof PostUiOpenwindowInformationDatasourceEnum[keyof typeof PostUiOpenwindowInformationDatasourceEnum];
-/**
- * @export
- */
 export const PostUiOpenwindowMarketdetailsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type PostUiOpenwindowMarketdetailsDatasourceEnum = typeof PostUiOpenwindowMarketdetailsDatasourceEnum[keyof typeof PostUiOpenwindowMarketdetailsDatasourceEnum];
-/**
- * @export
- */
 export const PostUiOpenwindowNewmailDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -34402,7 +29924,6 @@ export type PostUiOpenwindowNewmailDatasourceEnum = typeof PostUiOpenwindowNewma
 
 /**
  * WalletApi - axios parameter creator
- * @export
  */
 export const WalletApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -34751,7 +30272,6 @@ export const WalletApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * WalletApi - functional programming interface
- * @export
  */
 export const WalletApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = WalletApiAxiosParamCreator(configuration)
@@ -34863,7 +30383,6 @@ export const WalletApiFp = function(configuration?: Configuration) {
 
 /**
  * WalletApi - factory interface
- * @export
  */
 export const WalletApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = WalletApiFp(configuration)
@@ -34957,9 +30476,6 @@ export const WalletApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * WalletApi - object-oriented interface
- * @export
- * @class WalletApi
- * @extends {BaseAPI}
  */
 export class WalletApi extends BaseAPI {
     /**
@@ -34971,7 +30487,6 @@ export class WalletApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WalletApi
      */
     public getCharactersCharacterIdWallet(characterId: number, datasource?: GetCharactersCharacterIdWalletDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return WalletApiFp(this.configuration).getCharactersCharacterIdWallet(characterId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -34987,7 +30502,6 @@ export class WalletApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WalletApi
      */
     public getCharactersCharacterIdWalletJournal(characterId: number, datasource?: GetCharactersCharacterIdWalletJournalDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return WalletApiFp(this.configuration).getCharactersCharacterIdWalletJournal(characterId, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -35003,7 +30517,6 @@ export class WalletApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WalletApi
      */
     public getCharactersCharacterIdWalletTransactions(characterId: number, datasource?: GetCharactersCharacterIdWalletTransactionsDatasourceEnum, fromId?: number, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return WalletApiFp(this.configuration).getCharactersCharacterIdWalletTransactions(characterId, datasource, fromId, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -35018,7 +30531,6 @@ export class WalletApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WalletApi
      */
     public getCorporationsCorporationIdWallets(corporationId: number, datasource?: GetCorporationsCorporationIdWalletsDatasourceEnum, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return WalletApiFp(this.configuration).getCorporationsCorporationIdWallets(corporationId, datasource, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
@@ -35035,7 +30547,6 @@ export class WalletApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WalletApi
      */
     public getCorporationsCorporationIdWalletsDivisionJournal(corporationId: number, division: number, datasource?: GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum, ifNoneMatch?: string, page?: number, token?: string, options?: RawAxiosRequestConfig) {
         return WalletApiFp(this.configuration).getCorporationsCorporationIdWalletsDivisionJournal(corporationId, division, datasource, ifNoneMatch, page, token, options).then((request) => request(this.axios, this.basePath));
@@ -35052,51 +30563,32 @@ export class WalletApi extends BaseAPI {
      * @param {string} [token] Access token to use if unable to set a header
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WalletApi
      */
     public getCorporationsCorporationIdWalletsDivisionTransactions(corporationId: number, division: number, datasource?: GetCorporationsCorporationIdWalletsDivisionTransactionsDatasourceEnum, fromId?: number, ifNoneMatch?: string, token?: string, options?: RawAxiosRequestConfig) {
         return WalletApiFp(this.configuration).getCorporationsCorporationIdWalletsDivisionTransactions(corporationId, division, datasource, fromId, ifNoneMatch, token, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetCharactersCharacterIdWalletDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdWalletDatasourceEnum = typeof GetCharactersCharacterIdWalletDatasourceEnum[keyof typeof GetCharactersCharacterIdWalletDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdWalletJournalDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdWalletJournalDatasourceEnum = typeof GetCharactersCharacterIdWalletJournalDatasourceEnum[keyof typeof GetCharactersCharacterIdWalletJournalDatasourceEnum];
-/**
- * @export
- */
 export const GetCharactersCharacterIdWalletTransactionsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCharactersCharacterIdWalletTransactionsDatasourceEnum = typeof GetCharactersCharacterIdWalletTransactionsDatasourceEnum[keyof typeof GetCharactersCharacterIdWalletTransactionsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdWalletsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdWalletsDatasourceEnum = typeof GetCorporationsCorporationIdWalletsDatasourceEnum[keyof typeof GetCorporationsCorporationIdWalletsDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum = typeof GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum[keyof typeof GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum];
-/**
- * @export
- */
 export const GetCorporationsCorporationIdWalletsDivisionTransactionsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
@@ -35105,7 +30597,6 @@ export type GetCorporationsCorporationIdWalletsDivisionTransactionsDatasourceEnu
 
 /**
  * WarsApi - axios parameter creator
- * @export
  */
 export const WarsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -35249,7 +30740,6 @@ export const WarsApiAxiosParamCreator = function (configuration?: Configuration)
 
 /**
  * WarsApi - functional programming interface
- * @export
  */
 export const WarsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = WarsApiAxiosParamCreator(configuration)
@@ -35305,7 +30795,6 @@ export const WarsApiFp = function(configuration?: Configuration) {
 
 /**
  * WarsApi - factory interface
- * @export
  */
 export const WarsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = WarsApiFp(configuration)
@@ -35352,9 +30841,6 @@ export const WarsApiFactory = function (configuration?: Configuration, basePath?
 
 /**
  * WarsApi - object-oriented interface
- * @export
- * @class WarsApi
- * @extends {BaseAPI}
  */
 export class WarsApi extends BaseAPI {
     /**
@@ -35365,7 +30851,6 @@ export class WarsApi extends BaseAPI {
      * @param {number} [maxWarId] Only return wars with ID smaller than this
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WarsApi
      */
     public getWars(datasource?: GetWarsDatasourceEnum, ifNoneMatch?: string, maxWarId?: number, options?: RawAxiosRequestConfig) {
         return WarsApiFp(this.configuration).getWars(datasource, ifNoneMatch, maxWarId, options).then((request) => request(this.axios, this.basePath));
@@ -35379,7 +30864,6 @@ export class WarsApi extends BaseAPI {
      * @param {string} [ifNoneMatch] ETag from a previous request. A 304 will be returned if this matches the current ETag
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WarsApi
      */
     public getWarsWarId(warId: number, datasource?: GetWarsWarIdDatasourceEnum, ifNoneMatch?: string, options?: RawAxiosRequestConfig) {
         return WarsApiFp(this.configuration).getWarsWarId(warId, datasource, ifNoneMatch, options).then((request) => request(this.axios, this.basePath));
@@ -35394,30 +30878,20 @@ export class WarsApi extends BaseAPI {
      * @param {number} [page] Which page of results to return
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof WarsApi
      */
     public getWarsWarIdKillmails(warId: number, datasource?: GetWarsWarIdKillmailsDatasourceEnum, ifNoneMatch?: string, page?: number, options?: RawAxiosRequestConfig) {
         return WarsApiFp(this.configuration).getWarsWarIdKillmails(warId, datasource, ifNoneMatch, page, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
-/**
- * @export
- */
 export const GetWarsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetWarsDatasourceEnum = typeof GetWarsDatasourceEnum[keyof typeof GetWarsDatasourceEnum];
-/**
- * @export
- */
 export const GetWarsWarIdDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
 export type GetWarsWarIdDatasourceEnum = typeof GetWarsWarIdDatasourceEnum[keyof typeof GetWarsWarIdDatasourceEnum];
-/**
- * @export
- */
 export const GetWarsWarIdKillmailsDatasourceEnum = {
     Tranquility: 'tranquility'
 } as const;
