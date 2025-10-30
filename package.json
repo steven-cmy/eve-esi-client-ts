@@ -1,6 +1,6 @@
 {
   "name": "eve-esi-client-ts",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "OpenAPI client for eve-esi-client-ts",
   "author": "OpenAPI-Generator Contributors",
   "repository": {
