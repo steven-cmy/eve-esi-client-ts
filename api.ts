@@ -10415,8 +10415,8 @@ export const AllianceApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -10458,8 +10458,8 @@ export const AllianceApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -10501,8 +10501,8 @@ export const AllianceApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -10544,8 +10544,8 @@ export const AllianceApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -10807,8 +10807,8 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -10864,8 +10864,8 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -10918,9 +10918,8 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -10972,9 +10971,8 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -11026,9 +11024,8 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -11080,9 +11077,8 @@ export const AssetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -11458,8 +11454,8 @@ export const CalendarApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -11514,8 +11510,8 @@ export const CalendarApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -11570,8 +11566,8 @@ export const CalendarApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -11628,9 +11624,8 @@ export const CalendarApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -11904,8 +11899,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -11956,8 +11951,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12013,8 +12008,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12056,8 +12051,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12108,8 +12103,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12160,8 +12155,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12212,8 +12207,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12264,8 +12259,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12307,8 +12302,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12359,8 +12354,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12411,8 +12406,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12463,8 +12458,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -12504,9 +12499,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['datasource'] = datasource;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -12558,9 +12552,8 @@ export const CharacterApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -13289,8 +13282,8 @@ export const ClonesApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13341,8 +13334,8 @@ export const ClonesApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13526,8 +13519,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -13580,8 +13573,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13632,8 +13625,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13689,8 +13682,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13741,8 +13734,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13798,8 +13791,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13850,8 +13843,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -13921,9 +13914,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['watched'] = watched;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -13992,9 +13984,8 @@ export const ContactsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['watched'] = watched;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -14532,8 +14523,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14588,8 +14579,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14644,8 +14635,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14692,8 +14683,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['page'] = page;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14740,8 +14731,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['page'] = page;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14788,8 +14779,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['page'] = page;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14845,8 +14836,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14906,8 +14897,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -14962,8 +14953,8 @@ export const ContractsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15482,8 +15473,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15525,8 +15516,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15582,8 +15573,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15639,8 +15630,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15691,8 +15682,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15743,8 +15734,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15786,8 +15777,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15843,8 +15834,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15900,8 +15891,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -15952,8 +15943,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16004,8 +15995,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16056,8 +16047,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16108,8 +16099,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16160,8 +16151,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16217,8 +16208,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16274,8 +16265,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16331,8 +16322,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16388,8 +16379,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16451,8 +16442,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16514,8 +16505,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -16569,8 +16560,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -16608,8 +16599,8 @@ export const CorporationApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -17762,8 +17753,8 @@ export const DogmaApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -17805,8 +17796,8 @@ export const DogmaApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -17852,8 +17843,8 @@ export const DogmaApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -17891,8 +17882,8 @@ export const DogmaApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -17934,8 +17925,8 @@ export const DogmaApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18236,8 +18227,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18288,8 +18279,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18327,8 +18318,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18366,8 +18357,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18405,8 +18396,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18444,8 +18435,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18483,8 +18474,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18522,8 +18513,8 @@ export const FactionWarfareApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -18950,8 +18941,8 @@ export const FittingsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -18999,8 +18990,8 @@ export const FittingsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -19053,9 +19044,8 @@ export const FittingsApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -19282,8 +19272,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -19334,8 +19324,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -19386,8 +19376,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -19435,8 +19425,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -19487,8 +19477,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -19545,8 +19535,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -19606,8 +19596,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -19663,9 +19653,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -19714,8 +19703,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -19766,8 +19755,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -19817,9 +19806,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -19875,9 +19863,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -19933,9 +19920,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -19991,9 +19977,8 @@ export const FleetsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -20787,8 +20772,8 @@ export const IncursionsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -20918,8 +20903,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -20975,8 +20960,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21032,8 +21017,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21089,8 +21074,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21150,8 +21135,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21212,8 +21197,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21251,8 +21236,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21290,8 +21275,8 @@ export const IndustryApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21756,8 +21741,8 @@ export const InsuranceApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -21920,8 +21905,8 @@ export const KillmailsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -21977,8 +21962,8 @@ export const KillmailsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22024,8 +22009,8 @@ export const KillmailsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22256,8 +22241,8 @@ export const LocationApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22308,8 +22293,8 @@ export const LocationApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22360,8 +22345,8 @@ export const LocationApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22586,8 +22571,8 @@ export const LoyaltyApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22629,8 +22614,8 @@ export const LoyaltyApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22808,8 +22793,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -22860,8 +22845,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -22919,8 +22904,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -22971,8 +22956,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -23023,8 +23008,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -23079,8 +23064,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -23133,9 +23118,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -23187,9 +23171,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -23245,9 +23228,8 @@ export const MailApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -23765,8 +23747,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -23822,8 +23804,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -23879,8 +23861,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -23936,8 +23918,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -23975,8 +23957,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -24024,8 +24006,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -24066,8 +24048,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -24116,8 +24098,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['type_id'] = typeId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -24176,8 +24158,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['type_id'] = typeId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -24224,8 +24206,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['page'] = page;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -24281,8 +24263,8 @@ export const MarketApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -24922,8 +24904,8 @@ export const PlanetaryInteractionApiAxiosParamCreator = function (configuration?
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -24977,8 +24959,8 @@ export const PlanetaryInteractionApiAxiosParamCreator = function (configuration?
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -25031,8 +25013,8 @@ export const PlanetaryInteractionApiAxiosParamCreator = function (configuration?
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -25074,8 +25056,8 @@ export const PlanetaryInteractionApiAxiosParamCreator = function (configuration?
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -25357,8 +25339,8 @@ export const RoutesApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['flag'] = flag;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -25529,8 +25511,8 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -25717,8 +25699,8 @@ export const SkillsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -25769,8 +25751,8 @@ export const SkillsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -25821,8 +25803,8 @@ export const SkillsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26034,8 +26016,8 @@ export const SovereigntyApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26073,8 +26055,8 @@ export const SovereigntyApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26112,8 +26094,8 @@ export const SovereigntyApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26307,8 +26289,8 @@ export const StatusApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26426,8 +26408,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -26472,8 +26454,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26517,8 +26499,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -26559,8 +26541,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26608,8 +26590,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -26650,8 +26632,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26699,8 +26681,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -26747,8 +26729,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -26789,8 +26771,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26832,8 +26814,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26876,8 +26858,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['page'] = page;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -26925,8 +26907,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -26971,8 +26953,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27014,8 +26996,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27059,8 +27041,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -27101,8 +27083,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27150,8 +27132,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -27196,8 +27178,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27239,8 +27221,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27282,8 +27264,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27326,8 +27308,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['filter'] = filter;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27378,8 +27360,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27417,8 +27399,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27456,8 +27438,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27495,8 +27477,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27544,8 +27526,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -27591,8 +27573,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['page'] = page;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -27640,8 +27622,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
             }
@@ -27690,9 +27672,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['language'] = language;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             if (acceptLanguage != null) {
                 localVarHeaderParameter['Accept-Language'] = String(acceptLanguage);
@@ -27734,9 +27715,8 @@ export const UniverseApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['datasource'] = datasource;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -29454,8 +29434,8 @@ export const UserInterfaceApiAxiosParamCreator = function (configuration?: Confi
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -29505,8 +29485,8 @@ export const UserInterfaceApiAxiosParamCreator = function (configuration?: Confi
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -29556,8 +29536,8 @@ export const UserInterfaceApiAxiosParamCreator = function (configuration?: Confi
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -29607,8 +29587,8 @@ export const UserInterfaceApiAxiosParamCreator = function (configuration?: Confi
                 localVarQueryParameter['type_id'] = typeId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -29654,9 +29634,8 @@ export const UserInterfaceApiAxiosParamCreator = function (configuration?: Confi
                 localVarQueryParameter['token'] = token;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -29965,8 +29944,8 @@ export const WalletApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30022,8 +30001,8 @@ export const WalletApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30079,8 +30058,8 @@ export const WalletApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30131,8 +30110,8 @@ export const WalletApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30192,8 +30171,8 @@ export const WalletApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30253,8 +30232,8 @@ export const WalletApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['token'] = token;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30630,8 +30609,8 @@ export const WarsApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['max_war_id'] = maxWarId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30673,8 +30652,8 @@ export const WarsApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['datasource'] = datasource;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
@@ -30721,8 +30700,8 @@ export const WarsApiAxiosParamCreator = function (configuration?: Configuration)
                 localVarQueryParameter['page'] = page;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json';
 
-    
             if (ifNoneMatch != null) {
                 localVarHeaderParameter['If-None-Match'] = String(ifNoneMatch);
             }
