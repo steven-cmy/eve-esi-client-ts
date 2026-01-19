@@ -68,19 +68,4 @@ jobs:
           git add .
           git commit -m "Auto generate: ${{ steps.bump.outputs.version }}"
           git push
-      - name: Set up Node.js
-        if: steps.check.outputs.changed == 'true'
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          registry-url: 'https://registry.npmjs.org'
-      - name: Install dependencies
-        if: steps.check.outputs.changed == 'true'
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install
-      - name: Publish to NPM
-        if: steps.check.outputs.changed == 'true'
-        run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # Publishing is now handled in a separate workflow (.github/workflows/publish.yml)
