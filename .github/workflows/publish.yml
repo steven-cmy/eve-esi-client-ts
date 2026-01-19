@@ -16,7 +16,7 @@ jobs:
   publish:
     name: Publish to NPM
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,6 +26,16 @@ jobs:
         id: check_commit
         run: |
           git fetch --prune --unshallow || true
+          # If this run was started manually, always attempt to publish
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            LAST_COMMIT_MSG="(manual run)"
+            echo "last_msg<<EOF" >> $GITHUB_OUTPUT
+            echo "$LAST_COMMIT_MSG" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
           LAST_COMMIT_MSG="$(git log -1 --pretty=%B)"
           echo "last_msg<<EOF" >> $GITHUB_OUTPUT
           echo "$LAST_COMMIT_MSG" >> $GITHUB_OUTPUT
