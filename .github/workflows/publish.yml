@@ -1,0 +1,59 @@
+name: Publish
+
+on:
+  workflow_run:
+    workflows:
+      - "Generate Client"
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  publish:
+    name: Publish to NPM
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check last commit for generation
+        id: check_commit
+        run: |
+          git fetch --prune --unshallow || true
+          LAST_COMMIT_MSG="$(git log -1 --pretty=%B)"
+          echo "last_msg<<EOF" >> $GITHUB_OUTPUT
+          echo "$LAST_COMMIT_MSG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          if [[ "$LAST_COMMIT_MSG" == Auto\ generate:* ]]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: No generated changes
+        if: steps.check_commit.outputs.changed == 'false'
+        run: |
+          echo "No generated changes to publish."
+
+      - name: Set up Node.js
+        if: steps.check_commit.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        if: steps.check_commit.outputs.changed == 'true'
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
+
+      - name: Publish to NPM
+        if: steps.check_commit.outputs.changed == 'true'
+        run: npm publish --provenance --access public
