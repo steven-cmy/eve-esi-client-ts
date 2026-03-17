@@ -129,7 +129,7 @@ export const GetAlliancesAllianceIdContacts200OkContactTypeEnum = {
     Character: 'character',
     Corporation: 'corporation',
     Alliance: 'alliance',
-    Faction: 'faction'
+    Faction: 'faction',
 } as const;
 
 export type GetAlliancesAllianceIdContacts200OkContactTypeEnum = typeof GetAlliancesAllianceIdContacts200OkContactTypeEnum[keyof typeof GetAlliancesAllianceIdContacts200OkContactTypeEnum];
@@ -362,7 +362,7 @@ export const GetCharactersCharacterIdAssets200OkLocationFlagEnum = {
     SubSystemSlot6: 'SubSystemSlot6',
     SubSystemSlot7: 'SubSystemSlot7',
     Unlocked: 'Unlocked',
-    Wardrobe: 'Wardrobe'
+    Wardrobe: 'Wardrobe',
 } as const;
 
 export type GetCharactersCharacterIdAssets200OkLocationFlagEnum = typeof GetCharactersCharacterIdAssets200OkLocationFlagEnum[keyof typeof GetCharactersCharacterIdAssets200OkLocationFlagEnum];
@@ -370,7 +370,7 @@ export const GetCharactersCharacterIdAssets200OkLocationTypeEnum = {
     Station: 'station',
     SolarSystem: 'solar_system',
     Item: 'item',
-    Other: 'other'
+    Other: 'other',
 } as const;
 
 export type GetCharactersCharacterIdAssets200OkLocationTypeEnum = typeof GetCharactersCharacterIdAssets200OkLocationTypeEnum[keyof typeof GetCharactersCharacterIdAssets200OkLocationTypeEnum];
@@ -535,7 +535,7 @@ export const GetCharactersCharacterIdBlueprints200OkLocationFlagEnum = {
     FighterTube2: 'FighterTube2',
     FighterTube3: 'FighterTube3',
     FighterTube4: 'FighterTube4',
-    Module: 'Module'
+    Module: 'Module',
 } as const;
 
 export type GetCharactersCharacterIdBlueprints200OkLocationFlagEnum = typeof GetCharactersCharacterIdBlueprints200OkLocationFlagEnum[keyof typeof GetCharactersCharacterIdBlueprints200OkLocationFlagEnum];
@@ -570,7 +570,7 @@ export const GetCharactersCharacterIdCalendar200OkEventResponseEnum = {
     Declined: 'declined',
     NotResponded: 'not_responded',
     Accepted: 'accepted',
-    Tentative: 'tentative'
+    Tentative: 'tentative',
 } as const;
 
 export type GetCharactersCharacterIdCalendar200OkEventResponseEnum = typeof GetCharactersCharacterIdCalendar200OkEventResponseEnum[keyof typeof GetCharactersCharacterIdCalendar200OkEventResponseEnum];
@@ -593,7 +593,7 @@ export const GetCharactersCharacterIdCalendarEventIdAttendees200OkEventResponseE
     Declined: 'declined',
     NotResponded: 'not_responded',
     Accepted: 'accepted',
-    Tentative: 'tentative'
+    Tentative: 'tentative',
 } as const;
 
 export type GetCharactersCharacterIdCalendarEventIdAttendees200OkEventResponseEnum = typeof GetCharactersCharacterIdCalendarEventIdAttendees200OkEventResponseEnum[keyof typeof GetCharactersCharacterIdCalendarEventIdAttendees200OkEventResponseEnum];
@@ -667,7 +667,7 @@ export const GetCharactersCharacterIdCalendarEventIdOkOwnerTypeEnum = {
     Corporation: 'corporation',
     Faction: 'faction',
     Character: 'character',
-    Alliance: 'alliance'
+    Alliance: 'alliance',
 } as const;
 
 export type GetCharactersCharacterIdCalendarEventIdOkOwnerTypeEnum = typeof GetCharactersCharacterIdCalendarEventIdOkOwnerTypeEnum[keyof typeof GetCharactersCharacterIdCalendarEventIdOkOwnerTypeEnum];
@@ -688,7 +688,7 @@ export interface GetCharactersCharacterIdClonesHomeLocation {
 
 export const GetCharactersCharacterIdClonesHomeLocationLocationTypeEnum = {
     Station: 'station',
-    Structure: 'structure'
+    Structure: 'structure',
 } as const;
 
 export type GetCharactersCharacterIdClonesHomeLocationLocationTypeEnum = typeof GetCharactersCharacterIdClonesHomeLocationLocationTypeEnum[keyof typeof GetCharactersCharacterIdClonesHomeLocationLocationTypeEnum];
@@ -721,7 +721,7 @@ export interface GetCharactersCharacterIdClonesJumpClone {
 
 export const GetCharactersCharacterIdClonesJumpCloneLocationTypeEnum = {
     Station: 'station',
-    Structure: 'structure'
+    Structure: 'structure',
 } as const;
 
 export type GetCharactersCharacterIdClonesJumpCloneLocationTypeEnum = typeof GetCharactersCharacterIdClonesJumpCloneLocationTypeEnum[keyof typeof GetCharactersCharacterIdClonesJumpCloneLocationTypeEnum];
@@ -778,7 +778,7 @@ export const GetCharactersCharacterIdContacts200OkContactTypeEnum = {
     Character: 'character',
     Corporation: 'corporation',
     Alliance: 'alliance',
-    Faction: 'faction'
+    Faction: 'faction',
 } as const;
 
 export type GetCharactersCharacterIdContacts200OkContactTypeEnum = typeof GetCharactersCharacterIdContacts200OkContactTypeEnum[keyof typeof GetCharactersCharacterIdContacts200OkContactTypeEnum];
@@ -894,7 +894,7 @@ export const GetCharactersCharacterIdContracts200OkAvailabilityEnum = {
     Public: 'public',
     Personal: 'personal',
     Corporation: 'corporation',
-    Alliance: 'alliance'
+    Alliance: 'alliance',
 } as const;
 
 export type GetCharactersCharacterIdContracts200OkAvailabilityEnum = typeof GetCharactersCharacterIdContracts200OkAvailabilityEnum[keyof typeof GetCharactersCharacterIdContracts200OkAvailabilityEnum];
@@ -908,7 +908,7 @@ export const GetCharactersCharacterIdContracts200OkStatusEnum = {
     Rejected: 'rejected',
     Failed: 'failed',
     Deleted: 'deleted',
-    Reversed: 'reversed'
+    Reversed: 'reversed',
 } as const;
 
 export type GetCharactersCharacterIdContracts200OkStatusEnum = typeof GetCharactersCharacterIdContracts200OkStatusEnum[keyof typeof GetCharactersCharacterIdContracts200OkStatusEnum];
@@ -917,7 +917,7 @@ export const GetCharactersCharacterIdContracts200OkTypeEnum = {
     ItemExchange: 'item_exchange',
     Auction: 'auction',
     Courier: 'courier',
-    Loan: 'loan'
+    Loan: 'loan',
 } as const;
 
 export type GetCharactersCharacterIdContracts200OkTypeEnum = typeof GetCharactersCharacterIdContracts200OkTypeEnum[keyof typeof GetCharactersCharacterIdContracts200OkTypeEnum];
@@ -1114,7 +1114,7 @@ export const GetCharactersCharacterIdFittingsItemFlagEnum = {
     SubSystemSlot0: 'SubSystemSlot0',
     SubSystemSlot1: 'SubSystemSlot1',
     SubSystemSlot2: 'SubSystemSlot2',
-    SubSystemSlot3: 'SubSystemSlot3'
+    SubSystemSlot3: 'SubSystemSlot3',
 } as const;
 
 export type GetCharactersCharacterIdFittingsItemFlagEnum = typeof GetCharactersCharacterIdFittingsItemFlagEnum[keyof typeof GetCharactersCharacterIdFittingsItemFlagEnum];
@@ -1158,7 +1158,7 @@ export const GetCharactersCharacterIdFleetOkRoleEnum = {
     FleetCommander: 'fleet_commander',
     SquadCommander: 'squad_commander',
     SquadMember: 'squad_member',
-    WingCommander: 'wing_commander'
+    WingCommander: 'wing_commander',
 } as const;
 
 export type GetCharactersCharacterIdFleetOkRoleEnum = typeof GetCharactersCharacterIdFleetOkRoleEnum[keyof typeof GetCharactersCharacterIdFleetOkRoleEnum];
@@ -1320,7 +1320,7 @@ export const GetCharactersCharacterIdIndustryJobs200OkStatusEnum = {
     Delivered: 'delivered',
     Paused: 'paused',
     Ready: 'ready',
-    Reverted: 'reverted'
+    Reverted: 'reverted',
 } as const;
 
 export type GetCharactersCharacterIdIndustryJobs200OkStatusEnum = typeof GetCharactersCharacterIdIndustryJobs200OkStatusEnum[keyof typeof GetCharactersCharacterIdIndustryJobs200OkStatusEnum];
@@ -1441,7 +1441,7 @@ export const GetCharactersCharacterIdMailLabelsLabelColorEnum = {
     Ff6600: '#ff6600',
     Ffff01: '#ffff01',
     Ffffcd: '#ffffcd',
-    Ffffff: '#ffffff'
+    Ffffff: '#ffffff',
 } as const;
 
 export type GetCharactersCharacterIdMailLabelsLabelColorEnum = typeof GetCharactersCharacterIdMailLabelsLabelColorEnum[keyof typeof GetCharactersCharacterIdMailLabelsLabelColorEnum];
@@ -1532,7 +1532,7 @@ export const GetCharactersCharacterIdMailMailIdRecipientRecipientTypeEnum = {
     Alliance: 'alliance',
     Character: 'character',
     Corporation: 'corporation',
-    MailingList: 'mailing_list'
+    MailingList: 'mailing_list',
 } as const;
 
 export type GetCharactersCharacterIdMailMailIdRecipientRecipientTypeEnum = typeof GetCharactersCharacterIdMailMailIdRecipientRecipientTypeEnum[keyof typeof GetCharactersCharacterIdMailMailIdRecipientRecipientTypeEnum];
@@ -1555,7 +1555,7 @@ export const GetCharactersCharacterIdMailRecipientRecipientTypeEnum = {
     Alliance: 'alliance',
     Character: 'character',
     Corporation: 'corporation',
-    MailingList: 'mailing_list'
+    MailingList: 'mailing_list',
 } as const;
 
 export type GetCharactersCharacterIdMailRecipientRecipientTypeEnum = typeof GetCharactersCharacterIdMailRecipientRecipientTypeEnum[keyof typeof GetCharactersCharacterIdMailRecipientRecipientTypeEnum];
@@ -1604,7 +1604,7 @@ export interface GetCharactersCharacterIdMedals200Ok {
 
 export const GetCharactersCharacterIdMedals200OkStatusEnum = {
     Public: 'public',
-    Private: 'private'
+    Private: 'private',
 } as const;
 
 export type GetCharactersCharacterIdMedals200OkStatusEnum = typeof GetCharactersCharacterIdMedals200OkStatusEnum[keyof typeof GetCharactersCharacterIdMedals200OkStatusEnum];
@@ -1699,7 +1699,7 @@ export const GetCharactersCharacterIdNotifications200OkSenderTypeEnum = {
     Corporation: 'corporation',
     Alliance: 'alliance',
     Faction: 'faction',
-    Other: 'other'
+    Other: 'other',
 } as const;
 
 export type GetCharactersCharacterIdNotifications200OkSenderTypeEnum = typeof GetCharactersCharacterIdNotifications200OkSenderTypeEnum[keyof typeof GetCharactersCharacterIdNotifications200OkSenderTypeEnum];
@@ -1949,7 +1949,7 @@ export const GetCharactersCharacterIdNotifications200OkTypeEnum = {
     WarRetracted: 'WarRetracted',
     WarRetractedByConcord: 'WarRetractedByConcord',
     WarSurrenderDeclinedMsg: 'WarSurrenderDeclinedMsg',
-    WarSurrenderOfferMsg: 'WarSurrenderOfferMsg'
+    WarSurrenderOfferMsg: 'WarSurrenderOfferMsg',
 } as const;
 
 export type GetCharactersCharacterIdNotifications200OkTypeEnum = typeof GetCharactersCharacterIdNotifications200OkTypeEnum[keyof typeof GetCharactersCharacterIdNotifications200OkTypeEnum];
@@ -2031,7 +2031,7 @@ export interface GetCharactersCharacterIdOk {
 
 export const GetCharactersCharacterIdOkGenderEnum = {
     Female: 'female',
-    Male: 'male'
+    Male: 'male',
 } as const;
 
 export type GetCharactersCharacterIdOkGenderEnum = typeof GetCharactersCharacterIdOkGenderEnum[keyof typeof GetCharactersCharacterIdOkGenderEnum];
@@ -2131,7 +2131,7 @@ export const GetCharactersCharacterIdOrders200OkRangeEnum = {
     _5: '5',
     Region: 'region',
     Solarsystem: 'solarsystem',
-    Station: 'station'
+    Station: 'station',
 } as const;
 
 export type GetCharactersCharacterIdOrders200OkRangeEnum = typeof GetCharactersCharacterIdOrders200OkRangeEnum[keyof typeof GetCharactersCharacterIdOrders200OkRangeEnum];
@@ -2214,13 +2214,13 @@ export const GetCharactersCharacterIdOrdersHistory200OkRangeEnum = {
     _5: '5',
     Region: 'region',
     Solarsystem: 'solarsystem',
-    Station: 'station'
+    Station: 'station',
 } as const;
 
 export type GetCharactersCharacterIdOrdersHistory200OkRangeEnum = typeof GetCharactersCharacterIdOrdersHistory200OkRangeEnum[keyof typeof GetCharactersCharacterIdOrdersHistory200OkRangeEnum];
 export const GetCharactersCharacterIdOrdersHistory200OkStateEnum = {
     Cancelled: 'cancelled',
-    Expired: 'expired'
+    Expired: 'expired',
 } as const;
 
 export type GetCharactersCharacterIdOrdersHistory200OkStateEnum = typeof GetCharactersCharacterIdOrdersHistory200OkStateEnum[keyof typeof GetCharactersCharacterIdOrdersHistory200OkStateEnum];
@@ -2267,7 +2267,7 @@ export const GetCharactersCharacterIdPlanets200OkPlanetTypeEnum = {
     Gas: 'gas',
     Lava: 'lava',
     Storm: 'storm',
-    Plasma: 'plasma'
+    Plasma: 'plasma',
 } as const;
 
 export type GetCharactersCharacterIdPlanets200OkPlanetTypeEnum = typeof GetCharactersCharacterIdPlanets200OkPlanetTypeEnum[keyof typeof GetCharactersCharacterIdPlanets200OkPlanetTypeEnum];
@@ -2557,7 +2557,7 @@ export const GetCharactersCharacterIdRolesOkRolesEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCharactersCharacterIdRolesOkRolesEnum = typeof GetCharactersCharacterIdRolesOkRolesEnum[keyof typeof GetCharactersCharacterIdRolesOkRolesEnum];
@@ -2615,7 +2615,7 @@ export const GetCharactersCharacterIdRolesOkRolesAtBaseEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCharactersCharacterIdRolesOkRolesAtBaseEnum = typeof GetCharactersCharacterIdRolesOkRolesAtBaseEnum[keyof typeof GetCharactersCharacterIdRolesOkRolesAtBaseEnum];
@@ -2673,7 +2673,7 @@ export const GetCharactersCharacterIdRolesOkRolesAtHqEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCharactersCharacterIdRolesOkRolesAtHqEnum = typeof GetCharactersCharacterIdRolesOkRolesAtHqEnum[keyof typeof GetCharactersCharacterIdRolesOkRolesAtHqEnum];
@@ -2731,7 +2731,7 @@ export const GetCharactersCharacterIdRolesOkRolesAtOtherEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCharactersCharacterIdRolesOkRolesAtOtherEnum = typeof GetCharactersCharacterIdRolesOkRolesAtOtherEnum[keyof typeof GetCharactersCharacterIdRolesOkRolesAtOtherEnum];
@@ -2898,7 +2898,7 @@ export interface GetCharactersCharacterIdStandings200Ok {
 export const GetCharactersCharacterIdStandings200OkFromTypeEnum = {
     Agent: 'agent',
     NpcCorp: 'npc_corp',
-    Faction: 'faction'
+    Faction: 'faction',
 } as const;
 
 export type GetCharactersCharacterIdStandings200OkFromTypeEnum = typeof GetCharactersCharacterIdStandings200OkFromTypeEnum[keyof typeof GetCharactersCharacterIdStandings200OkFromTypeEnum];
@@ -2986,7 +2986,7 @@ export const GetCharactersCharacterIdWalletJournal200OkContextIdTypeEnum = {
     ContractId: 'contract_id',
     PlanetId: 'planet_id',
     SystemId: 'system_id',
-    TypeId: 'type_id'
+    TypeId: 'type_id',
 } as const;
 
 export type GetCharactersCharacterIdWalletJournal200OkContextIdTypeEnum = typeof GetCharactersCharacterIdWalletJournal200OkContextIdTypeEnum[keyof typeof GetCharactersCharacterIdWalletJournal200OkContextIdTypeEnum];
@@ -3145,7 +3145,7 @@ export const GetCharactersCharacterIdWalletJournal200OkRefTypeEnum = {
     UpkeepAdjustmentFee: 'upkeep_adjustment_fee',
     WarAllyContract: 'war_ally_contract',
     WarFee: 'war_fee',
-    WarFeeSurrender: 'war_fee_surrender'
+    WarFeeSurrender: 'war_fee_surrender',
 } as const;
 
 export type GetCharactersCharacterIdWalletJournal200OkRefTypeEnum = typeof GetCharactersCharacterIdWalletJournal200OkRefTypeEnum[keyof typeof GetCharactersCharacterIdWalletJournal200OkRefTypeEnum];
@@ -3364,7 +3364,7 @@ export const GetContractsPublicRegionId200OkTypeEnum = {
     ItemExchange: 'item_exchange',
     Auction: 'auction',
     Courier: 'courier',
-    Loan: 'loan'
+    Loan: 'loan',
 } as const;
 
 export type GetContractsPublicRegionId200OkTypeEnum = typeof GetContractsPublicRegionId200OkTypeEnum[keyof typeof GetContractsPublicRegionId200OkTypeEnum];
@@ -3422,7 +3422,7 @@ export interface GetCorporationCorporationIdMiningObservers200Ok {
 }
 
 export const GetCorporationCorporationIdMiningObservers200OkObserverTypeEnum = {
-    Structure: 'structure'
+    Structure: 'structure',
 } as const;
 
 export type GetCorporationCorporationIdMiningObservers200OkObserverTypeEnum = typeof GetCorporationCorporationIdMiningObservers200OkObserverTypeEnum[keyof typeof GetCorporationCorporationIdMiningObservers200OkObserverTypeEnum];
@@ -3635,7 +3635,7 @@ export const GetCorporationsCorporationIdAssets200OkLocationFlagEnum = {
     SubSystemSlot7: 'SubSystemSlot7',
     Unlocked: 'Unlocked',
     Wallet: 'Wallet',
-    Wardrobe: 'Wardrobe'
+    Wardrobe: 'Wardrobe',
 } as const;
 
 export type GetCorporationsCorporationIdAssets200OkLocationFlagEnum = typeof GetCorporationsCorporationIdAssets200OkLocationFlagEnum[keyof typeof GetCorporationsCorporationIdAssets200OkLocationFlagEnum];
@@ -3643,7 +3643,7 @@ export const GetCorporationsCorporationIdAssets200OkLocationTypeEnum = {
     Station: 'station',
     SolarSystem: 'solar_system',
     Item: 'item',
-    Other: 'other'
+    Other: 'other',
 } as const;
 
 export type GetCorporationsCorporationIdAssets200OkLocationTypeEnum = typeof GetCorporationsCorporationIdAssets200OkLocationTypeEnum[keyof typeof GetCorporationsCorporationIdAssets200OkLocationTypeEnum];
@@ -3810,7 +3810,7 @@ export const GetCorporationsCorporationIdBlueprints200OkLocationFlagEnum = {
     SubSystemSlot7: 'SubSystemSlot7',
     Unlocked: 'Unlocked',
     Wallet: 'Wallet',
-    Wardrobe: 'Wardrobe'
+    Wardrobe: 'Wardrobe',
 } as const;
 
 export type GetCorporationsCorporationIdBlueprints200OkLocationFlagEnum = typeof GetCorporationsCorporationIdBlueprints200OkLocationFlagEnum[keyof typeof GetCorporationsCorporationIdBlueprints200OkLocationFlagEnum];
@@ -3845,7 +3845,7 @@ export const GetCorporationsCorporationIdContacts200OkContactTypeEnum = {
     Character: 'character',
     Corporation: 'corporation',
     Alliance: 'alliance',
-    Faction: 'faction'
+    Faction: 'faction',
 } as const;
 
 export type GetCorporationsCorporationIdContacts200OkContactTypeEnum = typeof GetCorporationsCorporationIdContacts200OkContactTypeEnum[keyof typeof GetCorporationsCorporationIdContacts200OkContactTypeEnum];
@@ -3927,7 +3927,7 @@ export const GetCorporationsCorporationIdContainersLogs200OkActionEnum = {
     Repackage: 'repackage',
     SetName: 'set_name',
     SetPassword: 'set_password',
-    Unlock: 'unlock'
+    Unlock: 'unlock',
 } as const;
 
 export type GetCorporationsCorporationIdContainersLogs200OkActionEnum = typeof GetCorporationsCorporationIdContainersLogs200OkActionEnum[keyof typeof GetCorporationsCorporationIdContainersLogs200OkActionEnum];
@@ -4055,13 +4055,13 @@ export const GetCorporationsCorporationIdContainersLogs200OkLocationFlagEnum = {
     SubSystemSlot7: 'SubSystemSlot7',
     Unlocked: 'Unlocked',
     Wallet: 'Wallet',
-    Wardrobe: 'Wardrobe'
+    Wardrobe: 'Wardrobe',
 } as const;
 
 export type GetCorporationsCorporationIdContainersLogs200OkLocationFlagEnum = typeof GetCorporationsCorporationIdContainersLogs200OkLocationFlagEnum[keyof typeof GetCorporationsCorporationIdContainersLogs200OkLocationFlagEnum];
 export const GetCorporationsCorporationIdContainersLogs200OkPasswordTypeEnum = {
     Config: 'config',
-    General: 'general'
+    General: 'general',
 } as const;
 
 export type GetCorporationsCorporationIdContainersLogs200OkPasswordTypeEnum = typeof GetCorporationsCorporationIdContainersLogs200OkPasswordTypeEnum[keyof typeof GetCorporationsCorporationIdContainersLogs200OkPasswordTypeEnum];
@@ -4164,7 +4164,7 @@ export const GetCorporationsCorporationIdContracts200OkAvailabilityEnum = {
     Public: 'public',
     Personal: 'personal',
     Corporation: 'corporation',
-    Alliance: 'alliance'
+    Alliance: 'alliance',
 } as const;
 
 export type GetCorporationsCorporationIdContracts200OkAvailabilityEnum = typeof GetCorporationsCorporationIdContracts200OkAvailabilityEnum[keyof typeof GetCorporationsCorporationIdContracts200OkAvailabilityEnum];
@@ -4178,7 +4178,7 @@ export const GetCorporationsCorporationIdContracts200OkStatusEnum = {
     Rejected: 'rejected',
     Failed: 'failed',
     Deleted: 'deleted',
-    Reversed: 'reversed'
+    Reversed: 'reversed',
 } as const;
 
 export type GetCorporationsCorporationIdContracts200OkStatusEnum = typeof GetCorporationsCorporationIdContracts200OkStatusEnum[keyof typeof GetCorporationsCorporationIdContracts200OkStatusEnum];
@@ -4187,7 +4187,7 @@ export const GetCorporationsCorporationIdContracts200OkTypeEnum = {
     ItemExchange: 'item_exchange',
     Auction: 'auction',
     Courier: 'courier',
-    Loan: 'loan'
+    Loan: 'loan',
 } as const;
 
 export type GetCorporationsCorporationIdContracts200OkTypeEnum = typeof GetCorporationsCorporationIdContracts200OkTypeEnum[keyof typeof GetCorporationsCorporationIdContracts200OkTypeEnum];
@@ -4336,7 +4336,7 @@ export const GetCorporationsCorporationIdCustomsOffices200OkStandingLevelEnum = 
     Excellent: 'excellent',
     Good: 'good',
     Neutral: 'neutral',
-    Terrible: 'terrible'
+    Terrible: 'terrible',
 } as const;
 
 export type GetCorporationsCorporationIdCustomsOffices200OkStandingLevelEnum = typeof GetCorporationsCorporationIdCustomsOffices200OkStandingLevelEnum[keyof typeof GetCorporationsCorporationIdCustomsOffices200OkStandingLevelEnum];
@@ -4576,7 +4576,7 @@ export const GetCorporationsCorporationIdIndustryJobs200OkStatusEnum = {
     Delivered: 'delivered',
     Paused: 'paused',
     Ready: 'ready',
-    Reverted: 'reverted'
+    Reverted: 'reverted',
 } as const;
 
 export type GetCorporationsCorporationIdIndustryJobs200OkStatusEnum = typeof GetCorporationsCorporationIdIndustryJobs200OkStatusEnum[keyof typeof GetCorporationsCorporationIdIndustryJobs200OkStatusEnum];
@@ -4651,7 +4651,7 @@ export interface GetCorporationsCorporationIdMedalsIssued200Ok {
 
 export const GetCorporationsCorporationIdMedalsIssued200OkStatusEnum = {
     Private: 'private',
-    Public: 'public'
+    Public: 'public',
 } as const;
 
 export type GetCorporationsCorporationIdMedalsIssued200OkStatusEnum = typeof GetCorporationsCorporationIdMedalsIssued200OkStatusEnum[keyof typeof GetCorporationsCorporationIdMedalsIssued200OkStatusEnum];
@@ -4850,7 +4850,7 @@ export const GetCorporationsCorporationIdOrders200OkRangeEnum = {
     _5: '5',
     Region: 'region',
     Solarsystem: 'solarsystem',
-    Station: 'station'
+    Station: 'station',
 } as const;
 
 export type GetCorporationsCorporationIdOrders200OkRangeEnum = typeof GetCorporationsCorporationIdOrders200OkRangeEnum[keyof typeof GetCorporationsCorporationIdOrders200OkRangeEnum];
@@ -4937,13 +4937,13 @@ export const GetCorporationsCorporationIdOrdersHistory200OkRangeEnum = {
     _5: '5',
     Region: 'region',
     Solarsystem: 'solarsystem',
-    Station: 'station'
+    Station: 'station',
 } as const;
 
 export type GetCorporationsCorporationIdOrdersHistory200OkRangeEnum = typeof GetCorporationsCorporationIdOrdersHistory200OkRangeEnum[keyof typeof GetCorporationsCorporationIdOrdersHistory200OkRangeEnum];
 export const GetCorporationsCorporationIdOrdersHistory200OkStateEnum = {
     Cancelled: 'cancelled',
-    Expired: 'expired'
+    Expired: 'expired',
 } as const;
 
 export type GetCorporationsCorporationIdOrdersHistory200OkStateEnum = typeof GetCorporationsCorporationIdOrdersHistory200OkStateEnum[keyof typeof GetCorporationsCorporationIdOrdersHistory200OkStateEnum];
@@ -5044,7 +5044,7 @@ export const GetCorporationsCorporationIdRoles200OkGrantableRolesEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkGrantableRolesEnum = typeof GetCorporationsCorporationIdRoles200OkGrantableRolesEnum[keyof typeof GetCorporationsCorporationIdRoles200OkGrantableRolesEnum];
@@ -5102,7 +5102,7 @@ export const GetCorporationsCorporationIdRoles200OkGrantableRolesAtBaseEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkGrantableRolesAtBaseEnum = typeof GetCorporationsCorporationIdRoles200OkGrantableRolesAtBaseEnum[keyof typeof GetCorporationsCorporationIdRoles200OkGrantableRolesAtBaseEnum];
@@ -5160,7 +5160,7 @@ export const GetCorporationsCorporationIdRoles200OkGrantableRolesAtHqEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkGrantableRolesAtHqEnum = typeof GetCorporationsCorporationIdRoles200OkGrantableRolesAtHqEnum[keyof typeof GetCorporationsCorporationIdRoles200OkGrantableRolesAtHqEnum];
@@ -5218,7 +5218,7 @@ export const GetCorporationsCorporationIdRoles200OkGrantableRolesAtOtherEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkGrantableRolesAtOtherEnum = typeof GetCorporationsCorporationIdRoles200OkGrantableRolesAtOtherEnum[keyof typeof GetCorporationsCorporationIdRoles200OkGrantableRolesAtOtherEnum];
@@ -5276,7 +5276,7 @@ export const GetCorporationsCorporationIdRoles200OkRolesEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkRolesEnum = typeof GetCorporationsCorporationIdRoles200OkRolesEnum[keyof typeof GetCorporationsCorporationIdRoles200OkRolesEnum];
@@ -5334,7 +5334,7 @@ export const GetCorporationsCorporationIdRoles200OkRolesAtBaseEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkRolesAtBaseEnum = typeof GetCorporationsCorporationIdRoles200OkRolesAtBaseEnum[keyof typeof GetCorporationsCorporationIdRoles200OkRolesAtBaseEnum];
@@ -5392,7 +5392,7 @@ export const GetCorporationsCorporationIdRoles200OkRolesAtHqEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkRolesAtHqEnum = typeof GetCorporationsCorporationIdRoles200OkRolesAtHqEnum[keyof typeof GetCorporationsCorporationIdRoles200OkRolesAtHqEnum];
@@ -5450,7 +5450,7 @@ export const GetCorporationsCorporationIdRoles200OkRolesAtOtherEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRoles200OkRolesAtOtherEnum = typeof GetCorporationsCorporationIdRoles200OkRolesAtOtherEnum[keyof typeof GetCorporationsCorporationIdRoles200OkRolesAtOtherEnum];
@@ -5539,7 +5539,7 @@ export const GetCorporationsCorporationIdRolesHistory200OkNewRolesEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRolesHistory200OkNewRolesEnum = typeof GetCorporationsCorporationIdRolesHistory200OkNewRolesEnum[keyof typeof GetCorporationsCorporationIdRolesHistory200OkNewRolesEnum];
@@ -5597,7 +5597,7 @@ export const GetCorporationsCorporationIdRolesHistory200OkOldRolesEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdRolesHistory200OkOldRolesEnum = typeof GetCorporationsCorporationIdRolesHistory200OkOldRolesEnum[keyof typeof GetCorporationsCorporationIdRolesHistory200OkOldRolesEnum];
@@ -5609,7 +5609,7 @@ export const GetCorporationsCorporationIdRolesHistory200OkRoleTypeEnum = {
     Roles: 'roles',
     RolesAtBase: 'roles_at_base',
     RolesAtHq: 'roles_at_hq',
-    RolesAtOther: 'roles_at_other'
+    RolesAtOther: 'roles_at_other',
 } as const;
 
 export type GetCorporationsCorporationIdRolesHistory200OkRoleTypeEnum = typeof GetCorporationsCorporationIdRolesHistory200OkRoleTypeEnum[keyof typeof GetCorporationsCorporationIdRolesHistory200OkRoleTypeEnum];
@@ -5634,7 +5634,7 @@ export interface GetCorporationsCorporationIdShareholders200Ok {
 
 export const GetCorporationsCorporationIdShareholders200OkShareholderTypeEnum = {
     Character: 'character',
-    Corporation: 'corporation'
+    Corporation: 'corporation',
 } as const;
 
 export type GetCorporationsCorporationIdShareholders200OkShareholderTypeEnum = typeof GetCorporationsCorporationIdShareholders200OkShareholderTypeEnum[keyof typeof GetCorporationsCorporationIdShareholders200OkShareholderTypeEnum];
@@ -5660,7 +5660,7 @@ export interface GetCorporationsCorporationIdStandings200Ok {
 export const GetCorporationsCorporationIdStandings200OkFromTypeEnum = {
     Agent: 'agent',
     NpcCorp: 'npc_corp',
-    Faction: 'faction'
+    Faction: 'faction',
 } as const;
 
 export type GetCorporationsCorporationIdStandings200OkFromTypeEnum = typeof GetCorporationsCorporationIdStandings200OkFromTypeEnum[keyof typeof GetCorporationsCorporationIdStandings200OkFromTypeEnum];
@@ -5708,7 +5708,7 @@ export const GetCorporationsCorporationIdStarbases200OkStateEnum = {
     Online: 'online',
     Onlining: 'onlining',
     Reinforced: 'reinforced',
-    Unanchoring: 'unanchoring'
+    Unanchoring: 'unanchoring',
 } as const;
 
 export type GetCorporationsCorporationIdStarbases200OkStateEnum = typeof GetCorporationsCorporationIdStarbases200OkStateEnum[keyof typeof GetCorporationsCorporationIdStarbases200OkStateEnum];
@@ -5792,7 +5792,7 @@ export const GetCorporationsCorporationIdStarbasesStarbaseIdOkAnchorEnum = {
     AllianceMember: 'alliance_member',
     ConfigStarbaseEquipmentRole: 'config_starbase_equipment_role',
     CorporationMember: 'corporation_member',
-    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role'
+    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role',
 } as const;
 
 export type GetCorporationsCorporationIdStarbasesStarbaseIdOkAnchorEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkAnchorEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkAnchorEnum];
@@ -5800,7 +5800,7 @@ export const GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayTakeEnum = 
     AllianceMember: 'alliance_member',
     ConfigStarbaseEquipmentRole: 'config_starbase_equipment_role',
     CorporationMember: 'corporation_member',
-    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role'
+    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role',
 } as const;
 
 export type GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayTakeEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayTakeEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayTakeEnum];
@@ -5808,7 +5808,7 @@ export const GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayViewEnum = 
     AllianceMember: 'alliance_member',
     ConfigStarbaseEquipmentRole: 'config_starbase_equipment_role',
     CorporationMember: 'corporation_member',
-    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role'
+    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role',
 } as const;
 
 export type GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayViewEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayViewEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkFuelBayViewEnum];
@@ -5816,7 +5816,7 @@ export const GetCorporationsCorporationIdStarbasesStarbaseIdOkOfflineEnum = {
     AllianceMember: 'alliance_member',
     ConfigStarbaseEquipmentRole: 'config_starbase_equipment_role',
     CorporationMember: 'corporation_member',
-    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role'
+    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role',
 } as const;
 
 export type GetCorporationsCorporationIdStarbasesStarbaseIdOkOfflineEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkOfflineEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkOfflineEnum];
@@ -5824,7 +5824,7 @@ export const GetCorporationsCorporationIdStarbasesStarbaseIdOkOnlineEnum = {
     AllianceMember: 'alliance_member',
     ConfigStarbaseEquipmentRole: 'config_starbase_equipment_role',
     CorporationMember: 'corporation_member',
-    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role'
+    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role',
 } as const;
 
 export type GetCorporationsCorporationIdStarbasesStarbaseIdOkOnlineEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkOnlineEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkOnlineEnum];
@@ -5832,7 +5832,7 @@ export const GetCorporationsCorporationIdStarbasesStarbaseIdOkUnanchorEnum = {
     AllianceMember: 'alliance_member',
     ConfigStarbaseEquipmentRole: 'config_starbase_equipment_role',
     CorporationMember: 'corporation_member',
-    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role'
+    StarbaseFuelTechnicianRole: 'starbase_fuel_technician_role',
 } as const;
 
 export type GetCorporationsCorporationIdStarbasesStarbaseIdOkUnanchorEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkUnanchorEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdOkUnanchorEnum];
@@ -5916,7 +5916,7 @@ export const GetCorporationsCorporationIdStructures200OkStateEnum = {
     OnliningVulnerable: 'onlining_vulnerable',
     ShieldVulnerable: 'shield_vulnerable',
     Unanchored: 'unanchored',
-    Unknown: 'unknown'
+    Unknown: 'unknown',
 } as const;
 
 export type GetCorporationsCorporationIdStructures200OkStateEnum = typeof GetCorporationsCorporationIdStructures200OkStateEnum[keyof typeof GetCorporationsCorporationIdStructures200OkStateEnum];
@@ -5938,7 +5938,7 @@ export interface GetCorporationsCorporationIdStructuresService {
 export const GetCorporationsCorporationIdStructuresServiceStateEnum = {
     Online: 'online',
     Offline: 'offline',
-    Cleanup: 'cleanup'
+    Cleanup: 'cleanup',
 } as const;
 
 export type GetCorporationsCorporationIdStructuresServiceStateEnum = typeof GetCorporationsCorporationIdStructuresServiceStateEnum[keyof typeof GetCorporationsCorporationIdStructuresServiceStateEnum];
@@ -6043,7 +6043,7 @@ export const GetCorporationsCorporationIdTitles200OkGrantableRolesEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkGrantableRolesEnum = typeof GetCorporationsCorporationIdTitles200OkGrantableRolesEnum[keyof typeof GetCorporationsCorporationIdTitles200OkGrantableRolesEnum];
@@ -6101,7 +6101,7 @@ export const GetCorporationsCorporationIdTitles200OkGrantableRolesAtBaseEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkGrantableRolesAtBaseEnum = typeof GetCorporationsCorporationIdTitles200OkGrantableRolesAtBaseEnum[keyof typeof GetCorporationsCorporationIdTitles200OkGrantableRolesAtBaseEnum];
@@ -6159,7 +6159,7 @@ export const GetCorporationsCorporationIdTitles200OkGrantableRolesAtHqEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkGrantableRolesAtHqEnum = typeof GetCorporationsCorporationIdTitles200OkGrantableRolesAtHqEnum[keyof typeof GetCorporationsCorporationIdTitles200OkGrantableRolesAtHqEnum];
@@ -6217,7 +6217,7 @@ export const GetCorporationsCorporationIdTitles200OkGrantableRolesAtOtherEnum = 
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkGrantableRolesAtOtherEnum = typeof GetCorporationsCorporationIdTitles200OkGrantableRolesAtOtherEnum[keyof typeof GetCorporationsCorporationIdTitles200OkGrantableRolesAtOtherEnum];
@@ -6275,7 +6275,7 @@ export const GetCorporationsCorporationIdTitles200OkRolesEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkRolesEnum = typeof GetCorporationsCorporationIdTitles200OkRolesEnum[keyof typeof GetCorporationsCorporationIdTitles200OkRolesEnum];
@@ -6333,7 +6333,7 @@ export const GetCorporationsCorporationIdTitles200OkRolesAtBaseEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkRolesAtBaseEnum = typeof GetCorporationsCorporationIdTitles200OkRolesAtBaseEnum[keyof typeof GetCorporationsCorporationIdTitles200OkRolesAtBaseEnum];
@@ -6391,7 +6391,7 @@ export const GetCorporationsCorporationIdTitles200OkRolesAtHqEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkRolesAtHqEnum = typeof GetCorporationsCorporationIdTitles200OkRolesAtHqEnum[keyof typeof GetCorporationsCorporationIdTitles200OkRolesAtHqEnum];
@@ -6449,7 +6449,7 @@ export const GetCorporationsCorporationIdTitles200OkRolesAtOtherEnum = {
     StarbaseDefenseOperator: 'Starbase_Defense_Operator',
     StarbaseFuelTechnician: 'Starbase_Fuel_Technician',
     StationManager: 'Station_Manager',
-    Trader: 'Trader'
+    Trader: 'Trader',
 } as const;
 
 export type GetCorporationsCorporationIdTitles200OkRolesAtOtherEnum = typeof GetCorporationsCorporationIdTitles200OkRolesAtOtherEnum[keyof typeof GetCorporationsCorporationIdTitles200OkRolesAtOtherEnum];
@@ -6537,7 +6537,7 @@ export const GetCorporationsCorporationIdWalletsDivisionJournal200OkContextIdTyp
     ContractId: 'contract_id',
     PlanetId: 'planet_id',
     SystemId: 'system_id',
-    TypeId: 'type_id'
+    TypeId: 'type_id',
 } as const;
 
 export type GetCorporationsCorporationIdWalletsDivisionJournal200OkContextIdTypeEnum = typeof GetCorporationsCorporationIdWalletsDivisionJournal200OkContextIdTypeEnum[keyof typeof GetCorporationsCorporationIdWalletsDivisionJournal200OkContextIdTypeEnum];
@@ -6696,7 +6696,7 @@ export const GetCorporationsCorporationIdWalletsDivisionJournal200OkRefTypeEnum 
     UpkeepAdjustmentFee: 'upkeep_adjustment_fee',
     WarAllyContract: 'war_ally_contract',
     WarFee: 'war_fee',
-    WarFeeSurrender: 'war_fee_surrender'
+    WarFeeSurrender: 'war_fee_surrender',
 } as const;
 
 export type GetCorporationsCorporationIdWalletsDivisionJournal200OkRefTypeEnum = typeof GetCorporationsCorporationIdWalletsDivisionJournal200OkRefTypeEnum[keyof typeof GetCorporationsCorporationIdWalletsDivisionJournal200OkRefTypeEnum];
@@ -7033,7 +7033,7 @@ export const GetFleetsFleetIdMembers200OkRoleEnum = {
     FleetCommander: 'fleet_commander',
     WingCommander: 'wing_commander',
     SquadCommander: 'squad_commander',
-    SquadMember: 'squad_member'
+    SquadMember: 'squad_member',
 } as const;
 
 export type GetFleetsFleetIdMembers200OkRoleEnum = typeof GetFleetsFleetIdMembers200OkRoleEnum[keyof typeof GetFleetsFleetIdMembers200OkRoleEnum];
@@ -7560,7 +7560,7 @@ export const GetFwSystems200OkContestedEnum = {
     Captured: 'captured',
     Contested: 'contested',
     Uncontested: 'uncontested',
-    Vulnerable: 'vulnerable'
+    Vulnerable: 'vulnerable',
 } as const;
 
 export type GetFwSystems200OkContestedEnum = typeof GetFwSystems200OkContestedEnum[keyof typeof GetFwSystems200OkContestedEnum];
@@ -7619,7 +7619,7 @@ export interface GetIncursions200Ok {
 export const GetIncursions200OkStateEnum = {
     Withdrawing: 'withdrawing',
     Mobilizing: 'mobilizing',
-    Established: 'established'
+    Established: 'established',
 } as const;
 
 export type GetIncursions200OkStateEnum = typeof GetIncursions200OkStateEnum[keyof typeof GetIncursions200OkStateEnum];
@@ -7690,7 +7690,7 @@ export const GetIndustrySystemsCostIndiceActivityEnum = {
     ResearchingMaterialEfficiency: 'researching_material_efficiency',
     ResearchingTechnology: 'researching_technology',
     ResearchingTimeEfficiency: 'researching_time_efficiency',
-    ReverseEngineering: 'reverse_engineering'
+    ReverseEngineering: 'reverse_engineering',
 } as const;
 
 export type GetIndustrySystemsCostIndiceActivityEnum = typeof GetIndustrySystemsCostIndiceActivityEnum[keyof typeof GetIndustrySystemsCostIndiceActivityEnum];
@@ -8138,7 +8138,7 @@ export const GetMarketsRegionIdOrders200OkRangeEnum = {
     _10: '10',
     _20: '20',
     _30: '30',
-    _40: '40'
+    _40: '40',
 } as const;
 
 export type GetMarketsRegionIdOrders200OkRangeEnum = typeof GetMarketsRegionIdOrders200OkRangeEnum[keyof typeof GetMarketsRegionIdOrders200OkRangeEnum];
@@ -8232,7 +8232,7 @@ export const GetMarketsStructuresStructureId200OkRangeEnum = {
     _10: '10',
     _20: '20',
     _30: '30',
-    _40: '40'
+    _40: '40',
 } as const;
 
 export type GetMarketsStructuresStructureId200OkRangeEnum = typeof GetMarketsStructuresStructureId200OkRangeEnum[keyof typeof GetMarketsStructuresStructureId200OkRangeEnum];
@@ -8296,7 +8296,7 @@ export const GetSovereigntyCampaigns200OkEventTypeEnum = {
     TcuDefense: 'tcu_defense',
     IhubDefense: 'ihub_defense',
     StationDefense: 'station_defense',
-    StationFreeport: 'station_freeport'
+    StationFreeport: 'station_freeport',
 } as const;
 
 export type GetSovereigntyCampaigns200OkEventTypeEnum = typeof GetSovereigntyCampaigns200OkEventTypeEnum[keyof typeof GetSovereigntyCampaigns200OkEventTypeEnum];
@@ -9064,7 +9064,7 @@ export const GetUniverseStarsStarIdOkSpectralClassEnum = {
     F5Iv: 'F5 IV',
     A0: 'A0',
     A0Iv: 'A0IV',
-    A0Iv2: 'A0IV2'
+    A0Iv2: 'A0IV2',
 } as const;
 
 export type GetUniverseStarsStarIdOkSpectralClassEnum = typeof GetUniverseStarsStarIdOkSpectralClassEnum[keyof typeof GetUniverseStarsStarIdOkSpectralClassEnum];
@@ -9156,7 +9156,7 @@ export const GetUniverseStationsStationIdOkServicesEnum = {
     JumpCloneFacility: 'jump-clone-facility',
     LoyaltyPointStore: 'loyalty-point-store',
     NavyOffices: 'navy-offices',
-    SecurityOffices: 'security-offices'
+    SecurityOffices: 'security-offices',
 } as const;
 
 export type GetUniverseStationsStationIdOkServicesEnum = typeof GetUniverseStationsStationIdOkServicesEnum[keyof typeof GetUniverseStationsStationIdOkServicesEnum];
@@ -9744,7 +9744,7 @@ export const PostCharactersCharacterIdFittingsItemFlagEnum = {
     SubSystemSlot0: 'SubSystemSlot0',
     SubSystemSlot1: 'SubSystemSlot1',
     SubSystemSlot2: 'SubSystemSlot2',
-    SubSystemSlot3: 'SubSystemSlot3'
+    SubSystemSlot3: 'SubSystemSlot3',
 } as const;
 
 export type PostCharactersCharacterIdFittingsItemFlagEnum = typeof PostCharactersCharacterIdFittingsItemFlagEnum[keyof typeof PostCharactersCharacterIdFittingsItemFlagEnum];
@@ -9790,7 +9790,7 @@ export const PostCharactersCharacterIdMailLabelsLabelColorEnum = {
     Ff6600: '#ff6600',
     Ffff01: '#ffff01',
     Ffffcd: '#ffffcd',
-    Ffffff: '#ffffff'
+    Ffffff: '#ffffff',
 } as const;
 
 export type PostCharactersCharacterIdMailLabelsLabelColorEnum = typeof PostCharactersCharacterIdMailLabelsLabelColorEnum[keyof typeof PostCharactersCharacterIdMailLabelsLabelColorEnum];
@@ -9834,7 +9834,7 @@ export const PostCharactersCharacterIdMailRecipientRecipientTypeEnum = {
     Alliance: 'alliance',
     Character: 'character',
     Corporation: 'corporation',
-    MailingList: 'mailing_list'
+    MailingList: 'mailing_list',
 } as const;
 
 export type PostCharactersCharacterIdMailRecipientRecipientTypeEnum = typeof PostCharactersCharacterIdMailRecipientRecipientTypeEnum[keyof typeof PostCharactersCharacterIdMailRecipientRecipientTypeEnum];
@@ -9923,7 +9923,7 @@ export const PostFleetsFleetIdMembersInvitationRoleEnum = {
     FleetCommander: 'fleet_commander',
     WingCommander: 'wing_commander',
     SquadCommander: 'squad_commander',
-    SquadMember: 'squad_member'
+    SquadMember: 'squad_member',
 } as const;
 
 export type PostFleetsFleetIdMembersInvitationRoleEnum = typeof PostFleetsFleetIdMembersInvitationRoleEnum[keyof typeof PostFleetsFleetIdMembersInvitationRoleEnum];
@@ -10218,7 +10218,7 @@ export const PostUniverseNames200OkCategoryEnum = {
     Region: 'region',
     SolarSystem: 'solar_system',
     Station: 'station',
-    Faction: 'faction'
+    Faction: 'faction',
 } as const;
 
 export type PostUniverseNames200OkCategoryEnum = typeof PostUniverseNames200OkCategoryEnum[keyof typeof PostUniverseNames200OkCategoryEnum];
@@ -10245,7 +10245,7 @@ export interface PutCharactersCharacterIdCalendarEventIdResponse {
 export const PutCharactersCharacterIdCalendarEventIdResponseResponseEnum = {
     Accepted: 'accepted',
     Declined: 'declined',
-    Tentative: 'tentative'
+    Tentative: 'tentative',
 } as const;
 
 export type PutCharactersCharacterIdCalendarEventIdResponseResponseEnum = typeof PutCharactersCharacterIdCalendarEventIdResponseResponseEnum[keyof typeof PutCharactersCharacterIdCalendarEventIdResponseResponseEnum];
@@ -10285,7 +10285,7 @@ export const PutFleetsFleetIdMembersMemberIdMovementRoleEnum = {
     FleetCommander: 'fleet_commander',
     WingCommander: 'wing_commander',
     SquadCommander: 'squad_commander',
-    SquadMember: 'squad_member'
+    SquadMember: 'squad_member',
 } as const;
 
 export type PutFleetsFleetIdMembersMemberIdMovementRoleEnum = typeof PutFleetsFleetIdMembersMemberIdMovementRoleEnum[keyof typeof PutFleetsFleetIdMembersMemberIdMovementRoleEnum];
@@ -10742,19 +10742,19 @@ export class AllianceApi extends BaseAPI {
 }
 
 export const GetAlliancesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetAlliancesDatasourceEnum = typeof GetAlliancesDatasourceEnum[keyof typeof GetAlliancesDatasourceEnum];
 export const GetAlliancesAllianceIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetAlliancesAllianceIdDatasourceEnum = typeof GetAlliancesAllianceIdDatasourceEnum[keyof typeof GetAlliancesAllianceIdDatasourceEnum];
 export const GetAlliancesAllianceIdCorporationsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetAlliancesAllianceIdCorporationsDatasourceEnum = typeof GetAlliancesAllianceIdCorporationsDatasourceEnum[keyof typeof GetAlliancesAllianceIdCorporationsDatasourceEnum];
 export const GetAlliancesAllianceIdIconsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetAlliancesAllianceIdIconsDatasourceEnum = typeof GetAlliancesAllianceIdIconsDatasourceEnum[keyof typeof GetAlliancesAllianceIdIconsDatasourceEnum];
 
@@ -11381,27 +11381,27 @@ export class AssetsApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdAssetsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdAssetsDatasourceEnum = typeof GetCharactersCharacterIdAssetsDatasourceEnum[keyof typeof GetCharactersCharacterIdAssetsDatasourceEnum];
 export const GetCorporationsCorporationIdAssetsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdAssetsDatasourceEnum = typeof GetCorporationsCorporationIdAssetsDatasourceEnum[keyof typeof GetCorporationsCorporationIdAssetsDatasourceEnum];
 export const PostCharactersCharacterIdAssetsLocationsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersCharacterIdAssetsLocationsDatasourceEnum = typeof PostCharactersCharacterIdAssetsLocationsDatasourceEnum[keyof typeof PostCharactersCharacterIdAssetsLocationsDatasourceEnum];
 export const PostCharactersCharacterIdAssetsNamesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersCharacterIdAssetsNamesDatasourceEnum = typeof PostCharactersCharacterIdAssetsNamesDatasourceEnum[keyof typeof PostCharactersCharacterIdAssetsNamesDatasourceEnum];
 export const PostCorporationsCorporationIdAssetsLocationsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCorporationsCorporationIdAssetsLocationsDatasourceEnum = typeof PostCorporationsCorporationIdAssetsLocationsDatasourceEnum[keyof typeof PostCorporationsCorporationIdAssetsLocationsDatasourceEnum];
 export const PostCorporationsCorporationIdAssetsNamesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCorporationsCorporationIdAssetsNamesDatasourceEnum = typeof PostCorporationsCorporationIdAssetsNamesDatasourceEnum[keyof typeof PostCorporationsCorporationIdAssetsNamesDatasourceEnum];
 
@@ -11848,19 +11848,19 @@ export class CalendarApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdCalendarDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdCalendarDatasourceEnum = typeof GetCharactersCharacterIdCalendarDatasourceEnum[keyof typeof GetCharactersCharacterIdCalendarDatasourceEnum];
 export const GetCharactersCharacterIdCalendarEventIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdCalendarEventIdDatasourceEnum = typeof GetCharactersCharacterIdCalendarEventIdDatasourceEnum[keyof typeof GetCharactersCharacterIdCalendarEventIdDatasourceEnum];
 export const GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum = typeof GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum[keyof typeof GetCharactersCharacterIdCalendarEventIdAttendeesDatasourceEnum];
 export const PutCharactersCharacterIdCalendarEventIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PutCharactersCharacterIdCalendarEventIdDatasourceEnum = typeof PutCharactersCharacterIdCalendarEventIdDatasourceEnum[keyof typeof PutCharactersCharacterIdCalendarEventIdDatasourceEnum];
 
@@ -13182,59 +13182,59 @@ export class CharacterApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdDatasourceEnum = typeof GetCharactersCharacterIdDatasourceEnum[keyof typeof GetCharactersCharacterIdDatasourceEnum];
 export const GetCharactersCharacterIdAgentsResearchDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdAgentsResearchDatasourceEnum = typeof GetCharactersCharacterIdAgentsResearchDatasourceEnum[keyof typeof GetCharactersCharacterIdAgentsResearchDatasourceEnum];
 export const GetCharactersCharacterIdBlueprintsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdBlueprintsDatasourceEnum = typeof GetCharactersCharacterIdBlueprintsDatasourceEnum[keyof typeof GetCharactersCharacterIdBlueprintsDatasourceEnum];
 export const GetCharactersCharacterIdCorporationhistoryDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdCorporationhistoryDatasourceEnum = typeof GetCharactersCharacterIdCorporationhistoryDatasourceEnum[keyof typeof GetCharactersCharacterIdCorporationhistoryDatasourceEnum];
 export const GetCharactersCharacterIdFatigueDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdFatigueDatasourceEnum = typeof GetCharactersCharacterIdFatigueDatasourceEnum[keyof typeof GetCharactersCharacterIdFatigueDatasourceEnum];
 export const GetCharactersCharacterIdMedalsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdMedalsDatasourceEnum = typeof GetCharactersCharacterIdMedalsDatasourceEnum[keyof typeof GetCharactersCharacterIdMedalsDatasourceEnum];
 export const GetCharactersCharacterIdNotificationsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdNotificationsDatasourceEnum = typeof GetCharactersCharacterIdNotificationsDatasourceEnum[keyof typeof GetCharactersCharacterIdNotificationsDatasourceEnum];
 export const GetCharactersCharacterIdNotificationsContactsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdNotificationsContactsDatasourceEnum = typeof GetCharactersCharacterIdNotificationsContactsDatasourceEnum[keyof typeof GetCharactersCharacterIdNotificationsContactsDatasourceEnum];
 export const GetCharactersCharacterIdPortraitDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdPortraitDatasourceEnum = typeof GetCharactersCharacterIdPortraitDatasourceEnum[keyof typeof GetCharactersCharacterIdPortraitDatasourceEnum];
 export const GetCharactersCharacterIdRolesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdRolesDatasourceEnum = typeof GetCharactersCharacterIdRolesDatasourceEnum[keyof typeof GetCharactersCharacterIdRolesDatasourceEnum];
 export const GetCharactersCharacterIdStandingsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdStandingsDatasourceEnum = typeof GetCharactersCharacterIdStandingsDatasourceEnum[keyof typeof GetCharactersCharacterIdStandingsDatasourceEnum];
 export const GetCharactersCharacterIdTitlesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdTitlesDatasourceEnum = typeof GetCharactersCharacterIdTitlesDatasourceEnum[keyof typeof GetCharactersCharacterIdTitlesDatasourceEnum];
 export const PostCharactersAffiliationDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersAffiliationDatasourceEnum = typeof PostCharactersAffiliationDatasourceEnum[keyof typeof PostCharactersAffiliationDatasourceEnum];
 export const PostCharactersCharacterIdCspaDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersCharacterIdCspaDatasourceEnum = typeof PostCharactersCharacterIdCspaDatasourceEnum[keyof typeof PostCharactersCharacterIdCspaDatasourceEnum];
 
@@ -13461,11 +13461,11 @@ export class ClonesApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdClonesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdClonesDatasourceEnum = typeof GetCharactersCharacterIdClonesDatasourceEnum[keyof typeof GetCharactersCharacterIdClonesDatasourceEnum];
 export const GetCharactersCharacterIdImplantsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdImplantsDatasourceEnum = typeof GetCharactersCharacterIdImplantsDatasourceEnum[keyof typeof GetCharactersCharacterIdImplantsDatasourceEnum];
 
@@ -14438,39 +14438,39 @@ export class ContactsApi extends BaseAPI {
 }
 
 export const DeleteCharactersCharacterIdContactsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type DeleteCharactersCharacterIdContactsDatasourceEnum = typeof DeleteCharactersCharacterIdContactsDatasourceEnum[keyof typeof DeleteCharactersCharacterIdContactsDatasourceEnum];
 export const GetAlliancesAllianceIdContactsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetAlliancesAllianceIdContactsDatasourceEnum = typeof GetAlliancesAllianceIdContactsDatasourceEnum[keyof typeof GetAlliancesAllianceIdContactsDatasourceEnum];
 export const GetAlliancesAllianceIdContactsLabelsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetAlliancesAllianceIdContactsLabelsDatasourceEnum = typeof GetAlliancesAllianceIdContactsLabelsDatasourceEnum[keyof typeof GetAlliancesAllianceIdContactsLabelsDatasourceEnum];
 export const GetCharactersCharacterIdContactsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdContactsDatasourceEnum = typeof GetCharactersCharacterIdContactsDatasourceEnum[keyof typeof GetCharactersCharacterIdContactsDatasourceEnum];
 export const GetCharactersCharacterIdContactsLabelsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdContactsLabelsDatasourceEnum = typeof GetCharactersCharacterIdContactsLabelsDatasourceEnum[keyof typeof GetCharactersCharacterIdContactsLabelsDatasourceEnum];
 export const GetCorporationsCorporationIdContactsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdContactsDatasourceEnum = typeof GetCorporationsCorporationIdContactsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContactsDatasourceEnum];
 export const GetCorporationsCorporationIdContactsLabelsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdContactsLabelsDatasourceEnum = typeof GetCorporationsCorporationIdContactsLabelsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContactsLabelsDatasourceEnum];
 export const PostCharactersCharacterIdContactsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersCharacterIdContactsDatasourceEnum = typeof PostCharactersCharacterIdContactsDatasourceEnum[keyof typeof PostCharactersCharacterIdContactsDatasourceEnum];
 export const PutCharactersCharacterIdContactsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PutCharactersCharacterIdContactsDatasourceEnum = typeof PutCharactersCharacterIdContactsDatasourceEnum[keyof typeof PutCharactersCharacterIdContactsDatasourceEnum];
 
@@ -15402,39 +15402,39 @@ export class ContractsApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdContractsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdContractsDatasourceEnum = typeof GetCharactersCharacterIdContractsDatasourceEnum[keyof typeof GetCharactersCharacterIdContractsDatasourceEnum];
 export const GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum = typeof GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum[keyof typeof GetCharactersCharacterIdContractsContractIdBidsDatasourceEnum];
 export const GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum = typeof GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum[keyof typeof GetCharactersCharacterIdContractsContractIdItemsDatasourceEnum];
 export const GetContractsPublicBidsContractIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetContractsPublicBidsContractIdDatasourceEnum = typeof GetContractsPublicBidsContractIdDatasourceEnum[keyof typeof GetContractsPublicBidsContractIdDatasourceEnum];
 export const GetContractsPublicItemsContractIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetContractsPublicItemsContractIdDatasourceEnum = typeof GetContractsPublicItemsContractIdDatasourceEnum[keyof typeof GetContractsPublicItemsContractIdDatasourceEnum];
 export const GetContractsPublicRegionIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetContractsPublicRegionIdDatasourceEnum = typeof GetContractsPublicRegionIdDatasourceEnum[keyof typeof GetContractsPublicRegionIdDatasourceEnum];
 export const GetCorporationsCorporationIdContractsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdContractsDatasourceEnum = typeof GetCorporationsCorporationIdContractsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContractsDatasourceEnum];
 export const GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum = typeof GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContractsContractIdBidsDatasourceEnum];
 export const GetCorporationsCorporationIdContractsContractIdItemsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdContractsContractIdItemsDatasourceEnum = typeof GetCorporationsCorporationIdContractsContractIdItemsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContractsContractIdItemsDatasourceEnum];
 
@@ -17610,79 +17610,79 @@ export class CorporationApi extends BaseAPI {
 }
 
 export const GetCorporationsCorporationIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdDatasourceEnum = typeof GetCorporationsCorporationIdDatasourceEnum[keyof typeof GetCorporationsCorporationIdDatasourceEnum];
 export const GetCorporationsCorporationIdAlliancehistoryDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdAlliancehistoryDatasourceEnum = typeof GetCorporationsCorporationIdAlliancehistoryDatasourceEnum[keyof typeof GetCorporationsCorporationIdAlliancehistoryDatasourceEnum];
 export const GetCorporationsCorporationIdBlueprintsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdBlueprintsDatasourceEnum = typeof GetCorporationsCorporationIdBlueprintsDatasourceEnum[keyof typeof GetCorporationsCorporationIdBlueprintsDatasourceEnum];
 export const GetCorporationsCorporationIdContainersLogsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdContainersLogsDatasourceEnum = typeof GetCorporationsCorporationIdContainersLogsDatasourceEnum[keyof typeof GetCorporationsCorporationIdContainersLogsDatasourceEnum];
 export const GetCorporationsCorporationIdDivisionsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdDivisionsDatasourceEnum = typeof GetCorporationsCorporationIdDivisionsDatasourceEnum[keyof typeof GetCorporationsCorporationIdDivisionsDatasourceEnum];
 export const GetCorporationsCorporationIdFacilitiesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdFacilitiesDatasourceEnum = typeof GetCorporationsCorporationIdFacilitiesDatasourceEnum[keyof typeof GetCorporationsCorporationIdFacilitiesDatasourceEnum];
 export const GetCorporationsCorporationIdIconsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdIconsDatasourceEnum = typeof GetCorporationsCorporationIdIconsDatasourceEnum[keyof typeof GetCorporationsCorporationIdIconsDatasourceEnum];
 export const GetCorporationsCorporationIdMedalsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdMedalsDatasourceEnum = typeof GetCorporationsCorporationIdMedalsDatasourceEnum[keyof typeof GetCorporationsCorporationIdMedalsDatasourceEnum];
 export const GetCorporationsCorporationIdMedalsIssuedDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdMedalsIssuedDatasourceEnum = typeof GetCorporationsCorporationIdMedalsIssuedDatasourceEnum[keyof typeof GetCorporationsCorporationIdMedalsIssuedDatasourceEnum];
 export const GetCorporationsCorporationIdMembersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdMembersDatasourceEnum = typeof GetCorporationsCorporationIdMembersDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembersDatasourceEnum];
 export const GetCorporationsCorporationIdMembersLimitDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdMembersLimitDatasourceEnum = typeof GetCorporationsCorporationIdMembersLimitDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembersLimitDatasourceEnum];
 export const GetCorporationsCorporationIdMembersTitlesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdMembersTitlesDatasourceEnum = typeof GetCorporationsCorporationIdMembersTitlesDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembersTitlesDatasourceEnum];
 export const GetCorporationsCorporationIdMembertrackingDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdMembertrackingDatasourceEnum = typeof GetCorporationsCorporationIdMembertrackingDatasourceEnum[keyof typeof GetCorporationsCorporationIdMembertrackingDatasourceEnum];
 export const GetCorporationsCorporationIdRolesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdRolesDatasourceEnum = typeof GetCorporationsCorporationIdRolesDatasourceEnum[keyof typeof GetCorporationsCorporationIdRolesDatasourceEnum];
 export const GetCorporationsCorporationIdRolesHistoryDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdRolesHistoryDatasourceEnum = typeof GetCorporationsCorporationIdRolesHistoryDatasourceEnum[keyof typeof GetCorporationsCorporationIdRolesHistoryDatasourceEnum];
 export const GetCorporationsCorporationIdShareholdersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdShareholdersDatasourceEnum = typeof GetCorporationsCorporationIdShareholdersDatasourceEnum[keyof typeof GetCorporationsCorporationIdShareholdersDatasourceEnum];
 export const GetCorporationsCorporationIdStandingsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdStandingsDatasourceEnum = typeof GetCorporationsCorporationIdStandingsDatasourceEnum[keyof typeof GetCorporationsCorporationIdStandingsDatasourceEnum];
 export const GetCorporationsCorporationIdStarbasesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdStarbasesDatasourceEnum = typeof GetCorporationsCorporationIdStarbasesDatasourceEnum[keyof typeof GetCorporationsCorporationIdStarbasesDatasourceEnum];
 export const GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum = typeof GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum[keyof typeof GetCorporationsCorporationIdStarbasesStarbaseIdDatasourceEnum];
 export const GetCorporationsCorporationIdStructuresAcceptLanguageEnum = {
@@ -17694,11 +17694,11 @@ export const GetCorporationsCorporationIdStructuresAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetCorporationsCorporationIdStructuresAcceptLanguageEnum = typeof GetCorporationsCorporationIdStructuresAcceptLanguageEnum[keyof typeof GetCorporationsCorporationIdStructuresAcceptLanguageEnum];
 export const GetCorporationsCorporationIdStructuresDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdStructuresDatasourceEnum = typeof GetCorporationsCorporationIdStructuresDatasourceEnum[keyof typeof GetCorporationsCorporationIdStructuresDatasourceEnum];
 export const GetCorporationsCorporationIdStructuresLanguageEnum = {
@@ -17710,15 +17710,15 @@ export const GetCorporationsCorporationIdStructuresLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetCorporationsCorporationIdStructuresLanguageEnum = typeof GetCorporationsCorporationIdStructuresLanguageEnum[keyof typeof GetCorporationsCorporationIdStructuresLanguageEnum];
 export const GetCorporationsCorporationIdTitlesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdTitlesDatasourceEnum = typeof GetCorporationsCorporationIdTitlesDatasourceEnum[keyof typeof GetCorporationsCorporationIdTitlesDatasourceEnum];
 export const GetCorporationsNpccorpsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsNpccorpsDatasourceEnum = typeof GetCorporationsNpccorpsDatasourceEnum[keyof typeof GetCorporationsNpccorpsDatasourceEnum];
 
@@ -18163,23 +18163,23 @@ export class DogmaApi extends BaseAPI {
 }
 
 export const GetDogmaAttributesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetDogmaAttributesDatasourceEnum = typeof GetDogmaAttributesDatasourceEnum[keyof typeof GetDogmaAttributesDatasourceEnum];
 export const GetDogmaAttributesAttributeIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetDogmaAttributesAttributeIdDatasourceEnum = typeof GetDogmaAttributesAttributeIdDatasourceEnum[keyof typeof GetDogmaAttributesAttributeIdDatasourceEnum];
 export const GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum = typeof GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum[keyof typeof GetDogmaDynamicItemsTypeIdItemIdDatasourceEnum];
 export const GetDogmaEffectsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetDogmaEffectsDatasourceEnum = typeof GetDogmaEffectsDatasourceEnum[keyof typeof GetDogmaEffectsDatasourceEnum];
 export const GetDogmaEffectsEffectIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetDogmaEffectsEffectIdDatasourceEnum = typeof GetDogmaEffectsEffectIdDatasourceEnum[keyof typeof GetDogmaEffectsEffectIdDatasourceEnum];
 
@@ -18862,35 +18862,35 @@ export class FactionWarfareApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdFwStatsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdFwStatsDatasourceEnum = typeof GetCharactersCharacterIdFwStatsDatasourceEnum[keyof typeof GetCharactersCharacterIdFwStatsDatasourceEnum];
 export const GetCorporationsCorporationIdFwStatsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdFwStatsDatasourceEnum = typeof GetCorporationsCorporationIdFwStatsDatasourceEnum[keyof typeof GetCorporationsCorporationIdFwStatsDatasourceEnum];
 export const GetFwLeaderboardsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFwLeaderboardsDatasourceEnum = typeof GetFwLeaderboardsDatasourceEnum[keyof typeof GetFwLeaderboardsDatasourceEnum];
 export const GetFwLeaderboardsCharactersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFwLeaderboardsCharactersDatasourceEnum = typeof GetFwLeaderboardsCharactersDatasourceEnum[keyof typeof GetFwLeaderboardsCharactersDatasourceEnum];
 export const GetFwLeaderboardsCorporationsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFwLeaderboardsCorporationsDatasourceEnum = typeof GetFwLeaderboardsCorporationsDatasourceEnum[keyof typeof GetFwLeaderboardsCorporationsDatasourceEnum];
 export const GetFwStatsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFwStatsDatasourceEnum = typeof GetFwStatsDatasourceEnum[keyof typeof GetFwStatsDatasourceEnum];
 export const GetFwSystemsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFwSystemsDatasourceEnum = typeof GetFwSystemsDatasourceEnum[keyof typeof GetFwSystemsDatasourceEnum];
 export const GetFwWarsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFwWarsDatasourceEnum = typeof GetFwWarsDatasourceEnum[keyof typeof GetFwWarsDatasourceEnum];
 
@@ -19213,15 +19213,15 @@ export class FittingsApi extends BaseAPI {
 }
 
 export const DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum = typeof DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum[keyof typeof DeleteCharactersCharacterIdFittingsFittingIdDatasourceEnum];
 export const GetCharactersCharacterIdFittingsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdFittingsDatasourceEnum = typeof GetCharactersCharacterIdFittingsDatasourceEnum[keyof typeof GetCharactersCharacterIdFittingsDatasourceEnum];
 export const PostCharactersCharacterIdFittingsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersCharacterIdFittingsDatasourceEnum = typeof PostCharactersCharacterIdFittingsDatasourceEnum[keyof typeof PostCharactersCharacterIdFittingsDatasourceEnum];
 
@@ -20637,23 +20637,23 @@ export class FleetsApi extends BaseAPI {
 }
 
 export const DeleteFleetsFleetIdMembersMemberIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type DeleteFleetsFleetIdMembersMemberIdDatasourceEnum = typeof DeleteFleetsFleetIdMembersMemberIdDatasourceEnum[keyof typeof DeleteFleetsFleetIdMembersMemberIdDatasourceEnum];
 export const DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum = typeof DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum[keyof typeof DeleteFleetsFleetIdSquadsSquadIdDatasourceEnum];
 export const DeleteFleetsFleetIdWingsWingIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type DeleteFleetsFleetIdWingsWingIdDatasourceEnum = typeof DeleteFleetsFleetIdWingsWingIdDatasourceEnum[keyof typeof DeleteFleetsFleetIdWingsWingIdDatasourceEnum];
 export const GetCharactersCharacterIdFleetDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdFleetDatasourceEnum = typeof GetCharactersCharacterIdFleetDatasourceEnum[keyof typeof GetCharactersCharacterIdFleetDatasourceEnum];
 export const GetFleetsFleetIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFleetsFleetIdDatasourceEnum = typeof GetFleetsFleetIdDatasourceEnum[keyof typeof GetFleetsFleetIdDatasourceEnum];
 export const GetFleetsFleetIdMembersAcceptLanguageEnum = {
@@ -20665,11 +20665,11 @@ export const GetFleetsFleetIdMembersAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetFleetsFleetIdMembersAcceptLanguageEnum = typeof GetFleetsFleetIdMembersAcceptLanguageEnum[keyof typeof GetFleetsFleetIdMembersAcceptLanguageEnum];
 export const GetFleetsFleetIdMembersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFleetsFleetIdMembersDatasourceEnum = typeof GetFleetsFleetIdMembersDatasourceEnum[keyof typeof GetFleetsFleetIdMembersDatasourceEnum];
 export const GetFleetsFleetIdMembersLanguageEnum = {
@@ -20681,7 +20681,7 @@ export const GetFleetsFleetIdMembersLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetFleetsFleetIdMembersLanguageEnum = typeof GetFleetsFleetIdMembersLanguageEnum[keyof typeof GetFleetsFleetIdMembersLanguageEnum];
 export const GetFleetsFleetIdWingsAcceptLanguageEnum = {
@@ -20693,11 +20693,11 @@ export const GetFleetsFleetIdWingsAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetFleetsFleetIdWingsAcceptLanguageEnum = typeof GetFleetsFleetIdWingsAcceptLanguageEnum[keyof typeof GetFleetsFleetIdWingsAcceptLanguageEnum];
 export const GetFleetsFleetIdWingsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetFleetsFleetIdWingsDatasourceEnum = typeof GetFleetsFleetIdWingsDatasourceEnum[keyof typeof GetFleetsFleetIdWingsDatasourceEnum];
 export const GetFleetsFleetIdWingsLanguageEnum = {
@@ -20709,35 +20709,35 @@ export const GetFleetsFleetIdWingsLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetFleetsFleetIdWingsLanguageEnum = typeof GetFleetsFleetIdWingsLanguageEnum[keyof typeof GetFleetsFleetIdWingsLanguageEnum];
 export const PostFleetsFleetIdMembersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostFleetsFleetIdMembersDatasourceEnum = typeof PostFleetsFleetIdMembersDatasourceEnum[keyof typeof PostFleetsFleetIdMembersDatasourceEnum];
 export const PostFleetsFleetIdWingsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostFleetsFleetIdWingsDatasourceEnum = typeof PostFleetsFleetIdWingsDatasourceEnum[keyof typeof PostFleetsFleetIdWingsDatasourceEnum];
 export const PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum = typeof PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum[keyof typeof PostFleetsFleetIdWingsWingIdSquadsDatasourceEnum];
 export const PutFleetsFleetIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PutFleetsFleetIdDatasourceEnum = typeof PutFleetsFleetIdDatasourceEnum[keyof typeof PutFleetsFleetIdDatasourceEnum];
 export const PutFleetsFleetIdMembersMemberIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PutFleetsFleetIdMembersMemberIdDatasourceEnum = typeof PutFleetsFleetIdMembersMemberIdDatasourceEnum[keyof typeof PutFleetsFleetIdMembersMemberIdDatasourceEnum];
 export const PutFleetsFleetIdSquadsSquadIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PutFleetsFleetIdSquadsSquadIdDatasourceEnum = typeof PutFleetsFleetIdSquadsSquadIdDatasourceEnum[keyof typeof PutFleetsFleetIdSquadsSquadIdDatasourceEnum];
 export const PutFleetsFleetIdWingsWingIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PutFleetsFleetIdWingsWingIdDatasourceEnum = typeof PutFleetsFleetIdWingsWingIdDatasourceEnum[keyof typeof PutFleetsFleetIdWingsWingIdDatasourceEnum];
 
@@ -20850,7 +20850,7 @@ export class IncursionsApi extends BaseAPI {
 }
 
 export const GetIncursionsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetIncursionsDatasourceEnum = typeof GetIncursionsDatasourceEnum[keyof typeof GetIncursionsDatasourceEnum];
 
@@ -21672,35 +21672,35 @@ export class IndustryApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdIndustryJobsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdIndustryJobsDatasourceEnum = typeof GetCharactersCharacterIdIndustryJobsDatasourceEnum[keyof typeof GetCharactersCharacterIdIndustryJobsDatasourceEnum];
 export const GetCharactersCharacterIdMiningDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdMiningDatasourceEnum = typeof GetCharactersCharacterIdMiningDatasourceEnum[keyof typeof GetCharactersCharacterIdMiningDatasourceEnum];
 export const GetCorporationCorporationIdMiningExtractionsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationCorporationIdMiningExtractionsDatasourceEnum = typeof GetCorporationCorporationIdMiningExtractionsDatasourceEnum[keyof typeof GetCorporationCorporationIdMiningExtractionsDatasourceEnum];
 export const GetCorporationCorporationIdMiningObserversDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationCorporationIdMiningObserversDatasourceEnum = typeof GetCorporationCorporationIdMiningObserversDatasourceEnum[keyof typeof GetCorporationCorporationIdMiningObserversDatasourceEnum];
 export const GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum = typeof GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum[keyof typeof GetCorporationCorporationIdMiningObserversObserverIdDatasourceEnum];
 export const GetCorporationsCorporationIdIndustryJobsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdIndustryJobsDatasourceEnum = typeof GetCorporationsCorporationIdIndustryJobsDatasourceEnum[keyof typeof GetCorporationsCorporationIdIndustryJobsDatasourceEnum];
 export const GetIndustryFacilitiesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetIndustryFacilitiesDatasourceEnum = typeof GetIndustryFacilitiesDatasourceEnum[keyof typeof GetIndustryFacilitiesDatasourceEnum];
 export const GetIndustrySystemsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetIndustrySystemsDatasourceEnum = typeof GetIndustrySystemsDatasourceEnum[keyof typeof GetIndustrySystemsDatasourceEnum];
 
@@ -21836,11 +21836,11 @@ export const GetInsurancePricesAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetInsurancePricesAcceptLanguageEnum = typeof GetInsurancePricesAcceptLanguageEnum[keyof typeof GetInsurancePricesAcceptLanguageEnum];
 export const GetInsurancePricesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetInsurancePricesDatasourceEnum = typeof GetInsurancePricesDatasourceEnum[keyof typeof GetInsurancePricesDatasourceEnum];
 export const GetInsurancePricesLanguageEnum = {
@@ -21852,7 +21852,7 @@ export const GetInsurancePricesLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetInsurancePricesLanguageEnum = typeof GetInsurancePricesLanguageEnum[keyof typeof GetInsurancePricesLanguageEnum];
 
@@ -22185,15 +22185,15 @@ export class KillmailsApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdKillmailsRecentDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdKillmailsRecentDatasourceEnum = typeof GetCharactersCharacterIdKillmailsRecentDatasourceEnum[keyof typeof GetCharactersCharacterIdKillmailsRecentDatasourceEnum];
 export const GetCorporationsCorporationIdKillmailsRecentDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdKillmailsRecentDatasourceEnum = typeof GetCorporationsCorporationIdKillmailsRecentDatasourceEnum[keyof typeof GetCorporationsCorporationIdKillmailsRecentDatasourceEnum];
 export const GetKillmailsKillmailIdKillmailHashDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetKillmailsKillmailIdKillmailHashDatasourceEnum = typeof GetKillmailsKillmailIdKillmailHashDatasourceEnum[keyof typeof GetKillmailsKillmailIdKillmailHashDatasourceEnum];
 
@@ -22515,15 +22515,15 @@ export class LocationApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdLocationDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdLocationDatasourceEnum = typeof GetCharactersCharacterIdLocationDatasourceEnum[keyof typeof GetCharactersCharacterIdLocationDatasourceEnum];
 export const GetCharactersCharacterIdOnlineDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdOnlineDatasourceEnum = typeof GetCharactersCharacterIdOnlineDatasourceEnum[keyof typeof GetCharactersCharacterIdOnlineDatasourceEnum];
 export const GetCharactersCharacterIdShipDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdShipDatasourceEnum = typeof GetCharactersCharacterIdShipDatasourceEnum[keyof typeof GetCharactersCharacterIdShipDatasourceEnum];
 
@@ -22738,11 +22738,11 @@ export class LoyaltyApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdLoyaltyPointsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdLoyaltyPointsDatasourceEnum = typeof GetCharactersCharacterIdLoyaltyPointsDatasourceEnum[keyof typeof GetCharactersCharacterIdLoyaltyPointsDatasourceEnum];
 export const GetLoyaltyStoresCorporationIdOffersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetLoyaltyStoresCorporationIdOffersDatasourceEnum = typeof GetLoyaltyStoresCorporationIdOffersDatasourceEnum[keyof typeof GetLoyaltyStoresCorporationIdOffersDatasourceEnum];
 
@@ -23667,39 +23667,39 @@ export class MailApi extends BaseAPI {
 }
 
 export const DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum = typeof DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum[keyof typeof DeleteCharactersCharacterIdMailLabelsLabelIdDatasourceEnum];
 export const DeleteCharactersCharacterIdMailMailIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type DeleteCharactersCharacterIdMailMailIdDatasourceEnum = typeof DeleteCharactersCharacterIdMailMailIdDatasourceEnum[keyof typeof DeleteCharactersCharacterIdMailMailIdDatasourceEnum];
 export const GetCharactersCharacterIdMailDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdMailDatasourceEnum = typeof GetCharactersCharacterIdMailDatasourceEnum[keyof typeof GetCharactersCharacterIdMailDatasourceEnum];
 export const GetCharactersCharacterIdMailLabelsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdMailLabelsDatasourceEnum = typeof GetCharactersCharacterIdMailLabelsDatasourceEnum[keyof typeof GetCharactersCharacterIdMailLabelsDatasourceEnum];
 export const GetCharactersCharacterIdMailListsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdMailListsDatasourceEnum = typeof GetCharactersCharacterIdMailListsDatasourceEnum[keyof typeof GetCharactersCharacterIdMailListsDatasourceEnum];
 export const GetCharactersCharacterIdMailMailIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdMailMailIdDatasourceEnum = typeof GetCharactersCharacterIdMailMailIdDatasourceEnum[keyof typeof GetCharactersCharacterIdMailMailIdDatasourceEnum];
 export const PostCharactersCharacterIdMailDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersCharacterIdMailDatasourceEnum = typeof PostCharactersCharacterIdMailDatasourceEnum[keyof typeof PostCharactersCharacterIdMailDatasourceEnum];
 export const PostCharactersCharacterIdMailLabelsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostCharactersCharacterIdMailLabelsDatasourceEnum = typeof PostCharactersCharacterIdMailLabelsDatasourceEnum[keyof typeof PostCharactersCharacterIdMailLabelsDatasourceEnum];
 export const PutCharactersCharacterIdMailMailIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PutCharactersCharacterIdMailMailIdDatasourceEnum = typeof PutCharactersCharacterIdMailMailIdDatasourceEnum[keyof typeof PutCharactersCharacterIdMailMailIdDatasourceEnum];
 
@@ -24786,23 +24786,23 @@ export class MarketApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdOrdersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdOrdersDatasourceEnum = typeof GetCharactersCharacterIdOrdersDatasourceEnum[keyof typeof GetCharactersCharacterIdOrdersDatasourceEnum];
 export const GetCharactersCharacterIdOrdersHistoryDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdOrdersHistoryDatasourceEnum = typeof GetCharactersCharacterIdOrdersHistoryDatasourceEnum[keyof typeof GetCharactersCharacterIdOrdersHistoryDatasourceEnum];
 export const GetCorporationsCorporationIdOrdersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdOrdersDatasourceEnum = typeof GetCorporationsCorporationIdOrdersDatasourceEnum[keyof typeof GetCorporationsCorporationIdOrdersDatasourceEnum];
 export const GetCorporationsCorporationIdOrdersHistoryDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdOrdersHistoryDatasourceEnum = typeof GetCorporationsCorporationIdOrdersHistoryDatasourceEnum[keyof typeof GetCorporationsCorporationIdOrdersHistoryDatasourceEnum];
 export const GetMarketsGroupsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetMarketsGroupsDatasourceEnum = typeof GetMarketsGroupsDatasourceEnum[keyof typeof GetMarketsGroupsDatasourceEnum];
 export const GetMarketsGroupsMarketGroupIdAcceptLanguageEnum = {
@@ -24814,11 +24814,11 @@ export const GetMarketsGroupsMarketGroupIdAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetMarketsGroupsMarketGroupIdAcceptLanguageEnum = typeof GetMarketsGroupsMarketGroupIdAcceptLanguageEnum[keyof typeof GetMarketsGroupsMarketGroupIdAcceptLanguageEnum];
 export const GetMarketsGroupsMarketGroupIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetMarketsGroupsMarketGroupIdDatasourceEnum = typeof GetMarketsGroupsMarketGroupIdDatasourceEnum[keyof typeof GetMarketsGroupsMarketGroupIdDatasourceEnum];
 export const GetMarketsGroupsMarketGroupIdLanguageEnum = {
@@ -24830,33 +24830,33 @@ export const GetMarketsGroupsMarketGroupIdLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetMarketsGroupsMarketGroupIdLanguageEnum = typeof GetMarketsGroupsMarketGroupIdLanguageEnum[keyof typeof GetMarketsGroupsMarketGroupIdLanguageEnum];
 export const GetMarketsPricesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetMarketsPricesDatasourceEnum = typeof GetMarketsPricesDatasourceEnum[keyof typeof GetMarketsPricesDatasourceEnum];
 export const GetMarketsRegionIdHistoryDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetMarketsRegionIdHistoryDatasourceEnum = typeof GetMarketsRegionIdHistoryDatasourceEnum[keyof typeof GetMarketsRegionIdHistoryDatasourceEnum];
 export const GetMarketsRegionIdOrdersOrderTypeEnum = {
     Buy: 'buy',
     Sell: 'sell',
-    All: 'all'
+    All: 'all',
 } as const;
 export type GetMarketsRegionIdOrdersOrderTypeEnum = typeof GetMarketsRegionIdOrdersOrderTypeEnum[keyof typeof GetMarketsRegionIdOrdersOrderTypeEnum];
 export const GetMarketsRegionIdOrdersDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetMarketsRegionIdOrdersDatasourceEnum = typeof GetMarketsRegionIdOrdersDatasourceEnum[keyof typeof GetMarketsRegionIdOrdersDatasourceEnum];
 export const GetMarketsRegionIdTypesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetMarketsRegionIdTypesDatasourceEnum = typeof GetMarketsRegionIdTypesDatasourceEnum[keyof typeof GetMarketsRegionIdTypesDatasourceEnum];
 export const GetMarketsStructuresStructureIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetMarketsStructuresStructureIdDatasourceEnum = typeof GetMarketsStructuresStructureIdDatasourceEnum[keyof typeof GetMarketsStructuresStructureIdDatasourceEnum];
 
@@ -25269,19 +25269,19 @@ export class PlanetaryInteractionApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdPlanetsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdPlanetsDatasourceEnum = typeof GetCharactersCharacterIdPlanetsDatasourceEnum[keyof typeof GetCharactersCharacterIdPlanetsDatasourceEnum];
 export const GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum = typeof GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum[keyof typeof GetCharactersCharacterIdPlanetsPlanetIdDatasourceEnum];
 export const GetCorporationsCorporationIdCustomsOfficesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdCustomsOfficesDatasourceEnum = typeof GetCorporationsCorporationIdCustomsOfficesDatasourceEnum[keyof typeof GetCorporationsCorporationIdCustomsOfficesDatasourceEnum];
 export const GetUniverseSchematicsSchematicIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseSchematicsSchematicIdDatasourceEnum = typeof GetUniverseSchematicsSchematicIdDatasourceEnum[keyof typeof GetUniverseSchematicsSchematicIdDatasourceEnum];
 
@@ -25432,13 +25432,13 @@ export class RoutesApi extends BaseAPI {
 }
 
 export const GetRouteOriginDestinationDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetRouteOriginDestinationDatasourceEnum = typeof GetRouteOriginDestinationDatasourceEnum[keyof typeof GetRouteOriginDestinationDatasourceEnum];
 export const GetRouteOriginDestinationFlagEnum = {
     Shortest: 'shortest',
     Secure: 'secure',
-    Insecure: 'insecure'
+    Insecure: 'insecure',
 } as const;
 export type GetRouteOriginDestinationFlagEnum = typeof GetRouteOriginDestinationFlagEnum[keyof typeof GetRouteOriginDestinationFlagEnum];
 
@@ -25623,7 +25623,7 @@ export const GetCharactersCharacterIdSearchCategoriesEnum = {
     Region: 'region',
     SolarSystem: 'solar_system',
     Station: 'station',
-    Structure: 'structure'
+    Structure: 'structure',
 } as const;
 export type GetCharactersCharacterIdSearchCategoriesEnum = typeof GetCharactersCharacterIdSearchCategoriesEnum[keyof typeof GetCharactersCharacterIdSearchCategoriesEnum];
 export const GetCharactersCharacterIdSearchAcceptLanguageEnum = {
@@ -25635,11 +25635,11 @@ export const GetCharactersCharacterIdSearchAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetCharactersCharacterIdSearchAcceptLanguageEnum = typeof GetCharactersCharacterIdSearchAcceptLanguageEnum[keyof typeof GetCharactersCharacterIdSearchAcceptLanguageEnum];
 export const GetCharactersCharacterIdSearchDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdSearchDatasourceEnum = typeof GetCharactersCharacterIdSearchDatasourceEnum[keyof typeof GetCharactersCharacterIdSearchDatasourceEnum];
 export const GetCharactersCharacterIdSearchLanguageEnum = {
@@ -25651,7 +25651,7 @@ export const GetCharactersCharacterIdSearchLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetCharactersCharacterIdSearchLanguageEnum = typeof GetCharactersCharacterIdSearchLanguageEnum[keyof typeof GetCharactersCharacterIdSearchLanguageEnum];
 
@@ -25973,15 +25973,15 @@ export class SkillsApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdAttributesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdAttributesDatasourceEnum = typeof GetCharactersCharacterIdAttributesDatasourceEnum[keyof typeof GetCharactersCharacterIdAttributesDatasourceEnum];
 export const GetCharactersCharacterIdSkillqueueDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdSkillqueueDatasourceEnum = typeof GetCharactersCharacterIdSkillqueueDatasourceEnum[keyof typeof GetCharactersCharacterIdSkillqueueDatasourceEnum];
 export const GetCharactersCharacterIdSkillsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdSkillsDatasourceEnum = typeof GetCharactersCharacterIdSkillsDatasourceEnum[keyof typeof GetCharactersCharacterIdSkillsDatasourceEnum];
 
@@ -26246,15 +26246,15 @@ export class SovereigntyApi extends BaseAPI {
 }
 
 export const GetSovereigntyCampaignsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetSovereigntyCampaignsDatasourceEnum = typeof GetSovereigntyCampaignsDatasourceEnum[keyof typeof GetSovereigntyCampaignsDatasourceEnum];
 export const GetSovereigntyMapDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetSovereigntyMapDatasourceEnum = typeof GetSovereigntyMapDatasourceEnum[keyof typeof GetSovereigntyMapDatasourceEnum];
 export const GetSovereigntyStructuresDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetSovereigntyStructuresDatasourceEnum = typeof GetSovereigntyStructuresDatasourceEnum[keyof typeof GetSovereigntyStructuresDatasourceEnum];
 
@@ -26367,7 +26367,7 @@ export class StatusApi extends BaseAPI {
 }
 
 export const GetStatusDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetStatusDatasourceEnum = typeof GetStatusDatasourceEnum[keyof typeof GetStatusDatasourceEnum];
 
@@ -28993,11 +28993,11 @@ export const GetUniverseAncestriesAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseAncestriesAcceptLanguageEnum = typeof GetUniverseAncestriesAcceptLanguageEnum[keyof typeof GetUniverseAncestriesAcceptLanguageEnum];
 export const GetUniverseAncestriesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseAncestriesDatasourceEnum = typeof GetUniverseAncestriesDatasourceEnum[keyof typeof GetUniverseAncestriesDatasourceEnum];
 export const GetUniverseAncestriesLanguageEnum = {
@@ -29009,11 +29009,11 @@ export const GetUniverseAncestriesLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseAncestriesLanguageEnum = typeof GetUniverseAncestriesLanguageEnum[keyof typeof GetUniverseAncestriesLanguageEnum];
 export const GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum = typeof GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum[keyof typeof GetUniverseAsteroidBeltsAsteroidBeltIdDatasourceEnum];
 export const GetUniverseBloodlinesAcceptLanguageEnum = {
@@ -29025,11 +29025,11 @@ export const GetUniverseBloodlinesAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseBloodlinesAcceptLanguageEnum = typeof GetUniverseBloodlinesAcceptLanguageEnum[keyof typeof GetUniverseBloodlinesAcceptLanguageEnum];
 export const GetUniverseBloodlinesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseBloodlinesDatasourceEnum = typeof GetUniverseBloodlinesDatasourceEnum[keyof typeof GetUniverseBloodlinesDatasourceEnum];
 export const GetUniverseBloodlinesLanguageEnum = {
@@ -29041,11 +29041,11 @@ export const GetUniverseBloodlinesLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseBloodlinesLanguageEnum = typeof GetUniverseBloodlinesLanguageEnum[keyof typeof GetUniverseBloodlinesLanguageEnum];
 export const GetUniverseCategoriesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseCategoriesDatasourceEnum = typeof GetUniverseCategoriesDatasourceEnum[keyof typeof GetUniverseCategoriesDatasourceEnum];
 export const GetUniverseCategoriesCategoryIdAcceptLanguageEnum = {
@@ -29057,11 +29057,11 @@ export const GetUniverseCategoriesCategoryIdAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseCategoriesCategoryIdAcceptLanguageEnum = typeof GetUniverseCategoriesCategoryIdAcceptLanguageEnum[keyof typeof GetUniverseCategoriesCategoryIdAcceptLanguageEnum];
 export const GetUniverseCategoriesCategoryIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseCategoriesCategoryIdDatasourceEnum = typeof GetUniverseCategoriesCategoryIdDatasourceEnum[keyof typeof GetUniverseCategoriesCategoryIdDatasourceEnum];
 export const GetUniverseCategoriesCategoryIdLanguageEnum = {
@@ -29073,11 +29073,11 @@ export const GetUniverseCategoriesCategoryIdLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseCategoriesCategoryIdLanguageEnum = typeof GetUniverseCategoriesCategoryIdLanguageEnum[keyof typeof GetUniverseCategoriesCategoryIdLanguageEnum];
 export const GetUniverseConstellationsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseConstellationsDatasourceEnum = typeof GetUniverseConstellationsDatasourceEnum[keyof typeof GetUniverseConstellationsDatasourceEnum];
 export const GetUniverseConstellationsConstellationIdAcceptLanguageEnum = {
@@ -29089,11 +29089,11 @@ export const GetUniverseConstellationsConstellationIdAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseConstellationsConstellationIdAcceptLanguageEnum = typeof GetUniverseConstellationsConstellationIdAcceptLanguageEnum[keyof typeof GetUniverseConstellationsConstellationIdAcceptLanguageEnum];
 export const GetUniverseConstellationsConstellationIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseConstellationsConstellationIdDatasourceEnum = typeof GetUniverseConstellationsConstellationIdDatasourceEnum[keyof typeof GetUniverseConstellationsConstellationIdDatasourceEnum];
 export const GetUniverseConstellationsConstellationIdLanguageEnum = {
@@ -29105,7 +29105,7 @@ export const GetUniverseConstellationsConstellationIdLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseConstellationsConstellationIdLanguageEnum = typeof GetUniverseConstellationsConstellationIdLanguageEnum[keyof typeof GetUniverseConstellationsConstellationIdLanguageEnum];
 export const GetUniverseFactionsAcceptLanguageEnum = {
@@ -29117,11 +29117,11 @@ export const GetUniverseFactionsAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseFactionsAcceptLanguageEnum = typeof GetUniverseFactionsAcceptLanguageEnum[keyof typeof GetUniverseFactionsAcceptLanguageEnum];
 export const GetUniverseFactionsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseFactionsDatasourceEnum = typeof GetUniverseFactionsDatasourceEnum[keyof typeof GetUniverseFactionsDatasourceEnum];
 export const GetUniverseFactionsLanguageEnum = {
@@ -29133,19 +29133,19 @@ export const GetUniverseFactionsLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseFactionsLanguageEnum = typeof GetUniverseFactionsLanguageEnum[keyof typeof GetUniverseFactionsLanguageEnum];
 export const GetUniverseGraphicsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseGraphicsDatasourceEnum = typeof GetUniverseGraphicsDatasourceEnum[keyof typeof GetUniverseGraphicsDatasourceEnum];
 export const GetUniverseGraphicsGraphicIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseGraphicsGraphicIdDatasourceEnum = typeof GetUniverseGraphicsGraphicIdDatasourceEnum[keyof typeof GetUniverseGraphicsGraphicIdDatasourceEnum];
 export const GetUniverseGroupsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseGroupsDatasourceEnum = typeof GetUniverseGroupsDatasourceEnum[keyof typeof GetUniverseGroupsDatasourceEnum];
 export const GetUniverseGroupsGroupIdAcceptLanguageEnum = {
@@ -29157,11 +29157,11 @@ export const GetUniverseGroupsGroupIdAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseGroupsGroupIdAcceptLanguageEnum = typeof GetUniverseGroupsGroupIdAcceptLanguageEnum[keyof typeof GetUniverseGroupsGroupIdAcceptLanguageEnum];
 export const GetUniverseGroupsGroupIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseGroupsGroupIdDatasourceEnum = typeof GetUniverseGroupsGroupIdDatasourceEnum[keyof typeof GetUniverseGroupsGroupIdDatasourceEnum];
 export const GetUniverseGroupsGroupIdLanguageEnum = {
@@ -29173,15 +29173,15 @@ export const GetUniverseGroupsGroupIdLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseGroupsGroupIdLanguageEnum = typeof GetUniverseGroupsGroupIdLanguageEnum[keyof typeof GetUniverseGroupsGroupIdLanguageEnum];
 export const GetUniverseMoonsMoonIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseMoonsMoonIdDatasourceEnum = typeof GetUniverseMoonsMoonIdDatasourceEnum[keyof typeof GetUniverseMoonsMoonIdDatasourceEnum];
 export const GetUniversePlanetsPlanetIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniversePlanetsPlanetIdDatasourceEnum = typeof GetUniversePlanetsPlanetIdDatasourceEnum[keyof typeof GetUniversePlanetsPlanetIdDatasourceEnum];
 export const GetUniverseRacesAcceptLanguageEnum = {
@@ -29193,11 +29193,11 @@ export const GetUniverseRacesAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseRacesAcceptLanguageEnum = typeof GetUniverseRacesAcceptLanguageEnum[keyof typeof GetUniverseRacesAcceptLanguageEnum];
 export const GetUniverseRacesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseRacesDatasourceEnum = typeof GetUniverseRacesDatasourceEnum[keyof typeof GetUniverseRacesDatasourceEnum];
 export const GetUniverseRacesLanguageEnum = {
@@ -29209,11 +29209,11 @@ export const GetUniverseRacesLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseRacesLanguageEnum = typeof GetUniverseRacesLanguageEnum[keyof typeof GetUniverseRacesLanguageEnum];
 export const GetUniverseRegionsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseRegionsDatasourceEnum = typeof GetUniverseRegionsDatasourceEnum[keyof typeof GetUniverseRegionsDatasourceEnum];
 export const GetUniverseRegionsRegionIdAcceptLanguageEnum = {
@@ -29225,11 +29225,11 @@ export const GetUniverseRegionsRegionIdAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseRegionsRegionIdAcceptLanguageEnum = typeof GetUniverseRegionsRegionIdAcceptLanguageEnum[keyof typeof GetUniverseRegionsRegionIdAcceptLanguageEnum];
 export const GetUniverseRegionsRegionIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseRegionsRegionIdDatasourceEnum = typeof GetUniverseRegionsRegionIdDatasourceEnum[keyof typeof GetUniverseRegionsRegionIdDatasourceEnum];
 export const GetUniverseRegionsRegionIdLanguageEnum = {
@@ -29241,44 +29241,44 @@ export const GetUniverseRegionsRegionIdLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseRegionsRegionIdLanguageEnum = typeof GetUniverseRegionsRegionIdLanguageEnum[keyof typeof GetUniverseRegionsRegionIdLanguageEnum];
 export const GetUniverseStargatesStargateIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseStargatesStargateIdDatasourceEnum = typeof GetUniverseStargatesStargateIdDatasourceEnum[keyof typeof GetUniverseStargatesStargateIdDatasourceEnum];
 export const GetUniverseStarsStarIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseStarsStarIdDatasourceEnum = typeof GetUniverseStarsStarIdDatasourceEnum[keyof typeof GetUniverseStarsStarIdDatasourceEnum];
 export const GetUniverseStationsStationIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseStationsStationIdDatasourceEnum = typeof GetUniverseStationsStationIdDatasourceEnum[keyof typeof GetUniverseStationsStationIdDatasourceEnum];
 export const GetUniverseStructuresDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseStructuresDatasourceEnum = typeof GetUniverseStructuresDatasourceEnum[keyof typeof GetUniverseStructuresDatasourceEnum];
 export const GetUniverseStructuresFilterEnum = {
     Market: 'market',
-    ManufacturingBasic: 'manufacturing_basic'
+    ManufacturingBasic: 'manufacturing_basic',
 } as const;
 export type GetUniverseStructuresFilterEnum = typeof GetUniverseStructuresFilterEnum[keyof typeof GetUniverseStructuresFilterEnum];
 export const GetUniverseStructuresStructureIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseStructuresStructureIdDatasourceEnum = typeof GetUniverseStructuresStructureIdDatasourceEnum[keyof typeof GetUniverseStructuresStructureIdDatasourceEnum];
 export const GetUniverseSystemJumpsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseSystemJumpsDatasourceEnum = typeof GetUniverseSystemJumpsDatasourceEnum[keyof typeof GetUniverseSystemJumpsDatasourceEnum];
 export const GetUniverseSystemKillsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseSystemKillsDatasourceEnum = typeof GetUniverseSystemKillsDatasourceEnum[keyof typeof GetUniverseSystemKillsDatasourceEnum];
 export const GetUniverseSystemsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseSystemsDatasourceEnum = typeof GetUniverseSystemsDatasourceEnum[keyof typeof GetUniverseSystemsDatasourceEnum];
 export const GetUniverseSystemsSystemIdAcceptLanguageEnum = {
@@ -29290,11 +29290,11 @@ export const GetUniverseSystemsSystemIdAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseSystemsSystemIdAcceptLanguageEnum = typeof GetUniverseSystemsSystemIdAcceptLanguageEnum[keyof typeof GetUniverseSystemsSystemIdAcceptLanguageEnum];
 export const GetUniverseSystemsSystemIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseSystemsSystemIdDatasourceEnum = typeof GetUniverseSystemsSystemIdDatasourceEnum[keyof typeof GetUniverseSystemsSystemIdDatasourceEnum];
 export const GetUniverseSystemsSystemIdLanguageEnum = {
@@ -29306,11 +29306,11 @@ export const GetUniverseSystemsSystemIdLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseSystemsSystemIdLanguageEnum = typeof GetUniverseSystemsSystemIdLanguageEnum[keyof typeof GetUniverseSystemsSystemIdLanguageEnum];
 export const GetUniverseTypesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseTypesDatasourceEnum = typeof GetUniverseTypesDatasourceEnum[keyof typeof GetUniverseTypesDatasourceEnum];
 export const GetUniverseTypesTypeIdAcceptLanguageEnum = {
@@ -29322,11 +29322,11 @@ export const GetUniverseTypesTypeIdAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseTypesTypeIdAcceptLanguageEnum = typeof GetUniverseTypesTypeIdAcceptLanguageEnum[keyof typeof GetUniverseTypesTypeIdAcceptLanguageEnum];
 export const GetUniverseTypesTypeIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetUniverseTypesTypeIdDatasourceEnum = typeof GetUniverseTypesTypeIdDatasourceEnum[keyof typeof GetUniverseTypesTypeIdDatasourceEnum];
 export const GetUniverseTypesTypeIdLanguageEnum = {
@@ -29338,7 +29338,7 @@ export const GetUniverseTypesTypeIdLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type GetUniverseTypesTypeIdLanguageEnum = typeof GetUniverseTypesTypeIdLanguageEnum[keyof typeof GetUniverseTypesTypeIdLanguageEnum];
 export const PostUniverseIdsAcceptLanguageEnum = {
@@ -29350,11 +29350,11 @@ export const PostUniverseIdsAcceptLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type PostUniverseIdsAcceptLanguageEnum = typeof PostUniverseIdsAcceptLanguageEnum[keyof typeof PostUniverseIdsAcceptLanguageEnum];
 export const PostUniverseIdsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostUniverseIdsDatasourceEnum = typeof PostUniverseIdsDatasourceEnum[keyof typeof PostUniverseIdsDatasourceEnum];
 export const PostUniverseIdsLanguageEnum = {
@@ -29366,11 +29366,11 @@ export const PostUniverseIdsLanguageEnum = {
     Ru: 'ru',
     Zh: 'zh',
     Ko: 'ko',
-    Es: 'es'
+    Es: 'es',
 } as const;
 export type PostUniverseIdsLanguageEnum = typeof PostUniverseIdsLanguageEnum[keyof typeof PostUniverseIdsLanguageEnum];
 export const PostUniverseNamesDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostUniverseNamesDatasourceEnum = typeof PostUniverseNamesDatasourceEnum[keyof typeof PostUniverseNamesDatasourceEnum];
 
@@ -29880,23 +29880,23 @@ export class UserInterfaceApi extends BaseAPI {
 }
 
 export const PostUiAutopilotWaypointDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostUiAutopilotWaypointDatasourceEnum = typeof PostUiAutopilotWaypointDatasourceEnum[keyof typeof PostUiAutopilotWaypointDatasourceEnum];
 export const PostUiOpenwindowContractDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostUiOpenwindowContractDatasourceEnum = typeof PostUiOpenwindowContractDatasourceEnum[keyof typeof PostUiOpenwindowContractDatasourceEnum];
 export const PostUiOpenwindowInformationDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostUiOpenwindowInformationDatasourceEnum = typeof PostUiOpenwindowInformationDatasourceEnum[keyof typeof PostUiOpenwindowInformationDatasourceEnum];
 export const PostUiOpenwindowMarketdetailsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostUiOpenwindowMarketdetailsDatasourceEnum = typeof PostUiOpenwindowMarketdetailsDatasourceEnum[keyof typeof PostUiOpenwindowMarketdetailsDatasourceEnum];
 export const PostUiOpenwindowNewmailDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type PostUiOpenwindowNewmailDatasourceEnum = typeof PostUiOpenwindowNewmailDatasourceEnum[keyof typeof PostUiOpenwindowNewmailDatasourceEnum];
 
@@ -30549,27 +30549,27 @@ export class WalletApi extends BaseAPI {
 }
 
 export const GetCharactersCharacterIdWalletDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdWalletDatasourceEnum = typeof GetCharactersCharacterIdWalletDatasourceEnum[keyof typeof GetCharactersCharacterIdWalletDatasourceEnum];
 export const GetCharactersCharacterIdWalletJournalDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdWalletJournalDatasourceEnum = typeof GetCharactersCharacterIdWalletJournalDatasourceEnum[keyof typeof GetCharactersCharacterIdWalletJournalDatasourceEnum];
 export const GetCharactersCharacterIdWalletTransactionsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCharactersCharacterIdWalletTransactionsDatasourceEnum = typeof GetCharactersCharacterIdWalletTransactionsDatasourceEnum[keyof typeof GetCharactersCharacterIdWalletTransactionsDatasourceEnum];
 export const GetCorporationsCorporationIdWalletsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdWalletsDatasourceEnum = typeof GetCorporationsCorporationIdWalletsDatasourceEnum[keyof typeof GetCorporationsCorporationIdWalletsDatasourceEnum];
 export const GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum = typeof GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum[keyof typeof GetCorporationsCorporationIdWalletsDivisionJournalDatasourceEnum];
 export const GetCorporationsCorporationIdWalletsDivisionTransactionsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetCorporationsCorporationIdWalletsDivisionTransactionsDatasourceEnum = typeof GetCorporationsCorporationIdWalletsDivisionTransactionsDatasourceEnum[keyof typeof GetCorporationsCorporationIdWalletsDivisionTransactionsDatasourceEnum];
 
@@ -30864,15 +30864,15 @@ export class WarsApi extends BaseAPI {
 }
 
 export const GetWarsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetWarsDatasourceEnum = typeof GetWarsDatasourceEnum[keyof typeof GetWarsDatasourceEnum];
 export const GetWarsWarIdDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetWarsWarIdDatasourceEnum = typeof GetWarsWarIdDatasourceEnum[keyof typeof GetWarsWarIdDatasourceEnum];
 export const GetWarsWarIdKillmailsDatasourceEnum = {
-    Tranquility: 'tranquility'
+    Tranquility: 'tranquility',
 } as const;
 export type GetWarsWarIdKillmailsDatasourceEnum = typeof GetWarsWarIdKillmailsDatasourceEnum[keyof typeof GetWarsWarIdKillmailsDatasourceEnum];
 
