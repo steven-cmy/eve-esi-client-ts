@@ -25,8 +25,8 @@ jobs:
         id: esi_url
         run: |
           ESI_BASE="https://esi.evetech.net/meta/openapi.json"
-          TODAY_DATE=$(date -u '+%Y-%m-%d')
-          FULL_URL="${ESI_BASE}?compatibility_date=${TODAY_DATE}"
+          DATE=$(date -u -d "yesterday" '+%Y-%m-%d')
+          FULL_URL="${ESI_BASE}?compatibility_date=${DATE}"
           echo "esi_endpoint=$FULL_URL" >> $GITHUB_OUTPUT
       - name: Fetch version
         id: fetch_spec
@@ -40,12 +40,10 @@ jobs:
         run: |
           REMOTE_VERSION="${{ steps.fetch_spec.outputs.remote_version }}"
           if [ ! -f ESI_VERSION ]; then
-            echo "No local ESI_VERSION found, creating it..."
-            echo "$REMOTE_VERSION" > ESI_VERSION
+            echo "No local ESI_VERSION found."
             echo "changed=true" >> $GITHUB_OUTPUT
           elif [ "$(cat ESI_VERSION)" != "$REMOTE_VERSION" ]; then
             echo "Version changed: $(cat ESI_VERSION) -> $REMOTE_VERSION"
-            echo "$REMOTE_VERSION" > ESI_VERSION
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "Version unchanged: $REMOTE_VERSION"
@@ -74,13 +72,21 @@ jobs:
           else
             VERSION=$(npm version patch --tag-version-prefix='' --git-tag-version false)
           fi
+          echo "${{ needs.check-update.outputs.remote_version }}" > ESI_VERSION
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - name: Generate TypeScript Client
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: typescript-axios
           openapi-url: "${{ needs.check-update.outputs.esi_endpoint }}"
-          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
+          config-file: config.json
+          command-args: --minimal-update --additional-properties=npmVersion=${{ steps.bump.outputs.version }} --global-property=apiDocs=false,modelDocs=false --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
+      - name: Generate API docs
+        uses: openapi-generators/openapitools-generator-action@v1
+        with:
+          generator: html2
+          openapi-url: "${{ needs.check-update.outputs.esi_endpoint }}"
+          command-args: -o docs
       - name: Commit changes
         run: |
           git config --global user.name "github-actions[bot]"
@@ -90,6 +96,8 @@ jobs:
           git add .
           git commit -m "Auto generate: ${{ steps.bump.outputs.version }} (ESI-${{ needs.check-update.outputs.remote_version }})"
           git push
+      - name: Wait for commit to be available
+        run: sleep 15
 
   publish:
     name: Publish to NPM

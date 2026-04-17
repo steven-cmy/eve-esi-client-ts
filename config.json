@@ -1,0 +1,7 @@
+{
+  "supportsES6": true,
+  "npmName": "eve-esi-client-ts",
+  "licenseName": "MIT",
+  "packageDescription": "OpenAPI client for EVE Spring Inebriation(ESI) - tranquility",
+  "packageAuthor": "Archangel's Echo"
+}
