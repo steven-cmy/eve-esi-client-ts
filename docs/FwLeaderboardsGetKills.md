@@ -1,0 +1,25 @@
+# FwLeaderboardsGetKills
+
+Top 4 rankings of factions by number of kills from yesterday, last week and in total
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**active_total** | [**Array&lt;FwLeaderboardsGetKillsActiveTotalInner&gt;**](FwLeaderboardsGetKillsActiveTotalInner.md) | Top 4 ranking of factions active in faction warfare by total kills. A faction is considered \&quot;active\&quot; if they have participated in faction warfare in the past 14 days | [default to undefined]
+**last_week** | [**Array&lt;FwLeaderboardsGetKillsLastWeekInner&gt;**](FwLeaderboardsGetKillsLastWeekInner.md) | Top 4 ranking of factions by kills in the past week | [default to undefined]
+**yesterday** | [**Array&lt;FwLeaderboardsGetKillsYesterdayInner&gt;**](FwLeaderboardsGetKillsYesterdayInner.md) | Top 4 ranking of factions by kills in the past day | [default to undefined]
+
+## Example
+
+```typescript
+import { FwLeaderboardsGetKills } from 'eve-esi-client-ts';
+
+const instance: FwLeaderboardsGetKills = {
+    active_total,
+    last_week,
+    yesterday,
+};
+```
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
