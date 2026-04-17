@@ -66,6 +66,7 @@ jobs:
       - name: Bump version
         id: bump
         run: |
+          npm update --save
           git reset --hard
           CURRENT=$(jq -r .version package.json)
           if [[ "$CURRENT" < "1.1.0" ]]; then
@@ -73,7 +74,6 @@ jobs:
           else
             VERSION=$(npm version patch --tag-version-prefix='' --git-tag-version false)
           fi
-          npm update --save
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - name: Generate TypeScript Client
         uses: openapi-generators/openapitools-generator-action@v1

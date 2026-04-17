@@ -4,42 +4,39 @@ All URIs are relative to *https://esi.evetech.net*
 
 |Method | HTTP request | Description|
 |------------- | ------------- | -------------|
-|[**getRouteOriginDestination**](#getrouteorigindestination) | **GET** /route/{origin}/{destination} | Get route|
+|[**postRoute**](#postroute) | **POST** /route/{origin_system_id}/{destination_system_id} | Get route between two systems|
 
-# **getRouteOriginDestination**
-> Array<number> getRouteOriginDestination()
+# **postRoute**
+> Route postRoute(routeRequestBody)
 
-Get the systems between origin and destination
+Calculate the systems between the given origin and destination.
 
 ### Example
 
 ```typescript
 import {
     RoutesApi,
-    Configuration
+    Configuration,
+    RouteRequestBody
 } from 'eve-esi-client-ts';
 
 const configuration = new Configuration();
 const apiInstance = new RoutesApi(configuration);
 
-let destination: number; // (default to undefined)
-let origin: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
-let avoid: Set<number>; // (optional) (default to undefined)
-let connections: Set<Array<number>>; // (optional) (default to undefined)
-let flag: 'shortest' | 'secure' | 'insecure'; // (optional) (default to 'shortest')
+let originSystemId: number; //Origin system (default to undefined)
+let destinationSystemId: number; //Destination system (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
+let routeRequestBody: RouteRequestBody; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
 let ifModifiedSince: string; //The date the resource was last modified. A 304 will be returned if the resource has not been modified since this date. (optional) (default to undefined)
 
-const { status, data } = await apiInstance.getRouteOriginDestination(
-    destination,
-    origin,
+const { status, data } = await apiInstance.postRoute(
+    originSystemId,
+    destinationSystemId,
     xCompatibilityDate,
-    avoid,
-    connections,
-    flag,
+    routeRequestBody,
     acceptLanguage,
     ifNoneMatch,
     xTenant,
@@ -51,12 +48,10 @@ const { status, data } = await apiInstance.getRouteOriginDestination(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **destination** | [**number**] |  | defaults to undefined|
-| **origin** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
-| **avoid** | **Set&lt;number&gt;** |  | (optional) defaults to undefined|
-| **connections** | **Set&lt;Array&lt;number&gt;&gt;** |  | (optional) defaults to undefined|
-| **flag** | [**&#39;shortest&#39; | &#39;secure&#39; | &#39;insecure&#39;**]**Array<&#39;shortest&#39; &#124; &#39;secure&#39; &#124; &#39;insecure&#39;>** |  | (optional) defaults to 'shortest'|
+| **routeRequestBody** | **RouteRequestBody**|  | |
+| **originSystemId** | **number** | Origin system | defaults to undefined|
+| **destinationSystemId** | **number** | Destination system | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -65,7 +60,7 @@ const { status, data } = await apiInstance.getRouteOriginDestination(
 
 ### Return type
 
-**Array<number>**
+**Route**
 
 ### Authorization
 
@@ -73,7 +68,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

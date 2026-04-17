@@ -33,7 +33,7 @@ const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -54,7 +54,7 @@ const { status, data } = await apiInstance.getCharactersCharacterIdOrders(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -100,7 +100,7 @@ const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -123,7 +123,7 @@ const { status, data } = await apiInstance.getCharactersCharacterIdOrdersHistory
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -170,7 +170,7 @@ const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -193,7 +193,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdOrders(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -240,7 +240,7 @@ const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -263,7 +263,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdOrdersHis
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -309,7 +309,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -328,7 +328,7 @@ const { status, data } = await apiInstance.getMarketsGroups(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -374,7 +374,7 @@ const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
 let marketGroupId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -395,7 +395,7 @@ const { status, data } = await apiInstance.getMarketsGroupsMarketGroupId(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **marketGroupId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -440,7 +440,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -459,7 +459,7 @@ const { status, data } = await apiInstance.getMarketsPrices(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -506,7 +506,7 @@ const apiInstance = new MarketApi(configuration);
 
 let regionId: number; // (default to undefined)
 let typeId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -529,7 +529,7 @@ const { status, data } = await apiInstance.getMarketsRegionIdHistory(
 |------------- | ------------- | ------------- | -------------|
 | **regionId** | [**number**] |  | defaults to undefined|
 | **typeId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -576,7 +576,7 @@ const apiInstance = new MarketApi(configuration);
 
 let orderType: 'buy' | 'sell' | 'all'; // (default to 'all')
 let regionId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let typeId: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
@@ -603,7 +603,7 @@ const { status, data } = await apiInstance.getMarketsRegionIdOrders(
 |------------- | ------------- | ------------- | -------------|
 | **orderType** | [**&#39;buy&#39; | &#39;sell&#39; | &#39;all&#39;**]**Array<&#39;buy&#39; &#124; &#39;sell&#39; &#124; &#39;all&#39;>** |  | defaults to 'all'|
 | **regionId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **typeId** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
@@ -651,7 +651,7 @@ const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
 let regionId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -674,7 +674,7 @@ const { status, data } = await apiInstance.getMarketsRegionIdTypes(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **regionId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -721,7 +721,7 @@ const configuration = new Configuration();
 const apiInstance = new MarketApi(configuration);
 
 let structureId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -744,7 +744,7 @@ const { status, data } = await apiInstance.getMarketsStructuresStructureId(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **structureId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|

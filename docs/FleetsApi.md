@@ -37,7 +37,7 @@ const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
 let memberId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -60,7 +60,7 @@ const { status, data } = await apiInstance.deleteFleetsFleetIdMembersMemberId(
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
 | **memberId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -107,7 +107,7 @@ const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
 let squadId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -130,7 +130,7 @@ const { status, data } = await apiInstance.deleteFleetsFleetIdSquadsSquadId(
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
 | **squadId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -177,7 +177,7 @@ const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
 let wingId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -200,7 +200,7 @@ const { status, data } = await apiInstance.deleteFleetsFleetIdWingsWingId(
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
 | **wingId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -246,7 +246,7 @@ const configuration = new Configuration();
 const apiInstance = new FleetsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -267,7 +267,7 @@ const { status, data } = await apiInstance.getCharactersCharacterIdFleet(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -313,7 +313,7 @@ const configuration = new Configuration();
 const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -334,7 +334,7 @@ const { status, data } = await apiInstance.getFleetsFleetId(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -380,7 +380,7 @@ const configuration = new Configuration();
 const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -401,7 +401,7 @@ const { status, data } = await apiInstance.getFleetsFleetIdMembers(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -447,7 +447,7 @@ const configuration = new Configuration();
 const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -468,7 +468,7 @@ const { status, data } = await apiInstance.getFleetsFleetIdWings(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -515,7 +515,7 @@ const configuration = new Configuration();
 const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let postFleetsFleetIdMembersRequest: PostFleetsFleetIdMembersRequest; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -539,7 +539,7 @@ const { status, data } = await apiInstance.postFleetsFleetIdMembers(
 |------------- | ------------- | ------------- | -------------|
 | **postFleetsFleetIdMembersRequest** | **PostFleetsFleetIdMembersRequest**|  | |
 | **fleetId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -585,7 +585,7 @@ const configuration = new Configuration();
 const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -606,7 +606,7 @@ const { status, data } = await apiInstance.postFleetsFleetIdWings(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -653,7 +653,7 @@ const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
 let wingId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -676,7 +676,7 @@ const { status, data } = await apiInstance.postFleetsFleetIdWingsWingIdSquads(
 |------------- | ------------- | ------------- | -------------|
 | **fleetId** | [**number**] |  | defaults to undefined|
 | **wingId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -723,7 +723,7 @@ const configuration = new Configuration();
 const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let putFleetsFleetIdRequest: PutFleetsFleetIdRequest; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -747,7 +747,7 @@ const { status, data } = await apiInstance.putFleetsFleetId(
 |------------- | ------------- | ------------- | -------------|
 | **putFleetsFleetIdRequest** | **PutFleetsFleetIdRequest**|  | |
 | **fleetId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -795,7 +795,7 @@ const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
 let memberId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let putFleetsFleetIdMembersMemberIdRequest: PutFleetsFleetIdMembersMemberIdRequest; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -821,7 +821,7 @@ const { status, data } = await apiInstance.putFleetsFleetIdMembersMemberId(
 | **putFleetsFleetIdMembersMemberIdRequest** | **PutFleetsFleetIdMembersMemberIdRequest**|  | |
 | **fleetId** | [**number**] |  | defaults to undefined|
 | **memberId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -869,7 +869,7 @@ const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
 let squadId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let putFleetsFleetIdSquadsSquadIdRequest: PutFleetsFleetIdSquadsSquadIdRequest; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -895,7 +895,7 @@ const { status, data } = await apiInstance.putFleetsFleetIdSquadsSquadId(
 | **putFleetsFleetIdSquadsSquadIdRequest** | **PutFleetsFleetIdSquadsSquadIdRequest**|  | |
 | **fleetId** | [**number**] |  | defaults to undefined|
 | **squadId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -943,7 +943,7 @@ const apiInstance = new FleetsApi(configuration);
 
 let fleetId: number; // (default to undefined)
 let wingId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let putFleetsFleetIdSquadsSquadIdRequest: PutFleetsFleetIdSquadsSquadIdRequest; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -969,7 +969,7 @@ const { status, data } = await apiInstance.putFleetsFleetIdWingsWingId(
 | **putFleetsFleetIdSquadsSquadIdRequest** | **PutFleetsFleetIdSquadsSquadIdRequest**|  | |
 | **fleetId** | [**number**] |  | defaults to undefined|
 | **wingId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|

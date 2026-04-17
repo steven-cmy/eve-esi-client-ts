@@ -44,7 +44,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -65,7 +65,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationId(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | **number** | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -111,7 +111,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -132,7 +132,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdAllianceh
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -178,7 +178,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -201,7 +201,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdBlueprint
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -248,7 +248,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -271,7 +271,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdContainer
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -318,7 +318,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -339,7 +339,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdDivisions
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -385,7 +385,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -406,7 +406,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdFacilitie
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -452,7 +452,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -473,7 +473,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdIcons(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -519,7 +519,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -542,7 +542,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdMedals(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -589,7 +589,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -612,7 +612,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdMedalsIss
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -659,7 +659,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -680,7 +680,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdMembers(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -726,7 +726,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -747,7 +747,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdMembersLi
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -793,7 +793,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -814,7 +814,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdMembersTi
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -860,7 +860,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -881,7 +881,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdMembertra
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -927,7 +927,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -948,7 +948,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdRoles(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -994,7 +994,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -1017,7 +1017,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdRolesHist
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -1064,7 +1064,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -1087,7 +1087,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdSharehold
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -1134,7 +1134,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -1157,7 +1157,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdStandings
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -1204,7 +1204,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -1227,7 +1227,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdStarbases
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -1276,7 +1276,7 @@ const apiInstance = new CorporationApi(configuration);
 let corporationId: number; //The ID of the corporation (default to undefined)
 let starbaseId: number; // (default to undefined)
 let systemId: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -1301,7 +1301,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdStarbases
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
 | **starbaseId** | [**number**] |  | defaults to undefined|
 | **systemId** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -1347,7 +1347,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -1370,7 +1370,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdStructure
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -1417,7 +1417,7 @@ const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -1438,7 +1438,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdTitles(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -1483,7 +1483,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new CorporationApi(configuration);
 
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -1502,7 +1502,7 @@ const { status, data } = await apiInstance.getCorporationsNpccorps(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|

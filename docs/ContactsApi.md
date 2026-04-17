@@ -32,7 +32,7 @@ const apiInstance = new ContactsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
 let contactIds: Array<number>; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -55,7 +55,7 @@ const { status, data } = await apiInstance.deleteCharactersCharacterIdContacts(
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
 | **contactIds** | **Array&lt;number&gt;** |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -101,7 +101,7 @@ const configuration = new Configuration();
 const apiInstance = new ContactsApi(configuration);
 
 let allianceId: number; //The ID of the alliance (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -124,7 +124,7 @@ const { status, data } = await apiInstance.getAlliancesAllianceIdContacts(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **allianceId** | [**number**] | The ID of the alliance | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -171,7 +171,7 @@ const configuration = new Configuration();
 const apiInstance = new ContactsApi(configuration);
 
 let allianceId: number; //The ID of the alliance (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -192,7 +192,7 @@ const { status, data } = await apiInstance.getAlliancesAllianceIdContactsLabels(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **allianceId** | [**number**] | The ID of the alliance | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -238,7 +238,7 @@ const configuration = new Configuration();
 const apiInstance = new ContactsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -261,7 +261,7 @@ const { status, data } = await apiInstance.getCharactersCharacterIdContacts(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -308,7 +308,7 @@ const configuration = new Configuration();
 const apiInstance = new ContactsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -329,7 +329,7 @@ const { status, data } = await apiInstance.getCharactersCharacterIdContactsLabel
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -375,7 +375,7 @@ const configuration = new Configuration();
 const apiInstance = new ContactsApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -398,7 +398,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdContacts(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -445,7 +445,7 @@ const configuration = new Configuration();
 const apiInstance = new ContactsApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -466,7 +466,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdContactsL
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -513,7 +513,7 @@ const apiInstance = new ContactsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
 let standing: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let requestBody: Array<number>; //
 let labelIds: Array<number>; // (optional) (default to undefined)
 let watched: boolean; // (optional) (default to false)
@@ -543,7 +543,7 @@ const { status, data } = await apiInstance.postCharactersCharacterIdContacts(
 | **requestBody** | **Array<number>**|  | |
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
 | **standing** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **labelIds** | **Array&lt;number&gt;** |  | (optional) defaults to undefined|
 | **watched** | [**boolean**] |  | (optional) defaults to false|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
@@ -592,7 +592,7 @@ const apiInstance = new ContactsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
 let standing: number; // (default to undefined)
-let xCompatibilityDate: '2020-01-01'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
 let requestBody: Array<number>; //
 let labelIds: Array<number>; // (optional) (default to undefined)
 let watched: boolean; // (optional) (default to false)
@@ -622,7 +622,7 @@ const { status, data } = await apiInstance.putCharactersCharacterIdContacts(
 | **requestBody** | **Array<number>**|  | |
 | **characterId** | [**number**] | The ID of the character | defaults to undefined|
 | **standing** | [**number**] |  | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2020-01-01&#39;**]**Array<&#39;2020-01-01&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **labelIds** | **Array&lt;number&gt;** |  | (optional) defaults to undefined|
 | **watched** | [**boolean**] |  | (optional) defaults to false|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
