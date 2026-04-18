@@ -79,7 +79,6 @@ jobs:
         with:
           generator: typescript-axios
           openapi-url: "${{ needs.check-update.outputs.esi_endpoint }}"
-          config-file: config.json
           command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT,packageDescription="test",packageAuthor=cmy --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
       - name: Commit changes
         run: |
