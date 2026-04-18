@@ -50,6 +50,27 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
+  update-dependencies:
+    name: Update dependencies
+    runs-on: ubuntu-latest
+    needs: check-update
+    if: needs.check-update.outputs.changed == 'false'
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Update dependencies
+        run: |
+          git reset --hard
+          npm update --save
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          git commit -m "Update dependencies"
+          git push
+
   generate-client:
     name: Generate TypeScript Client
     runs-on: ubuntu-latest
@@ -64,8 +85,6 @@ jobs:
       - name: Bump version
         id: bump
         run: |
-          npm update --save
-          git reset --hard
           CURRENT=$(jq -r .version package.json)
           if [[ "$CURRENT" < "1.1.0" ]]; then
             VERSION=$(npm version minor --tag-version-prefix='' --git-tag-version false)
@@ -79,13 +98,18 @@ jobs:
         with:
           generator: typescript-axios
           openapi-url: "${{ needs.check-update.outputs.esi_endpoint }}"
-          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT,packageDescription="test",packageAuthor=cmy --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
+          command-args: --minimal-update --additional-properties=supportsES6=true,npmName=eve-esi-client-ts,npmVersion=${{ steps.bump.outputs.version }},licenseName=MIT --git-user-id=${{ github.repository_owner }} --git-repo-id=${{ github.event.repository.name }} --git-host=github.com
+      - name: Add custom info
+        run: |
+          jq ".description = \"OpenAPI client for EVE Spring Inebriation(ESI) - tranquility\" | .author = \"Archangel's Echo\"" typescript-axios-client/package.json > tmp.json && mv tmp.json typescript-axios-client/package.json
       - name: Commit changes
         run: |
+          git reset --hard
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           rsync -a --remove-source-files typescript-axios-client/ .
           rm -rf typescript-axios-client
+          npm update --save
           git add .
           git commit -m "Auto generate: ${{ steps.bump.outputs.version }} (ESI-${{ needs.check-update.outputs.remote_version }})"
           git push
