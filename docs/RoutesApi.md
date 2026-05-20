@@ -25,7 +25,7 @@ const apiInstance = new RoutesApi(configuration);
 
 let originSystemId: number; //Origin system (default to undefined)
 let destinationSystemId: number; //Destination system (default to undefined)
-let xCompatibilityDate: '2025-12-16'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-05-19'; //The compatibility date for the request. (default to undefined)
 let routeRequestBody: RouteRequestBody; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
@@ -51,7 +51,7 @@ const { status, data } = await apiInstance.postRoute(
 | **routeRequestBody** | **RouteRequestBody**|  | |
 | **originSystemId** | **number** | Origin system | defaults to undefined|
 | **destinationSystemId** | **number** | Destination system | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2025-12-16&#39;**]**Array<&#39;2025-12-16&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-05-19&#39;**]**Array<&#39;2026-05-19&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|

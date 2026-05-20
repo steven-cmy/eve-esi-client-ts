@@ -15,10 +15,11 @@ Name | Type | Description | Notes
 **neutral_standing_tax_rate** | **number** |  | [optional] [default to undefined]
 **office_id** | **number** | unique ID of this customs office | [default to undefined]
 **reinforce_exit_end** | **number** |  | [default to undefined]
-**reinforce_exit_start** | **number** | Together with reinforce_exit_end, marks a 2-hour period where this customs office could exit reinforcement mode during the day after initial attack | [default to undefined]
+**reinforce_exit_start** | **number** | Together with reinforce_exit_end, marks a 2-hour or 6-hour (depending on the office type) period where this customs office could exit reinforcement mode during the day after initial attack | [default to undefined]
 **standing_level** | **string** | Access is allowed only for entities with this level of standing or better | [optional] [default to undefined]
 **system_id** | **number** | ID of the solar system this customs office is located in | [default to undefined]
 **terrible_standing_tax_rate** | **number** |  | [optional] [default to undefined]
+**type_id** | **number** | ID of the type of this customs office | [optional] [default to undefined]
 
 ## Example
 
@@ -40,6 +41,7 @@ const instance: CorporationsCorporationIdCustomsOfficesGetInner = {
     standing_level,
     system_id,
     terrible_standing_tax_rate,
+    type_id,
 };
 ```
 
