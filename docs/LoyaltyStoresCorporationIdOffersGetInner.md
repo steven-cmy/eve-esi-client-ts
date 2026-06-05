@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **lp_cost** | **number** |  | [default to undefined]
 **offer_id** | **number** |  | [default to undefined]
 **quantity** | **number** |  | [default to undefined]
-**required_items** | [**Array&lt;LoyaltyStoresCorporationIdOffersGetInnerRequiredItemsInner&gt;**](LoyaltyStoresCorporationIdOffersGetInnerRequiredItemsInner.md) |  | [default to undefined]
+**required_items** | [**Array&lt;CorporationsCorporationIdStarbasesStarbaseIdGetFuelsInner&gt;**](CorporationsCorporationIdStarbasesStarbaseIdGetFuelsInner.md) |  | [default to undefined]
 **type_id** | **number** |  | [default to undefined]
 
 ## Example

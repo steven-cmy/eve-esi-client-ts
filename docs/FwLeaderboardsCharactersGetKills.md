@@ -7,8 +7,8 @@ Top 100 rankings of pilots by number of kills from yesterday, last week and in t
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **active_total** | [**Array&lt;FwLeaderboardsCharactersGetKillsActiveTotalInner&gt;**](FwLeaderboardsCharactersGetKillsActiveTotalInner.md) | Top 100 ranking of pilots active in faction warfare by total kills. A pilot is considered \&quot;active\&quot; if they have participated in faction warfare in the past 14 days | [default to undefined]
-**last_week** | [**Array&lt;FwLeaderboardsCharactersGetKillsLastWeekInner&gt;**](FwLeaderboardsCharactersGetKillsLastWeekInner.md) | Top 100 ranking of pilots by kills in the past week | [default to undefined]
-**yesterday** | [**Array&lt;FwLeaderboardsCharactersGetKillsYesterdayInner&gt;**](FwLeaderboardsCharactersGetKillsYesterdayInner.md) | Top 100 ranking of pilots by kills in the past day | [default to undefined]
+**last_week** | [**Array&lt;FwLeaderboardsCharactersGetKillsActiveTotalInner&gt;**](FwLeaderboardsCharactersGetKillsActiveTotalInner.md) | Top 100 ranking of pilots by kills in the past week | [default to undefined]
+**yesterday** | [**Array&lt;FwLeaderboardsCharactersGetKillsActiveTotalInner&gt;**](FwLeaderboardsCharactersGetKillsActiveTotalInner.md) | Top 100 ranking of pilots by kills in the past day | [default to undefined]
 
 ## Example
 

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type_id** | **number** | Item\&#39;s type ID | [optional] [default to undefined]
+**type_id** | **number** | Ship\&#39;s type ID | [optional] [default to undefined]
 **group_id** | **number** | Item\&#39;s group ID | [optional] [default to undefined]
 
 ## Example

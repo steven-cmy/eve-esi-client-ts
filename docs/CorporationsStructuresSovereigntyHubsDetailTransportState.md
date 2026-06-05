@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_import** | [**CorporationsStructuresSovereigntyHubsDetailTransportstateimport**](CorporationsStructuresSovereigntyHubsDetailTransportstateimport.md) | Workforce is being imported | [optional] [default to undefined]
 **_export** | [**CorporationsStructuresSovereigntyHubsDetailTransportstateexport**](CorporationsStructuresSovereigntyHubsDetailTransportstateexport.md) | Workforce is being exported | [optional] [default to undefined]
-**transit** | **boolean** | Workforce is being brought to transit | [optional] [default to undefined]
+**transit** | **boolean** | Workforce is requested to be brought to transit | [optional] [default to undefined]
 
 ## Example
 

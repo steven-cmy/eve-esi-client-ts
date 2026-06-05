@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **aggressor** | [**WarsWarIdGetAggressor**](WarsWarIdGetAggressor.md) |  | [default to undefined]
 **allies** | [**Array&lt;WarsWarIdGetAlliesInner&gt;**](WarsWarIdGetAlliesInner.md) | allied corporations or alliances, each object contains either corporation_id or alliance_id | [optional] [default to undefined]
 **declared** | **string** | Time that the war was declared | [default to undefined]
-**defender** | [**WarsWarIdGetDefender**](WarsWarIdGetDefender.md) |  | [default to undefined]
+**defender** | [**WarsWarIdGetAggressor**](WarsWarIdGetAggressor.md) |  | [default to undefined]
 **finished** | **string** | Time the war ended and shooting was no longer allowed | [optional] [default to undefined]
 **id** | **number** | ID of the specified war | [default to undefined]
 **mutual** | **boolean** | Was the war declared mutual by both parties | [default to undefined]

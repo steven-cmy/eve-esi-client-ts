@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **hangar** | [**Array&lt;CorporationsCorporationIdDivisionsGetHangarInner&gt;**](CorporationsCorporationIdDivisionsGetHangarInner.md) |  | [optional] [default to undefined]
-**wallet** | [**Array&lt;CorporationsCorporationIdDivisionsGetWalletInner&gt;**](CorporationsCorporationIdDivisionsGetWalletInner.md) |  | [optional] [default to undefined]
+**wallet** | [**Array&lt;CorporationsCorporationIdDivisionsGetHangarInner&gt;**](CorporationsCorporationIdDivisionsGetHangarInner.md) |  | [optional] [default to undefined]
 
 ## Example
 

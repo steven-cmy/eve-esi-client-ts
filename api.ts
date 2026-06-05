@@ -862,67 +862,10 @@ export interface CharactersCharacterIdFatigueGet {
 export interface CharactersCharacterIdFittingsGetInner {
     'description': string;
     'fitting_id': number;
-    'items': Array<CharactersCharacterIdFittingsGetInnerItemsInner>;
+    'items': Array<PostCharactersCharacterIdFittingsRequestItemsInner>;
     'name': string;
     'ship_type_id': number;
 }
-/**
- * item object
- */
-export interface CharactersCharacterIdFittingsGetInnerItemsInner {
-    'flag': CharactersCharacterIdFittingsGetInnerItemsInnerFlagEnum;
-    'quantity': number;
-    'type_id': number;
-}
-
-export const CharactersCharacterIdFittingsGetInnerItemsInnerFlagEnum = {
-    Cargo: 'Cargo',
-    DroneBay: 'DroneBay',
-    FighterBay: 'FighterBay',
-    HiSlot0: 'HiSlot0',
-    HiSlot1: 'HiSlot1',
-    HiSlot2: 'HiSlot2',
-    HiSlot3: 'HiSlot3',
-    HiSlot4: 'HiSlot4',
-    HiSlot5: 'HiSlot5',
-    HiSlot6: 'HiSlot6',
-    HiSlot7: 'HiSlot7',
-    Invalid: 'Invalid',
-    LoSlot0: 'LoSlot0',
-    LoSlot1: 'LoSlot1',
-    LoSlot2: 'LoSlot2',
-    LoSlot3: 'LoSlot3',
-    LoSlot4: 'LoSlot4',
-    LoSlot5: 'LoSlot5',
-    LoSlot6: 'LoSlot6',
-    LoSlot7: 'LoSlot7',
-    MedSlot0: 'MedSlot0',
-    MedSlot1: 'MedSlot1',
-    MedSlot2: 'MedSlot2',
-    MedSlot3: 'MedSlot3',
-    MedSlot4: 'MedSlot4',
-    MedSlot5: 'MedSlot5',
-    MedSlot6: 'MedSlot6',
-    MedSlot7: 'MedSlot7',
-    RigSlot0: 'RigSlot0',
-    RigSlot1: 'RigSlot1',
-    RigSlot2: 'RigSlot2',
-    ServiceSlot0: 'ServiceSlot0',
-    ServiceSlot1: 'ServiceSlot1',
-    ServiceSlot2: 'ServiceSlot2',
-    ServiceSlot3: 'ServiceSlot3',
-    ServiceSlot4: 'ServiceSlot4',
-    ServiceSlot5: 'ServiceSlot5',
-    ServiceSlot6: 'ServiceSlot6',
-    ServiceSlot7: 'ServiceSlot7',
-    SubSystemSlot0: 'SubSystemSlot0',
-    SubSystemSlot1: 'SubSystemSlot1',
-    SubSystemSlot2: 'SubSystemSlot2',
-    SubSystemSlot3: 'SubSystemSlot3',
-} as const;
-
-export type CharactersCharacterIdFittingsGetInnerItemsInnerFlagEnum = typeof CharactersCharacterIdFittingsGetInnerItemsInnerFlagEnum[keyof typeof CharactersCharacterIdFittingsGetInnerItemsInnerFlagEnum];
-
 /**
  * 201 created object
  */
@@ -979,7 +922,7 @@ export interface CharactersCharacterIdFwStatsGet {
      */
     'highest_rank'?: number;
     'kills': CharactersCharacterIdFwStatsGetKills;
-    'victory_points': CharactersCharacterIdFwStatsGetVictoryPoints;
+    'victory_points': CharactersCharacterIdFwStatsGetKills;
 }
 /**
  * Summary of kills done by the given character against enemy factions
@@ -995,23 +938,6 @@ export interface CharactersCharacterIdFwStatsGetKills {
     'total': number;
     /**
      * Yesterday\'s total number of kills by a given character against enemy factions
-     */
-    'yesterday': number;
-}
-/**
- * Summary of victory points gained by the given character for the enlisted faction
- */
-export interface CharactersCharacterIdFwStatsGetVictoryPoints {
-    /**
-     * Last week\'s victory points gained by the given character
-     */
-    'last_week': number;
-    /**
-     * Total victory points gained since the given character enlisted
-     */
-    'total': number;
-    /**
-     * Yesterday\'s victory points gained by the given character
      */
     'yesterday': number;
 }
@@ -3505,126 +3431,6 @@ export const CorporationsCorporationIdContainersLogsGetInnerPasswordTypeEnum = {
 
 export type CorporationsCorporationIdContainersLogsGetInnerPasswordTypeEnum = typeof CorporationsCorporationIdContainersLogsGetInnerPasswordTypeEnum[keyof typeof CorporationsCorporationIdContainersLogsGetInnerPasswordTypeEnum];
 
-export interface CorporationsCorporationIdContractsGetInner {
-    /**
-     * Who will accept the contract
-     */
-    'acceptor_id': number;
-    /**
-     * ID to whom the contract is assigned, can be corporation or character ID
-     */
-    'assignee_id': number;
-    /**
-     * To whom the contract is available
-     */
-    'availability': CorporationsCorporationIdContractsGetInnerAvailabilityEnum;
-    /**
-     * Buyout price (for Auctions only)
-     */
-    'buyout'?: number;
-    /**
-     * Collateral price (for Couriers only)
-     */
-    'collateral'?: number;
-    'contract_id': number;
-    /**
-     * Date of confirmation of contract
-     */
-    'date_accepted'?: string;
-    /**
-     * Date of completed of contract
-     */
-    'date_completed'?: string;
-    /**
-     * Expiration date of the contract
-     */
-    'date_expired': string;
-    /**
-     * Сreation date of the contract
-     */
-    'date_issued': string;
-    /**
-     * Number of days to perform the contract
-     */
-    'days_to_complete'?: number;
-    /**
-     * End location ID (for Couriers contract)
-     */
-    'end_location_id'?: number;
-    /**
-     * true if the contract was issued on behalf of the issuer\'s corporation
-     */
-    'for_corporation': boolean;
-    /**
-     * Character\'s corporation ID for the issuer
-     */
-    'issuer_corporation_id': number;
-    /**
-     * Character ID for the issuer
-     */
-    'issuer_id': number;
-    /**
-     * Price of contract (for ItemsExchange and Auctions)
-     */
-    'price'?: number;
-    /**
-     * Remuneration for contract (for Couriers only)
-     */
-    'reward'?: number;
-    /**
-     * Start location ID (for Couriers contract)
-     */
-    'start_location_id'?: number;
-    /**
-     * Status of the the contract
-     */
-    'status': CorporationsCorporationIdContractsGetInnerStatusEnum;
-    /**
-     * Title of the contract
-     */
-    'title'?: string;
-    /**
-     * Type of the contract
-     */
-    'type': CorporationsCorporationIdContractsGetInnerTypeEnum;
-    /**
-     * Volume of items in the contract
-     */
-    'volume'?: number;
-}
-
-export const CorporationsCorporationIdContractsGetInnerAvailabilityEnum = {
-    Public: 'public',
-    Personal: 'personal',
-    Corporation: 'corporation',
-    Alliance: 'alliance',
-} as const;
-
-export type CorporationsCorporationIdContractsGetInnerAvailabilityEnum = typeof CorporationsCorporationIdContractsGetInnerAvailabilityEnum[keyof typeof CorporationsCorporationIdContractsGetInnerAvailabilityEnum];
-export const CorporationsCorporationIdContractsGetInnerStatusEnum = {
-    Outstanding: 'outstanding',
-    InProgress: 'in_progress',
-    FinishedIssuer: 'finished_issuer',
-    FinishedContractor: 'finished_contractor',
-    Finished: 'finished',
-    Cancelled: 'cancelled',
-    Rejected: 'rejected',
-    Failed: 'failed',
-    Deleted: 'deleted',
-    Reversed: 'reversed',
-} as const;
-
-export type CorporationsCorporationIdContractsGetInnerStatusEnum = typeof CorporationsCorporationIdContractsGetInnerStatusEnum[keyof typeof CorporationsCorporationIdContractsGetInnerStatusEnum];
-export const CorporationsCorporationIdContractsGetInnerTypeEnum = {
-    Unknown: 'unknown',
-    ItemExchange: 'item_exchange',
-    Auction: 'auction',
-    Courier: 'courier',
-    Loan: 'loan',
-} as const;
-
-export type CorporationsCorporationIdContractsGetInnerTypeEnum = typeof CorporationsCorporationIdContractsGetInnerTypeEnum[keyof typeof CorporationsCorporationIdContractsGetInnerTypeEnum];
-
 export interface CorporationsCorporationIdCustomsOfficesGetInner {
     /**
      * Only present if alliance access is allowed
@@ -3679,19 +3485,12 @@ export type CorporationsCorporationIdCustomsOfficesGetInnerStandingLevelEnum = t
 
 export interface CorporationsCorporationIdDivisionsGet {
     'hangar'?: Array<CorporationsCorporationIdDivisionsGetHangarInner>;
-    'wallet'?: Array<CorporationsCorporationIdDivisionsGetWalletInner>;
+    'wallet'?: Array<CorporationsCorporationIdDivisionsGetHangarInner>;
 }
 /**
  * hangar object
  */
 export interface CorporationsCorporationIdDivisionsGetHangarInner {
-    'division'?: number;
-    'name'?: string;
-}
-/**
- * wallet object
- */
-export interface CorporationsCorporationIdDivisionsGetWalletInner {
     'division'?: number;
     'name'?: string;
 }
@@ -3709,46 +3508,12 @@ export interface CorporationsCorporationIdFwStatsGet {
      * The faction the given corporation is enlisted to fight for. Will not be included if corporation is not enlisted in faction warfare
      */
     'faction_id'?: number;
-    'kills': CorporationsCorporationIdFwStatsGetKills;
+    'kills': CharactersCharacterIdFwStatsGetKills;
     /**
      * How many pilots the enlisted corporation has. Will not be included if corporation is not enlisted in faction warfare
      */
     'pilots'?: number;
-    'victory_points': CorporationsCorporationIdFwStatsGetVictoryPoints;
-}
-/**
- * Summary of kills done by the given corporation against enemy factions
- */
-export interface CorporationsCorporationIdFwStatsGetKills {
-    /**
-     * Last week\'s total number of kills by members of the given corporation against enemy factions
-     */
-    'last_week': number;
-    /**
-     * Total number of kills by members of the given corporation against enemy factions since the corporation enlisted
-     */
-    'total': number;
-    /**
-     * Yesterday\'s total number of kills by members of the given corporation against enemy factions
-     */
-    'yesterday': number;
-}
-/**
- * Summary of victory points gained by the given corporation for the enlisted faction
- */
-export interface CorporationsCorporationIdFwStatsGetVictoryPoints {
-    /**
-     * Last week\'s victory points gained by members of the given corporation
-     */
-    'last_week': number;
-    /**
-     * Total victory points gained since the given corporation enlisted
-     */
-    'total': number;
-    /**
-     * Yesterday\'s victory points gained by members of the given corporation
-     */
-    'yesterday': number;
+    'victory_points': CharactersCharacterIdFwStatsGetKills;
 }
 export interface CorporationsCorporationIdIconsGet {
     'px128x128'?: string;
@@ -5417,244 +5182,6 @@ export const CorporationsCorporationIdTitlesGetInnerRolesAtOtherEnum = {
 
 export type CorporationsCorporationIdTitlesGetInnerRolesAtOtherEnum = typeof CorporationsCorporationIdTitlesGetInnerRolesAtOtherEnum[keyof typeof CorporationsCorporationIdTitlesGetInnerRolesAtOtherEnum];
 
-export interface CorporationsCorporationIdWalletsDivisionJournalGetInner {
-    /**
-     * The amount of ISK given or taken from the wallet as a result of the given transaction. Positive when ISK is deposited into the wallet and negative when ISK is withdrawn
-     */
-    'amount'?: number;
-    /**
-     * Wallet balance after transaction occurred
-     */
-    'balance'?: number;
-    /**
-     * An ID that gives extra context to the particular transaction. Because of legacy reasons the context is completely different per ref_type and means different things. It is also possible to not have a context_id
-     */
-    'context_id'?: number;
-    /**
-     * The type of the given context_id if present
-     */
-    'context_id_type'?: CorporationsCorporationIdWalletsDivisionJournalGetInnerContextIdTypeEnum;
-    /**
-     * Date and time of transaction
-     */
-    'date': string;
-    /**
-     * The reason for the transaction, mirrors what is seen in the client
-     */
-    'description': string;
-    /**
-     * The id of the first party involved in the transaction. This attribute has no consistency and is different or non existant for particular ref_types. The description attribute will help make sense of what this attribute means. For more info about the given ID it can be dropped into the /universe/names/ ESI route to determine its type and name
-     */
-    'first_party_id'?: number;
-    /**
-     * Unique journal reference ID
-     */
-    'id': number;
-    /**
-     * The user stated reason for the transaction. Only applies to some ref_types
-     */
-    'reason'?: string;
-    /**
-     * \"The transaction type for the given. transaction. Different transaction types will populate different attributes. Note: If you have an existing XML API application that is using ref_types, you will need to know which string ESI ref_type maps to which integer. You can look at the following file to see string->int mappings: https://github.com/ccpgames/eve-glue/blob/master/eve_glue/wallet_journal_ref.py\"
-     */
-    'ref_type': CorporationsCorporationIdWalletsDivisionJournalGetInnerRefTypeEnum;
-    /**
-     * The id of the second party involved in the transaction. This attribute has no consistency and is different or non existant for particular ref_types. The description attribute will help make sense of what this attribute means. For more info about the given ID it can be dropped into the /universe/names/ ESI route to determine its type and name
-     */
-    'second_party_id'?: number;
-    /**
-     * Tax amount received. Only applies to tax related transactions
-     */
-    'tax'?: number;
-    /**
-     * The corporation ID receiving any tax paid. Only applies to tax related transactions
-     */
-    'tax_receiver_id'?: number;
-}
-
-export const CorporationsCorporationIdWalletsDivisionJournalGetInnerContextIdTypeEnum = {
-    StructureId: 'structure_id',
-    StationId: 'station_id',
-    MarketTransactionId: 'market_transaction_id',
-    CharacterId: 'character_id',
-    CorporationId: 'corporation_id',
-    AllianceId: 'alliance_id',
-    EveSystem: 'eve_system',
-    IndustryJobId: 'industry_job_id',
-    ContractId: 'contract_id',
-    PlanetId: 'planet_id',
-    SystemId: 'system_id',
-    TypeId: 'type_id',
-} as const;
-
-export type CorporationsCorporationIdWalletsDivisionJournalGetInnerContextIdTypeEnum = typeof CorporationsCorporationIdWalletsDivisionJournalGetInnerContextIdTypeEnum[keyof typeof CorporationsCorporationIdWalletsDivisionJournalGetInnerContextIdTypeEnum];
-export const CorporationsCorporationIdWalletsDivisionJournalGetInnerRefTypeEnum = {
-    AccelerationGateFee: 'acceleration_gate_fee',
-    AchievementCategoryMilestoneReward: 'achievement_category_milestone_reward',
-    AchievementMilestoneReward: 'achievement_milestone_reward',
-    AdvertisementListingFee: 'advertisement_listing_fee',
-    AgentDonation: 'agent_donation',
-    AgentLocationServices: 'agent_location_services',
-    AgentMiscellaneous: 'agent_miscellaneous',
-    AgentMissionCollateralPaid: 'agent_mission_collateral_paid',
-    AgentMissionCollateralRefunded: 'agent_mission_collateral_refunded',
-    AgentMissionReward: 'agent_mission_reward',
-    AgentMissionRewardCorporationTax: 'agent_mission_reward_corporation_tax',
-    AgentMissionSecurityTax: 'agent_mission_security_tax',
-    AgentMissionTimeBonusReward: 'agent_mission_time_bonus_reward',
-    AgentMissionTimeBonusRewardCorporationTax: 'agent_mission_time_bonus_reward_corporation_tax',
-    AgentSecurityServices: 'agent_security_services',
-    AgentServicesRendered: 'agent_services_rendered',
-    AgentsPreward: 'agents_preward',
-    AirCareerProgramReward: 'air_career_program_reward',
-    AllianceMaintainanceFee: 'alliance_maintainance_fee',
-    AllianceRegistrationFee: 'alliance_registration_fee',
-    AllignmentBasedGateToll: 'allignment_based_gate_toll',
-    AssetSafetyRecoveryTax: 'asset_safety_recovery_tax',
-    Bounty: 'bounty',
-    BountyPrize: 'bounty_prize',
-    BountyPrizeCorporationTax: 'bounty_prize_corporation_tax',
-    BountyPrizes: 'bounty_prizes',
-    BountyReimbursement: 'bounty_reimbursement',
-    BountySurcharge: 'bounty_surcharge',
-    BrokersFee: 'brokers_fee',
-    CampaignObjectiveIskReward: 'campaign_objective_isk_reward',
-    CloneActivation: 'clone_activation',
-    CloneTransfer: 'clone_transfer',
-    ContrabandFine: 'contraband_fine',
-    ContractAuctionBid: 'contract_auction_bid',
-    ContractAuctionBidCorp: 'contract_auction_bid_corp',
-    ContractAuctionBidRefund: 'contract_auction_bid_refund',
-    ContractAuctionSold: 'contract_auction_sold',
-    ContractBrokersFee: 'contract_brokers_fee',
-    ContractBrokersFeeCorp: 'contract_brokers_fee_corp',
-    ContractCollateral: 'contract_collateral',
-    ContractCollateralDepositedCorp: 'contract_collateral_deposited_corp',
-    ContractCollateralPayout: 'contract_collateral_payout',
-    ContractCollateralRefund: 'contract_collateral_refund',
-    ContractDeposit: 'contract_deposit',
-    ContractDepositCorp: 'contract_deposit_corp',
-    ContractDepositRefund: 'contract_deposit_refund',
-    ContractDepositSalesTax: 'contract_deposit_sales_tax',
-    ContractPrice: 'contract_price',
-    ContractPricePaymentCorp: 'contract_price_payment_corp',
-    ContractReversal: 'contract_reversal',
-    ContractReward: 'contract_reward',
-    ContractRewardDeposited: 'contract_reward_deposited',
-    ContractRewardDepositedCorp: 'contract_reward_deposited_corp',
-    ContractRewardRefund: 'contract_reward_refund',
-    ContractSalesTax: 'contract_sales_tax',
-    Copying: 'copying',
-    CorporateRewardPayout: 'corporate_reward_payout',
-    CorporateRewardTax: 'corporate_reward_tax',
-    CorporationAccountWithdrawal: 'corporation_account_withdrawal',
-    CorporationBulkPayment: 'corporation_bulk_payment',
-    CorporationDividendPayment: 'corporation_dividend_payment',
-    CorporationLiquidation: 'corporation_liquidation',
-    CorporationLogoChangeCost: 'corporation_logo_change_cost',
-    CorporationPayment: 'corporation_payment',
-    CorporationRegistrationFee: 'corporation_registration_fee',
-    CosmeticMarketComponentItemPurchase: 'cosmetic_market_component_item_purchase',
-    CosmeticMarketSkinPurchase: 'cosmetic_market_skin_purchase',
-    CosmeticMarketSkinSale: 'cosmetic_market_skin_sale',
-    CosmeticMarketSkinSaleBrokerFee: 'cosmetic_market_skin_sale_broker_fee',
-    CosmeticMarketSkinSaleTax: 'cosmetic_market_skin_sale_tax',
-    CosmeticMarketSkinTransaction: 'cosmetic_market_skin_transaction',
-    CourierMissionEscrow: 'courier_mission_escrow',
-    Cspa: 'cspa',
-    Cspaofflinerefund: 'cspaofflinerefund',
-    DailyChallengeReward: 'daily_challenge_reward',
-    DailyGoalPayouts: 'daily_goal_payouts',
-    DailyGoalPayoutsTax: 'daily_goal_payouts_tax',
-    DatacoreFee: 'datacore_fee',
-    DnaModificationFee: 'dna_modification_fee',
-    DockingFee: 'docking_fee',
-    DuelWagerEscrow: 'duel_wager_escrow',
-    DuelWagerPayment: 'duel_wager_payment',
-    DuelWagerRefund: 'duel_wager_refund',
-    EssEscrowTransfer: 'ess_escrow_transfer',
-    ExternalTradeDelivery: 'external_trade_delivery',
-    ExternalTradeFreeze: 'external_trade_freeze',
-    ExternalTradeThaw: 'external_trade_thaw',
-    FactorySlotRentalFee: 'factory_slot_rental_fee',
-    FluxPayout: 'flux_payout',
-    FluxTax: 'flux_tax',
-    FluxTicketRepayment: 'flux_ticket_repayment',
-    FluxTicketSale: 'flux_ticket_sale',
-    FreelanceJobsBroadcastingFee: 'freelance_jobs_broadcasting_fee',
-    FreelanceJobsDurationFee: 'freelance_jobs_duration_fee',
-    FreelanceJobsEscrowRefund: 'freelance_jobs_escrow_refund',
-    FreelanceJobsReward: 'freelance_jobs_reward',
-    FreelanceJobsRewardCorporationTax: 'freelance_jobs_reward_corporation_tax',
-    FreelanceJobsRewardEscrow: 'freelance_jobs_reward_escrow',
-    GmCashTransfer: 'gm_cash_transfer',
-    GmPlexFeeRefund: 'gm_plex_fee_refund',
-    IndustryJobTax: 'industry_job_tax',
-    IndustrySecurityTax: 'industry_security_tax',
-    InfrastructureHubMaintenance: 'infrastructure_hub_maintenance',
-    Inheritance: 'inheritance',
-    Insurance: 'insurance',
-    InsurgencyCorruptionContributionReward: 'insurgency_corruption_contribution_reward',
-    InsurgencySuppressionContributionReward: 'insurgency_suppression_contribution_reward',
-    ItemTraderPayment: 'item_trader_payment',
-    JumpCloneActivationFee: 'jump_clone_activation_fee',
-    JumpCloneInstallationFee: 'jump_clone_installation_fee',
-    KillRightFee: 'kill_right_fee',
-    LpStore: 'lp_store',
-    Manufacturing: 'manufacturing',
-    MarketEscrow: 'market_escrow',
-    MarketFinePaid: 'market_fine_paid',
-    MarketProviderTax: 'market_provider_tax',
-    MarketSecurityTax: 'market_security_tax',
-    MarketTransaction: 'market_transaction',
-    MedalCreation: 'medal_creation',
-    MedalIssued: 'medal_issued',
-    MilestoneRewardPayment: 'milestone_reward_payment',
-    MissionCompletion: 'mission_completion',
-    MissionCost: 'mission_cost',
-    MissionExpiration: 'mission_expiration',
-    MissionReward: 'mission_reward',
-    NpcBountySecurityTax: 'npc_bounty_security_tax',
-    OfficeRentalFee: 'office_rental_fee',
-    OperationBonus: 'operation_bonus',
-    OpportunityReward: 'opportunity_reward',
-    PlanetaryConstruction: 'planetary_construction',
-    PlanetaryExportTax: 'planetary_export_tax',
-    PlanetaryImportTax: 'planetary_import_tax',
-    PlayerDonation: 'player_donation',
-    PlayerTrading: 'player_trading',
-    ProjectDiscoveryReward: 'project_discovery_reward',
-    ProjectDiscoveryTax: 'project_discovery_tax',
-    ProjectPayouts: 'project_payouts',
-    Reaction: 'reaction',
-    RedeemedIskToken: 'redeemed_isk_token',
-    ReleaseOfImpoundedProperty: 'release_of_impounded_property',
-    RepairBill: 'repair_bill',
-    ReprocessingTax: 'reprocessing_tax',
-    ResearchingMaterialProductivity: 'researching_material_productivity',
-    ResearchingTechnology: 'researching_technology',
-    ResearchingTimeProductivity: 'researching_time_productivity',
-    ResourceWarsReward: 'resource_wars_reward',
-    ReverseEngineering: 'reverse_engineering',
-    SeasonChallengeReward: 'season_challenge_reward',
-    SecurityProcessingFee: 'security_processing_fee',
-    Shares: 'shares',
-    SkillPurchase: 'skill_purchase',
-    SkyhookClaimFee: 'skyhook_claim_fee',
-    SovereignityBill: 'sovereignity_bill',
-    StorePurchase: 'store_purchase',
-    StorePurchaseRefund: 'store_purchase_refund',
-    StructureGateJump: 'structure_gate_jump',
-    TransactionTax: 'transaction_tax',
-    UnderConstruction: 'under_construction',
-    UpkeepAdjustmentFee: 'upkeep_adjustment_fee',
-    WarAllyContract: 'war_ally_contract',
-    WarFee: 'war_fee',
-    WarFeeSurrender: 'war_fee_surrender',
-} as const;
-
-export type CorporationsCorporationIdWalletsDivisionJournalGetInnerRefTypeEnum = typeof CorporationsCorporationIdWalletsDivisionJournalGetInnerRefTypeEnum[keyof typeof CorporationsCorporationIdWalletsDivisionJournalGetInnerRefTypeEnum];
-
 /**
  * wallet transaction
  */
@@ -5982,7 +5509,7 @@ export type CorporationsProjectsDetailConfigurationdeliveritemDockingLocationsIn
 /**
  * @type CorporationsProjectsDetailConfigurationdeliveritemItemsInner
  */
-export type CorporationsProjectsDetailConfigurationdeliveritemItemsInner = GroupId1 | TypeId1;
+export type CorporationsProjectsDetailConfigurationdeliveritemItemsInner = GroupId1 | TypeId;
 
 export interface CorporationsProjectsDetailConfigurationdestroynpc {
     /**
@@ -6088,13 +5615,8 @@ export interface CorporationsProjectsDetailConfigurationminematerial {
     /**
      * Materials to mine
      */
-    'materials'?: Array<CorporationsProjectsDetailConfigurationminematerialMaterialsInner>;
+    'materials'?: Array<CorporationsProjectsDetailConfigurationdeliveritemItemsInner>;
 }
-/**
- * @type CorporationsProjectsDetailConfigurationminematerialMaterialsInner
- */
-export type CorporationsProjectsDetailConfigurationminematerialMaterialsInner = GroupId2 | TypeId2;
-
 export interface CorporationsProjectsDetailConfigurationremoteboostshield {
     /**
      * Identity of capsuleer to boost
@@ -6561,7 +6083,7 @@ export type CorporationsStructuresSovereigntyHubsDetailTransportConfiguration = 
  * @type CorporationsStructuresSovereigntyHubsDetailTransportState
  * Current state of the workforce transport
  */
-export type CorporationsStructuresSovereigntyHubsDetailTransportState = Export1 | Import1 | Transit1;
+export type CorporationsStructuresSovereigntyHubsDetailTransportState = Export1 | Import1 | Transit;
 
 export interface CorporationsStructuresSovereigntyHubsDetailTransportconfigurationexport {
     /**
@@ -7273,7 +6795,7 @@ export interface FreelanceJobsListing {
 }
 export interface FwLeaderboardsCharactersGet {
     'kills': FwLeaderboardsCharactersGetKills;
-    'victory_points': FwLeaderboardsCharactersGetVictoryPoints;
+    'victory_points': FwLeaderboardsCharactersGetKills;
 }
 /**
  * Top 100 rankings of pilots by number of kills from yesterday, last week and in total
@@ -7286,11 +6808,11 @@ export interface FwLeaderboardsCharactersGetKills {
     /**
      * Top 100 ranking of pilots by kills in the past week
      */
-    'last_week': Array<FwLeaderboardsCharactersGetKillsLastWeekInner>;
+    'last_week': Array<FwLeaderboardsCharactersGetKillsActiveTotalInner>;
     /**
      * Top 100 ranking of pilots by kills in the past day
      */
-    'yesterday': Array<FwLeaderboardsCharactersGetKillsYesterdayInner>;
+    'yesterday': Array<FwLeaderboardsCharactersGetKillsActiveTotalInner>;
 }
 /**
  * active_total object
@@ -7302,76 +6824,9 @@ export interface FwLeaderboardsCharactersGetKillsActiveTotalInner {
     'amount'?: number;
     'character_id'?: number;
 }
-/**
- * last_week object
- */
-export interface FwLeaderboardsCharactersGetKillsLastWeekInner {
-    /**
-     * Amount of kills
-     */
-    'amount'?: number;
-    'character_id'?: number;
-}
-/**
- * yesterday object
- */
-export interface FwLeaderboardsCharactersGetKillsYesterdayInner {
-    /**
-     * Amount of kills
-     */
-    'amount'?: number;
-    'character_id'?: number;
-}
-/**
- * Top 100 rankings of pilots by victory points from yesterday, last week and in total
- */
-export interface FwLeaderboardsCharactersGetVictoryPoints {
-    /**
-     * Top 100 ranking of pilots active in faction warfare by total victory points. A pilot is considered \"active\" if they have participated in faction warfare in the past 14 days
-     */
-    'active_total': Array<FwLeaderboardsCharactersGetVictoryPointsActiveTotalInner>;
-    /**
-     * Top 100 ranking of pilots by victory points in the past week
-     */
-    'last_week': Array<FwLeaderboardsCharactersGetVictoryPointsLastWeekInner>;
-    /**
-     * Top 100 ranking of pilots by victory points in the past day
-     */
-    'yesterday': Array<FwLeaderboardsCharactersGetVictoryPointsYesterdayInner>;
-}
-/**
- * active_total object
- */
-export interface FwLeaderboardsCharactersGetVictoryPointsActiveTotalInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'character_id'?: number;
-}
-/**
- * last_week object
- */
-export interface FwLeaderboardsCharactersGetVictoryPointsLastWeekInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'character_id'?: number;
-}
-/**
- * yesterday object
- */
-export interface FwLeaderboardsCharactersGetVictoryPointsYesterdayInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'character_id'?: number;
-}
 export interface FwLeaderboardsCorporationsGet {
     'kills': FwLeaderboardsCorporationsGetKills;
-    'victory_points': FwLeaderboardsCorporationsGetVictoryPoints;
+    'victory_points': FwLeaderboardsCorporationsGetKills;
 }
 /**
  * Top 10 rankings of corporations by number of kills from yesterday, last week and in total
@@ -7384,11 +6839,11 @@ export interface FwLeaderboardsCorporationsGetKills {
     /**
      * Top 10 ranking of corporations by kills in the past week
      */
-    'last_week': Array<FwLeaderboardsCorporationsGetKillsLastWeekInner>;
+    'last_week': Array<FwLeaderboardsCorporationsGetKillsActiveTotalInner>;
     /**
      * Top 10 ranking of corporations by kills in the past day
      */
-    'yesterday': Array<FwLeaderboardsCorporationsGetKillsYesterdayInner>;
+    'yesterday': Array<FwLeaderboardsCorporationsGetKillsActiveTotalInner>;
 }
 /**
  * active_total object
@@ -7400,76 +6855,9 @@ export interface FwLeaderboardsCorporationsGetKillsActiveTotalInner {
     'amount'?: number;
     'corporation_id'?: number;
 }
-/**
- * last_week object
- */
-export interface FwLeaderboardsCorporationsGetKillsLastWeekInner {
-    /**
-     * Amount of kills
-     */
-    'amount'?: number;
-    'corporation_id'?: number;
-}
-/**
- * yesterday object
- */
-export interface FwLeaderboardsCorporationsGetKillsYesterdayInner {
-    /**
-     * Amount of kills
-     */
-    'amount'?: number;
-    'corporation_id'?: number;
-}
-/**
- * Top 10 rankings of corporations by victory points from yesterday, last week and in total
- */
-export interface FwLeaderboardsCorporationsGetVictoryPoints {
-    /**
-     * Top 10 ranking of corporations active in faction warfare by total victory points. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days
-     */
-    'active_total': Array<FwLeaderboardsCorporationsGetVictoryPointsActiveTotalInner>;
-    /**
-     * Top 10 ranking of corporations by victory points in the past week
-     */
-    'last_week': Array<FwLeaderboardsCorporationsGetVictoryPointsLastWeekInner>;
-    /**
-     * Top 10 ranking of corporations by victory points in the past day
-     */
-    'yesterday': Array<FwLeaderboardsCorporationsGetVictoryPointsYesterdayInner>;
-}
-/**
- * active_total object
- */
-export interface FwLeaderboardsCorporationsGetVictoryPointsActiveTotalInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'corporation_id'?: number;
-}
-/**
- * last_week object
- */
-export interface FwLeaderboardsCorporationsGetVictoryPointsLastWeekInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'corporation_id'?: number;
-}
-/**
- * yesterday object
- */
-export interface FwLeaderboardsCorporationsGetVictoryPointsYesterdayInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'corporation_id'?: number;
-}
 export interface FwLeaderboardsGet {
     'kills': FwLeaderboardsGetKills;
-    'victory_points': FwLeaderboardsGetVictoryPoints;
+    'victory_points': FwLeaderboardsGetKills;
 }
 /**
  * Top 4 rankings of factions by number of kills from yesterday, last week and in total
@@ -7482,11 +6870,11 @@ export interface FwLeaderboardsGetKills {
     /**
      * Top 4 ranking of factions by kills in the past week
      */
-    'last_week': Array<FwLeaderboardsGetKillsLastWeekInner>;
+    'last_week': Array<FwLeaderboardsGetKillsActiveTotalInner>;
     /**
      * Top 4 ranking of factions by kills in the past day
      */
-    'yesterday': Array<FwLeaderboardsGetKillsYesterdayInner>;
+    'yesterday': Array<FwLeaderboardsGetKillsActiveTotalInner>;
 }
 /**
  * active_total object
@@ -7498,76 +6886,9 @@ export interface FwLeaderboardsGetKillsActiveTotalInner {
     'amount'?: number;
     'faction_id'?: number;
 }
-/**
- * last_week object
- */
-export interface FwLeaderboardsGetKillsLastWeekInner {
-    /**
-     * Amount of kills
-     */
-    'amount'?: number;
-    'faction_id'?: number;
-}
-/**
- * yesterday object
- */
-export interface FwLeaderboardsGetKillsYesterdayInner {
-    /**
-     * Amount of kills
-     */
-    'amount'?: number;
-    'faction_id'?: number;
-}
-/**
- * Top 4 rankings of factions by victory points from yesterday, last week and in total
- */
-export interface FwLeaderboardsGetVictoryPoints {
-    /**
-     * Top 4 ranking of factions active in faction warfare by total victory points. A faction is considered \"active\" if they have participated in faction warfare in the past 14 days
-     */
-    'active_total': Array<FwLeaderboardsGetVictoryPointsActiveTotalInner>;
-    /**
-     * Top 4 ranking of factions by victory points in the past week
-     */
-    'last_week': Array<FwLeaderboardsGetVictoryPointsLastWeekInner>;
-    /**
-     * Top 4 ranking of factions by victory points in the past day
-     */
-    'yesterday': Array<FwLeaderboardsGetVictoryPointsYesterdayInner>;
-}
-/**
- * active_total object
- */
-export interface FwLeaderboardsGetVictoryPointsActiveTotalInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'faction_id'?: number;
-}
-/**
- * last_week object
- */
-export interface FwLeaderboardsGetVictoryPointsLastWeekInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'faction_id'?: number;
-}
-/**
- * yesterday object
- */
-export interface FwLeaderboardsGetVictoryPointsYesterdayInner {
-    /**
-     * Amount of victory points
-     */
-    'amount'?: number;
-    'faction_id'?: number;
-}
 export interface FwStatsGetInner {
     'faction_id': number;
-    'kills': FwStatsGetInnerKills;
+    'kills': CharactersCharacterIdFwStatsGetKills;
     /**
      * How many pilots fight for the given faction
      */
@@ -7576,41 +6897,7 @@ export interface FwStatsGetInner {
      * The number of solar systems controlled by the given faction
      */
     'systems_controlled': number;
-    'victory_points': FwStatsGetInnerVictoryPoints;
-}
-/**
- * Summary of kills against an enemy faction for the given faction
- */
-export interface FwStatsGetInnerKills {
-    /**
-     * Last week\'s total number of kills against enemy factions
-     */
-    'last_week': number;
-    /**
-     * Total number of kills against enemy factions since faction warfare began
-     */
-    'total': number;
-    /**
-     * Yesterday\'s total number of kills against enemy factions
-     */
-    'yesterday': number;
-}
-/**
- * Summary of victory points gained for the given faction
- */
-export interface FwStatsGetInnerVictoryPoints {
-    /**
-     * Last week\'s victory points gained
-     */
-    'last_week': number;
-    /**
-     * Total victory points gained since faction warfare began
-     */
-    'total': number;
-    /**
-     * Yesterday\'s victory points gained
-     */
-    'yesterday': number;
+    'victory_points': CharactersCharacterIdFwStatsGetKills;
 }
 export interface FwSystemsGetInner {
     'contested': FwSystemsGetInnerContestedEnum;
@@ -7646,12 +6933,6 @@ export interface GroupId {
 export interface GroupId1 {
     /**
      * Item\'s group ID
-     */
-    'group_id'?: number;
-}
-export interface GroupId2 {
-    /**
-     * Ore\'s group ID
      */
     'group_id'?: number;
 }
@@ -7841,7 +7122,7 @@ export interface KillmailsKillmailIdKillmailHashGetVictim {
     'damage_taken': number;
     'faction_id'?: number;
     'items'?: Array<KillmailsKillmailIdKillmailHashGetVictimItemsInner>;
-    'position'?: KillmailsKillmailIdKillmailHashGetVictimPosition;
+    'position'?: CharactersCharacterIdAssetsLocationsPostInnerPosition;
     /**
      * The ship that the victim was piloting and was destroyed 
      */
@@ -7877,14 +7158,6 @@ export interface KillmailsKillmailIdKillmailHashGetVictimItemsInnerItemsInner {
     'quantity_dropped'?: number;
     'singleton': number;
 }
-/**
- * Coordinates of the victim in Cartesian space relative to the Sun 
- */
-export interface KillmailsKillmailIdKillmailHashGetVictimPosition {
-    'x': number;
-    'y': number;
-    'z': number;
-}
 export interface LostShip {
     /**
      * Lost ship
@@ -7900,14 +7173,7 @@ export interface LoyaltyStoresCorporationIdOffersGetInner {
     'lp_cost': number;
     'offer_id': number;
     'quantity': number;
-    'required_items': Array<LoyaltyStoresCorporationIdOffersGetInnerRequiredItemsInner>;
-    'type_id': number;
-}
-/**
- * required_item object
- */
-export interface LoyaltyStoresCorporationIdOffersGetInnerRequiredItemsInner {
-    'quantity': number;
+    'required_items': Array<CorporationsCorporationIdStarbasesStarbaseIdGetFuelsInner>;
     'type_id': number;
 }
 export interface Manual {
@@ -8706,27 +7972,9 @@ export interface Transit {
      */
     'transit'?: boolean | null;
 }
-export interface Transit1 {
-    /**
-     * Workforce is being brought to transit
-     */
-    'transit'?: boolean | null;
-}
 export interface TypeId {
     /**
      * Ship\'s type ID
-     */
-    'type_id'?: number;
-}
-export interface TypeId1 {
-    /**
-     * Item\'s type ID
-     */
-    'type_id'?: number;
-}
-export interface TypeId2 {
-    /**
-     * Ore\'s type ID
      */
     'type_id'?: number;
 }
@@ -8815,83 +8063,20 @@ export interface UniverseGroupsGroupIdGet {
 }
 export interface UniverseIdsPost {
     'agents'?: Array<UniverseIdsPostAgentsInner>;
-    'alliances'?: Array<UniverseIdsPostAlliancesInner>;
-    'characters'?: Array<UniverseIdsPostCharactersInner>;
-    'constellations'?: Array<UniverseIdsPostConstellationsInner>;
-    'corporations'?: Array<UniverseIdsPostCorporationsInner>;
-    'factions'?: Array<UniverseIdsPostFactionsInner>;
-    'inventory_types'?: Array<UniverseIdsPostInventoryTypesInner>;
-    'regions'?: Array<UniverseIdsPostRegionsInner>;
-    'stations'?: Array<UniverseIdsPostStationsInner>;
-    'systems'?: Array<UniverseIdsPostSystemsInner>;
+    'alliances'?: Array<UniverseIdsPostAgentsInner>;
+    'characters'?: Array<UniverseIdsPostAgentsInner>;
+    'constellations'?: Array<UniverseIdsPostAgentsInner>;
+    'corporations'?: Array<UniverseIdsPostAgentsInner>;
+    'factions'?: Array<UniverseIdsPostAgentsInner>;
+    'inventory_types'?: Array<UniverseIdsPostAgentsInner>;
+    'regions'?: Array<UniverseIdsPostAgentsInner>;
+    'stations'?: Array<UniverseIdsPostAgentsInner>;
+    'systems'?: Array<UniverseIdsPostAgentsInner>;
 }
 /**
  * agent object
  */
 export interface UniverseIdsPostAgentsInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * alliance object
- */
-export interface UniverseIdsPostAlliancesInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * character object
- */
-export interface UniverseIdsPostCharactersInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * constellation object
- */
-export interface UniverseIdsPostConstellationsInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * corporation object
- */
-export interface UniverseIdsPostCorporationsInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * faction object
- */
-export interface UniverseIdsPostFactionsInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * inventory_type object
- */
-export interface UniverseIdsPostInventoryTypesInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * region object
- */
-export interface UniverseIdsPostRegionsInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * station object
- */
-export interface UniverseIdsPostStationsInner {
-    'id'?: number;
-    'name'?: string;
-}
-/**
- * system object
- */
-export interface UniverseIdsPostSystemsInner {
     'id'?: number;
     'name'?: string;
 }
@@ -9147,17 +8332,9 @@ export interface UniverseStructuresStructureIdGet {
      * The ID of the corporation who owns this particular structure
      */
     'owner_id': number;
-    'position'?: UniverseStructuresStructureIdGetPosition;
+    'position'?: CharactersCharacterIdAssetsLocationsPostInnerPosition;
     'solar_system_id': number;
     'type_id'?: number;
-}
-/**
- * Coordinates of the structure in Cartesian space relative to the Sun, in metres. 
- */
-export interface UniverseStructuresStructureIdGetPosition {
-    'x': number;
-    'y': number;
-    'z': number;
 }
 export interface UniverseSystemJumpsGetInner {
     'ship_jumps': number;
@@ -9238,7 +8415,7 @@ export interface WarsWarIdGet {
      * Time that the war was declared
      */
     'declared': string;
-    'defender': WarsWarIdGetDefender;
+    'defender': WarsWarIdGetAggressor;
     /**
      * Time the war ended and shooting was no longer allowed
      */
@@ -9297,27 +8474,6 @@ export interface WarsWarIdGetAlliesInner {
      * Corporation ID if and only if this ally is a corporation
      */
     'corporation_id'?: number;
-}
-/**
- * The defending corporation or alliance that declared this war, only contains either corporation_id or alliance_id
- */
-export interface WarsWarIdGetDefender {
-    /**
-     * Alliance ID if and only if the defender is an alliance
-     */
-    'alliance_id'?: number;
-    /**
-     * Corporation ID if and only if the defender is a corporation
-     */
-    'corporation_id'?: number;
-    /**
-     * ISK value of ships the defender has killed
-     */
-    'isk_destroyed': number;
-    /**
-     * The number of ships the defender has killed
-     */
-    'ships_killed': number;
 }
 
 /**
@@ -16029,7 +15185,7 @@ export const ContractsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getCorporationsCorporationIdContracts(corporationId: number, xCompatibilityDate: GetCorporationsCorporationIdContractsXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdContractsAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CorporationsCorporationIdContractsGetInner>>> {
+        async getCorporationsCorporationIdContracts(corporationId: number, xCompatibilityDate: GetCorporationsCorporationIdContractsXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdContractsAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CharactersCharacterIdContractsGetInner>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getCorporationsCorporationIdContracts(corporationId, xCompatibilityDate, page, acceptLanguage, ifNoneMatch, xTenant, ifModifiedSince, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ContractsApi.getCorporationsCorporationIdContracts']?.[localVarOperationServerIndex]?.url;
@@ -16192,7 +15348,7 @@ export const ContractsApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCorporationsCorporationIdContracts(corporationId: number, xCompatibilityDate: GetCorporationsCorporationIdContractsXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdContractsAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<CorporationsCorporationIdContractsGetInner>> {
+        getCorporationsCorporationIdContracts(corporationId: number, xCompatibilityDate: GetCorporationsCorporationIdContractsXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdContractsAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<CharactersCharacterIdContractsGetInner>> {
             return localVarFp.getCorporationsCorporationIdContracts(corporationId, xCompatibilityDate, page, acceptLanguage, ifNoneMatch, xTenant, ifModifiedSince, options).then((request) => request(axios, basePath));
         },
         /**
@@ -37770,7 +36926,7 @@ export const WalletApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getCorporationsCorporationIdWalletsDivisionJournal(corporationId: number, division: number, xCompatibilityDate: GetCorporationsCorporationIdWalletsDivisionJournalXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdWalletsDivisionJournalAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CorporationsCorporationIdWalletsDivisionJournalGetInner>>> {
+        async getCorporationsCorporationIdWalletsDivisionJournal(corporationId: number, division: number, xCompatibilityDate: GetCorporationsCorporationIdWalletsDivisionJournalXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdWalletsDivisionJournalAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CharactersCharacterIdWalletJournalGetInner>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getCorporationsCorporationIdWalletsDivisionJournal(corporationId, division, xCompatibilityDate, page, acceptLanguage, ifNoneMatch, xTenant, ifModifiedSince, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['WalletApi.getCorporationsCorporationIdWalletsDivisionJournal']?.[localVarOperationServerIndex]?.url;
@@ -37881,7 +37037,7 @@ export const WalletApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCorporationsCorporationIdWalletsDivisionJournal(corporationId: number, division: number, xCompatibilityDate: GetCorporationsCorporationIdWalletsDivisionJournalXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdWalletsDivisionJournalAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<CorporationsCorporationIdWalletsDivisionJournalGetInner>> {
+        getCorporationsCorporationIdWalletsDivisionJournal(corporationId: number, division: number, xCompatibilityDate: GetCorporationsCorporationIdWalletsDivisionJournalXCompatibilityDateEnum, page?: number, acceptLanguage?: GetCorporationsCorporationIdWalletsDivisionJournalAcceptLanguageEnum, ifNoneMatch?: string, xTenant?: string, ifModifiedSince?: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<CharactersCharacterIdWalletJournalGetInner>> {
             return localVarFp.getCorporationsCorporationIdWalletsDivisionJournal(corporationId, division, xCompatibilityDate, page, acceptLanguage, ifNoneMatch, xTenant, ifModifiedSince, options).then((request) => request(axios, basePath));
         },
         /**

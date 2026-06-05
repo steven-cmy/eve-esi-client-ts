@@ -6,10 +6,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **faction_id** | **number** |  | [default to undefined]
-**kills** | [**FwStatsGetInnerKills**](FwStatsGetInnerKills.md) |  | [default to undefined]
+**kills** | [**CharactersCharacterIdFwStatsGetKills**](CharactersCharacterIdFwStatsGetKills.md) |  | [default to undefined]
 **pilots** | **number** | How many pilots fight for the given faction | [default to undefined]
 **systems_controlled** | **number** | The number of solar systems controlled by the given faction | [default to undefined]
-**victory_points** | [**FwStatsGetInnerVictoryPoints**](FwStatsGetInnerVictoryPoints.md) |  | [default to undefined]
+**victory_points** | [**CharactersCharacterIdFwStatsGetKills**](CharactersCharacterIdFwStatsGetKills.md) |  | [default to undefined]
 
 ## Example
 

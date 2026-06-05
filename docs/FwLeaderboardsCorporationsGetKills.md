@@ -7,8 +7,8 @@ Top 10 rankings of corporations by number of kills from yesterday, last week and
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **active_total** | [**Array&lt;FwLeaderboardsCorporationsGetKillsActiveTotalInner&gt;**](FwLeaderboardsCorporationsGetKillsActiveTotalInner.md) | Top 10 ranking of corporations active in faction warfare by total kills. A corporation is considered \&quot;active\&quot; if they have participated in faction warfare in the past 14 days | [default to undefined]
-**last_week** | [**Array&lt;FwLeaderboardsCorporationsGetKillsLastWeekInner&gt;**](FwLeaderboardsCorporationsGetKillsLastWeekInner.md) | Top 10 ranking of corporations by kills in the past week | [default to undefined]
-**yesterday** | [**Array&lt;FwLeaderboardsCorporationsGetKillsYesterdayInner&gt;**](FwLeaderboardsCorporationsGetKillsYesterdayInner.md) | Top 10 ranking of corporations by kills in the past day | [default to undefined]
+**last_week** | [**Array&lt;FwLeaderboardsCorporationsGetKillsActiveTotalInner&gt;**](FwLeaderboardsCorporationsGetKillsActiveTotalInner.md) | Top 10 ranking of corporations by kills in the past week | [default to undefined]
+**yesterday** | [**Array&lt;FwLeaderboardsCorporationsGetKillsActiveTotalInner&gt;**](FwLeaderboardsCorporationsGetKillsActiveTotalInner.md) | Top 10 ranking of corporations by kills in the past day | [default to undefined]
 
 ## Example
 

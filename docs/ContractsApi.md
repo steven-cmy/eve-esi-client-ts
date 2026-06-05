@@ -435,7 +435,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getCorporationsCorporationIdContracts**
-> Array<CorporationsCorporationIdContractsGetInner> getCorporationsCorporationIdContracts()
+> Array<CharactersCharacterIdContractsGetInner> getCorporationsCorporationIdContracts()
 
 Returns contracts available to a corporation, only if the corporation is issuer, acceptor or assignee. Only returns contracts no older than 30 days, or if the status is \"in_progress\".
 
@@ -484,7 +484,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdContracts
 
 ### Return type
 
-**Array<CorporationsCorporationIdContractsGetInner>**
+**Array<CharactersCharacterIdContractsGetInner>**
 
 ### Authorization
 

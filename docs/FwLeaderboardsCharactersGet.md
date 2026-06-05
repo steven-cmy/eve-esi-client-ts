@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **kills** | [**FwLeaderboardsCharactersGetKills**](FwLeaderboardsCharactersGetKills.md) |  | [default to undefined]
-**victory_points** | [**FwLeaderboardsCharactersGetVictoryPoints**](FwLeaderboardsCharactersGetVictoryPoints.md) |  | [default to undefined]
+**victory_points** | [**FwLeaderboardsCharactersGetKills**](FwLeaderboardsCharactersGetKills.md) |  | [default to undefined]
 
 ## Example
 

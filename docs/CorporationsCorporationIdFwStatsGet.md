@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **enlisted_on** | **string** | The enlistment date of the given corporation into faction warfare. Will not be included if corporation is not enlisted in faction warfare | [optional] [default to undefined]
 **faction_id** | **number** | The faction the given corporation is enlisted to fight for. Will not be included if corporation is not enlisted in faction warfare | [optional] [default to undefined]
-**kills** | [**CorporationsCorporationIdFwStatsGetKills**](CorporationsCorporationIdFwStatsGetKills.md) |  | [default to undefined]
+**kills** | [**CharactersCharacterIdFwStatsGetKills**](CharactersCharacterIdFwStatsGetKills.md) |  | [default to undefined]
 **pilots** | **number** | How many pilots the enlisted corporation has. Will not be included if corporation is not enlisted in faction warfare | [optional] [default to undefined]
-**victory_points** | [**CorporationsCorporationIdFwStatsGetVictoryPoints**](CorporationsCorporationIdFwStatsGetVictoryPoints.md) |  | [default to undefined]
+**victory_points** | [**CharactersCharacterIdFwStatsGetKills**](CharactersCharacterIdFwStatsGetKills.md) |  | [default to undefined]
 
 ## Example
 

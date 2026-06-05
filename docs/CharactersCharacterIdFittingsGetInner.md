@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **string** |  | [default to undefined]
 **fitting_id** | **number** |  | [default to undefined]
-**items** | [**Array&lt;CharactersCharacterIdFittingsGetInnerItemsInner&gt;**](CharactersCharacterIdFittingsGetInnerItemsInner.md) |  | [default to undefined]
+**items** | [**Array&lt;PostCharactersCharacterIdFittingsRequestItemsInner&gt;**](PostCharactersCharacterIdFittingsRequestItemsInner.md) |  | [default to undefined]
 **name** | **string** |  | [default to undefined]
 **ship_type_id** | **number** |  | [default to undefined]
 

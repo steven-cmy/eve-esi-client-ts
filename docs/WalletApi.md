@@ -286,7 +286,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdWallets(
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getCorporationsCorporationIdWalletsDivisionJournal**
-> Array<CorporationsCorporationIdWalletsDivisionJournalGetInner> getCorporationsCorporationIdWalletsDivisionJournal()
+> Array<CharactersCharacterIdWalletJournalGetInner> getCorporationsCorporationIdWalletsDivisionJournal()
 
 Retrieve the given corporation\'s wallet journal for the given division going 30 days back
 
@@ -338,7 +338,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdWalletsDi
 
 ### Return type
 
-**Array<CorporationsCorporationIdWalletsDivisionJournalGetInner>**
+**Array<CharactersCharacterIdWalletJournalGetInner>**
 
 ### Authorization
 

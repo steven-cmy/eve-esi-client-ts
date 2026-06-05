@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **damage_taken** | **number** | How much total damage was taken by the victim  | [default to undefined]
 **faction_id** | **number** |  | [optional] [default to undefined]
 **items** | [**Array&lt;KillmailsKillmailIdKillmailHashGetVictimItemsInner&gt;**](KillmailsKillmailIdKillmailHashGetVictimItemsInner.md) |  | [optional] [default to undefined]
-**position** | [**KillmailsKillmailIdKillmailHashGetVictimPosition**](KillmailsKillmailIdKillmailHashGetVictimPosition.md) |  | [optional] [default to undefined]
+**position** | [**CharactersCharacterIdAssetsLocationsPostInnerPosition**](CharactersCharacterIdAssetsLocationsPostInnerPosition.md) |  | [optional] [default to undefined]
 **ship_type_id** | **number** | The ship that the victim was piloting and was destroyed  | [default to undefined]
 
 ## Example

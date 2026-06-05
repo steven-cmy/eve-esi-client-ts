@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **faction_id** | **number** | The faction the given character is enlisted to fight for. Will not be included if character is not enlisted in faction warfare | [optional] [default to undefined]
 **highest_rank** | **number** | The given character\&#39;s highest faction rank achieved | [optional] [default to undefined]
 **kills** | [**CharactersCharacterIdFwStatsGetKills**](CharactersCharacterIdFwStatsGetKills.md) |  | [default to undefined]
-**victory_points** | [**CharactersCharacterIdFwStatsGetVictoryPoints**](CharactersCharacterIdFwStatsGetVictoryPoints.md) |  | [default to undefined]
+**victory_points** | [**CharactersCharacterIdFwStatsGetKills**](CharactersCharacterIdFwStatsGetKills.md) |  | [default to undefined]
 
 ## Example
 

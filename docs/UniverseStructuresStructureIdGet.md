@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | The full name of the structure | [default to undefined]
 **owner_id** | **number** | The ID of the corporation who owns this particular structure | [default to undefined]
-**position** | [**UniverseStructuresStructureIdGetPosition**](UniverseStructuresStructureIdGetPosition.md) |  | [optional] [default to undefined]
+**position** | [**CharactersCharacterIdAssetsLocationsPostInnerPosition**](CharactersCharacterIdAssetsLocationsPostInnerPosition.md) |  | [optional] [default to undefined]
 **solar_system_id** | **number** |  | [default to undefined]
 **type_id** | **number** |  | [optional] [default to undefined]
 

@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **locations** | [**Array&lt;CorporationsProjectsDetailConfigurationcapturefwcomplexLocationsInner&gt;**](CorporationsProjectsDetailConfigurationcapturefwcomplexLocationsInner.md) | Location to mine | [optional] [default to undefined]
-**materials** | [**Array&lt;CorporationsProjectsDetailConfigurationminematerialMaterialsInner&gt;**](CorporationsProjectsDetailConfigurationminematerialMaterialsInner.md) | Materials to mine | [optional] [default to undefined]
+**materials** | [**Array&lt;CorporationsProjectsDetailConfigurationdeliveritemItemsInner&gt;**](CorporationsProjectsDetailConfigurationdeliveritemItemsInner.md) | Materials to mine | [optional] [default to undefined]
 
 ## Example
 
