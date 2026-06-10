@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **number** | Amount of reagent in the bay | [default to undefined]
+**amount** | **number** | Amount of reagent in the bay at the time of \&#39;last_updated\&#39; | [default to undefined]
 **burning_per_hour** | **number** | Amount of reagent burning per hour | [default to undefined]
 **type_id** | **number** | Reagent\&#39;s type ID | [default to undefined]
 

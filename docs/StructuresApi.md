@@ -29,7 +29,7 @@ const apiInstance = new StructuresApi(configuration);
 
 let mercenaryDenId: number; //The ID of the Mercenary Den (default to undefined)
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2026-05-19'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-06-09'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -52,7 +52,7 @@ const { status, data } = await apiInstance.getCharactersStructuresMercenaryDensD
 |------------- | ------------- | ------------- | -------------|
 | **mercenaryDenId** | **number** | The ID of the Mercenary Den | defaults to undefined|
 | **characterId** | **number** | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-05-19&#39;**]**Array<&#39;2026-05-19&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-06-09&#39;**]**Array<&#39;2026-06-09&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -98,7 +98,7 @@ const configuration = new Configuration();
 const apiInstance = new StructuresApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2026-05-19'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-06-09'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -119,7 +119,7 @@ const { status, data } = await apiInstance.getCharactersStructuresMercenaryDensL
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | **number** | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-05-19&#39;**]**Array<&#39;2026-05-19&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-06-09&#39;**]**Array<&#39;2026-06-09&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -166,7 +166,7 @@ const apiInstance = new StructuresApi(configuration);
 
 let skyhookId: number; //The ID of the Skyhook (default to undefined)
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2026-05-19'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-06-09'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -189,7 +189,7 @@ const { status, data } = await apiInstance.getCorporationsStructuresSkyhooksDeta
 |------------- | ------------- | ------------- | -------------|
 | **skyhookId** | **number** | The ID of the Skyhook | defaults to undefined|
 | **corporationId** | **number** | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-05-19&#39;**]**Array<&#39;2026-05-19&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-06-09&#39;**]**Array<&#39;2026-06-09&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -235,7 +235,7 @@ const configuration = new Configuration();
 const apiInstance = new StructuresApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2026-05-19'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-06-09'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -256,7 +256,7 @@ const { status, data } = await apiInstance.getCorporationsStructuresSkyhooksList
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | **number** | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-05-19&#39;**]**Array<&#39;2026-05-19&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-06-09&#39;**]**Array<&#39;2026-06-09&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -303,7 +303,7 @@ const apiInstance = new StructuresApi(configuration);
 
 let sovereigntyHubId: number; //The ID of the Sovereignty Hub (default to undefined)
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2026-05-19'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-06-09'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -326,7 +326,7 @@ const { status, data } = await apiInstance.getCorporationsStructuresSovereigntyH
 |------------- | ------------- | ------------- | -------------|
 | **sovereigntyHubId** | **number** | The ID of the Sovereignty Hub | defaults to undefined|
 | **corporationId** | **number** | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-05-19&#39;**]**Array<&#39;2026-05-19&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-06-09&#39;**]**Array<&#39;2026-06-09&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -372,7 +372,7 @@ const configuration = new Configuration();
 const apiInstance = new StructuresApi(configuration);
 
 let corporationId: number; //The ID of the corporation (default to undefined)
-let xCompatibilityDate: '2026-05-19'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-06-09'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -393,7 +393,7 @@ const { status, data } = await apiInstance.getCorporationsStructuresSovereigntyH
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **corporationId** | **number** | The ID of the corporation | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-05-19&#39;**]**Array<&#39;2026-05-19&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-06-09&#39;**]**Array<&#39;2026-06-09&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|

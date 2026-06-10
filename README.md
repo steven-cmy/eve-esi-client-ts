@@ -1,4 +1,4 @@
-## eve-esi-client-ts@1.1.22
+## eve-esi-client-ts@1.1.23
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
@@ -36,7 +36,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install eve-esi-client-ts@1.1.22 --save
+npm install eve-esi-client-ts@1.1.23 --save
 ```
 
 _unPublished (not recommended):_
@@ -70,7 +70,6 @@ Class | Method | HTTP request | Description
 *CalendarApi* | [**getCharactersCharacterIdCalendarEventId**](docs/CalendarApi.md#getcharacterscharacteridcalendareventid) | **GET** /characters/{character_id}/calendar/{event_id} | Get an event
 *CalendarApi* | [**getCharactersCharacterIdCalendarEventIdAttendees**](docs/CalendarApi.md#getcharacterscharacteridcalendareventidattendees) | **GET** /characters/{character_id}/calendar/{event_id}/attendees | Get attendees
 *CalendarApi* | [**putCharactersCharacterIdCalendarEventId**](docs/CalendarApi.md#putcharacterscharacteridcalendareventid) | **PUT** /characters/{character_id}/calendar/{event_id} | Respond to an event
-*CharacterApi* | [**getCharactersCharacterId**](docs/CharacterApi.md#getcharacterscharacterid) | **GET** /characters/{character_id} | Get character\&#39;s public information
 *CharacterApi* | [**getCharactersCharacterIdAgentsResearch**](docs/CharacterApi.md#getcharacterscharacteridagentsresearch) | **GET** /characters/{character_id}/agents_research | Get agents research
 *CharacterApi* | [**getCharactersCharacterIdBlueprints**](docs/CharacterApi.md#getcharacterscharacteridblueprints) | **GET** /characters/{character_id}/blueprints | Get blueprints
 *CharacterApi* | [**getCharactersCharacterIdCorporationhistory**](docs/CharacterApi.md#getcharacterscharacteridcorporationhistory) | **GET** /characters/{character_id}/corporationhistory | Get corporation history
@@ -82,6 +81,7 @@ Class | Method | HTTP request | Description
 *CharacterApi* | [**getCharactersCharacterIdRoles**](docs/CharacterApi.md#getcharacterscharacteridroles) | **GET** /characters/{character_id}/roles | Get character corporation roles
 *CharacterApi* | [**getCharactersCharacterIdStandings**](docs/CharacterApi.md#getcharacterscharacteridstandings) | **GET** /characters/{character_id}/standings | Get standings
 *CharacterApi* | [**getCharactersCharacterIdTitles**](docs/CharacterApi.md#getcharacterscharacteridtitles) | **GET** /characters/{character_id}/titles | Get character corporation titles
+*CharacterApi* | [**getCharactersDetail**](docs/CharacterApi.md#getcharactersdetail) | **GET** /characters/{character_id} | Get character\&#39;s public information
 *CharacterApi* | [**postCharactersAffiliation**](docs/CharacterApi.md#postcharactersaffiliation) | **POST** /characters/affiliation | Character affiliation
 *CharacterApi* | [**postCharactersCharacterIdCspa**](docs/CharacterApi.md#postcharacterscharacteridcspa) | **POST** /characters/{character_id}/cspa | Calculate a CSPA charge cost
 *ClonesApi* | [**getCharactersCharacterIdClones**](docs/ClonesApi.md#getcharacterscharacteridclones) | **GET** /characters/{character_id}/clones | Get clones

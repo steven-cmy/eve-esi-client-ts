@@ -5,17 +5,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**achievement_score** | **number** | Character\&#39;s achievement score | [default to undefined]
 **alliance_id** | **number** | Character\&#39;s alliance ID | [optional] [default to undefined]
 **birthday** | **string** | Character\&#39;s creation date | [default to undefined]
 **bloodline_id** | **number** | Character\&#39;s bloodline ID | [default to undefined]
+**character_title_id** | **string** | Character\&#39;s equipped cosmetic title ID | [optional] [default to undefined]
 **corporation_id** | **number** | Character\&#39;s corporation ID | [default to undefined]
+**corporation_title** | **string** | Character\&#39;s corporation title | [optional] [default to undefined]
 **description** | **string** | Character\&#39;s description (biography) | [optional] [default to undefined]
 **faction_id** | **number** | Character\&#39;s faction ID | [optional] [default to undefined]
 **gender** | **string** | Character\&#39;s gender | [default to undefined]
 **name** | **string** | Character\&#39;s name | [default to undefined]
 **race_id** | **number** | Character\&#39;s race ID | [default to undefined]
 **security_status** | **number** | Character\&#39;s security status | [optional] [default to undefined]
-**title** | **string** | Character\&#39;s corporation title | [optional] [default to undefined]
 
 ## Example
 
@@ -23,17 +25,19 @@ Name | Type | Description | Notes
 import { CharactersDetail } from 'eve-esi-client-ts';
 
 const instance: CharactersDetail = {
+    achievement_score,
     alliance_id,
     birthday,
     bloodline_id,
+    character_title_id,
     corporation_id,
+    corporation_title,
     description,
     faction_id,
     gender,
     name,
     race_id,
     security_status,
-    title,
 };
 ```
 
