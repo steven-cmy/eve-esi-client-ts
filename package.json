@@ -1,6 +1,6 @@
 {
   "name": "eve-esi-client-ts",
-  "version": "1.1.27",
+  "version": "1.1.28",
   "description": "OpenAPI client for EVE Spring Inebriation(ESI) - tranquility",
   "author": "Archangel's Echo",
   "repository": {
@@ -24,7 +24,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "axios": "^1.17.0"
+    "axios": "^1.18.0"
   },
   "devDependencies": {
     "@types/node": "12.11.5 - 12.20.42",
