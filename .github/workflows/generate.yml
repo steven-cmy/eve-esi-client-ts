@@ -86,7 +86,7 @@ jobs:
   generate-client:
     name: Generate TypeScript Client
     runs-on: ubuntu-latest
-    needs: check-update
+    needs: [check-update, update-dependencies]
     if: needs.check-update.outputs.changed == 'true'
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
