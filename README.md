@@ -1,4 +1,4 @@
-## eve-esi-client-ts@1.1.38
+## eve-esi-client-ts@1.1.39
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
@@ -36,7 +36,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install eve-esi-client-ts@1.1.38 --save
+npm install eve-esi-client-ts@1.1.39 --save
 ```
 
 _unPublished (not recommended):_
@@ -206,6 +206,7 @@ Class | Method | HTTP request | Description
 *MarketApi* | [**getMarketsStructuresStructureId**](docs/MarketApi.md#getmarketsstructuresstructureid) | **GET** /markets/structures/{structure_id} | List orders in a structure
 *MetaApi* | [**getMetaChangelog**](docs/MetaApi.md#getmetachangelog) | **GET** /meta/changelog | Get changelog
 *MetaApi* | [**getMetaCompatibilityDates**](docs/MetaApi.md#getmetacompatibilitydates) | **GET** /meta/compatibility-dates | Get compatibility dates
+*MetaApi* | [**getMetaName**](docs/MetaApi.md#getmetaname) | **GET** /meta/name | Get the name of ESI
 *MetaApi* | [**getMetaStatus**](docs/MetaApi.md#getmetastatus) | **GET** /meta/status | Get health status
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanets**](docs/PlanetaryInteractionApi.md#getcharacterscharacteridplanets) | **GET** /characters/{character_id}/planets | Get colonies
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanetsPlanetId**](docs/PlanetaryInteractionApi.md#getcharacterscharacteridplanetsplanetid) | **GET** /characters/{character_id}/planets/{planet_id} | Get colony layout
@@ -309,10 +310,12 @@ Class | Method | HTTP request | Description
  - [CharactersCharacterIdCorporationhistoryGetInner](docs/CharactersCharacterIdCorporationhistoryGetInner.md)
  - [CharactersCharacterIdFatigueGet](docs/CharactersCharacterIdFatigueGet.md)
  - [CharactersCharacterIdFittingsGetInner](docs/CharactersCharacterIdFittingsGetInner.md)
+ - [CharactersCharacterIdFittingsGetInnerItemsInner](docs/CharactersCharacterIdFittingsGetInnerItemsInner.md)
  - [CharactersCharacterIdFittingsPost](docs/CharactersCharacterIdFittingsPost.md)
  - [CharactersCharacterIdFleetGet](docs/CharactersCharacterIdFleetGet.md)
  - [CharactersCharacterIdFwStatsGet](docs/CharactersCharacterIdFwStatsGet.md)
  - [CharactersCharacterIdFwStatsGetKills](docs/CharactersCharacterIdFwStatsGetKills.md)
+ - [CharactersCharacterIdFwStatsGetVictoryPoints](docs/CharactersCharacterIdFwStatsGetVictoryPoints.md)
  - [CharactersCharacterIdIndustryJobsGetInner](docs/CharactersCharacterIdIndustryJobsGetInner.md)
  - [CharactersCharacterIdKillmailsRecentGetInner](docs/CharactersCharacterIdKillmailsRecentGetInner.md)
  - [CharactersCharacterIdLocationGet](docs/CharactersCharacterIdLocationGet.md)
@@ -379,11 +382,15 @@ Class | Method | HTTP request | Description
  - [CorporationsCorporationIdBlueprintsGetInner](docs/CorporationsCorporationIdBlueprintsGetInner.md)
  - [CorporationsCorporationIdContactsGetInner](docs/CorporationsCorporationIdContactsGetInner.md)
  - [CorporationsCorporationIdContainersLogsGetInner](docs/CorporationsCorporationIdContainersLogsGetInner.md)
+ - [CorporationsCorporationIdContractsGetInner](docs/CorporationsCorporationIdContractsGetInner.md)
  - [CorporationsCorporationIdCustomsOfficesGetInner](docs/CorporationsCorporationIdCustomsOfficesGetInner.md)
  - [CorporationsCorporationIdDivisionsGet](docs/CorporationsCorporationIdDivisionsGet.md)
  - [CorporationsCorporationIdDivisionsGetHangarInner](docs/CorporationsCorporationIdDivisionsGetHangarInner.md)
+ - [CorporationsCorporationIdDivisionsGetWalletInner](docs/CorporationsCorporationIdDivisionsGetWalletInner.md)
  - [CorporationsCorporationIdFacilitiesGetInner](docs/CorporationsCorporationIdFacilitiesGetInner.md)
  - [CorporationsCorporationIdFwStatsGet](docs/CorporationsCorporationIdFwStatsGet.md)
+ - [CorporationsCorporationIdFwStatsGetKills](docs/CorporationsCorporationIdFwStatsGetKills.md)
+ - [CorporationsCorporationIdFwStatsGetVictoryPoints](docs/CorporationsCorporationIdFwStatsGetVictoryPoints.md)
  - [CorporationsCorporationIdIconsGet](docs/CorporationsCorporationIdIconsGet.md)
  - [CorporationsCorporationIdIndustryJobsGetInner](docs/CorporationsCorporationIdIndustryJobsGetInner.md)
  - [CorporationsCorporationIdMedalsGetInner](docs/CorporationsCorporationIdMedalsGetInner.md)
@@ -401,6 +408,7 @@ Class | Method | HTTP request | Description
  - [CorporationsCorporationIdStructuresGetInner](docs/CorporationsCorporationIdStructuresGetInner.md)
  - [CorporationsCorporationIdStructuresGetInnerServicesInner](docs/CorporationsCorporationIdStructuresGetInnerServicesInner.md)
  - [CorporationsCorporationIdTitlesGetInner](docs/CorporationsCorporationIdTitlesGetInner.md)
+ - [CorporationsCorporationIdWalletsDivisionJournalGetInner](docs/CorporationsCorporationIdWalletsDivisionJournalGetInner.md)
  - [CorporationsCorporationIdWalletsDivisionTransactionsGetInner](docs/CorporationsCorporationIdWalletsDivisionTransactionsGetInner.md)
  - [CorporationsCorporationIdWalletsGetInner](docs/CorporationsCorporationIdWalletsGetInner.md)
  - [CorporationsDetail](docs/CorporationsDetail.md)
@@ -516,13 +524,33 @@ Class | Method | HTTP request | Description
  - [FwLeaderboardsCharactersGet](docs/FwLeaderboardsCharactersGet.md)
  - [FwLeaderboardsCharactersGetKills](docs/FwLeaderboardsCharactersGetKills.md)
  - [FwLeaderboardsCharactersGetKillsActiveTotalInner](docs/FwLeaderboardsCharactersGetKillsActiveTotalInner.md)
+ - [FwLeaderboardsCharactersGetKillsLastWeekInner](docs/FwLeaderboardsCharactersGetKillsLastWeekInner.md)
+ - [FwLeaderboardsCharactersGetKillsYesterdayInner](docs/FwLeaderboardsCharactersGetKillsYesterdayInner.md)
+ - [FwLeaderboardsCharactersGetVictoryPoints](docs/FwLeaderboardsCharactersGetVictoryPoints.md)
+ - [FwLeaderboardsCharactersGetVictoryPointsActiveTotalInner](docs/FwLeaderboardsCharactersGetVictoryPointsActiveTotalInner.md)
+ - [FwLeaderboardsCharactersGetVictoryPointsLastWeekInner](docs/FwLeaderboardsCharactersGetVictoryPointsLastWeekInner.md)
+ - [FwLeaderboardsCharactersGetVictoryPointsYesterdayInner](docs/FwLeaderboardsCharactersGetVictoryPointsYesterdayInner.md)
  - [FwLeaderboardsCorporationsGet](docs/FwLeaderboardsCorporationsGet.md)
  - [FwLeaderboardsCorporationsGetKills](docs/FwLeaderboardsCorporationsGetKills.md)
  - [FwLeaderboardsCorporationsGetKillsActiveTotalInner](docs/FwLeaderboardsCorporationsGetKillsActiveTotalInner.md)
+ - [FwLeaderboardsCorporationsGetKillsLastWeekInner](docs/FwLeaderboardsCorporationsGetKillsLastWeekInner.md)
+ - [FwLeaderboardsCorporationsGetKillsYesterdayInner](docs/FwLeaderboardsCorporationsGetKillsYesterdayInner.md)
+ - [FwLeaderboardsCorporationsGetVictoryPoints](docs/FwLeaderboardsCorporationsGetVictoryPoints.md)
+ - [FwLeaderboardsCorporationsGetVictoryPointsActiveTotalInner](docs/FwLeaderboardsCorporationsGetVictoryPointsActiveTotalInner.md)
+ - [FwLeaderboardsCorporationsGetVictoryPointsLastWeekInner](docs/FwLeaderboardsCorporationsGetVictoryPointsLastWeekInner.md)
+ - [FwLeaderboardsCorporationsGetVictoryPointsYesterdayInner](docs/FwLeaderboardsCorporationsGetVictoryPointsYesterdayInner.md)
  - [FwLeaderboardsGet](docs/FwLeaderboardsGet.md)
  - [FwLeaderboardsGetKills](docs/FwLeaderboardsGetKills.md)
  - [FwLeaderboardsGetKillsActiveTotalInner](docs/FwLeaderboardsGetKillsActiveTotalInner.md)
+ - [FwLeaderboardsGetKillsLastWeekInner](docs/FwLeaderboardsGetKillsLastWeekInner.md)
+ - [FwLeaderboardsGetKillsYesterdayInner](docs/FwLeaderboardsGetKillsYesterdayInner.md)
+ - [FwLeaderboardsGetVictoryPoints](docs/FwLeaderboardsGetVictoryPoints.md)
+ - [FwLeaderboardsGetVictoryPointsActiveTotalInner](docs/FwLeaderboardsGetVictoryPointsActiveTotalInner.md)
+ - [FwLeaderboardsGetVictoryPointsLastWeekInner](docs/FwLeaderboardsGetVictoryPointsLastWeekInner.md)
+ - [FwLeaderboardsGetVictoryPointsYesterdayInner](docs/FwLeaderboardsGetVictoryPointsYesterdayInner.md)
  - [FwStatsGetInner](docs/FwStatsGetInner.md)
+ - [FwStatsGetInnerKills](docs/FwStatsGetInnerKills.md)
+ - [FwStatsGetInnerVictoryPoints](docs/FwStatsGetInnerVictoryPoints.md)
  - [FwSystemsGetInner](docs/FwSystemsGetInner.md)
  - [FwWarsGetInner](docs/FwWarsGetInner.md)
  - [GroupId](docs/GroupId.md)
@@ -540,8 +568,10 @@ Class | Method | HTTP request | Description
  - [KillmailsKillmailIdKillmailHashGetVictim](docs/KillmailsKillmailIdKillmailHashGetVictim.md)
  - [KillmailsKillmailIdKillmailHashGetVictimItemsInner](docs/KillmailsKillmailIdKillmailHashGetVictimItemsInner.md)
  - [KillmailsKillmailIdKillmailHashGetVictimItemsInnerItemsInner](docs/KillmailsKillmailIdKillmailHashGetVictimItemsInnerItemsInner.md)
+ - [KillmailsKillmailIdKillmailHashGetVictimPosition](docs/KillmailsKillmailIdKillmailHashGetVictimPosition.md)
  - [LostShip](docs/LostShip.md)
  - [LoyaltyStoresCorporationIdOffersGetInner](docs/LoyaltyStoresCorporationIdOffersGetInner.md)
+ - [LoyaltyStoresCorporationIdOffersGetInnerRequiredItemsInner](docs/LoyaltyStoresCorporationIdOffersGetInnerRequiredItemsInner.md)
  - [Manual](docs/Manual.md)
  - [ManufactureItem](docs/ManufactureItem.md)
  - [MarketsGroupsMarketGroupIdGet](docs/MarketsGroupsMarketGroupIdGet.md)
@@ -553,6 +583,8 @@ Class | Method | HTTP request | Description
  - [MetaChangelog](docs/MetaChangelog.md)
  - [MetaChangelogEntry](docs/MetaChangelogEntry.md)
  - [MetaCompatibilityDates](docs/MetaCompatibilityDates.md)
+ - [MetaName](docs/MetaName.md)
+ - [MetaNameEntry](docs/MetaNameEntry.md)
  - [MetaStatus](docs/MetaStatus.md)
  - [MetaStatusRoutestatus](docs/MetaStatusRoutestatus.md)
  - [MineMaterial](docs/MineMaterial.md)
@@ -610,6 +642,15 @@ Class | Method | HTTP request | Description
  - [UniverseGroupsGroupIdGet](docs/UniverseGroupsGroupIdGet.md)
  - [UniverseIdsPost](docs/UniverseIdsPost.md)
  - [UniverseIdsPostAgentsInner](docs/UniverseIdsPostAgentsInner.md)
+ - [UniverseIdsPostAlliancesInner](docs/UniverseIdsPostAlliancesInner.md)
+ - [UniverseIdsPostCharactersInner](docs/UniverseIdsPostCharactersInner.md)
+ - [UniverseIdsPostConstellationsInner](docs/UniverseIdsPostConstellationsInner.md)
+ - [UniverseIdsPostCorporationsInner](docs/UniverseIdsPostCorporationsInner.md)
+ - [UniverseIdsPostFactionsInner](docs/UniverseIdsPostFactionsInner.md)
+ - [UniverseIdsPostInventoryTypesInner](docs/UniverseIdsPostInventoryTypesInner.md)
+ - [UniverseIdsPostRegionsInner](docs/UniverseIdsPostRegionsInner.md)
+ - [UniverseIdsPostStationsInner](docs/UniverseIdsPostStationsInner.md)
+ - [UniverseIdsPostSystemsInner](docs/UniverseIdsPostSystemsInner.md)
  - [UniverseMoonsMoonIdGet](docs/UniverseMoonsMoonIdGet.md)
  - [UniverseNamesPostInner](docs/UniverseNamesPostInner.md)
  - [UniversePlanetsPlanetIdGet](docs/UniversePlanetsPlanetIdGet.md)
@@ -621,6 +662,7 @@ Class | Method | HTTP request | Description
  - [UniverseStarsStarIdGet](docs/UniverseStarsStarIdGet.md)
  - [UniverseStationsStationIdGet](docs/UniverseStationsStationIdGet.md)
  - [UniverseStructuresStructureIdGet](docs/UniverseStructuresStructureIdGet.md)
+ - [UniverseStructuresStructureIdGetPosition](docs/UniverseStructuresStructureIdGetPosition.md)
  - [UniverseSystemJumpsGetInner](docs/UniverseSystemJumpsGetInner.md)
  - [UniverseSystemKillsGetInner](docs/UniverseSystemKillsGetInner.md)
  - [UniverseSystemsSystemIdGet](docs/UniverseSystemsSystemIdGet.md)
@@ -630,6 +672,7 @@ Class | Method | HTTP request | Description
  - [WarsWarIdGet](docs/WarsWarIdGet.md)
  - [WarsWarIdGetAggressor](docs/WarsWarIdGetAggressor.md)
  - [WarsWarIdGetAlliesInner](docs/WarsWarIdGetAlliesInner.md)
+ - [WarsWarIdGetDefender](docs/WarsWarIdGetDefender.md)
 
 
 <a id="documentation-for-authorization"></a>
