@@ -1,4 +1,4 @@
-## eve-esi-client-ts@1.1.39
+## eve-esi-client-ts@1.1.40
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
@@ -36,7 +36,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install eve-esi-client-ts@1.1.39 --save
+npm install eve-esi-client-ts@1.1.40 --save
 ```
 
 _unPublished (not recommended):_
@@ -412,6 +412,8 @@ Class | Method | HTTP request | Description
  - [CorporationsCorporationIdWalletsDivisionTransactionsGetInner](docs/CorporationsCorporationIdWalletsDivisionTransactionsGetInner.md)
  - [CorporationsCorporationIdWalletsGetInner](docs/CorporationsCorporationIdWalletsGetInner.md)
  - [CorporationsDetail](docs/CorporationsDetail.md)
+ - [CorporationsDetailPalette](docs/CorporationsDetailPalette.md)
+ - [CorporationsDetailTaxrates](docs/CorporationsDetailTaxrates.md)
  - [CorporationsFreelanceJobsListing](docs/CorporationsFreelanceJobsListing.md)
  - [CorporationsFreelanceJobsParticipants](docs/CorporationsFreelanceJobsParticipants.md)
  - [CorporationsFreelanceJobsParticipantsParticipant](docs/CorporationsFreelanceJobsParticipantsParticipant.md)
