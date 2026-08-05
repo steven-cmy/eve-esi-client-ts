@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | **any** |  | [default to undefined]
+**data** | **any** | JSON-encoded configuration | [default to undefined]
 **type** | **string** | Configuration type | [default to undefined]
 
 ## Example

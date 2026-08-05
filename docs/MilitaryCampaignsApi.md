@@ -1,44 +1,48 @@
-# AssetsApi
+# MilitaryCampaignsApi
 
 All URIs are relative to *https://esi.evetech.net*
 
 |Method | HTTP request | Description|
 |------------- | ------------- | -------------|
-|[**getCharactersCharacterIdAssets**](#getcharacterscharacteridassets) | **GET** /characters/{character_id}/assets | Get character assets|
-|[**getCorporationsCorporationIdAssets**](#getcorporationscorporationidassets) | **GET** /corporations/{corporation_id}/assets | Get corporation assets|
-|[**postCharactersCharacterIdAssetsLocations**](#postcharacterscharacteridassetslocations) | **POST** /characters/{character_id}/assets/locations | Get character asset locations|
-|[**postCharactersCharacterIdAssetsNames**](#postcharacterscharacteridassetsnames) | **POST** /characters/{character_id}/assets/names | Get character asset names|
-|[**postCorporationsCorporationIdAssetsLocations**](#postcorporationscorporationidassetslocations) | **POST** /corporations/{corporation_id}/assets/locations | Get corporation asset locations|
-|[**postCorporationsCorporationIdAssetsNames**](#postcorporationscorporationidassetsnames) | **POST** /corporations/{corporation_id}/assets/names | Get corporation asset names|
+|[**getCharactersMilitaryCampaignsObjectivesListing**](#getcharactersmilitarycampaignsobjectiveslisting) | **GET** /characters/{character_id}/military-campaigns/objectives | List character participation in military campaigns|
+|[**getCharactersMilitaryCampaignsObjectivesParticipation**](#getcharactersmilitarycampaignsobjectivesparticipation) | **GET** /characters/{character_id}/military-campaigns/objectives/{objective_id} | Get character military campaign objective participation|
+|[**getMilitaryCampaignsDetail**](#getmilitarycampaignsdetail) | **GET** /military-campaigns/{campaign_id} | Get military campaign details|
+|[**getMilitaryCampaignsListing**](#getmilitarycampaignslisting) | **GET** /military-campaigns | List military campaigns|
+|[**getMilitaryCampaignsObjectivesDetail**](#getmilitarycampaignsobjectivesdetail) | **GET** /military-campaigns/{campaign_id}/objectives/{objective_id} | Get military campaign objective details|
+|[**getMilitaryCampaignsObjectivesListing**](#getmilitarycampaignsobjectiveslisting) | **GET** /military-campaigns/{campaign_id}/objectives | List military campaign objectives|
 
-# **getCharactersCharacterIdAssets**
-> Array<CharactersCharacterIdAssetsGetInner> getCharactersCharacterIdAssets()
+# **getCharactersMilitaryCampaignsObjectivesListing**
+> CharactersMilitaryCampaignsObjectivesListing getCharactersMilitaryCampaignsObjectivesListing()
 
-Return a list of the characters assets
+Listing of the military campaign objectives the character has participated in.
 
 ### Example
 
 ```typescript
 import {
-    AssetsApi,
+    MilitaryCampaignsApi,
     Configuration
 } from 'eve-esi-client-ts';
 
 const configuration = new Configuration();
-const apiInstance = new AssetsApi(configuration);
+const apiInstance = new MilitaryCampaignsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
 let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
-let page: number; // (optional) (default to undefined)
+let after: string; //Return records from after this cursor (mutual exclusive with \'before\'). \'0\' to start from the beginning. (optional) (default to undefined)
+let before: string; //Return records from before this cursor (mutual exclusive with \'after\'). \'0\' to start from the end. (optional) (default to undefined)
+let limit: number; //The amount of records to retrieve per request. (optional) (default to 10)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
 let ifModifiedSince: string; //The date the resource was last modified. A 304 will be returned if the resource has not been modified since this date. (optional) (default to undefined)
 
-const { status, data } = await apiInstance.getCharactersCharacterIdAssets(
+const { status, data } = await apiInstance.getCharactersMilitaryCampaignsObjectivesListing(
     characterId,
     xCompatibilityDate,
-    page,
+    after,
+    before,
+    limit,
     acceptLanguage,
     ifNoneMatch,
     xTenant,
@@ -50,9 +54,11 @@ const { status, data } = await apiInstance.getCharactersCharacterIdAssets(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **characterId** | [**number**] | The ID of the character | defaults to undefined|
+| **characterId** | **number** | The ID of the character | defaults to undefined|
 | **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
-| **page** | [**number**] |  | (optional) defaults to undefined|
+| **after** | [**string**] | Return records from after this cursor (mutual exclusive with \&#39;before\&#39;). \&#39;0\&#39; to start from the beginning. | (optional) defaults to undefined|
+| **before** | [**string**] | Return records from before this cursor (mutual exclusive with \&#39;after\&#39;). \&#39;0\&#39; to start from the end. | (optional) defaults to undefined|
+| **limit** | [**number**] | The amount of records to retrieve per request. | (optional) defaults to 10|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -61,7 +67,7 @@ const { status, data } = await apiInstance.getCharactersCharacterIdAssets(
 
 ### Return type
 
-**Array<CharactersCharacterIdAssetsGetInner>**
+**CharactersMilitaryCampaignsObjectivesListing**
 
 ### Authorization
 
@@ -76,39 +82,39 @@ const { status, data } = await apiInstance.getCharactersCharacterIdAssets(
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-|**200** | OK |  * Cache-Control -  <br>  * ETag -  <br>  * Last-Modified -  <br>  * X-Pages - The total number of pages in the result set. <br>  |
+|**200** | OK |  * Cache-Control -  <br>  * ETag -  <br>  * Last-Modified -  <br>  |
 |**0** | Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **getCorporationsCorporationIdAssets**
-> Array<CorporationsCorporationIdAssetsGetInner> getCorporationsCorporationIdAssets()
+# **getCharactersMilitaryCampaignsObjectivesParticipation**
+> CharactersMilitaryCampaignsObjectivesParticipation getCharactersMilitaryCampaignsObjectivesParticipation()
 
-Return a list of the corporation assets
+Show your participation in a military campaign objective.
 
 ### Example
 
 ```typescript
 import {
-    AssetsApi,
+    MilitaryCampaignsApi,
     Configuration
 } from 'eve-esi-client-ts';
 
 const configuration = new Configuration();
-const apiInstance = new AssetsApi(configuration);
+const apiInstance = new MilitaryCampaignsApi(configuration);
 
-let corporationId: number; //The ID of the corporation (default to undefined)
+let characterId: number; //The ID of the character (default to undefined)
+let objectiveId: string; //The ID of the objective (default to undefined)
 let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
-let page: number; // (optional) (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
 let ifModifiedSince: string; //The date the resource was last modified. A 304 will be returned if the resource has not been modified since this date. (optional) (default to undefined)
 
-const { status, data } = await apiInstance.getCorporationsCorporationIdAssets(
-    corporationId,
+const { status, data } = await apiInstance.getCharactersMilitaryCampaignsObjectivesParticipation(
+    characterId,
+    objectiveId,
     xCompatibilityDate,
-    page,
     acceptLanguage,
     ifNoneMatch,
     xTenant,
@@ -120,9 +126,9 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdAssets(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
+| **characterId** | **number** | The ID of the character | defaults to undefined|
+| **objectiveId** | **string** | The ID of the objective | defaults to undefined|
 | **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
-| **page** | [**number**] |  | (optional) defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -131,7 +137,7 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdAssets(
 
 ### Return type
 
-**Array<CorporationsCorporationIdAssetsGetInner>**
+**CharactersMilitaryCampaignsObjectivesParticipation**
 
 ### Authorization
 
@@ -146,39 +152,37 @@ const { status, data } = await apiInstance.getCorporationsCorporationIdAssets(
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-|**200** | OK |  * Cache-Control -  <br>  * ETag -  <br>  * Last-Modified -  <br>  * X-Pages - The total number of pages in the result set. <br>  |
+|**200** | OK |  * Cache-Control -  <br>  * ETag -  <br>  * Last-Modified -  <br>  |
 |**0** | Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **postCharactersCharacterIdAssetsLocations**
-> Array<CharactersCharacterIdAssetsLocationsPostInner> postCharactersCharacterIdAssetsLocations(requestBody)
+# **getMilitaryCampaignsDetail**
+> MilitaryCampaignsDetail getMilitaryCampaignsDetail()
 
-Return locations for a set of item ids, which you can get from character assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)
+Get the details of a military campaign.
 
 ### Example
 
 ```typescript
 import {
-    AssetsApi,
+    MilitaryCampaignsApi,
     Configuration
 } from 'eve-esi-client-ts';
 
 const configuration = new Configuration();
-const apiInstance = new AssetsApi(configuration);
+const apiInstance = new MilitaryCampaignsApi(configuration);
 
-let characterId: number; //The ID of the character (default to undefined)
+let campaignId: string; //The ID of the military campaign (default to undefined)
 let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
-let requestBody: Set<number>; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
 let ifModifiedSince: string; //The date the resource was last modified. A 304 will be returned if the resource has not been modified since this date. (optional) (default to undefined)
 
-const { status, data } = await apiInstance.postCharactersCharacterIdAssetsLocations(
-    characterId,
+const { status, data } = await apiInstance.getMilitaryCampaignsDetail(
+    campaignId,
     xCompatibilityDate,
-    requestBody,
     acceptLanguage,
     ifNoneMatch,
     xTenant,
@@ -190,8 +194,7 @@ const { status, data } = await apiInstance.postCharactersCharacterIdAssetsLocati
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **requestBody** | **Set<number>**|  | |
-| **characterId** | [**number**] | The ID of the character | defaults to undefined|
+| **campaignId** | **string** | The ID of the military campaign | defaults to undefined|
 | **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -201,15 +204,15 @@ const { status, data } = await apiInstance.postCharactersCharacterIdAssetsLocati
 
 ### Return type
 
-**Array<CharactersCharacterIdAssetsLocationsPostInner>**
+**MilitaryCampaignsDetail**
 
 ### Authorization
 
-[OAuth2](../README.md#OAuth2)
+No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -221,34 +224,30 @@ const { status, data } = await apiInstance.postCharactersCharacterIdAssetsLocati
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **postCharactersCharacterIdAssetsNames**
-> Array<CharactersCharacterIdAssetsNamesPostInner> postCharactersCharacterIdAssetsNames(requestBody)
+# **getMilitaryCampaignsListing**
+> MilitaryCampaignsListing getMilitaryCampaignsListing()
 
-Return names for a set of item ids, which you can get from character assets endpoint. Typically used for items that can customize names, like containers or ships.
+Listing of all active military campaigns.
 
 ### Example
 
 ```typescript
 import {
-    AssetsApi,
+    MilitaryCampaignsApi,
     Configuration
 } from 'eve-esi-client-ts';
 
 const configuration = new Configuration();
-const apiInstance = new AssetsApi(configuration);
+const apiInstance = new MilitaryCampaignsApi(configuration);
 
-let characterId: number; //The ID of the character (default to undefined)
 let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
-let requestBody: Set<number>; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
 let ifModifiedSince: string; //The date the resource was last modified. A 304 will be returned if the resource has not been modified since this date. (optional) (default to undefined)
 
-const { status, data } = await apiInstance.postCharactersCharacterIdAssetsNames(
-    characterId,
+const { status, data } = await apiInstance.getMilitaryCampaignsListing(
     xCompatibilityDate,
-    requestBody,
     acceptLanguage,
     ifNoneMatch,
     xTenant,
@@ -260,8 +259,6 @@ const { status, data } = await apiInstance.postCharactersCharacterIdAssetsNames(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **requestBody** | **Set<number>**|  | |
-| **characterId** | [**number**] | The ID of the character | defaults to undefined|
 | **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -271,15 +268,15 @@ const { status, data } = await apiInstance.postCharactersCharacterIdAssetsNames(
 
 ### Return type
 
-**Array<CharactersCharacterIdAssetsNamesPostInner>**
+**MilitaryCampaignsListing**
 
 ### Authorization
 
-[OAuth2](../README.md#OAuth2)
+No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -291,34 +288,34 @@ const { status, data } = await apiInstance.postCharactersCharacterIdAssetsNames(
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **postCorporationsCorporationIdAssetsLocations**
-> Array<CharactersCharacterIdAssetsLocationsPostInner> postCorporationsCorporationIdAssetsLocations(requestBody)
+# **getMilitaryCampaignsObjectivesDetail**
+> MilitaryCampaignsObjectivesDetail getMilitaryCampaignsObjectivesDetail()
 
-Return locations for a set of item ids, which you can get from corporation assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0)
+Get the details of an objective of a military campaign.
 
 ### Example
 
 ```typescript
 import {
-    AssetsApi,
+    MilitaryCampaignsApi,
     Configuration
 } from 'eve-esi-client-ts';
 
 const configuration = new Configuration();
-const apiInstance = new AssetsApi(configuration);
+const apiInstance = new MilitaryCampaignsApi(configuration);
 
-let corporationId: number; //The ID of the corporation (default to undefined)
+let campaignId: string; //The ID of the military campaign (default to undefined)
+let objectiveId: string; //The ID of the objective (default to undefined)
 let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
-let requestBody: Set<number>; //
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
 let ifModifiedSince: string; //The date the resource was last modified. A 304 will be returned if the resource has not been modified since this date. (optional) (default to undefined)
 
-const { status, data } = await apiInstance.postCorporationsCorporationIdAssetsLocations(
-    corporationId,
+const { status, data } = await apiInstance.getMilitaryCampaignsObjectivesDetail(
+    campaignId,
+    objectiveId,
     xCompatibilityDate,
-    requestBody,
     acceptLanguage,
     ifNoneMatch,
     xTenant,
@@ -330,8 +327,8 @@ const { status, data } = await apiInstance.postCorporationsCorporationIdAssetsLo
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **requestBody** | **Set<number>**|  | |
-| **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
+| **campaignId** | **string** | The ID of the military campaign | defaults to undefined|
+| **objectiveId** | **string** | The ID of the objective | defaults to undefined|
 | **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
@@ -341,15 +338,15 @@ const { status, data } = await apiInstance.postCorporationsCorporationIdAssetsLo
 
 ### Return type
 
-**Array<CharactersCharacterIdAssetsLocationsPostInner>**
+**MilitaryCampaignsObjectivesDetail**
 
 ### Authorization
 
-[OAuth2](../README.md#OAuth2)
+No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -361,34 +358,38 @@ const { status, data } = await apiInstance.postCorporationsCorporationIdAssetsLo
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **postCorporationsCorporationIdAssetsNames**
-> Array<CharactersCharacterIdAssetsNamesPostInner> postCorporationsCorporationIdAssetsNames(requestBody)
+# **getMilitaryCampaignsObjectivesListing**
+> MilitaryCampaignsObjectivesListing getMilitaryCampaignsObjectivesListing()
 
-Return names for a set of item ids, which you can get from corporation assets endpoint. Only valid for items that can customize names, like containers or ships
+Listing of all active, completed or expired objectives of a military campaign.
 
 ### Example
 
 ```typescript
 import {
-    AssetsApi,
+    MilitaryCampaignsApi,
     Configuration
 } from 'eve-esi-client-ts';
 
 const configuration = new Configuration();
-const apiInstance = new AssetsApi(configuration);
+const apiInstance = new MilitaryCampaignsApi(configuration);
 
-let corporationId: number; //The ID of the corporation (default to undefined)
+let campaignId: string; //The ID of the military campaign (default to undefined)
 let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
-let requestBody: Set<number>; //
+let after: string; //Return records from after this cursor (mutual exclusive with \'before\'). \'0\' to start from the beginning. (optional) (default to undefined)
+let before: string; //Return records from before this cursor (mutual exclusive with \'after\'). \'0\' to start from the end. (optional) (default to undefined)
+let limit: number; //The amount of records to retrieve per request. (optional) (default to 10)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
 let ifModifiedSince: string; //The date the resource was last modified. A 304 will be returned if the resource has not been modified since this date. (optional) (default to undefined)
 
-const { status, data } = await apiInstance.postCorporationsCorporationIdAssetsNames(
-    corporationId,
+const { status, data } = await apiInstance.getMilitaryCampaignsObjectivesListing(
+    campaignId,
     xCompatibilityDate,
-    requestBody,
+    after,
+    before,
+    limit,
     acceptLanguage,
     ifNoneMatch,
     xTenant,
@@ -400,9 +401,11 @@ const { status, data } = await apiInstance.postCorporationsCorporationIdAssetsNa
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **requestBody** | **Set<number>**|  | |
-| **corporationId** | [**number**] | The ID of the corporation | defaults to undefined|
+| **campaignId** | **string** | The ID of the military campaign | defaults to undefined|
 | **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **after** | [**string**] | Return records from after this cursor (mutual exclusive with \&#39;before\&#39;). \&#39;0\&#39; to start from the beginning. | (optional) defaults to undefined|
+| **before** | [**string**] | Return records from before this cursor (mutual exclusive with \&#39;after\&#39;). \&#39;0\&#39; to start from the end. | (optional) defaults to undefined|
+| **limit** | [**number**] | The amount of records to retrieve per request. | (optional) defaults to 10|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -411,15 +414,15 @@ const { status, data } = await apiInstance.postCorporationsCorporationIdAssetsNa
 
 ### Return type
 
-**Array<CharactersCharacterIdAssetsNamesPostInner>**
+**MilitaryCampaignsObjectivesListing**
 
 ### Authorization
 
-[OAuth2](../README.md#OAuth2)
+No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 

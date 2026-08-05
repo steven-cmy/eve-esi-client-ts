@@ -1,4 +1,4 @@
-## eve-esi-client-ts@1.1.40
+## eve-esi-client-ts@1.1.41
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
@@ -36,7 +36,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install eve-esi-client-ts@1.1.40 --save
+npm install eve-esi-client-ts@1.1.41 --save
 ```
 
 _unPublished (not recommended):_
@@ -208,6 +208,12 @@ Class | Method | HTTP request | Description
 *MetaApi* | [**getMetaCompatibilityDates**](docs/MetaApi.md#getmetacompatibilitydates) | **GET** /meta/compatibility-dates | Get compatibility dates
 *MetaApi* | [**getMetaName**](docs/MetaApi.md#getmetaname) | **GET** /meta/name | Get the name of ESI
 *MetaApi* | [**getMetaStatus**](docs/MetaApi.md#getmetastatus) | **GET** /meta/status | Get health status
+*MilitaryCampaignsApi* | [**getCharactersMilitaryCampaignsObjectivesListing**](docs/MilitaryCampaignsApi.md#getcharactersmilitarycampaignsobjectiveslisting) | **GET** /characters/{character_id}/military-campaigns/objectives | List character participation in military campaigns
+*MilitaryCampaignsApi* | [**getCharactersMilitaryCampaignsObjectivesParticipation**](docs/MilitaryCampaignsApi.md#getcharactersmilitarycampaignsobjectivesparticipation) | **GET** /characters/{character_id}/military-campaigns/objectives/{objective_id} | Get character military campaign objective participation
+*MilitaryCampaignsApi* | [**getMilitaryCampaignsDetail**](docs/MilitaryCampaignsApi.md#getmilitarycampaignsdetail) | **GET** /military-campaigns/{campaign_id} | Get military campaign details
+*MilitaryCampaignsApi* | [**getMilitaryCampaignsListing**](docs/MilitaryCampaignsApi.md#getmilitarycampaignslisting) | **GET** /military-campaigns | List military campaigns
+*MilitaryCampaignsApi* | [**getMilitaryCampaignsObjectivesDetail**](docs/MilitaryCampaignsApi.md#getmilitarycampaignsobjectivesdetail) | **GET** /military-campaigns/{campaign_id}/objectives/{objective_id} | Get military campaign objective details
+*MilitaryCampaignsApi* | [**getMilitaryCampaignsObjectivesListing**](docs/MilitaryCampaignsApi.md#getmilitarycampaignsobjectiveslisting) | **GET** /military-campaigns/{campaign_id}/objectives | List military campaign objectives
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanets**](docs/PlanetaryInteractionApi.md#getcharacterscharacteridplanets) | **GET** /characters/{character_id}/planets | Get colonies
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanetsPlanetId**](docs/PlanetaryInteractionApi.md#getcharacterscharacteridplanetsplanetid) | **GET** /characters/{character_id}/planets/{planet_id} | Get colony layout
 *PlanetaryInteractionApi* | [**getCorporationsCorporationIdCustomsOffices**](docs/PlanetaryInteractionApi.md#getcorporationscorporationidcustomsoffices) | **GET** /corporations/{corporation_id}/customs_offices | List corporation customs offices
@@ -356,6 +362,9 @@ Class | Method | HTTP request | Description
  - [CharactersMercenaryTacticalOperationsDetail](docs/CharactersMercenaryTacticalOperationsDetail.md)
  - [CharactersMercenaryTacticalOperationsListing](docs/CharactersMercenaryTacticalOperationsListing.md)
  - [CharactersMercenaryTacticalOperationsListingOperation](docs/CharactersMercenaryTacticalOperationsListingOperation.md)
+ - [CharactersMilitaryCampaignsObjectivesListing](docs/CharactersMilitaryCampaignsObjectivesListing.md)
+ - [CharactersMilitaryCampaignsObjectivesParticipation](docs/CharactersMilitaryCampaignsObjectivesParticipation.md)
+ - [CharactersMilitaryCampaignsObjectivesParticipationCharacterobjective](docs/CharactersMilitaryCampaignsObjectivesParticipationCharacterobjective.md)
  - [CharactersSkillqueueSkill](docs/CharactersSkillqueueSkill.md)
  - [CharactersSkills](docs/CharactersSkills.md)
  - [CharactersSkillsSkill](docs/CharactersSkillsSkill.md)
@@ -589,6 +598,13 @@ Class | Method | HTTP request | Description
  - [MetaNameEntry](docs/MetaNameEntry.md)
  - [MetaStatus](docs/MetaStatus.md)
  - [MetaStatusRoutestatus](docs/MetaStatusRoutestatus.md)
+ - [MilitaryCampaignsDetail](docs/MilitaryCampaignsDetail.md)
+ - [MilitaryCampaignsDetailCampaign](docs/MilitaryCampaignsDetailCampaign.md)
+ - [MilitaryCampaignsListing](docs/MilitaryCampaignsListing.md)
+ - [MilitaryCampaignsObjectivesDetail](docs/MilitaryCampaignsObjectivesDetail.md)
+ - [MilitaryCampaignsObjectivesDetailObjective](docs/MilitaryCampaignsObjectivesDetailObjective.md)
+ - [MilitaryCampaignsObjectivesDetailParticipants](docs/MilitaryCampaignsObjectivesDetailParticipants.md)
+ - [MilitaryCampaignsObjectivesListing](docs/MilitaryCampaignsObjectivesListing.md)
  - [MineMaterial](docs/MineMaterial.md)
  - [ModelBoolean](docs/ModelBoolean.md)
  - [ModelError](docs/ModelError.md)
@@ -759,4 +775,6 @@ Authentication schemes defined for the API:
  - **esi-universe.read_structures.v1**: esi-universe.read_structures.v1
  - **esi-wallet.read_character_wallet.v1**: esi-wallet.read_character_wallet.v1
  - **esi-wallet.read_corporation_wallets.v1**: esi-wallet.read_corporation_wallets.v1
+ - **esi.activity.char:read**: esi.activity.char:read
+ - **esi.cosmetic.char:read**: esi.cosmetic.char:read
 

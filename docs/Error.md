@@ -5,8 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**details** | [**Array&lt;ErrorDetail&gt;**](ErrorDetail.md) | List of individual error details. | [optional] [default to undefined]
+**details** | [**Array&lt;ErrorDetail&gt;**](ErrorDetail.md) | List of individual issues. | [optional] [default to undefined]
 **error** | **string** | Error message. | [default to undefined]
+**status** | **number** | HTTP status code. | [optional] [default to undefined]
 
 ## Example
 
@@ -16,6 +17,7 @@ import { ModelError } from 'eve-esi-client-ts';
 const instance: ModelError = {
     details,
     error,
+    status,
 };
 ```
 

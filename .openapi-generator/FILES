@@ -95,6 +95,9 @@ docs/CharactersFreelanceJobsParticipation.md
 docs/CharactersMercenaryTacticalOperationsDetail.md
 docs/CharactersMercenaryTacticalOperationsListing.md
 docs/CharactersMercenaryTacticalOperationsListingOperation.md
+docs/CharactersMilitaryCampaignsObjectivesListing.md
+docs/CharactersMilitaryCampaignsObjectivesParticipation.md
+docs/CharactersMilitaryCampaignsObjectivesParticipationCharacterobjective.md
 docs/CharactersSkillqueueSkill.md
 docs/CharactersSkills.md
 docs/CharactersSkillsSkill.md
@@ -348,6 +351,14 @@ docs/MetaName.md
 docs/MetaNameEntry.md
 docs/MetaStatus.md
 docs/MetaStatusRoutestatus.md
+docs/MilitaryCampaignsApi.md
+docs/MilitaryCampaignsDetail.md
+docs/MilitaryCampaignsDetailCampaign.md
+docs/MilitaryCampaignsListing.md
+docs/MilitaryCampaignsObjectivesDetail.md
+docs/MilitaryCampaignsObjectivesDetailObjective.md
+docs/MilitaryCampaignsObjectivesDetailParticipants.md
+docs/MilitaryCampaignsObjectivesListing.md
 docs/MineMaterial.md
 docs/Options.md
 docs/PlanetaryInteractionApi.md
