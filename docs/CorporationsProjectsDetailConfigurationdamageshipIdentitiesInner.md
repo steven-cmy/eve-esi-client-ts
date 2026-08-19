@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**character_id** | **number** | Character\&#39;s ID | [optional] [default to undefined]
-**corporation_id** | **number** | Corporation\&#39;s ID | [optional] [default to undefined]
-**alliance_id** | **number** | Alliance\&#39;s ID | [optional] [default to undefined]
+**character_id** | **number** | Character the listing is visible to | [optional] [default to undefined]
+**corporation_id** | **number** | Corporation the listing is visible to | [optional] [default to undefined]
+**alliance_id** | **number** | Alliance the listing is visible to | [optional] [default to undefined]
 **faction_id** | **number** | Faction\&#39;s ID | [optional] [default to undefined]
 
 ## Example

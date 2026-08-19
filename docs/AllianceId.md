@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**alliance_id** | **number** | Alliance\&#39;s ID | [optional] [default to undefined]
+**alliance_id** | **number** | Alliance the listing is visible to | [optional] [default to undefined]
 
 ## Example
 

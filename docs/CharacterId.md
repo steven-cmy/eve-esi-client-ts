@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**character_id** | **number** | Character\&#39;s ID | [optional] [default to undefined]
+**character_id** | **number** | Character the listing is visible to | [optional] [default to undefined]
 
 ## Example
 

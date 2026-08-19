@@ -1,4 +1,4 @@
-## eve-esi-client-ts@1.1.41
+## eve-esi-client-ts@1.1.42
 
 This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
 
@@ -36,7 +36,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install eve-esi-client-ts@1.1.41 --save
+npm install eve-esi-client-ts@1.1.42 --save
 ```
 
 _unPublished (not recommended):_
@@ -130,6 +130,9 @@ Class | Method | HTTP request | Description
 *CorporationProjectsApi* | [**getCorporationsProjectsContributors**](docs/CorporationProjectsApi.md#getcorporationsprojectscontributors) | **GET** /corporations/{corporation_id}/projects/{project_id}/contributors | List project contributors
 *CorporationProjectsApi* | [**getCorporationsProjectsDetail**](docs/CorporationProjectsApi.md#getcorporationsprojectsdetail) | **GET** /corporations/{corporation_id}/projects/{project_id} | Get project details
 *CorporationProjectsApi* | [**getCorporationsProjectsListing**](docs/CorporationProjectsApi.md#getcorporationsprojectslisting) | **GET** /corporations/{corporation_id}/projects | List corporation projects
+*CosmeticsApi* | [**getCharactersCosmeticsSkinr**](docs/CosmeticsApi.md#getcharacterscosmeticsskinr) | **GET** /characters/{character_id}/cosmetics/skinr | List a character\&#39;s owned SKINR licenses
+*CosmeticsApi* | [**getCharactersCosmeticsSkinrComponents**](docs/CosmeticsApi.md#getcharacterscosmeticsskinrcomponents) | **GET** /characters/{character_id}/cosmetics/skinr/components | List a character\&#39;s owned SKINR component licenses
+*CosmeticsApi* | [**getCosmeticsSkinr**](docs/CosmeticsApi.md#getcosmeticsskinr) | **GET** /cosmetics/skinr/{skinr_id} | Get SKINR attributes
 *DogmaApi* | [**getDogmaAttributes**](docs/DogmaApi.md#getdogmaattributes) | **GET** /dogma/attributes | Get attributes
 *DogmaApi* | [**getDogmaAttributesAttributeId**](docs/DogmaApi.md#getdogmaattributesattributeid) | **GET** /dogma/attributes/{attribute_id} | Get attribute information
 *DogmaApi* | [**getDogmaDynamicItemsTypeIdItemId**](docs/DogmaApi.md#getdogmadynamicitemstypeiditemid) | **GET** /dogma/dynamic/items/{type_id}/{item_id} | Get dynamic item information
@@ -214,6 +217,11 @@ Class | Method | HTTP request | Description
 *MilitaryCampaignsApi* | [**getMilitaryCampaignsListing**](docs/MilitaryCampaignsApi.md#getmilitarycampaignslisting) | **GET** /military-campaigns | List military campaigns
 *MilitaryCampaignsApi* | [**getMilitaryCampaignsObjectivesDetail**](docs/MilitaryCampaignsApi.md#getmilitarycampaignsobjectivesdetail) | **GET** /military-campaigns/{campaign_id}/objectives/{objective_id} | Get military campaign objective details
 *MilitaryCampaignsApi* | [**getMilitaryCampaignsObjectivesListing**](docs/MilitaryCampaignsApi.md#getmilitarycampaignsobjectiveslisting) | **GET** /military-campaigns/{campaign_id}/objectives | List military campaign objectives
+*ParagonHubApi* | [**getCharactersParagonHubSkinr**](docs/ParagonHubApi.md#getcharactersparagonhubskinr) | **GET** /characters/{character_id}/paragon-hub/skinr | List a character\&#39;s Paragon Hub SKINR listings
+*ParagonHubApi* | [**getParagonHubSkinr**](docs/ParagonHubApi.md#getparagonhubskinr) | **GET** /paragon-hub/skinr | List public Paragon Hub SKINR listings
+*ParagonHubApi* | [**getParagonHubSkinrAlliances**](docs/ParagonHubApi.md#getparagonhubskinralliances) | **GET** /paragon-hub/skinr/alliances/{alliance_id} | List Paragon Hub SKINR listings targeted at an alliance
+*ParagonHubApi* | [**getParagonHubSkinrCharacters**](docs/ParagonHubApi.md#getparagonhubskinrcharacters) | **GET** /paragon-hub/skinr/characters/{character_id} | List Paragon Hub SKINR listings targeted at a character
+*ParagonHubApi* | [**getParagonHubSkinrCorporations**](docs/ParagonHubApi.md#getparagonhubskinrcorporations) | **GET** /paragon-hub/skinr/corporations/{corporation_id} | List Paragon Hub SKINR listings targeted at a corporation
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanets**](docs/PlanetaryInteractionApi.md#getcharacterscharacteridplanets) | **GET** /characters/{character_id}/planets | Get colonies
 *PlanetaryInteractionApi* | [**getCharactersCharacterIdPlanetsPlanetId**](docs/PlanetaryInteractionApi.md#getcharacterscharacteridplanetsplanetid) | **GET** /characters/{character_id}/planets/{planet_id} | Get colony layout
 *PlanetaryInteractionApi* | [**getCorporationsCorporationIdCustomsOffices**](docs/PlanetaryInteractionApi.md#getcorporationscorporationidcustomsoffices) | **GET** /corporations/{corporation_id}/customs_offices | List corporation customs offices
@@ -225,7 +233,7 @@ Class | Method | HTTP request | Description
 *SkillsApi* | [**getCharactersCharacterIdSkills**](docs/SkillsApi.md#getcharacterscharacteridskills) | **GET** /characters/{character_id}/skills | Get character skills
 *SovereigntyApi* | [**getSovereigntyCampaigns**](docs/SovereigntyApi.md#getsovereigntycampaigns) | **GET** /sovereignty/campaigns | List sovereignty campaigns
 *SovereigntyApi* | [**getSovereigntySystems**](docs/SovereigntyApi.md#getsovereigntysystems) | **GET** /sovereignty/systems | List sovereignty details for K-space systems
-*StatusApi* | [**getStatus**](docs/StatusApi.md#getstatus) | **GET** /status | Retrieve the uptime and player counts
+*StatusApi* | [**getStatus**](docs/StatusApi.md#getstatus) | **GET** /status | Get the server\&#39;s status
 *StructuresApi* | [**getCharactersStructuresMercenaryDensDetail**](docs/StructuresApi.md#getcharactersstructuresmercenarydensdetail) | **GET** /characters/{character_id}/structures/mercenary-dens/{mercenary_den_id} | Get Mercenary Den details
 *StructuresApi* | [**getCharactersStructuresMercenaryDensListing**](docs/StructuresApi.md#getcharactersstructuresmercenarydenslisting) | **GET** /characters/{character_id}/structures/mercenary-dens | List Mercenary Dens
 *StructuresApi* | [**getCorporationsStructuresSkyhooksDetail**](docs/StructuresApi.md#getcorporationsstructuresskyhooksdetail) | **GET** /corporations/{corporation_id}/structures/skyhooks/{skyhook_id} | Get Skyhook details
@@ -356,6 +364,11 @@ Class | Method | HTTP request | Description
  - [CharactersCharacterIdTitlesGetInner](docs/CharactersCharacterIdTitlesGetInner.md)
  - [CharactersCharacterIdWalletJournalGetInner](docs/CharactersCharacterIdWalletJournalGetInner.md)
  - [CharactersCharacterIdWalletTransactionsGetInner](docs/CharactersCharacterIdWalletTransactionsGetInner.md)
+ - [CharactersCosmeticsSkinr](docs/CharactersCosmeticsSkinr.md)
+ - [CharactersCosmeticsSkinrComponents](docs/CharactersCosmeticsSkinrComponents.md)
+ - [CharactersCosmeticsSkinrComponentsItem](docs/CharactersCosmeticsSkinrComponentsItem.md)
+ - [CharactersCosmeticsSkinrComponentsItemRuns](docs/CharactersCosmeticsSkinrComponentsItemRuns.md)
+ - [CharactersCosmeticsSkinrItem](docs/CharactersCosmeticsSkinrItem.md)
  - [CharactersDetail](docs/CharactersDetail.md)
  - [CharactersFreelanceJobsListing](docs/CharactersFreelanceJobsListing.md)
  - [CharactersFreelanceJobsParticipation](docs/CharactersFreelanceJobsParticipation.md)
@@ -365,6 +378,10 @@ Class | Method | HTTP request | Description
  - [CharactersMilitaryCampaignsObjectivesListing](docs/CharactersMilitaryCampaignsObjectivesListing.md)
  - [CharactersMilitaryCampaignsObjectivesParticipation](docs/CharactersMilitaryCampaignsObjectivesParticipation.md)
  - [CharactersMilitaryCampaignsObjectivesParticipationCharacterobjective](docs/CharactersMilitaryCampaignsObjectivesParticipationCharacterobjective.md)
+ - [CharactersParagonHubSkinr](docs/CharactersParagonHubSkinr.md)
+ - [CharactersParagonHubSkinrItem](docs/CharactersParagonHubSkinrItem.md)
+ - [CharactersParagonHubSkinrItemPrice](docs/CharactersParagonHubSkinrItemPrice.md)
+ - [CharactersParagonHubSkinrItemTarget](docs/CharactersParagonHubSkinrItemTarget.md)
  - [CharactersSkillqueueSkill](docs/CharactersSkillqueueSkill.md)
  - [CharactersSkills](docs/CharactersSkills.md)
  - [CharactersSkillsSkill](docs/CharactersSkillsSkill.md)
@@ -488,6 +505,18 @@ Class | Method | HTTP request | Description
  - [CorporationsStructuresSovereigntyHubsDetailVulnerabilitywindow](docs/CorporationsStructuresSovereigntyHubsDetailVulnerabilitywindow.md)
  - [CorporationsStructuresSovereigntyHubsListing](docs/CorporationsStructuresSovereigntyHubsListing.md)
  - [CorporationsStructuresSovereigntyHubsListingSovereigntyhub](docs/CorporationsStructuresSovereigntyHubsListingSovereigntyhub.md)
+ - [CosmeticsSkinr](docs/CosmeticsSkinr.md)
+ - [CosmeticsSkinrLayout](docs/CosmeticsSkinrLayout.md)
+ - [CosmeticsSkinrLayoutslot](docs/CosmeticsSkinrLayoutslot.md)
+ - [CosmeticsSkinrLayoutslotConfiguration](docs/CosmeticsSkinrLayoutslotConfiguration.md)
+ - [CosmeticsSkinrPatternconfiguration](docs/CosmeticsSkinrPatternconfiguration.md)
+ - [CosmeticsSkinrPatternprojection](docs/CosmeticsSkinrPatternprojection.md)
+ - [CosmeticsSkinrPatterntransform](docs/CosmeticsSkinrPatterntransform.md)
+ - [CosmeticsSkinrSlotnanocoating](docs/CosmeticsSkinrSlotnanocoating.md)
+ - [CosmeticsSkinrSlotpattern](docs/CosmeticsSkinrSlotpattern.md)
+ - [CosmeticsSkinrTier](docs/CosmeticsSkinrTier.md)
+ - [CosmeticsSkinrVector3](docs/CosmeticsSkinrVector3.md)
+ - [CosmeticsSkinrVector4](docs/CosmeticsSkinrVector4.md)
  - [Cursor](docs/Cursor.md)
  - [DamageShip](docs/DamageShip.md)
  - [DefendFwComplex](docs/DefendFwComplex.md)
@@ -574,6 +603,7 @@ Class | Method | HTTP request | Description
  - [IndustrySystemsGetInnerCostIndicesInner](docs/IndustrySystemsGetInnerCostIndicesInner.md)
  - [InsurancePricesGetInner](docs/InsurancePricesGetInner.md)
  - [InsurancePricesGetInnerLevelsInner](docs/InsurancePricesGetInnerLevelsInner.md)
+ - [Isk](docs/Isk.md)
  - [KillmailsKillmailIdKillmailHashGet](docs/KillmailsKillmailIdKillmailHashGet.md)
  - [KillmailsKillmailIdKillmailHashGetAttackersInner](docs/KillmailsKillmailIdKillmailHashGetAttackersInner.md)
  - [KillmailsKillmailIdKillmailHashGetVictim](docs/KillmailsKillmailIdKillmailHashGetVictim.md)
@@ -608,7 +638,15 @@ Class | Method | HTTP request | Description
  - [MineMaterial](docs/MineMaterial.md)
  - [ModelBoolean](docs/ModelBoolean.md)
  - [ModelError](docs/ModelError.md)
+ - [Nanocoating](docs/Nanocoating.md)
  - [Options](docs/Options.md)
+ - [ParagonHubSkinr](docs/ParagonHubSkinr.md)
+ - [ParagonHubSkinrAlliances](docs/ParagonHubSkinrAlliances.md)
+ - [ParagonHubSkinrCharacters](docs/ParagonHubSkinrCharacters.md)
+ - [ParagonHubSkinrCorporations](docs/ParagonHubSkinrCorporations.md)
+ - [ParagonHubSkinrInternalItem](docs/ParagonHubSkinrInternalItem.md)
+ - [Pattern](docs/Pattern.md)
+ - [Plex](docs/Plex.md)
  - [PostCharactersCharacterIdFittingsRequest](docs/PostCharactersCharacterIdFittingsRequest.md)
  - [PostCharactersCharacterIdFittingsRequestItemsInner](docs/PostCharactersCharacterIdFittingsRequestItemsInner.md)
  - [PostCharactersCharacterIdMailLabelsRequest](docs/PostCharactersCharacterIdMailLabelsRequest.md)
@@ -616,12 +654,14 @@ Class | Method | HTTP request | Description
  - [PostCharactersCharacterIdMailRequestRecipientsInner](docs/PostCharactersCharacterIdMailRequestRecipientsInner.md)
  - [PostFleetsFleetIdMembersRequest](docs/PostFleetsFleetIdMembersRequest.md)
  - [PostUiOpenwindowNewmailRequest](docs/PostUiOpenwindowNewmailRequest.md)
+ - [Public](docs/Public.md)
  - [PutCharactersCharacterIdCalendarEventIdRequest](docs/PutCharactersCharacterIdCalendarEventIdRequest.md)
  - [PutCharactersCharacterIdMailMailIdRequest](docs/PutCharactersCharacterIdMailMailIdRequest.md)
  - [PutFleetsFleetIdMembersMemberIdRequest](docs/PutFleetsFleetIdMembersMemberIdRequest.md)
  - [PutFleetsFleetIdRequest](docs/PutFleetsFleetIdRequest.md)
  - [PutFleetsFleetIdSquadsSquadIdRequest](docs/PutFleetsFleetIdSquadsSquadIdRequest.md)
  - [RegionId](docs/RegionId.md)
+ - [Remaining](docs/Remaining.md)
  - [RemoteBoostShield](docs/RemoteBoostShield.md)
  - [RemoteRepairArmor](docs/RemoteRepairArmor.md)
  - [Route](docs/Route.md)
@@ -645,7 +685,7 @@ Class | Method | HTTP request | Description
  - [SovereigntySystemsSovereigntyhub](docs/SovereigntySystemsSovereigntyhub.md)
  - [SovereigntySystemsVulnerabilitywindow](docs/SovereigntySystemsVulnerabilitywindow.md)
  - [StationId](docs/StationId.md)
- - [StatusGet](docs/StatusGet.md)
+ - [Status](docs/Status.md)
  - [StructureId](docs/StructureId.md)
  - [Transit](docs/Transit.md)
  - [TypeId](docs/TypeId.md)
@@ -687,6 +727,7 @@ Class | Method | HTTP request | Description
  - [UniverseSystemsSystemIdGetPlanetsInner](docs/UniverseSystemsSystemIdGetPlanetsInner.md)
  - [UniverseTypesTypeIdGet](docs/UniverseTypesTypeIdGet.md)
  - [Unknown](docs/Unknown.md)
+ - [Unlimited](docs/Unlimited.md)
  - [WarsWarIdGet](docs/WarsWarIdGet.md)
  - [WarsWarIdGetAggressor](docs/WarsWarIdGetAggressor.md)
  - [WarsWarIdGetAlliesInner](docs/WarsWarIdGetAlliesInner.md)

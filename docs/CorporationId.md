@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**corporation_id** | **number** | Corporation\&#39;s ID | [optional] [default to undefined]
+**corporation_id** | **number** | Corporation the listing is visible to | [optional] [default to undefined]
 
 ## Example
 

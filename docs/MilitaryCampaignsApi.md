@@ -28,7 +28,7 @@ const configuration = new Configuration();
 const apiInstance = new MilitaryCampaignsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
-let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-08-18'; //The compatibility date for the request. (default to undefined)
 let after: string; //Return records from after this cursor (mutual exclusive with \'before\'). \'0\' to start from the beginning. (optional) (default to undefined)
 let before: string; //Return records from before this cursor (mutual exclusive with \'after\'). \'0\' to start from the end. (optional) (default to undefined)
 let limit: number; //The amount of records to retrieve per request. (optional) (default to 10)
@@ -55,7 +55,7 @@ const { status, data } = await apiInstance.getCharactersMilitaryCampaignsObjecti
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | **number** | The ID of the character | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-08-18&#39;**]**Array<&#39;2026-08-18&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **after** | [**string**] | Return records from after this cursor (mutual exclusive with \&#39;before\&#39;). \&#39;0\&#39; to start from the beginning. | (optional) defaults to undefined|
 | **before** | [**string**] | Return records from before this cursor (mutual exclusive with \&#39;after\&#39;). \&#39;0\&#39; to start from the end. | (optional) defaults to undefined|
 | **limit** | [**number**] | The amount of records to retrieve per request. | (optional) defaults to 10|
@@ -105,7 +105,7 @@ const apiInstance = new MilitaryCampaignsApi(configuration);
 
 let characterId: number; //The ID of the character (default to undefined)
 let objectiveId: string; //The ID of the objective (default to undefined)
-let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-08-18'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -128,7 +128,7 @@ const { status, data } = await apiInstance.getCharactersMilitaryCampaignsObjecti
 |------------- | ------------- | ------------- | -------------|
 | **characterId** | **number** | The ID of the character | defaults to undefined|
 | **objectiveId** | **string** | The ID of the objective | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-08-18&#39;**]**Array<&#39;2026-08-18&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -174,7 +174,7 @@ const configuration = new Configuration();
 const apiInstance = new MilitaryCampaignsApi(configuration);
 
 let campaignId: string; //The ID of the military campaign (default to undefined)
-let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-08-18'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -195,7 +195,7 @@ const { status, data } = await apiInstance.getMilitaryCampaignsDetail(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **campaignId** | **string** | The ID of the military campaign | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-08-18&#39;**]**Array<&#39;2026-08-18&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -240,7 +240,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new MilitaryCampaignsApi(configuration);
 
-let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-08-18'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -259,7 +259,7 @@ const { status, data } = await apiInstance.getMilitaryCampaignsListing(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-08-18&#39;**]**Array<&#39;2026-08-18&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -306,7 +306,7 @@ const apiInstance = new MilitaryCampaignsApi(configuration);
 
 let campaignId: string; //The ID of the military campaign (default to undefined)
 let objectiveId: string; //The ID of the objective (default to undefined)
-let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-08-18'; //The compatibility date for the request. (default to undefined)
 let acceptLanguage: 'en' | 'de' | 'fr' | 'ja' | 'ru' | 'zh' | 'ko' | 'es'; //The language to use for the response. (optional) (default to 'en')
 let ifNoneMatch: string; //The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional) (default to undefined)
 let xTenant: string; //The tenant ID for the request. (optional) (default to 'tranquility')
@@ -329,7 +329,7 @@ const { status, data } = await apiInstance.getMilitaryCampaignsObjectivesDetail(
 |------------- | ------------- | ------------- | -------------|
 | **campaignId** | **string** | The ID of the military campaign | defaults to undefined|
 | **objectiveId** | **string** | The ID of the objective | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-08-18&#39;**]**Array<&#39;2026-08-18&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **acceptLanguage** | [**&#39;en&#39; | &#39;de&#39; | &#39;fr&#39; | &#39;ja&#39; | &#39;ru&#39; | &#39;zh&#39; | &#39;ko&#39; | &#39;es&#39;**]**Array<&#39;en&#39; &#124; &#39;de&#39; &#124; &#39;fr&#39; &#124; &#39;ja&#39; &#124; &#39;ru&#39; &#124; &#39;zh&#39; &#124; &#39;ko&#39; &#124; &#39;es&#39;>** | The language to use for the response. | (optional) defaults to 'en'|
 | **ifNoneMatch** | [**string**] | The ETag of the previous request. A 304 will be returned if this matches the current ETag. | (optional) defaults to undefined|
 | **xTenant** | [**string**] | The tenant ID for the request. | (optional) defaults to 'tranquility'|
@@ -375,7 +375,7 @@ const configuration = new Configuration();
 const apiInstance = new MilitaryCampaignsApi(configuration);
 
 let campaignId: string; //The ID of the military campaign (default to undefined)
-let xCompatibilityDate: '2026-08-04'; //The compatibility date for the request. (default to undefined)
+let xCompatibilityDate: '2026-08-18'; //The compatibility date for the request. (default to undefined)
 let after: string; //Return records from after this cursor (mutual exclusive with \'before\'). \'0\' to start from the beginning. (optional) (default to undefined)
 let before: string; //Return records from before this cursor (mutual exclusive with \'after\'). \'0\' to start from the end. (optional) (default to undefined)
 let limit: number; //The amount of records to retrieve per request. (optional) (default to 10)
@@ -402,7 +402,7 @@ const { status, data } = await apiInstance.getMilitaryCampaignsObjectivesListing
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **campaignId** | **string** | The ID of the military campaign | defaults to undefined|
-| **xCompatibilityDate** | [**&#39;2026-08-04&#39;**]**Array<&#39;2026-08-04&#39;>** | The compatibility date for the request. | defaults to undefined|
+| **xCompatibilityDate** | [**&#39;2026-08-18&#39;**]**Array<&#39;2026-08-18&#39;>** | The compatibility date for the request. | defaults to undefined|
 | **after** | [**string**] | Return records from after this cursor (mutual exclusive with \&#39;before\&#39;). \&#39;0\&#39; to start from the beginning. | (optional) defaults to undefined|
 | **before** | [**string**] | Return records from before this cursor (mutual exclusive with \&#39;after\&#39;). \&#39;0\&#39; to start from the end. | (optional) defaults to undefined|
 | **limit** | [**number**] | The amount of records to retrieve per request. | (optional) defaults to 10|
